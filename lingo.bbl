@@ -1,0 +1,873 @@
+\begin{thebibliography}{127}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Albu(2006)}]{Albu:06}
+\textsc{Albu, Mihai}, 2006.
+\newblock \emph{Quantitative analyses of typological data}.
+\newblock Ph.D. thesis, Univ.\ Leipzig.
+\newblock \urlprefix\url{http://pubman.mpdl.mpg.de/pubman/item/escidoc:405604}.
+
+\bibitem[{Altschul et~al.(2010)Altschul, Wootton, Zaslavsky, and
+  Yu}]{Altschul:10}
+\textsc{Altschul, Stephen~F.}; \textsc{Wootton, John~C.}; \textsc{Zaslavsky,
+  Elena}; and \textsc{Yu, Yi-Kuo}, 2010.
+\newblock The construction and use of log-odds substitution scores for multiple
+  sequence alignment.
+\newblock \emph{PLoS Comput Biol}, 6.e1000852.
+\newblock \doi{10.1371/journal.pcbi.1000852}.
+
+\bibitem[{Arenas(2013)}]{Arenas:13}
+\textsc{Arenas, Miguel}, 2013.
+\newblock The importance and application of the ancestral recombination graph.
+\newblock \emph{Front.\ Genet.}, 4.206.
+\newblock \doi{10.3389/fgene.2013.00206}.
+
+\bibitem[{Atkinson et~al.(2008)Atkinson, Meade, Venditti, Greenhill, and
+  Pagel}]{Pagel_rates}
+\textsc{Atkinson, Q}; \textsc{Meade, A}; \textsc{Venditti, C};
+  \textsc{Greenhill, S}; and \textsc{Pagel, M}, 2008.
+\newblock Languages evolve in punctuational bursts.
+\newblock \emph{Science}, 319.588.
+\newblock \doi{10.1126/science.1149683}.
+
+\bibitem[{Baxter and Manaster-Ramer(2000)}]{Baxter:00}
+\textsc{Baxter, W} and \textsc{Manaster-Ramer, A}, 2000.
+\newblock Beyond lumping and splitting: probabilistic issues in historical
+  linguistics.
+\newblock \emph{Time Depth in Historical Linguistics}, edited by Colin Renfrew;
+  April McMahon; and Larry Trask, volume~1, 167--188. Oxford, UK: McDonald
+  Institute for Archaeological Research, Oxford Publishing Press.
+
+\bibitem[{Begleiter et~al.(2004)Begleiter, El-Yaniv, and Yona}]{Begleiter:04}
+\textsc{Begleiter, R}; \textsc{El-Yaniv, R.}; and \textsc{Yona, G}, 2004.
+\newblock On prediction using variable order markov models.
+\newblock \emph{J. Artificial Intelligence Res.}, 22.385--421.
+
+\bibitem[{Bergsland and Vogt(1962)}]{Bergsland:62}
+\textsc{Bergsland, Knut} and \textsc{Vogt, Hans}, 1962.
+\newblock On the validity of glottochronology.
+\newblock \emph{Current Anthropology}, 3.115--153.
+\newblock \urlprefix\url{http://www.jstor.org/stable/2739527}.
+
+\bibitem[{Berlin and Kay(1969)}]{Berlin:69}
+\textsc{Berlin, Brent} and \textsc{Kay, Paul}, 1969.
+\newblock \emph{Basic color terms: their universality and evolution}.
+\newblock Berkeley: University of California Press.
+
+\bibitem[{Blasi et~al.(2016)Blasi, Christiansen, Hammarstr{\"o}m, Stadler, and
+  Wichmann}]{Blasi:16a}
+\textsc{Blasi, Dami{\'a}n}; \textsc{Christiansen, Morten~H.};
+  \textsc{Hammarstr{\"o}m, Harald}; \textsc{Stadler, Peter~F.}; and
+  \textsc{Wichmann, Soeren}, 2016.
+\newblock Sound-meaning association biases evidenced across thousands of
+  languages.
+\newblock \emph{Proc. Natl. Acad. Sci. USA}, 113.10818--10823.
+\newblock \doi{10.1073/pnas.1605782113}.
+
+\bibitem[{Bonferroni(1936)}]{Bonferroni:1936}
+\textsc{Bonferroni, C.~E.}, 1936.
+\newblock Teoria statistica delle classi e calcolo delle probabilit\`{a}.
+\newblock \emph{Pubblicazioni del R Istituto Superiore di Scienze Economiche e
+  Commerciali di Firenze}, 8.3--62.
+
+\bibitem[{Bouchard-C{\^o}t{\'e} et~al.(2013)Bouchard-C{\^o}t{\'e}, Hall,
+  Griffiths, and Klein}]{BouchardCote:13}
+\textsc{Bouchard-C{\^o}t{\'e}, A}; \textsc{Hall, D}; \textsc{Griffiths, T~L};
+  and \textsc{Klein, D}, 2013.
+\newblock Automated reconstruction of ancient languages using probabilistic
+  models of sound change.
+\newblock \emph{Proc Natl Acad Sci USA}, 110.4224--4229.
+\newblock \doi{10.1073/pnas.1204678110}.
+
+\bibitem[{Bouckaert et~al.(2012)Bouckaert, Lemey, Dunn, Greenhill, Alekseyenko,
+  Drummond, Gray, Suchard, and Atkinson}]{Bouckaert:12}
+\textsc{Bouckaert, R}; \textsc{Lemey, P}; \textsc{Dunn, M}; \textsc{Greenhill,
+  S~J}; \textsc{Alekseyenko, A~V}; \textsc{Drummond, A~J}; \textsc{Gray, R~D};
+  \textsc{Suchard, M~A}; and \textsc{Atkinson, Q}, 2012.
+\newblock Mapping the origins and expansion of the first {Indo-Europeans}.
+\newblock \emph{Science}, 337.957--960.
+\newblock \doi{10.1126/science.1219669}.
+
+\bibitem[{Bourlat et~al.(2006)Bourlat, Juliusdottir, Lowe, Freeman, Aronowicz,
+  Kirschner, Lander, Thorndyke, Nakano, Kohn, Heyland, Moroz, Copley, and
+  Telford}]{Bourlat:06}
+\textsc{Bourlat, S.~J.}; \textsc{Juliusdottir, T.}; \textsc{Lowe, C.~J.};
+  \textsc{Freeman, R.}; \textsc{Aronowicz, J.}; \textsc{Kirschner, M.};
+  \textsc{Lander, E.~S.}; \textsc{Thorndyke, M.}; \textsc{Nakano, H.};
+  \textsc{Kohn, A.~B.}; \textsc{Heyland, A.}; \textsc{Moroz, L.~L.};
+  \textsc{Copley, R.~R.}; and \textsc{Telford, M.~J.}, 2006.
+\newblock Deuterostome phylogeny reveals monophyletic chordates and the new
+  phylum xenoturbellida.
+\newblock \emph{Nature}, 444.85--88.
+
+\bibitem[{Bowern(2010)}]{Bowern:10}
+\textsc{Bowern, Claire}, 2010.
+\newblock Historical linguistics in {Australia}: trees, networks and their
+  implications.
+\newblock \emph{Philosophical Transactions of Royal Society B}, 365.3845--3854.
+\newblock \doi{10.1098/rstb.2010.0013}.
+
+\bibitem[{Bowern(2012)}]{Bowern:12a}
+\textsc{Bowern, Claire}, 2012.
+\newblock The riddle of {Tasmanian} languages.
+\newblock \emph{Proceedings of the Royal Society B}, 279.4590--4595.
+\newblock \doi{10.1098/rspb.2012.1842}.
+
+\bibitem[{Bowern and Atkinson(2012)}]{Bowern:12b}
+\textsc{Bowern, Claire} and \textsc{Atkinson, Quentin}, 2012.
+\newblock Computational phylogenetics and the internal structure of
+  {Pama}-{Nyungan}.
+\newblock \emph{Language}, 88.817--845.
+\newblock \doi{10.1353/lan.2012.0081}.
+
+\bibitem[{Brown(1976)}]{Brown:76}
+\textsc{Brown, Cecil~H}, 1976.
+\newblock General principles of human anatomical partonomy and speculations on
+  the growth of partonomic nomenclature.
+\newblock \emph{American Ethnologist}, 3.400--424.
+\newblock \urlprefix\url{http://www.jstor.org/stable/643763}.
+
+\bibitem[{Brown(1979)}]{Brown:79}
+\textsc{Brown, Cecil~H}, 1979.
+\newblock A theory of lexical change (with examples from folk biology, human
+  anatomical partonomy and other domains).
+\newblock \emph{Anthropological Linguistics}, 21.257--276.
+\newblock \urlprefix\url{http://www.jstor.org/stable/30027730}.
+
+\bibitem[{Brown(1983)}]{Brown:83}
+\textsc{Brown, Cecil~H.}, 1983.
+\newblock Where do cardinal direction terms come from?
+\newblock \emph{Anthropological Linguistics}, 25.121--161.
+\newblock \urlprefix\url{http://www.jstor.org/stable/30027665}.
+
+\bibitem[{Buck(1949)}]{Buck:49}
+\textsc{Buck, Carl~Darling}, 1949.
+\newblock \emph{A dictionary of selected synonyms in the principal
+  {Indo-European} languages: A contribution to the history of ideas}.
+\newblock Chicago: University of Chicago Press.
+
+\bibitem[{Calude and Pagel(2011)}]{Calude:2011}
+\textsc{Calude, Andreea~S} and \textsc{Pagel, Mark}, 2011.
+\newblock {How do we use language? Shared patterns in the frequency of word use
+  across 17 world languages}.
+\newblock \emph{Philosophical Transactions of the Royal Society of London B:
+  Biological Sciences}, 366.1101--1107.
+
+\bibitem[{Calude and Pagel(2014)}]{Calude:2014}
+\textsc{Calude, Andreea~S} and \textsc{Pagel, Mark}, 2014.
+\newblock Frequency of use and basic vocabulary.
+\newblock \emph{Multilingual Cognition and Language Use: Processing and
+  typological perspectives}, 44.45.
+
+\bibitem[{Campbell(1998)}]{Campbell:1998}
+\textsc{Campbell, L.}, 1998.
+\newblock \emph{Historical Linguistics: An Introduction}.
+\newblock Edinburgh, UK: Edinburgh University Press.
+
+\bibitem[{Covington(1996)}]{Covington:96}
+\textsc{Covington, M.~A.}, 1996.
+\newblock An algorithm to align words for historical comparison.
+\newblock \emph{Comp. Linguistics}, 22.481--496.
+
+\bibitem[{Croft and Cruse(2004)}]{Croft:04}
+\textsc{Croft, William} and \textsc{Cruse, D~Alan}, 2004.
+\newblock \emph{Cognitive linguistics}.
+\newblock Cambridge: Cambridge University Press.
+
+\bibitem[{Croft and Poole(2008)}]{Croft:08}
+\textsc{Croft, William} and \textsc{Poole, Keith~T}, 2008.
+\newblock Inferring universals from grammatical variation: multidimensional
+  scaling for typological analysis.
+\newblock \emph{Theoretical Linguistics}, 34.1--37.
+\newblock \doi{10.1515/THLI.2008.001}.
+
+\bibitem[{Crowley and Bowern(2010)}]{Crowley:2010}
+\textsc{Crowley, Terry} and \textsc{Bowern, Claire}, 2010.
+\newblock \emph{An introduction to historical linguistics}.
+\newblock Oxford, UK: Oxford University Press.
+
+\bibitem[{Crowley and Dixon(1981)}]{Crowley:1981}
+\textsc{Crowley, Terry} and \textsc{Dixon, Robert~MW}, 1981.
+\newblock Tasmanian.
+\newblock \emph{Handbook of Australian languages}, 2.394--421.
+
+\bibitem[{Cutler et~al.(2000)Cutler, Sebasti\'an-Gall\'es, Soler-Vilageliu, and
+  van Ooijen}]{Cutler:2000}
+\textsc{Cutler, A}; \textsc{Sebasti\'an-Gall\'es, N}; \textsc{Soler-Vilageliu,
+  O}; and \textsc{van Ooijen, B}, 2000.
+\newblock Constraints of vowels and consonants on lexical selection:
+  Cross-linguistic comparisons.
+\newblock \emph{Memory \& Cognition}, 28.746--755.
+\newblock \doi{10.3758/BF03198409}.
+
+\bibitem[{Cysouw et~al.(2008)Cysouw, Album, and Dress}]{Cysouw:08}
+\textsc{Cysouw, Michael}; \textsc{Album, Mihai}; and \textsc{Dress, Andreas
+  W~M}, 2008.
+\newblock Analyzing feature consistency using similarity matrices.
+\newblock \emph{Sprachtypologie und Universalienforschung (STUF)}, 61.263--279.
+\newblock \doi{10.1524/stuf.2008.0025}.
+
+\bibitem[{Cysouw and Jung(2007)}]{Cysouw:07}
+\textsc{Cysouw, Michael} and \textsc{Jung, Hagen}, 2007.
+\newblock Cognate identification and alignment using practical orthographies.
+\newblock \emph{Proceedings of Ninth Meeting of the ACL Special Interest Group
+  in Computational Morphology and Phonology}, 109--116. Association for
+  Computational Linguistics.
+\newblock \urlprefix\url{https://www.aclweb.org/anthology/W/W07/W07-1314.pdf}.
+
+\bibitem[{Dahl(1985)}]{Dahl:85}
+\textsc{Dahl, {\"O}sten}, 1985.
+\newblock \emph{Tense and Aspect Systems}.
+\newblock Oxford: Basil Blackwell.
+
+\bibitem[{Dediu(2015)}]{Dediu:13}
+\textsc{Dediu, Dan}, 2015.
+\newblock \emph{An Introduction of Genetics for Language Scientists}.
+\newblock Cambridge, UK: Cambridge Univ.\ Press.
+
+\bibitem[{Derrig(1978)}]{Derrig:78}
+\textsc{Derrig, Sandra}, 1978.
+\newblock Metaphor in the color lexicon.
+\newblock \emph{Papers from the parasession on the lexicon}, edited by Donka
+  Farkas; Jacobsen~Wesley M.; and Karol~W. Todyris, 85--96. Chicago: Chicago
+  Linguistic Society.
+
+\bibitem[{Dingemanse et~al.(2015)Dingemanse, Blasi, Lupyan, Christiansen, and
+  Monaghan}]{dingemanse2015}
+\textsc{Dingemanse, Mark}; \textsc{Blasi, Dami{\'a}n~E}; \textsc{Lupyan, Gary};
+  \textsc{Christiansen, Morten~H}; and \textsc{Monaghan, Padraic}, 2015.
+\newblock Arbitrariness, iconicity, and systematicity in language.
+\newblock \emph{Trends in cognitive sciences}, 19.603--615.
+
+\bibitem[{Doyle and Csete(2011)}]{Doyle:11}
+\textsc{Doyle, J~C} and \textsc{Csete, M}, 2011.
+\newblock Architecture, constraints, and behavior.
+\newblock \emph{Proc Natl Acad Sci U S A}, 108 Suppl 3.15624--15630.
+\newblock \doi{10.1073/pnas.1103557108}.
+
+\bibitem[{Dufraigne et~al.(2005)Dufraigne, Fertil, Lespinats, Giron, and
+  Deschavanne}]{Dufraigne:05}
+\textsc{Dufraigne, Christine}; \textsc{Fertil, Bernard}; \textsc{Lespinats,
+  Sylvain}; \textsc{Giron, Alain}; and \textsc{Deschavanne, Patrick}, 2005.
+\newblock Detection and characterization of horizontal transfers in prokaryotes
+  using genomic signature.
+\newblock \emph{Nucleic Acids Res.}, 33.e6.
+
+\bibitem[{Dumont~d'\ Urville(1832)}]{dUrville:1832}
+\textsc{Dumont~d'\ Urville, Jules}, 1832.
+\newblock Sur les {\^i}les du {Grand} {Oc{\'e}an}.
+\newblock \emph{Soc.\ G{\'e}ogr.\ Bull.}, 17.1--21.
+
+\bibitem[{Dunn et~al.(2011)Dunn, Greenhill, Levinson, and Gray}]{Dunn:11}
+\textsc{Dunn, M}; \textsc{Greenhill, S~J}; \textsc{Levinson, S~C}; and
+  \textsc{Gray, R~D}, 2011.
+\newblock Evolved structure of language shows lineage-specific trends in
+  word-order ``universals''.
+\newblock \emph{Nature}, 473.79--82.
+\newblock \doi{10.1038/nature09923}.
+
+\bibitem[{Dunn et~al.(2005)Dunn, Terrill, Reesink, Foley, and
+  Levinson}]{Dunn:05}
+\textsc{Dunn, M}; \textsc{Terrill, A}; \textsc{Reesink, G}; \textsc{Foley,
+  R~A}; and \textsc{Levinson, S~C}, 2005.
+\newblock Structural phylogenetics and the reconstruction of ancient language
+  history.
+\newblock \emph{Science}, 309.2072--2075.
+\newblock \doi{10.1126/science.1114615}.
+
+\bibitem[{Durbin et~al.(1998)Durbin, Eddy, Krogh, and Mitchison}]{Durbin:98}
+\textsc{Durbin, Richard}; \textsc{Eddy, Sean~R.}; \textsc{Krogh, Anders}; and
+  \textsc{Mitchison, Graeme}, 1998.
+\newblock \emph{Biological Sequence Analysis: Probabilistic Models of Proteins
+  and Nucleic Acids}.
+\newblock Cambridge, UK: Cambridge University Press.
+
+\bibitem[{EHL()}]{EHL}
+EHL, 2001.
+\newblock \urlprefix\url{http://ehl.santafe.edu/}.
+\newblock Evolution of Human Languages.
+
+\bibitem[{Ehret(2000)}]{Ehret:00}
+\textsc{Ehret, Christopher}, 2000.
+\newblock Testing the expectations of glottochronology against the correlations
+  of language and archaeology in {Africa}.
+\newblock \emph{Time Depth in Historical Linguistics}, edited by Colin Renfrew;
+  April McMahon; and Larry Trask, volume~2, 373--399. Oxford: McDonald
+  Institute for Archaeological Research.
+
+\bibitem[{Embleton(1986)}]{Embleton:86}
+\textsc{Embleton, Sheila~M}, 1986.
+\newblock \emph{Statistics in historical linguistics}, volume~30.
+\newblock Bochum, D: Brockmeyer.
+
+\bibitem[{Evans(1992)}]{Evans:92}
+\textsc{Evans, Nicholas}, 1992.
+\newblock Multiple semiotic systems, hyperpolysemy, and the reconstruction of
+  semantic change in {A}ustralian languages.
+\newblock \emph{Diachrony within synchrony: language history and cognition}.
+  Frankfurt: Peter Lang.
+
+\bibitem[{Field(2002)}]{field2002linguistic}
+\textsc{Field, Fredric~W}, 2002.
+\newblock \emph{Linguistic borrowing in bilingual contexts}.
+\newblock Amsterdam, NL: John Benjamins Publishing.
+
+\bibitem[{Fox(1995)}]{Fox:95}
+\textsc{Fox, Anthony}, 1995.
+\newblock \emph{Lingusitic Reconstruction: An introduction to theory and
+  method}.
+\newblock Oxford, UK: Oxford Univ.\ Press.
+
+\bibitem[{Fran{\c{c}}ois(2015)}]{franccois2015trees}
+\textsc{Fran{\c{c}}ois, Alexandre}, 2015.
+\newblock Trees, waves and linkages.
+\newblock \emph{The Routledge Handbook of Historical Linguistics}, edited by
+  C.~Bowern and B.~Evans, 161--189. Abingdon, UK: Taylor \& Francis.
+
+\bibitem[{Frunz{\u{a}}(2008)}]{Frunza:08}
+\textsc{Frunz{\u{a}}, Oana~Magdalena}, 2008.
+\newblock \emph{Cognates, False Friends, and Partial Cognates: Automatic
+  Identification of Cognates and False Friends; Partial Cognate
+  Disambiguation}.
+\newblock Saarbr{\"u}cken, D: VDM Verlag Dr.\ M{\"u}ller.
+
+\bibitem[{Gell-Mann and Ruhlen(2011)}]{Gell-Mann:11}
+\textsc{Gell-Mann, Murray} and \textsc{Ruhlen, Merritt}, 2011.
+\newblock The origin and evolution of word order.
+\newblock \emph{Proc.\ Natl.\ Acad.\ Sci.\ USA}, 108.17290--17295.
+\newblock \doi{10.1073/pnas.1113716108}.
+
+\bibitem[{Gotoh(1982)}]{Gotoh:82}
+\textsc{Gotoh, O.}, 1982.
+\newblock An improved algorithm for matching biological sequences.
+\newblock \emph{J.\ Mol.\ Biol.}, 162.705--708.
+
+\bibitem[{Gray et~al.(2009)Gray, Drummond, and Greenhill}]{Gray:09}
+\textsc{Gray, R~D}; \textsc{Drummond, A~J}; and \textsc{Greenhill, S~J}, 2009.
+\newblock Language phylogenies reveal expansion pulses and pauses in pacific
+  settlement.
+\newblock \emph{Science}, 323.479--483.
+\newblock \doi{10.1126/science.1166858}.
+
+\bibitem[{Gray and Atkinson(2003)}]{Gray:03}
+\textsc{Gray, Russell~D} and \textsc{Atkinson, Quentin~D}, 2003.
+\newblock Language-tree divergence times support the {Anatolian} theory of
+  {Indo-European} origin.
+\newblock \emph{Nature}, 426.435--439.
+\newblock \doi{10.1038/nature02029}.
+
+\bibitem[{Gray et~al.(2011)Gray, Atkinson, and Greenhill}]{Gray:11}
+\textsc{Gray, Russell~D}; \textsc{Atkinson, Quentin~D}; and \textsc{Greenhill,
+  Simon~J}, 2011.
+\newblock Language evolution and human history: what a difference a date makes.
+\newblock \emph{Phil.\ Trans.\ Royal Soc.\ B: Biol.\ Sci.}, 366.1090--1100.
+\newblock \doi{10.1098/rstb.2010.0378}.
+
+\bibitem[{Gray and Jordan(2000)}]{Gray:00}
+\textsc{Gray, Russell~D} and \textsc{Jordan, Fiona~M}, 2000.
+\newblock Language trees support the express-train sequence of {Austronesian}
+  expansion.
+\newblock \emph{Nature}, 405.1052--1055.
+\newblock \doi{10.1038/35016575}.
+
+\bibitem[{Greenberg(1987)}]{Greenberg:87}
+\textsc{Greenberg, J~H}, 1987.
+\newblock \emph{Language in the Americas}.
+\newblock Stanford CA: Stanford University Press.
+
+\bibitem[{Greenhill et~al.(2009)Greenhill, Currie, and Gray}]{Greenhill:09}
+\textsc{Greenhill, Simon~J}; \textsc{Currie, Thomas~E}; and \textsc{Gray,
+  Russell~D}, 2009.
+\newblock Does horizontal transmission invalidate cultural phylogenies?
+\newblock \emph{Proc.\ Royal Soc.\ B: Biol.\ Sci.}, 276.2299--2306.
+\newblock \doi{10.1098/rspb.2008.1944}.
+
+\bibitem[{Griffiths and Marjoram(1997)}]{Griffiths:97}
+\textsc{Griffiths, R~C} and \textsc{Marjoram, P}, 1997.
+\newblock An ancestral recombination graph.
+\newblock \emph{Progress in Population Genetics and Human Evolution}, edited by
+  P~Donelly and S~Tavar{\'e}, 257--270. Berlin: Springer-Verlag.
+
+\bibitem[{Haas(1969)}]{Haas:69}
+\textsc{Haas, Mary~Rosamond}, 1969.
+\newblock \emph{The prehistory of languages}, volume~57 of \emph{Janua
+  linguarum: Series minor}.
+\newblock Michigan: Mouton.
+
+\bibitem[{Hall and Klein(2011)}]{Hall:11}
+\textsc{Hall, David} and \textsc{Klein, Dan}, 2011.
+\newblock Large-scale cognate recovery.
+\newblock \emph{Proceedings of the 2011 Conference on Empirical Methods in
+  Natural Language Processing}, edited by Regina Barzilay and Mark Johnson,
+  344--354. Association for Computational Linguistics.
+\newblock \urlprefix\url{http://aclweb.org/anthology/D11-1032}.
+
+\bibitem[{Haspelmath(2009)}]{Haspelmath:2009}
+\textsc{Haspelmath, Martin}, 2009.
+\newblock Lexical borrowing: Concepts and issues.
+\newblock \emph{Loanwords in the world’s languages: A comparative handbook},
+  35--54.
+
+\bibitem[{Heggarty(2000)}]{Heggarty:00}
+\textsc{Heggarty, Paul}, 2000.
+\newblock Quantifying change over time in phonetics.
+\newblock \emph{Time depth in historical linguistics}, edited by Colin Renfrew;
+  April McMahon; and Larry Trask, volume~2, 531--562. Oxford, UK: Oxbow Books.
+
+\bibitem[{Heggarty(2006)}]{Heggarty:06}
+\textsc{Heggarty, Paul}, 2006.
+\newblock Interdisciplinary indiscipline? {C}an phylogenetic methods
+  meaningfully be applied to language data -- and to dating language.
+\newblock \emph{Phylogenetic methods and the prehistory of languages}, edited
+  by Peter Forster and Colin Renfrew, 183--194. Cambridge: McDonald Institute
+  for Archaeological Research.
+
+\bibitem[{Heggarty et~al.(2010)Heggarty, Maguire, and McMahon}]{heggarty:2010}
+\textsc{Heggarty, Paul}; \textsc{Maguire, Warren}; and \textsc{McMahon, April},
+  2010.
+\newblock Splits or waves? trees or webs? how divergence measures and network
+  analysis can unravel language histories.
+\newblock \emph{Philosophical Transactions of the Royal Society of London B:
+  Biological Sciences}, 365.3829--3843.
+\newblock \doi{10.1098/rstb.2010.0099}.
+
+\bibitem[{Hochberg(1988)}]{Hochberg:1988}
+\textsc{Hochberg, Yosef}, 1988.
+\newblock A sharper bonferroni procedure for multiple tests of significance.
+\newblock \emph{Biometrika}, 75.800--802.
+
+\bibitem[{Hockett(1958)}]{Hockett:58}
+\textsc{Hockett, C~F}, 1958.
+\newblock A course in modern linguistics.
+\newblock \emph{Language Learning}, 8.73--75.
+\newblock \doi{10.1111/j.1467-1770.1958.tb00870.x}.
+
+\bibitem[{Holm(1979)}]{Holm:1979}
+\textsc{Holm, Sture}, 1979.
+\newblock A simple sequentially rejective multiple test procedure.
+\newblock \emph{Scandinavian Journal of Statistics}, 6.65--70.
+
+\bibitem[{Holman et~al.(2011)Holman, Brown, Wichmann, M{\"u}ller, Velupillai,
+  Hammarstr{\"o}m, Sauppe, Jung, Bakker, Brown, Belyaev, Urban, Mailhammer,
+  List, and Egorov}]{Holman:11}
+\textsc{Holman, Eric~W}; \textsc{Brown, Cecil~H}; \textsc{Wichmann, S{\o}ren};
+  \textsc{M{\"u}ller, Andr{\'e}}; \textsc{Velupillai, Viveka};
+  \textsc{Hammarstr{\"o}m, Harald}; \textsc{Sauppe, Sebastian}; \textsc{Jung,
+  Hagen}; \textsc{Bakker, Dik}; \textsc{Brown, Pamela}; \textsc{Belyaev, Oleg};
+  \textsc{Urban, Matthias}; \textsc{Mailhammer, Robert}; \textsc{List,
+  Johann~Mattis}; and \textsc{Egorov, Dmitry}, 2011.
+\newblock Automated dating of the world's language families based on lexical
+  similarity.
+\newblock \emph{Current Anthropology}, 52.841--875.
+\newblock \doi{10.1086/662127}.
+
+\bibitem[{Hommel(1988)}]{Hommel:1988}
+\textsc{Hommel, G.}, 1988.
+\newblock A stagewise rejective multiple test procedure based on a modified
+  bonferroni test.
+\newblock \emph{Biometrika}, 75.383--386.
+
+\bibitem[{Hruschka et~al.(2015)Hruschka, Branford, Smith, Wilkins, Meade,
+  Pagel, and Bhattacharya}]{Hruschka:14}
+\textsc{Hruschka, Daniel~J}; \textsc{Branford, Simon}; \textsc{Smith, Eric~D};
+  \textsc{Wilkins, Jon}; \textsc{Meade, Andrew}; \textsc{Pagel, Mark}; and
+  \textsc{Bhattacharya, Tanmoy}, 2015.
+\newblock Detecting regular sound changes in linguistics as an example of
+  concerted evolution.
+\newblock \emph{Current Biology}, 25.1--9.
+\newblock \doi{10.3389/fgene.2013.00206}.
+
+\bibitem[{Hudson(1991)}]{Hudson:91}
+\textsc{Hudson, R~R}, 1991.
+\newblock Gene genealogies and the coalescent process.
+\newblock \emph{Oxford Surveys in Evolutionary Biology}, edited by D~Futuyama
+  and J~Antonovics, volume~7, 1--44. Oxford, UK: Oxford University Press.
+\newblock
+  \urlprefix\url{http://web.eve.ucdavis.edu/pbg298/pdfs/Hudson_OxfordSurveysEvolBiol_1991.pdf}.
+
+\bibitem[{Huson et~al.(2010)Huson, Rupp, and Scornavacca}]{Huson:10}
+\textsc{Huson, Daniel~H}; \textsc{Rupp, Regula}; and \textsc{Scornavacca,
+  Celine}, 2010.
+\newblock \emph{Phylogenetic networks}.
+\newblock Cambridge UK: Cambridge Univ.\ Press.
+
+\bibitem[{Irwin et~al.(2005)Irwin, Bensch, Irwin, and Price}]{irwin:2005}
+\textsc{Irwin, Darren~E}; \textsc{Bensch, Staffan}; \textsc{Irwin, Jessica~H};
+  and \textsc{Price, Trevor~D}, 2005.
+\newblock Speciation by distance in a ring species.
+\newblock \emph{Science}, 307.414--416.
+\newblock \doi{10.1126/science.1105201}.
+
+\bibitem[{Key and Comrie(2007)}]{IDS}
+\textsc{Key, Mary~Ritchie} and \textsc{Comrie, Bernard}, 2007.
+\newblock Intercontinental dictionary series.
+\newblock \urlprefix\url{http://lingweb.eva.mpg.de/ids/}.
+
+\bibitem[{Kondrak(2000)}]{Kondrak:00}
+\textsc{Kondrak, Grzegorz}, 2000.
+\newblock A new algorithm for the alignment of phonetic sequences.
+\newblock \emph{Proceedings of NAACL 2000 1st Meeting of the North American
+  Chapter of the Association for Computational Linguistics}, 288--295. San
+  Francisco, CA, USA: Morgan Kaufmann Publishers Inc.
+\newblock \urlprefix\url{http://aclweb.org/anthology/A00-2038}.
+
+\bibitem[{Kondrak(2003)}]{Kondrak:03}
+\textsc{Kondrak, Grzegorz}, 2003.
+\newblock Phonetic alignment and similarity.
+\newblock \emph{Computers Humanities}, 37.273--291.
+
+\bibitem[{Kondrak(2009)}]{Kondrak:09}
+\textsc{Kondrak, Grzegorz}, 2009.
+\newblock Identication of cognates and recurrent sound correspondences in word
+  lists.
+\newblock \emph{Traitement automatique des langues et langues anciennes},
+  50.201--235.
+\newblock
+  \urlprefix\url{http://www.atala.org/IMG/pdf/TAL-2009-50-2-08-Kondrak.pdf}.
+
+\bibitem[{Koptjevskaja-Tamm(2008)}]{Koptjevskaja-Tamm:08}
+\textsc{Koptjevskaja-Tamm, Maria}, 2008.
+\newblock Approaching lexical typology.
+\newblock \emph{From polysemy to semantic change}, edited by Martine Vanhove,
+  3--52. Amsterdam: John Benjamins.
+
+\bibitem[{Korber et~al.(2000)Korber, Muldoon, Theiler, Gao, Gupta, Lapedes,
+  Hahn, Wolinsky, and Bhattacharya}]{Korber:00}
+\textsc{Korber, B}; \textsc{Muldoon, M}; \textsc{Theiler, J}; \textsc{Gao, F};
+  \textsc{Gupta, R}; \textsc{Lapedes, A}; \textsc{Hahn, B~H}; \textsc{Wolinsky,
+  S}; and \textsc{Bhattacharya, T}, 2000.
+\newblock Timing the ancestor of the {HIV-1} pandemic strains.
+\newblock \emph{Science}, 288.1789--1796.
+
+\bibitem[{Lawrence et~al.(1993)Lawrence, Altschul, Boguski, Liu, Neuwald, and
+  Wootton}]{Lawrence:93}
+\textsc{Lawrence, C.~E.}; \textsc{Altschul, S.~F.}; \textsc{Boguski, M.~S.};
+  \textsc{Liu, J.~S.}; \textsc{Neuwald, A.~F.}; and \textsc{Wootton, J.C},
+  1993.
+\newblock Detecting subtle sequence signals: a {Gibbs} sampling strategy for
+  multiple alignment.
+\newblock \emph{Science}, 262.208--214.
+
+\bibitem[{Lee and Hasegawa(2011)}]{Lee:11}
+\textsc{Lee, Sean} and \textsc{Hasegawa, Toshikazu}, 2011.
+\newblock {Bayesian} phylogenetic analysis supports an agricultural origin of
+  {Japonic} languages.
+\newblock \emph{Proc.\ R. Soc.\ B}, 278.3662--3669.
+\newblock \doi{10.1098/rspb.2011.0518}.
+
+\bibitem[{Levenshtein(1966)}]{Levenshtein:66}
+\textsc{Levenshtein, Vladimir~I.}, 1966.
+\newblock Binary codes capable of correcting deletions, insertions, and
+  reversals.
+\newblock \emph{Soviet Physics Doklady}, 10.
+
+\bibitem[{Levinson and Meira(2003)}]{Levinson:03}
+\textsc{Levinson, Stephen~C} and \textsc{Meira, S{\'e}rgio}, 2003.
+\newblock `natural concepts' in the spatial topological domain-adpositional
+  meanings in crosslinguistic prespective: an exercise in semantic typology.
+\newblock \emph{Language}, 79.485--516.
+\newblock \doi{10.1353/lan.2003.0174}.
+
+\bibitem[{Liberles(2007)}]{Liberles:07}
+\textsc{Liberles, D~A}, 2007.
+\newblock \emph{Ancestral Sequence Reconstruction}.
+\newblock Oxford, UK: Oxford University Press.
+
+\bibitem[{Longobardi and Guardiano(2009)}]{Longobardi:09}
+\textsc{Longobardi, Giuseppe} and \textsc{Guardiano, Cristina}, 2009.
+\newblock Evidence for syntax as a signal of historical relatedness.
+\newblock \emph{Lingua}, 119.1679--1706.
+\newblock \doi{10.1016/j.lingua.2008.09.012}.
+
+\bibitem[{Majid et~al.(2008)Majid, Boster, and Bowerman}]{Majid:08}
+\textsc{Majid, Asifa}; \textsc{Boster, James~S}; and \textsc{Bowerman,
+  Melissa}, 2008.
+\newblock The cross-linguistic categorization of everyday events: a study of
+  cutting and breaking.
+\newblock \emph{Cognition}, 109.235--250.
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0010027708001911}.
+
+\bibitem[{Needleman and Wunsch(1970)}]{needleman:70}
+\textsc{Needleman, Saul~B} and \textsc{Wunsch, Christian~D}, 1970.
+\newblock A general method applicable to the search for similarities in the
+  amino acid sequence of two proteins.
+\newblock \emph{J. Mol. Biol.}, 48.443--453.
+
+\bibitem[{Nicholls and Gray(2006)}]{Nicholls:06}
+\textsc{Nicholls, Geoff~K} and \textsc{Gray, Russell~D}, 2006.
+\newblock Quantifying uncertainty in a stochastic model of vocabulary
+  evolution.
+\newblock \emph{Phylogenetic methods and the prehistory of languages}, edited
+  by Peter Forster and Colin Renfrew, 161--171. Cambridge: McDonald Institute
+  for Archaeological Research.
+
+\bibitem[{Nichols(1992)}]{Nichols:92}
+\textsc{Nichols, Johanna}, 1992.
+\newblock \emph{Linguistic diversity in space and time}.
+\newblock University of Chicago Press.
+
+\bibitem[{Nichols(1996)}]{Nichols:96}
+\textsc{Nichols, Johanna}, 1996.
+\newblock The comparative method as heuristic.
+\newblock \emph{The comparative method reviewed: regularity and irregularity in
+  language change}, edited by Mark Durie and Malcolm Ross, 39--89. Oxford:
+  Oxford University Press.
+
+\bibitem[{Nichols and Warnow(2008)}]{Nichols:08}
+\textsc{Nichols, Johanna} and \textsc{Warnow, Tandy}, 2008.
+\newblock Tutorial on computational linguistic phylogeny.
+\newblock \emph{Language and Linguistics Compass}, 2.760--820.
+\newblock \doi{10.1111/j.1749-818x.2008.00082.x}.
+
+\bibitem[{Notredame(2007)}]{Notredame:07}
+\textsc{Notredame, C}, 2007.
+\newblock Recent evolutions of multiple sequence alignment algorithms.
+\newblock \emph{PLoS Comput Biol.}, 3.e123.
+\newblock \doi{10.1371/journal.pcbi.0030123}.
+
+\bibitem[{Pagel et~al.(2007)Pagel, Atkinson, and Meade}]{Pagel:NatureLetter}
+\textsc{Pagel, M}; \textsc{Atkinson, Q}; and \textsc{Meade, A}, 2007.
+\newblock Frequency of word-use predicts rates of lexical evolution throughout
+  {Indo-European} history.
+\newblock \emph{Nature}, 449.717--720.
+\newblock \doi{10.1038/nature06176}.
+
+\bibitem[{Pagel et~al.(2013)Pagel, Atkinson, Calude, and Meade}]{Pagel:2013}
+\textsc{Pagel, Mark}; \textsc{Atkinson, Quentin~D}; \textsc{Calude, Andreea~S};
+  and \textsc{Meade, Andrew}, 2013.
+\newblock {Ultraconserved words point to deep language ancestry across
+  Eurasia}.
+\newblock \emph{Proceedings of the National Academy of Sciences},
+  110.8471--8476.
+
+\bibitem[{Pennisi(2005)}]{Pennisi:05}
+\textsc{Pennisi, E}, 2005.
+\newblock Extinct genome under construction.
+\newblock \emph{Science}, 308.1401--1402.
+\newblock \doi{10.1126/science.308.5727.1401b}.
+
+\bibitem[{Penny et~al.(2001)Penny, McComish, Charleston, and Hendy}]{Penny:01}
+\textsc{Penny, David}; \textsc{McComish, Bennet~J}; \textsc{Charleston,
+  Michael~A}; and \textsc{Hendy, Michael~D}, 2001.
+\newblock Mathematical elegance with biochemical realism: The covarion model of
+  molecular evolution.
+\newblock \emph{J. Mol.\ Evol.}, 53.711--723.
+\newblock \doi{10.1007/s002390010258}.
+
+\bibitem[{Rama et~al.(2013)Rama, Kolachina, and Kolachina}]{rama2013two}
+\textsc{Rama, Taraka}; \textsc{Kolachina, Prasant}; and \textsc{Kolachina,
+  Sudheer}, 2013.
+\newblock Two methods for automatic identification of cognates.
+\newblock \emph{Proceedings of the 5th Conference on Quantitative
+  Investigations in Theoretical Linguistics}, edited by Thomas Wielfaert; Kris
+  Heylen; and Dirk Speelman, 76--80. Univ.\ Leuven.
+\newblock
+  \urlprefix\url{http://wwwling.arts.kuleuven.be/QITL5/QITL5-proceedings.pdf#page=84}.
+
+\bibitem[{Rasmussen et~al.(2014)Rasmussen, Hubisz, Gronau, and
+  Adam}]{Rasmussen:14}
+\textsc{Rasmussen, Matthew~D}; \textsc{Hubisz, Melissa~J}; \textsc{Gronau,
+  Ilan}; and \textsc{Adam, Sipel}, 2014.
+\newblock Genome-wide inference of ancestral recombination graphs.
+\newblock \emph{PLoS Genetics}, 10.e1004342.
+\newblock \doi{10.1371/journal.pgen.1004342}.
+
+\bibitem[{Rouse et~al.(2016)Rouse, Wilson, Carvajal, and Vrijenhoek}]{Rouse:16}
+\textsc{Rouse, Greg~W.}; \textsc{Wilson, Nerida~G.}; \textsc{Carvajal,
+  Jose~I.}; and \textsc{Vrijenhoek, Robert~C.}, 2016.
+\newblock New deep-sea species of \emph{Xenoturbella} and the position of
+  {Xenacoelomorpha}.
+\newblock \emph{Nature}, 530.94--97.
+
+\bibitem[{Sanderson(2002)}]{Sanderson:02}
+\textsc{Sanderson, Michael~J}, 2002.
+\newblock Estimating absolute rates of molecular evolution and divergence
+  times: a penalized likelihood approach.
+\newblock \emph{Mol.\ Biol.\ Evol.}, 19.101--109.
+\newblock \urlprefix\url{http://mbe.oxfordjournals.org/content/19/1/101.full}.
+
+\bibitem[{Sankoff(1973)}]{Sankoff:73}
+\textsc{Sankoff, David}, 1973.
+\newblock Parallels between genetics and lexicostatistics.
+\newblock \emph{Lexicostatistics and Genetic Linguistics}, edited by I~Dyen,
+  64--94. The Hague, NL: Mouton.
+
+\bibitem[{Schleicher(1853)}]{Schleicher:1853}
+\textsc{Schleicher, August}, 1853.
+\newblock Die ersten {Spaltungen} des indogermanischen {Urvolkes}.
+\newblock \emph{Allgemeine {Zeitschrift} f{\"u}r {Wissenschaft} und
+  {Literatur}}, 786--787.
+
+\bibitem[{Semple and Steel(2003)}]{Semple:03}
+\textsc{Semple, Charles} and \textsc{Steel, Mike}, 2003.
+\newblock \emph{Phylogenetics}.
+\newblock Oxford UK: Oxford University Press.
+
+\bibitem[{Smirnov(1948)}]{Smirnov:1948}
+\textsc{Smirnov, Nickolay}, 1948.
+\newblock Table for estimating the goodness of fit of empirical distributions.
+\newblock \emph{The annals of mathematical statistics}, 279--281.
+
+\bibitem[{Starostin(2010)}]{Starostin:10}
+\textsc{Starostin, G}, 2010.
+\newblock Preliminary lexicostatistics as a basis for language classification:
+  a new approach.
+\newblock \emph{J. Language Relationship}, 3.79--116.
+\newblock \urlprefix\url{http://www.jolr.ru/files/(33)jlr2010-3(79-116).pdf}.
+
+\bibitem[{Starostin(2013)}]{Starostin:13}
+\textsc{Starostin, G}, 2013.
+\newblock Lexicostatistics as a basis for language classification: increasing
+  the pros, and reducing the cons.
+\newblock \emph{Classification and Evolution in Biology, Linguistics and the
+  History of Science: Concepts-Methods-Visualization}, 125--146. Stuttgart:
+  Franz Steiner Verlag.
+
+\bibitem[{Starostin(2000)}]{Starostin:00}
+\textsc{Starostin, S}, 2000.
+\newblock Comparative-historical linguistics and lexicostatistics.
+\newblock \emph{Time Depth in Historical Linguistics}, edited by Colin Renfrew;
+  April McMahon; and Larry Trask, volume~1, 223--259. Oxford: McDonald
+  Institute for Archaeological Research.
+
+\bibitem[{Starostin(2007)}]{Starostin}
+\textsc{Starostin, S}, 2007.
+\newblock Computer-based simulation of glottochronological process.
+\newblock \emph{Trudy po yazykoznaniyu (Works on linguistics)}, edited by
+  S~Starostin, 854--861. Moscow: Yazyki slavyanskikh kul'tur.
+
+\bibitem[{Steiner et~al.(2011)Steiner, Stadler, and Cysouw}]{Steiner:11a}
+\textsc{Steiner, Lydia}; \textsc{Stadler, Peter~F}; and \textsc{Cysouw,
+  Michael}, 2011.
+\newblock A pipeline for computational historical linguistics.
+\newblock \emph{Language Dynamics \& Change}, 1.89--127.
+\newblock \doi{10.1163/221058211X570358}.
+
+\bibitem[{Storey(2002)}]{Storey:2002}
+\textsc{Storey, John~D.}, 2002.
+\newblock A direct approach to false discovery rates.
+\newblock \emph{Journal of the Royal Statistical Society: Series B (Statistical
+  Methodology)}, 64.479--498.
+
+\bibitem[{Swadesh(1952)}]{Swadesh:52}
+\textsc{Swadesh, Morris}, 1952.
+\newblock Lexicostatistic dating of prehistoric ethnic contacts.
+\newblock \emph{Proc.\ Amer.\ Phil.\ Soc.}, 96.452--463.
+\newblock \urlprefix\url{http://www.jstor.org/stable/3143802}.
+
+\bibitem[{Swadesh(1955)}]{Swadesh:55}
+\textsc{Swadesh, Morris}, 1955.
+\newblock Towards greater accuracy in lexicostatistic dating.
+\newblock \emph{Internatl.\ J. American linguistics}, 21.121--137.
+\newblock \urlprefix\url{http://www.jstor.org/stable/1263939}.
+
+\bibitem[{Sweetser(1990)}]{Sweetser:90}
+\textsc{Sweetser, Eve}, 1990.
+\newblock \emph{From etymology to pragmatics: Metaphorical and cultural aspects
+  of semantic structure}.
+\newblock Cambridge: Cambridge University Press.
+
+\bibitem[{Thorne et~al.(1998)Thorne, Kishino, and Painter}]{Thorne:98}
+\textsc{Thorne, J~L}; \textsc{Kishino, H}; and \textsc{Painter, I~S}, 1998.
+\newblock Estimating the rate of evolution of the rate of molecular evolution.
+\newblock \emph{Mol.\ Biol.\ Evol.}, 15.1647--1657.
+\newblock
+  \urlprefix\url{http://mbe.oxfordjournals.org/content/15/12/1647.long}.
+
+\bibitem[{Traugott and Dasher(2002)}]{Traugott:02}
+\textsc{Traugott, Elizabeth} and \textsc{Dasher, Richard}, 2002.
+\newblock \emph{Regularity and semantic change}.
+\newblock Cambridge: Cambridge University Press.
+
+\bibitem[{Turchin et~al.(2010)Turchin, Peiros, and Gell-Mann}]{Turchin:2010}
+\textsc{Turchin, Peter}; \textsc{Peiros, Ilia}; and \textsc{Gell-Mann, Murray},
+  2010.
+\newblock Analyzing genetic connections between languages by matching consonant
+  classes.
+\newblock \emph{Journal of Language Relationship}, 3.117--126.
+\newblock \urlprefix\url{http://www.jolr.ru/files/(34)jlr2010-3(117-126).pdf}.
+
+\bibitem[{Viberg(1983)}]{Viberg:83}
+\textsc{Viberg, {\AA}ke}, 1983.
+\newblock The verbs of perception: a typological study.
+\newblock \emph{Linguistics}, 21.123--162.
+\newblock \doi{doi:10.1515/ling.1983.21.1.123}.
+
+\bibitem[{Waegele and Bartholomaeus(2014)}]{Waegele:DMP}
+\textsc{Waegele, J~Wolfgang} and \textsc{Bartholomaeus, Thomas~Wolfgang}, eds.,
+  2014.
+\newblock \emph{Deep Metazoan Phylogeny: The Backbone of the Tree of Life---New
+  Insights from Analyses of Molecules, Morphology, and Theory of Data
+  Analysis}.
+\newblock De Gruyter.
+
+\bibitem[{Whorf and Trager(1937)}]{WhorfTrager:37}
+\textsc{Whorf, Benjamin~L} and \textsc{Trager, George~L}, 1937.
+\newblock The relationship of {Uto-Aztecan} and {Tanoan}.
+\newblock \emph{American Anthropologist}, 39.609--624.
+\newblock \doi{10.1525/aa.1937.39.4.02a00060}.
+
+\bibitem[{Wichman and Saunders(2007)}]{Wichmann:07}
+\textsc{Wichman, S{\o}ren} and \textsc{Saunders, Arpiar}, 2007.
+\newblock How to use typological databases in historical linguistic research.
+\newblock \emph{Diachronica}, 24.373--404.
+\newblock \doi{10.1075/dia.24.2.06wic}.
+
+\bibitem[{Wichmann et~al.(2010)Wichmann, Holman, Bakker, and
+  Brown}]{Wichmann:10}
+\textsc{Wichmann, S}; \textsc{Holman, E~W}; \textsc{Bakker, D}; and
+  \textsc{Brown, C~H}, 2010.
+\newblock Evaluating linguistic distance measures.
+\newblock \emph{Physica A}, 389.3632--3639.
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0378437110003997}.
+
+\bibitem[{Wilkins(1996)}]{Wilkins:96}
+\textsc{Wilkins, David}, 1996.
+\newblock Natural tendencies of semantic change and the search for cognates.
+\newblock \emph{The comparative method reviewed}, edited by Mark Durie and
+  Malcolm Ross, 264--304. Oxford: Oxford University Press.
+
+\bibitem[{Witkowski and Brown(1979)}]{Witkowski:78}
+\textsc{Witkowski, Stanley~R.} and \textsc{Brown, Cecil~H.}, 1979.
+\newblock Lexical universals.
+\newblock \emph{Annual Review of Anthropology}, 7.427--451.
+\newblock \doi{doi:10.1146/annurev.an.07.100178.002235}.
+
+\bibitem[{Yoav~Benjamini(1995)}]{Benjamini:1995}
+\textsc{Yoav~Benjamini, Yosef~Hochberg}, 1995.
+\newblock Controlling the false discovery rate: A practical and powerful
+  approach to multiple testing.
+\newblock \emph{Journal of the Royal Statistical Society. Series B
+  (Methodological)}, 57.289--300.
+
+\bibitem[{Youn et~al.(2016)Youn, Sutton, Smith, Moore, Wilkins, Maddieson,
+  Croft, and Bhattacharya}]{Youn:16}
+\textsc{Youn, Hyejin}; \textsc{Sutton, Logan}; \textsc{Smith, Eric};
+  \textsc{Moore, Cristopher}; \textsc{Wilkins, Jon~F.}; \textsc{Maddieson,
+  Ian}; \textsc{Croft, William}; and \textsc{Bhattacharya, Tanmoy}, 2016.
+\newblock On the universal structure of human lexical semantics.
+\newblock \emph{Proc Natl Acad Sci USA}, 113.1766--1771.
+\newblock \doi{doi:10.1073/pnas.1520752113}.
+
+\bibitem[{Zalizniak(2008)}]{Zalizniak}
+\textsc{Zalizniak, Anna~A}, 2008.
+\newblock A catalogue of semantic shifts: Towards a typology of semantic
+  derivation.
+\newblock \emph{From polysemy to semantic change}, edited by Martin Vanhove,
+  217--232. Amsterdam/Philadelphia: John Benjamins.
+\newblock \doi{10.1075/slcs.106.10zal}.
+
+\bibitem[{Zwickl and Hillis(2002)}]{Zwickl:02}
+\textsc{Zwickl, Derrick~J.} and \textsc{Hillis, David~M.}, 2002.
+\newblock Increased taxon sampling greatly reduces phylogenetic error.
+\newblock \emph{Syst. Biol.}, 51.588--598.
+
+\end{thebibliography}

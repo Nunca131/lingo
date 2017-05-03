@@ -1,0 +1,212 @@
+\documentclass[final,12pt,3p,times,authoryear]{elsarticle}
+
+\usepackage[dvipsnames,svgnames,x11names]{xcolor}
+\usepackage{array}
+
+\newcommand\cmr[1]{{\fontfamily{cmr}\selectfont#1}}
+
+\newcommand\maybecolor[1]{}
+\let\maybecolor=\color % Comment this out to remove author marks.
+                       % \TODO needs to be removed by hand.
+
+\newif\ifANONYMOUS\ANONYMOUStrue
+\newif\iffrontonly\frontonlyfalse
+\ANONYMOUSfalse
+
+\newcommand{\eg}[1]{{\it e.g.\spacefactor1000\relax#1}}
+\newcommand{\ie}[1]{{\it i.e.\spacefactor1000\relax#1}}
+\renewcommand{\ie}[1]{that is,}
+\renewcommand{\eg}[1]{for example,}
+
+\usepackage[explicit]{titlesec}
+\setcounter{secnumdepth}{2}
+\titleformat{\section}[runin]{\bf}{\thesection}{1em}{\sc #1 }
+\titleformat{\subsection}[runin]{\bf}{\thesubsection}{1em}{\sc #1 }
+\titleformat{\subsubsection}[runin]{\bf}{\thesubsubsection}{1em}{\sc #1 \hspace{1em}}
+
+
+\ifx\doiresolver\undefined\def\doiresolver{http://dx.doi.org/}\fi
+\ifx\texorpdfstring\undefined\newcommand\texorpdfstring[2]{#1}\fi
+
+%\def\doiresolver{}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{tipa}
+\usepackage{float}
+%\usepackage{subfigure}
+\newcommand{\TODO}[1]{\begingroup\color{red}#1\endgroup}
+\newcommand{\LM}[1]{\begingroup\maybecolor{magenta}#1\endgroup}
+\newcommand{\PFS}[1]{\begingroup\maybecolor{green}#1\endgroup}
+\newcommand{\NOTE}[1]{\begingroup\maybecolor{blue}#1\endgroup}
+\newcommand{\NR}[1]{\begingroup\maybecolor{Orange}#1\endgroup}
+\newcommand{\DB}[1]{\begingroup\maybecolor{Cerulean}#1\endgroup}
+\newcommand{\HY}[1]{\begingroup\maybecolor{OliveGreen}#1\endgroup}
+\newcommand{\TB}[1]{\begingroup\maybecolor{Fuchsia}#1\endgroup}
+\newcommand{\NEW}[1]{\texorpdfstring{\begingroup\maybecolor{PineGreen}#1\endgroup}{#1}} %TB
+%mark ups for language style
+\newcommand{\LING}[1]{\textit{#1}}
+\newcommand{\TT}[1]{\textsc{#1}}
+\newcommand{\QUOTE}[1]{`#1'}
+ 
+\usepackage{endnotes}
+\def\notesname{}
+
+ 
+\renewcommand{\cite}{\citep}
+\renewcommand{\floatpagefraction}{.9999}
+\renewcommand{\textfraction}{.0001}
+\renewcommand{\dblfloatpagefraction}{.999}
+\renewcommand{\dbltopfraction}{0.999}
+\renewcommand{\bottomfraction}{0.999}
+\makeatletter
+\def\paragraph{\secdef{\els@aparagraph}{\els@bparagraph}}
+\def\els@aparagraph[#1]#2{\elsparagraph[#1]{#2}}
+\def\els@bparagraph#1{\elsparagraph*{#1}}
+\makeatother
+
+\usepackage{setspace}
+
+\newcommand{\othercall}[2]{{\escapechar-1\relax
+                      \edef\temp{\expandafter\string\csname#2\endcsname}%
+                      \expandafter}\expandafter#1\expandafter{\temp}}
+\newcommand{\doemail}[1]{\href{mailto:#1}{\tt #1}}
+\newcommand{\email}[1]{\othercall\doemail{#1}}
+
+% Pretty up doi and url
+{\catcode`\!=\catcode`\%
+  \gdef\activateurlcodes{\catcode`\/=\active
+                        \catcode`\-=\active
+                        \catcode`\(=\active
+                        \catcode`\)=\active
+                        \catcode`\.=\active
+                        \catcode`\&=\active
+                        \catcode`\_=\active
+                        \catcode`\^=\active
+                        \catcode`\$=\active
+                        \catcode`\#=\active
+                        \catcode`\%=\active
+                        \catcode`\:=\active}
+ \activateurlcodes
+ \gdef\deactivateurlcodes{\def/{\string/}!
+                          \def-{\string-}!
+                          \def({\string(}!
+                          \def){\string)}!
+                          \def.{\string.}!
+                          \def&{\string&}!
+                          \def_{\string_}!
+                          \def^{\string^}!
+                          \def${\string$}!
+                          \def#{\string#}!
+                          \def%{\string%}!
+                          \def:{\string:}}
+ \gdef/{\string/\discretionary{}{}{}}
+ \gdef-{\string-\discretionary{}{}{}}
+ \gdef({\discretionary{}{}{}\string(}
+ \gdef){\string)\discretionary{}{}{}}
+ \gdef.{\string.\discretionary{}{}{}}
+ \gdef&{\string&\discretionary{}{}{}}
+ \gdef_{\_\discretionary{}{}{}}
+ \gdef^{\string^}
+ \gdef${\string$}
+ \gdef#{\string#}
+ \gdef%{\string%}
+ \gdef:{\string:\discretionary{}{}{}}
+}
+%\expandafter\ifx\csname url\endcsname\relax
+\def\url#1{{\deactivateurlcodes\edef\tmp{\noexpand\href{#1}}%
+            \expandafter}\tmp{\texttt #1}}
+%\fi
+\let\origurl=\url
+\def\url{{\activateurlcodes\expandafter}\origurl}
+\def\email#1{{\deactivateurlcodes\edef\tmp{\noexpand\href{mailto:#1}}%
+    \expandafter}\tmp{\texttt #1}}
+\let\origemail=\email
+\def\email{{\activateurlcodes\expandafter}\origemail}
+\expandafter\ifx\csname doi\endcsname\relax
+\def\doi#1{{\deactivateurlcodes\edef\tmp{\noexpand\href{\doiresolver#1}}%
+            \expandafter}\tmp{\texttt doi:#1}}\fi
+\let\origdoi=\doi
+\def\doi{{\activateurlcodes\expandafter}\origdoi}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\journal{Preprint}
+
+\usepackage{hyperref}
+
+%page numbering in top right corner
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\thepage}
+%opening
+\title{Studying Language Evolution in the Age of Big Data}
+\author[SFI,LANL]{Tanmoy Bhattacharya\corref{cor}}
+\author[ZURI,SHH]{Dami\'{a}n E. Blasi}
+\author[UNM]{William Croft}
+\author[Marburg]{Michael Cysouw}
+\author[ASU]{Daniel Hruschka}
+\author[UNM]{Ian Maddieson}
+\author[Leipzig]{Lydia M{\"u}ller}
+\author[Leipzig,MIS]{Nancy Retzlaff}
+\author[SFI,GMU,RI]{Eric Smith}
+\author[SFI,MPI,Leipzig]{Peter F. Stadler\corref{cor}}
+\author[Moscow]{George Starostin}
+\author[SFI,Oxford]{Hyejin Youn}
+\address[SFI]{Santa Fe Institute, 1399 Hyde Park Rd., Santa Fe, NM
+             87501, USA}
+\address[LANL]{Theoretical Division, Los Alamos National Laboratory,
+             Los Alamos, NM 87545-0285, USA}
+\address[MIS]{Max Planck Institute for Mathematics in the Sciences,
+            D-04103 Leipzig, Germany}
+\address[ZURI]{University of Z\"{u}rich,
+            Z\"{u}rich, Switzerland}
+\address[SHH]{Max Planck Institute for the Science of Human History,
+            Jena, Germany}
+\address[EVA]{Max Planck Institute for Evolutionary Anthropology,
+            D-04103 Leipzig, Germany}
+\address[UNM]{Linguistics, University of New Mexico, Albuquerque,
+             NM 87131-0001, USA}
+\address[Marburg]{Forschungszentrum Deutscher Sprachatlas, Philipps
+                 Universit\"at Marburg, Marburg, Germany}
+\address[ASU]{School of Human Evolution and Social Change, Arizona State 
+            University, Tempe AZ 85287, USA}
+\address[Leipzig]{Bioinformatics Group, Department of Computer 
+                 Sciences, University of Leipzig, Leipzig 04107,
+                 Germany}
+\address[GMU]{Krasnow Institute for Advanced Study, George Mason
+             University, Fairfax, VA 22030, USA}
+\address[RI]{Ronin Institute, Montclair, NJ 07043}
+\address[Moscow]{Centre for Comparative Linguistics, Russian
+                State University for the Humanities, Moscow, Russia}
+\address[Oxford]{The Institute for New Economic Thinking at the 
+                Oxford Martin School, Oxford, OX2 6ED, UK}
+\cortext[cor]{Correspondence should be addressed to TB and PFS. emails:
+            \email{tanmoy@santafe.edu} and 
+            \email{stadler@bioinf.uni-lepzig.de}.}
+
+
+\begin{document}
+
+\maketitle
+
+\section{Acknowledgements} 
+This manuscript grew out of a working
+    group held at the Santa Fe Institute in spring 2014. This work was
+    supported in part by the National Science Foundation (no.\ SMA-1312294)
+    and the CABDyN (to HJ) and a PPP grant from the German Academic
+    Exchange Service (to PFS). In addition, we would like to acknowledge
+    the valuable comments from anonymous referees to a previous version of
+    this manuscript.
+
+\end{document}

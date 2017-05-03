@@ -1,0 +1,698 @@
+Reviewer: 1
+
+Comments to the Author
+I am not sure what the paper at hand is attemping to achieve. Its
+title and abstract talk about a big data sanctioned methological shift
+and as such it has the characteristics of a survey paper, whereas the
+bulk of the paper is about a specific method for cognate detection and
+some satellite empirical questions.  The overarching argument that
+quantification promises a superior future doesn't come out very well
+when the paper is full of hedged or vague claims of the sort that
+quantification is supposed to resolve (such and such is useful, may be
+useful, works well, experience shows etc etc) and that the authors do
+not understand or have not read many of the papers they cite properly.
+
+Although it contains a number of sensible observations it does not really
+fulfil the role of a survey paper since it carries much eclectic,
+uncritical,
+promissory and platitudinal information. Other existing survey papers cover
+the issues touched by the present paper equally or better:
+
+List, J.-M. (2016): Beyond cognacy: Historical relations between words and
+their implication for phylogenetic reconstruction. Journal of Language
+Evolution 1.2. 119-136.
+
+List, J.-M., J. Pathmanathan, P. Lopez, and E. Bapteste (2016): Unity and
+disunity in evolutionary sciences: process-based analogies open common
+research avenues for biology and linguistics. Biology Direct 11.39. 1-17.
+
+Dunn, Michael. (2014) Language phylogenies. In Claire Bowern & Bethwyn
+Evans (eds.), The Routledge Handbook of Historical Linguistics,
+190-211. New York: Routledge.
+
+Kondrak, Grzegorz. (2009) Identification of Cognates and Recurrent
+Sound Correspondences in Word Lists. Traitement Automatique des
+Langues 50(2):201-235.
+
+Levinson, Stephen C. and Russell D. Gray. 2012. Tools
+from evolutionary biology shed new light on the diversification
+of languages. Trends in Cognitive Sciences 16(3):167–173.
+
+Also on the matter of cognate identification, there's really not much that
+stands out in the present paper as opposed to the existing literature (which
+the authors are not sufficiently familiar with) but there are some
+experiments
+in here that are of minor value.
+
+Since I fail to see a major contribution of this paper I think its
+publication would be largely redundant. To make the best use of the
+contents of it I would recommend the authors to contemplate its
+purpose. Is it a survey of big data in historical linguistics? Then do
+it properly (define, cite all lines of work, be critical). If it is a
+survey of big data in **lexical** historical linguistics this might
+make the task smaller. Is the paper about cognate identification? Then
+do this fully and leave the more general concerns about computers vs
+manual work for elsewhere. Is the paper an enlightenment in general that
+you can make use of quantification/statistics if you have a computer
+and a lot of data? This is trivial, don't write such a paper.
+
+The paper uses the term 'language evolution' is the narrow sense of
+'linguistic change in the last few thousand years' (for which there's
+already the established term 'historical linguistics' within linguistics).
+This is probably deliberate.
+
+Some text is in purple --- I don't know its significance.
+
+Detailed comments:
+
+* "Dumont d'Urville’s attempt to introduce a quantitative aspect into the
+comparison of Oceanic languages (Dumont d'Urville, 1832)."
+
+In the cited paper Dumont d'Urville talks about the distribution of
+different
+races/language families and their difference in development, there's no
+introducing a quantitative aspect. Try reading the originals and cite the
+right item.
+
+Also a citation to
+
+Geisler, H. and J.-M. List (2013): Do languages grow on trees? The tree
+metaphor in the history of linguistics. In: Fangerau, H., H. Geisler, T.
+Halling, and W. Martin (eds.): Classification and evolution in biology,
+linguistics and the history of science. Concepts – methods – visualization.
+Franz Steiner Verlag: Stuttgart. 111-124.
+
+would be appropriated for the reader who wants to know more.
+
+
+* The passage "Nevertheless, it seems safe to assume that spoken
+languages include a set of core features that are mainly uniparentally
+co-inherited with occasional horizontal influences from other speech
+communities. Such vertically inherited features range from phonetics
+to individual lexical items and entire grammatical structures. Just
+like the genotype comprising a biological system has a core subset of
+housekeeping genes that form a bundle that is frequently, but not
+always, co-inherited, it is likely that language has a core that can
+be used to define a vertical descent."
+
+directly contradicts that of the next page
+
+"in fact we shall studiously refrain from privileging a single
+co-inheritance bundle as the defining feature of genetic relationship
+of a cultural trait such as language"
+
+If you assume that there is a set of core features that define vertical
+descent (and you venture to say it draws from phonology (probably not
+phonetics!), lexicon and grammar!) there exists such a privileged bundle,
+and by the logic of the paper you should be looking for it. Probably
+the authors want to say that they do want to privilege a core set of
+features for gauging vertical transmission, they just do not know which
+this set is, and to find out is a key task.
+
+But one does not need to assume so much as the question has been
+studied empirically and there are lots of partial results in various
+linguistic papers that should have been cited.
+
+* "Of course no method is infallible. If features are chosen that are
+either too noisy to convey retrievable information or that are not
+strictly vertically transmitted to begin with the resulting tree might
+not depict the actual relationships."
+
+The logic here seems strange wrt to the use of infallible. Is an
+infallible method one that retrieves true conclusions from wrong data?
+
+* "This underlines the fundamental importance of basing phylogenetic
+reconstruction on multiple, independent feature sets."
+
+I fail to see that the example of Xenoturbella underlines this conclusion.
+It just seems to illustrate that one needs to be able to correctly identify
+the data used and that the phylogenetic placement of a leaf will be wrong if
+not all relevant clades are included in the analysis.
+
+* "Just like language evolution, biological evolution is neither purely
+vertical nor completely treelike."
+
+Says the same thing twice.
+
+* "Even in higher organisms, horizontal gene transfer, convergent
+adaptive evolution, lineage sorting, and random noise in the data
+introduce deviations from tree-likeness in the data"
+
+What is lineage sorting?
+
+* "In fact, even in the presence of other forms of inheritance, trees
+are a useful representation of evolutionary relationships whenever
+there exists a dominating set of vertically inherited features."
+
+This is a circular assessment (trees are useful when the data is
+sufficiently
+tree-like).
+
+NB: The use of the term "other forms of inheritance" does violence
+upon the term "inheritance". Presumably it refers to the mentioned
+cases where "lineages are not well-sorted" but it's never explained
+what that means in terms of an evolutionary process and whether it's a
+form of inheritance.
+
+* "Nevertheless, they can be very useful to visualize and quantify the
+contribution of non-vertical inheritance (Bowern, 2010)."
+
+(I am assuming "non-vertical inheritance" should be "non-vertical
+transmission".) The conclusion, however, does not follow from the
+citation. Bowern (2010) could have done the comparison between the
+borrowable and non-borrowable subset in the absense of any
+visualization at all, and the visualization used did not allow anyone
+to distinguish between retention/innovation and certainly did not give
+any quantification.
+
+* "to stick to a tree-based phylogenetic techniques but express the
+potential existence of reticulation or conflicts by measures of goodness of
+fit, for example, through low likelihoods in particular branches or a wide
+spread in the posterior distributions in Bayesian settings."
+
+This is an important point which, unfortunately, is not developed in the
+paper.
+It would be great to be told how measuring the goodness of fit of various
+tree-models tells us whether a non-tree model fits better or worse. Also,
+the
+suggested paradigm of looking at the posterior in Bayesian settings
+conflates
+effects due to the desired quantity (tree-like-ness) and other things
+estimated
+(branch lengths, rates of change etc).
+
+* "First, it allows us to identify the cases where the underlying
+tree-like structure induced by the vertical process of inheritance is
+such a strong regularity that it can be recognized and, at the very
+least, approximated from the observable data. Second, as the amount of
+data increases, it allows one to systematically improve the model
+using techniques like ancestral recombination graphs (Hudson, 1991;
+Griffiths and Marjoram, 1997; Arenas, 2013; Rasmussen et al., 2014)
+well known in the biological phylogenetic literature."
+
+The logic here is unclear. Cf. the comment above that we never actually
+told how only using tree-models tells us whether they are appropriate
+or not. But suppose we did, then the authors suggest we can systematically
+improve the tree-model by extending it to become ARGs. Then why not use
+ARGs to begin with? (That would be systematic, rather than ad hoc).
+
+* this gave a very good fit with known linguistic history (Lee and
+Hasegawa, 2011; Gray et al., 2009; Dunn et al., 2011)
+
+What is meant by "very good fit"? The whole paper argues we should
+use quantification to answer such questions but for some reason
+when we need it and it is easy to do, they don't do it. For example
+what is the Robinson-Foulds distance between the computational and
+"known linguistic history"-tree topologies in the cited papers? (And
+why cite these, esp Dunn et al 2011, rather than all studies with
+this metholodogy).
+
+* The section "2 Lexicostatistics and language phylogenetic" is mislabeled
+because half of it is devoted to non-lexical phylogenies.
+
+* "there have been several attempts to use other kinds of linguistic data
+for
+the reconstruction of language history"
+
+Several? There have been hundreds. Perhaps the author mean papers with
+explicit quantification.
+
+* "learning approaches have been used in reconstructing ancient word
+forms"
+
+This information belongs in the section about lexicon.
+
+* "in phylogenetic analysis of typological features (Gell-Mann and Ruhlen,
+2011; Dunn et al., 2011)."
+
+There is no machine learning in the standard sense of the term in the two
+cited papers.
+
+* "The core or basic vocabulary comprising the Swadesh concepts when
+compiled into such word lists is particularly suited for the phylogenetic
+enterprise for two reasons. First, it is composed of many items of proven
+genealogical persistence (Calude and Pagel, 2011), with some of them
+potentially conserved beyond the conventionally assumed 10,000 ybp limit of
+the comparative method (Pagel et al., 2013)."
+
+These studies do not "prove genealogical persistence", they are circular in
+this respect since they assume families established on the assumption of
+genealogical persistence of the very same vocabulary items...
+
+* "Importantly, though cognate judgments made purely from the phonetic
+structure captured in these semantically aligned word lists can be
+improved with specialized linguistic knowledge, in recent tests on
+‘simple’ language families, the difference was found to have no
+systematic structure that could bias the reconstruction of phylogenies
+based on this data (Steiner et al., 2011; Hruschka et al., 2015)."
+
+Rephrase.
+
+* "This so-called log-odds score is theoretically justified by a simple
+model of independent evolution (Durbin et al., 1998; Altschul et al.,
+2010)."
+
+I would not be so sure it's theoretically justified in cases where you have
+few datapoints (as with small wordlists or uncommon sounds), then a Fisher
+Exact Test or something that takes the amount of evidence into account may
+be more appropriate.
+
+* "the same for both model"
+
+the same for both models
+
+* p 11 "Basen on this one can proceed to define the total score .."
+
+The text and formulas here are ambiguous as to whether sigma and nscore
+are defined of a pair of languages or a pair of words from two lgs.
+Presumably
+the latter but actually the sigma formula as written contains free variables
+that ranged over the full set of pairs between two languages on the previous
+page. Formulas are used for clarity so please be explicit as to what is
+defined over what and the domains of free variables.
+
+* p 11 ".. words from 11 Indo-European"
+
+Which 11 I-E lgs and why those (and, not, say, a single pair). This matters
+as the results should look quite different for distantly vs closely
+related pairs of languages.
+
+* P 11 re the peak structure
+
+No explanation is offered as to i) why the peak for non-cognates is
+negative appx -2 (rather than 0) and ii) why the Guaycuruan and IE datasets
+behave differently.
+
+* "Each cutoff values thus yields a pair of sensitivity and
+specificity values that quantify how well the scorebased separation
+between cognates and non-cognates performs. It is customary to
+summarize the values in the form of the Receiver-Operator-Curve (ROC)
+shown in Fig. 5."
+
+It's more customary to present the f-score of the precision/recall
+corresponding to the different threshold values...
+
+* p 10-14 on the cognate detection algorithm.
+
+The method described has no conceptual improvment over that of Jäger
+(2013), and more generally fails to cite modern and old relevant work
+and position itself wrt to relevant work. It makes no advance (or even
+mentions) any of the modeling challenges existing such as partial
+cognacy, global (all words) vs local (per word) scoring of sound
+correspondences, deep vs shallow cognacy, pairwise aligment vs
+multiple alignment etc etc and the implications for the presented
+algorithm. It is also deceptive in that it fails to mention a
+parameter epsilon until in the appendix. It is not an innocuous
+parameter since it is related to the size(s) of the wordlists.
+
+Most deplorable of all is that they do with heuristics what was
+achieved a decade ago with a much more elegant model with global
+scoring and absense of a threshold by Ellison (2007).
+
+Ellison, T. Mark. (2007) Bayesian Identification of Cognates and
+Correspondences. Proceedings of Ninth Meeting of the ACL Special
+Interest Group in Computational Morphology and Phonology,
+15--22. Prague, Czech Republic.
+
+Jäger, Gerhard. (2013) Phylogenetic Inference from Word Lists Using
+Weighted Alignment with Empirically Determined Weights Language.
+Dynamics and Change 3:245–291.
+
+* "Importantly, however, the automatic cognate recognition path
+provides these later stages of analysis not merely with a binary
+decision of whether or not a pair is a cognate, but rather with a
+score that represents the weight of phonetic evidence in favor of
+cognacy"
+
+But cognacy is a yes/no property and modeled as such in the work
+the authors cite, so the inability to provide a yes/no answer is
+incompleteness rather than a virtue.
+
+* "Turkic languages as an example is that relatively comparable
+phonetic transcriptions were available, the language family has a
+relatively shallow time depth, and words had already been categorized
+into probable descendants of common ancestors"
+
+It should be mentioned that i) the results do not necessarily generalize
+to deeper families/cognacy and ii) that cognates in the Hruschka et al 2015
+come in sets whereas the method described in the paper identifies
+cognates pairwise and may thus give inconsistent results of the type
+A is cognate with B and B is cognate with C but A is not cognate with C.
+
+* "k >= 3 ..." Such a model would also take care of local transposition"
+
+These were assumed to be so few as to negligible earlier in the paper
+so that is not much of an improvement. But if it were important to
+capture them, k >= 3 is not necessary as adding transposition operations
+to the Needleman & Wunsch algorithm still keeps it polynominal.
+
+* "At present there
+is no method to infer sound changes rules directly from a scoring system."
+
+At least cite Holman & Wichmann's paper in Language for the discussion
+even though it does not infer the direction of sound changes.
+
+* "Furthermore, the scores are explicitly dependent on the languages
+that are compared. Alternative approaches using a scoring system based
+on linguistic expertise also exist (Covington, 1996; Kondrak, 2003)
+and such models could also be designed to be more or less specific for
+particular language pairs or language families."
+
+Later in the paper sound change processes are argued be universal (a
+la Ohala) which means that there is a specific answer to the
+incertitude expressed in the above passage.
+
+* "A thorough application of the comparative methods requires the
+simultaneous estimation of the language history tree, of the
+proto-languages corresponding to the interior nodes of the tree, of
+the associated regular correspondences, and of the cognates that are
+invoked in their support.  This amounts to a comprehensive stochastic
+model of language evolution. While this approach is certainly the gold
+standard, it requires sufficient data to actually parameterize the
+model with sufficient accuracy, and sufficient computational
+capacities. While this is becoming feasible at least from a
+computational point of view,"
+
+Reference here is needed to Bouchard-Cote's book but, even more so,
+a justification for the totally unspported claim that it is feasible
+from a computational point of view is needed...
+
+* "In the context of biological phylogenetics it often pays to
+subdivide the gold standard inference task into individual components
+that can be solved independently from one another.  It is common
+practice in computational biology to compute sequence alignments first
+and to use them as starting point for the reconstruction of
+phylogenetic trees. The reconstruction of ancestral genomes (Pennisi,
+2005) and ancestral sequences (Liberles, 2007) is then performed on a
+given tree. Inferred trees may then help to improve alignments, which
+in turn yield a better tree in an interative manner. In complete
+analogy, word alignments can be performed independently of cognate
+identification and the identification of regular sound changes. One
+may meaningfully start by first identifying regular correspondences
+between pairs of extant languages and then use the fact that these
+regular correspondences are by definition the result of sound changes
+from the same proto-language along the two independent lineages to
+piece this information together to approximately reconstruct
+proto-languages and then the regularities of sound change."
+
+This is an important question, but unfortunately not prudently
+discussed in this passage. Since the components depend on each other,
+it is not probabilistically correct to do it in the iterative manner,
+and, as argued elsewhere in the paper (p 16) it is not a correct
+approach from the perspective of propagating uncertainty.
+
+* "Experience from computational biology, furthermore, shows that it
+is often pragmatically favorable to perform as much of the analysis as
+possible on directly observable data. For example, it can be helpful
+to identify regular correspondences between extant languages as a
+first step rather than trying to infer proto-languages and
+phylogenetic trees directly."
+
+Please explain what experience from computational biology shows how
+this is helpful if not for computational efficiency and expediency? As
+the text stands this claim is completelty unsupported.
+
+* "For example, reliable reconstruction of the subgrouping within a
+language family or identification of macro-families can be conducted
+on the basis of presence and absence of cognates without the necessity
+to model sound changes explicitly (Bowern, 2012; Bowern and Atkinson,
+2012)."
+
+How do you know the subgrouping in Bowern, 2012; Bowern and
+Atkinson, 2012 is reliable? The data is not given, the tree inference
+method uses exactly the tree priors taken over blindly from biology
+that the present paper warns about, and is squarely at odds with the
+flat subgrouping espoused by the earlier non-computational work.
+
+NB: reconstruction of the subgrouping is misphrased, presumbly
+just "subgrouping" is meant as there is no reconstruction in
+those papers.
+
+* "This is also an issue in bioinformatics, where Hidden Markov Models
+have been quite successful in recognizing sequences that have been
+acquired by horizontal transfer (Dufraigne et al., 2005).  It will
+remain to be seen whether a similar approach can also be successful in
+cases of large scale borrowing."
+
+Please explain what this HMM does? (HMM is an extremely general technique
+for sequences and it is not obvious how they can be used in the manner
+mentioned).
+
+* "Let us consider again cognacy as an example. Given word lists of
+two languages, we expect cognates to be much more frequent among words
+that share similar or identical meanings.  The corresponding
+null-model thus consists of randomized word lists, where words with
+different meanings are matched across languages (Baxter and
+Manaster-Ramer, 2000). If meaning-matched words are more similar to
+each other than words from unrelated meanings—ignoring horizontal
+transfer and sound symbolic shared patterns (Dingemanse et al.,
+2015)—a statistically significant difference between real and permuted
+similarity distributions supports a non-trivial genealogical
+relationship between the languages"
+
+This idea is limited by regularities in the meaning space of the kind
+discussed in 4.1-4.2 (as well as synonyms). The paper would make an
+actual contribution if this was taken seriously for a correct
+assessment of number emanating from a permutation test.
+
+* "As this powerful method is still underappreciated in the linguistics
+literature, we elaborate on the example in Fig. 6."
+
+I am surprised to learn it is underappreciated. It's been all over the
+place in quantatitative linguistics at least since Oswalt (1970)
+
+Oswalt, Robert L. (1970}. The detection of remote linguistic relationships.
+Computer Studies in the Humanities and Verbal Behavior 3:117-129.
+
+See also many non-quantitative papers in the long-ranger literature for the
+same principle being discussed.
+
+* "Finally, many non-alphabetic writing systems do not directly encode the
+phonetics at all."
+
+Do alphabetic scripts do that? Or is segmental phonology rather than
+"phonetics" intended?
+
+* "These experiments demonstrate that automated cognate detection is very
+robust against small differences in the encoding used for the word
+list and thus tolerates occasional errors in the data.  In our ‘easy’
+example we found a residual level of about 3% discrepancies"
+
+This conclusion should be qualified by the fact that only closely related
+languages were used in the tests. Of course, then a small amoutn of error
+drowns in the flood cognates. More interesting would be to assess the
+impact in a case where the error amound would compete against a similarly
+small amount of cognates.
+
+
+* "and consonants are perceptually different from vowels in word
+recognition (Cutler et al., 2000). The most efficient use of lexical
+data for determining deep language relationships, therefore, should
+weight the stable words and consonantal identity more."
+
+Is this a language independent result?
+
+* "notion of uniformatarianism"
+
+uniformitarianism
+
+* p 28
+
+There seems to be some confusion of what uniformitarianism, rates and
+process mean. If the process is the same but the rates change, then
+process is the same and did not change. Uniformitarianism usually
+means the assumption that the process does not change, which is an
+assumption since there are observations from the present but not from
+the past.
+
+* "Based on this data, researchers have argued about the unity or
+diversity of Tasmanian languages, with perhaps the most widely
+accepted opinion being that linguistic analysis can lead at most to
+rejecting the idea that Tasmanian languages constitute a single
+linguistic family (Crowley and Dixon, 1981)."
+
+"By using a combination of methods from evolutionary
+biology—prominently, phylogenetic inference—Bowern was able to gather
+enough evidence for 4/5 groupings (tentatively referred as
+macro-families) present in the wordlists that correspond somewhat with
+earlier archaeological classifications,"
+
+"Not only did the usage of methods from evolutionary biology allow
+Bowern to determine the number and extension of putative genealogical
+groups among the Tasmanian languages, but, more importantly, the usage
+of those methods lead to a natural quantification of uncertainty—so,
+for instance, while the evidence for a common ancestry of two of the
+inferred groups (those from Bruny Island and Oyster Bay) is strong,
+the estimate of the common root age is extremely imprecise, ranging
+from anywhere from 2,000 ybp to 20,000 ybp or more."
+
+These three passages are completely mistaken. The philological work
+by Dixon & Crowley 1981 is very similar to Bowern (2012) it's just that
+Bowern (2010) probably did a more thorough job (one has to hope, the
+data is not in the paper). The conlusions are very similar too, the
+only difference is that the strictly quantitative aspects ended in
+Dixon & Crowley 1981 with cognate density figures. Just like Bowern
+the reserve judgment on many of the worst attested doculects (Bowerns
+extended analysis only applies to the subsets with more than 100
+items).
+
+All the conclusions in Bowern (2012) quoted in the paper at hand can
+be reached with accurate figures of the pairwise cognate desnities and
+permutation tests. The phylogenetic methods used by Bowern (2012) were
+used wrongly, in ways the present paper warns against. Structure has a
+model of admixture which obviously incorrect for the evolution of
+linguistic data (where we have trees, as also argued in the paper)
+rather than random sampling from a number of pools. (Only in the case
+of source mixing may this warranted, and that does concern a few
+Tasmanian vocabularies, but that does not motivate its usage for
+questions of descent, e.g., inferring the number of families.)
+Furthermore the K is not compared to the prior in Bowern (2012)
+application and so it not warranted solely by the data anyway.
+
+The number of genealogical groups among the Tasmanian languages was
+reached by Bowern (2012) with elementary means: simply "too few
+cognates" uniting all groups that are not arguably borrowings/recent
+introductions.  If she had followed the phylogenetic method she
+(mis)applied the conclusion would indeed have been that they formed
+one family spoken 20000 to 2000 years ago. Not 5 families, one family.
+Not one family with such and such uncertainty concerning the number
+one, but one family with full certainty, only a lof of uncertainty
+about its age. That's what the phylogenetic methods she applied says,
+but sensibly, she choose to ignore that conclusion (as it springs from
+a misapplied monogenetic model, though the does not say that out loud).
+
+* "although some support for the idea still
+exists in other contexts (Ehret, 2000; Starostin, 2000, 2013; Holman
+et al., 2011)."
+
+None of these paper support the idea of rate constancy, they support
+(emprirically) the idea of rate regularity.
+
+The earlier passage btw fails to cite the most powerful paper against
+rate constancy (better than Bergsland and Vogt):
+
+Blust, Robert. (2000) Why lexicostatistics doesn't work: the
+'universal constant' hypothesis and the Austronesian languages. In
+Colin Renfrew, April McMahon & Robert Lawrence Trask (eds.), Time
+depth in historical linguistics (Papers in the prehistory of languages
+2), 311-331. Cambridge: McDonald Institute for Archaeological
+Research.
+
+* "Therefore, one has to correct the p-values of the m independent
+tests. In our example, we have 7 languages and thus 30 different
+language pairs"
+
+Is the math correct here? 7 x 6 / 2 = 21 according to me.
+
+* "In other words: do data source accessible to"
+
+data sources
+
+* "We have to make one single assumption about paralogous cognates,
+namely that they inherit both their phonological form and their
+meaning from a common ancestor. Conversely, we assume that a
+simultaneous similarity of meaning and phonological form, if not
+explanable by chance, can result only from paralogous cognates"
+
+As it is written this is two assumptions. Actually the first is
+the definition of paralogous and what you assume is the second
+one (that only paralogous cognates have sim in form and meaning).
+
+* "To do this in practice, we compare for each language two samples of
+1000 pairs of nonidentical words. We remove identical words with
+different meanings since we only interested in paralogs, that is,
+words that are distinct, not in words that have simply expanded their
+semantic scope."
+
+The removal of identical words is contrary to the stated interest
+which was "This element of cognacy across meaning category is
+analogous to an important mode of biological evolution—the duplication
+and subsequent functional divergence of genes.". Surely identical
+words are (always or sometimes) instances of this process. For example,
+mouse is an animal and now also a computer device, with its own life
+in the different senses (e.g., the computer device can have a different
+plural).
+
+* Section 4
+
+It is never declared how synonyms are treated in the IDS and in the
+experiments of Section 4 and how prevalent that is.
+
+* p 31-32
+
+The experiment is flawed in that it removes languages like Old Prussian
+because it does not show bimodality. Either find the error is the supposed
+method or the theoretical property of the data of these languages that mean
+they do not apply.
+
+* "several statistical method"
+
+several statistical methods
+
+* Sec 6
+
+The conclusion contains information not in the body of the paper and
+should thus be reorganized.
+
+* The so-called North Caucasian family consists of languages in
+North-East Caucasian family only.
+
+
+Reviewer: 2
+
+Comments to the Author
+This paper outlines methods and workflows for using large datasets to
+perform phylolinguistic analyses. With some reorganization and adjustments
+to the writing, this will be a very valuable contribution to the Journal of
+Language Evolution. Below are some general comments regarding the
+organization and writing of the article. Further detailed comments are
+included in the attached file.
+
+In general the writing of this piece tends toward the verbose end of the
+spectrum, which in some places muddies the message being presented. I
+recommend that the author(s) aim for maximally clear and concise text in
+the revision process, especially in sections that present background
+information. Some specific comments on writing and typos are included in
+the attached file.
+
+The extent to which individual technical terms and concepts are explained
+is quite variable and may not in all cases be appropriate for the  target
+audience. Some linguistic concepts that most people interested in language
+evolution will be familiar with are fleshed out in great detail (e.g. the
+notion of basic vocabulary as a more reliable source of phylogenetic signal
+than other areas of the lexicon - p. 6), while other terms (including
+technical terminology central to the methods discussed) are used without
+being clearly introduced and defined (e.g. "pre-alignment", which appears
+by p. 9, but is introduced with small caps and sketchy definition only on
+p. 12).
+
+The introduction section provides plenty of general background on
+phylolinguistic traditions and their relationships to biology, but at the
+expense of clearly introducing the content of the article -- namely, the
+use of specific computational methods for answering questions in historical
+linguistics using large datasets. I recommend condensing the discussion of
+the history of phylogenetics and outlining the main focus of the
+contribution within the first paragraph or two.
+
+The issues of orthographic representation and level of phonetic detail are
+discussed briefly in Section 3.2, and are then re-introduced and discussed
+in further detail in Section 3.5. Between the two is a lengthy discussion
+of alignment, scoring, tree reconstruction, and statistical tests. This
+organization seems disjointed, particularly because the issue of sound
+representation is so important to the matter of alignment. I recommend
+consolidating the discussion of representations and presenting all
+theoretical discussion relatively early in Section 3 (perhaps in the
+beginning of Section 3.2, or in a new section in that vicinity). The IDS
+example might make more of an impact if it referred back to a single,
+concise discussion of representational issues instead of including its own
+lengthy introductory discussion of these issues.
+
+Section 3.7 seems out of place and wordier than it needs to be. The point
+that computational methods can supplement or assist with traditional
+historical linguistics has already been made, including the notion that
+they can be used to overcome data limitations (e.g. the  Bowern reference
+on p. 13). As the admixture model and NeighborNet methods central to Bowern
+2012 aren't directly discussed in this article, it seems like an odd
+example to devote so much space to. I would reconsider whether this section
+is necessary at all, especially since Section 3.8 segues abruptly back to
+methodological matters.

@@ -61,8 +61,6 @@ The paper uses the term 'language evolution' is the narrow sense of
 already the established term 'historical linguistics' within linguistics).
 This is probably deliberate.
 
-Some text is in purple --- I don't know its significance.
-
 Detailed comments:
 
 * "Dumont d'Urville’s attempt to introduce a quantitative aspect into the

@@ -201,7 +201,20 @@ The evolutionary relationships of languages have been a lively field of
 research for nearly two centuries, ever since Schleicher's evolutionary
 trees~\cite{Schleicher:1853} and Dumont d'Urville's attempt to introduce a
 quantitative aspect into the comparison of Oceanic
-languages~\cite{dUrville:1832}. These early roots predate Darwin's first
+languages~\cite{dUrville:1832}. 
+\TODO{In the cited paper Dumont d'Urville talks about the distribution of
+different
+races/language families and their difference in development, there's no
+introducing a quantitative aspect. Try reading the originals and cite the
+right item.
+Also a citation to
+Geisler, H. and J.-M. List (2013): Do languages grow on trees? The tree
+metaphor in the history of linguistics. In: Fangerau, H., H. Geisler, T.
+Halling, and W. Martin (eds.): Classification and evolution in biology,
+linguistics and the history of science. Concepts – methods – visualization.
+Franz Steiner Verlag: Stuttgart. 111-124.
+}
+These early roots predate Darwin's first
 sketch of an evolutionary tree of species, possibly drawn in 1837. Early
 work on phylogenetics in biology has been grounded in detailed expert
 descriptions of morphology. The advent of a deluge of molecular data and
@@ -235,11 +248,11 @@ of these features \textsc{should} be defined as \TT{genetic
 single co-inheritance bundle as \textsc{the} defining feature of
 genetic relationship of a cultural trait such as language, but,
 instead, will concern ourselves solely with reconstructing the
-phylogeny of any of these sets of features. \TB{When we are confident
+phylogeny of any of these sets of features. When we are confident
   that a set of features belong to the same bundle, a phylogeny built
   primarily on the basis of evidence from one set of features can
   provide a historical reconstruction for the other features. In any
-  case,} we consider all these features as useful subjects for
+  case, we consider all these features as useful subjects for
 historical inquiry, though their relative merit for answering a given
 question of interest to individual researchers will vary. For
 concreteness and because of large amounts of available data, we shall
@@ -247,7 +260,7 @@ talk about \TT{phylolinguistic} analysis of lexical features but much
 of the discussion also translates to phylogenies constructed from
 other features.
 
-\TB{An important issue to consider in the choice of traits to analyze is
+An important issue to consider in the choice of traits to analyze is
   the importance of synapomorphies, or shared derived traits that set a
   genealogical family apart.  Certain traits such as grammatical paradigms
   may be complex enough that a particular system has a very low chance of
@@ -262,7 +275,7 @@ other features.
   these provides the larger body of relevant evidence, but rather consider
   ways of evaluating the evidence quantitatively in light of confounding
   processes like contact phenomena, areal diffusion, and sound symbolism
-  and other psycholinguistic effects.}
+  and other psycholinguistic effects.
 
 One of the key take-home lessons from phylogenetic studies in both biology
 and linguistics is that a detailed understanding of the mechanisms of
@@ -284,7 +297,10 @@ reconstruction are often the method of choice~\cite{Waegele:DMP}. Of course
 no method is infallible. If features are chosen that are either too noisy
 to convey retrievable information or that are not strictly vertically
 transmitted to begin with the resulting tree might not depict the actual
-relationships. An extreme example in the phylogeny of animals is the
+relationships.
+\TODO{The logic here seems strange wrt to the use of infallible. Is an
+infallible method one that retrieves true conclusions from wrong data?}
+An extreme example in the phylogeny of animals is the
 strange case of \emph{Xenoturbella}. This unimpressive worm-like animal was
 classified as close relative of molluscs based on DNA that, as it turned
 out later, represented its food rather than the animal itself. It was later
@@ -294,12 +310,20 @@ animal clade that also includes vertebrates \cite{Bourlat:06}, only to be
 branches with the help of data for related species \cite{Rouse:16}. This
 underlines the fundamental importance of basing phylogenetic reconstruction
 on multiple, independent feature sets.
+\TODO{I fail to see that the example of Xenoturbella underlines this conclusion.
+It just seems to illustrate that one needs to be able to correctly identify
+the data used and that the phylogenetic placement of a leaf will be wrong if
+not all relevant clades are included in the analysis.}
 
 Just like language evolution, biological evolution is neither purely
-vertical nor completely tree-like. Even in higher organisms, horizontal
+vertical nor completely tree-like. 
+\TODO{Says the same thing twice.}
+Even in higher organisms, horizontal
 gene transfer, convergent adaptive evolution, lineage sorting, and random
 noise in the data introduce deviations from tree-likeness in the
-data. Lineages are not always well-separated, as in the case of \TT{ring
+data. 
+\TODO{What is lineage sorting?}
+Lineages are not always well-separated, as in the case of \TT{ring
   species} \cite{irwin:2005} in biology and \TT{dialect continua}
 \cite{heggarty:2010,franccois2015trees}, making the tree model only an
 approximation.  Although horizontal transfer, like any other causes of
@@ -310,13 +334,29 @@ by trees because they are primarily conserved vertically. In fact, even in
 the presence of other forms of inheritance, trees are a useful
 representation of evolutionary relationships whenever there exists a
 dominating set of vertically inherited features.
+\TODO{This is a circular assessment (trees are useful when the data is
+sufficiently tree-like).
+
+NB: The use of the term "other forms of inheritance" does violence
+upon the term "inheritance". Presumably it refers to the mentioned
+cases where "lineages are not well-sorted" but it's never explained
+what that means in terms of an evolutionary process and whether it's a
+form of inheritance.}
 
 Models of evolution that allow an arbitrary network as representing the
 evolution are, of course, available, \texttt{NeighborNet}~\cite{Huson:10}
 being by far the most popular choice. Such networks, however, do not
 necessarily directly model an evolutionary process. Nevertheless, they can
 be very useful to visualize and quantify the contribution of non-vertical
-inheritance \cite{Bowern:10}. As in other loosely constrained statistical
+inheritance \cite{Bowern:10}.
+\TODO{(I am assuming "non-vertical inheritance" should be "non-vertical
+transmission".) The conclusion, however, does not follow from the
+citation. Bowern (2010) could have done the comparison between the
+borrowable and non-borrowable subset in the absense of any
+visualization at all, and the visualization used did not allow anyone
+to distinguish between retention/innovation and certainly did not give
+any quantification.}
+As in other loosely constrained statistical
 estimation problems, phylogenetic networks may be over-parameterized so
 that it is often difficult to discern whether they uncover patterns of the
 underlying linguistic history, or are merely describing the random and
@@ -324,7 +364,14 @@ idiosyncratic noise inherent in any particular data set. It is often
 better, therefore, to stick to a tree-based phylogenetic techniques but
 express the potential existence of reticulation or conflicts by measures of
 goodness of fit, \eg{} through low likelihoods in particular branches or a
-wide spread in the posterior distributions in Bayesian settings. The key
+wide spread in the posterior distributions in Bayesian settings. 
+\TODO{This is an important point which, unfortunately, is not developed in the
+paper. It would be great to be told how measuring the goodness of fit of various
+tree-models tells us whether a non-tree model fits better or worse. Also,
+the suggested paradigm of looking at the posterior in Bayesian settings
+conflates effects due to the desired quantity (tree-like-ness) and other things
+estimated (branch lengths, rates of change etc). }
+The key
 question, then, is not whether one can devise a complete and sufficiently
 richly parameterized model of language evolution that takes all horizontal
 effects into account. Instead, we have to ask whether and how it is
@@ -338,6 +385,11 @@ amount of data increases, it allows one to \emph{systematically} improve
 the model using techniques like ancestral recombination
 graphs~\cite{Hudson:91,Griffiths:97,Arenas:13,Rasmussen:14} well known in
 the biological phylogenetic literature.
+\TODO{The logic here is unclear. Cf. the comment above that we never actually
+told how only using tree-models tells us whether they are appropriate
+or not. But suppose we did, then the authors suggest we can systematically
+improve the tree-model by extending it to become ARGs. Then why not use
+ARGs to begin with? (That would be systematic, rather than ad hoc).}
 
 The purpose of this contribution is to demonstrate that quantitative
 statistical approaches that have become widely accepted and used in the
@@ -350,6 +402,8 @@ driven (bio-)sciences. Not only can quantitative methods answer linguistic
 research questions but they also suggest additional research questions.
  
 \section{Lexicostatistics and language phylogenetics.}
+\TODO{is mislabeled
+because half of it is devoted to non-lexical phylogenies.}
 
 Although phylogenetic signal is present in virtually all aspects of
 language, computational work so far has concentrated primarily on cognate
@@ -373,7 +427,15 @@ analysis used only the core concepts belonging to the Swadesh
 lists---assumed to be the most closely co-inherited roots, refractory to
 horizontal transfer---or, at least, weighted their evidence more, this gave
 a very good fit with known linguistic
-history~\cite{Lee:11,Gray:09,Dunn:11}, and provided a credible starting
+history~\cite{Lee:11,Gray:09,Dunn:11}
+\TODO{What is meant by "very good fit"? The whole paper argues we should
+use quantification to answer such questions but for some reason
+when we need it and it is easy to do, they don't do it. For example
+what is the Robinson-Foulds distance between the computational and
+"known linguistic history"-tree topologies in the cited papers? (And
+why cite these, esp Dunn et al 2011, rather than all studies with
+this metholodogy).}
+, and provided a credible starting
 point in discussions on language relationships \cite{Bouckaert:12}. It is
 important to realize, though, that all these approaches crucially depend on
 manually determined cognate classes. There is not yet an equally reliable
@@ -382,7 +444,10 @@ such methods has to rely on a good inference of sound correspondences,
 which seems to require larger datasets.
 
 Beyond lexical data, there have been several attempts to use other kinds of
-linguistic data for the reconstruction of language history. A lack of
+linguistic data for the reconstruction of language history. 
+\TODO{Several? There have been hundreds. Perhaps the author mean papers with
+explicit quantification.}
+A lack of
 reliable cognates among Papuan languages in Island Melanesia (apart from
 obvious borrowings from nearby Austronesian languages) on which to base a
 more standard lexicostatistic comparison, prompted~\citet{Dunn:05} to use
@@ -393,8 +458,13 @@ proposals have involved comparing morphological material~\cite{Nichols:92},
 syntactic features~\cite{Longobardi:09}, as well as the phonetic distance
 between word forms within a cognate set~\cite{Heggarty:00}. In addition,
 machine learning approaches have been used in reconstructing ancient word
-forms~\cite{BouchardCote:13} and in phylogenetic analysis of typological
-features~\cite{Gell-Mann:11,Dunn:11}. One must note, however, that even
+forms~\cite{BouchardCote:13} 
+\TODO{This information belongs in the section about lexicon.}
+and in phylogenetic analysis of typological
+features~\cite{Gell-Mann:11,Dunn:11}.
+\TODO{There is no machine learning in the standard sense of the term in the two
+cited papers.}
+One must note, however, that even
 when there appears to be a phylogenetic signal in such data, there is much
 less consensus about the nature of any vertically-inherited \TT{core} and
 how that relates to the vertical inherited bundle of features traditionally
@@ -474,7 +544,11 @@ into such word lists is particularly suited for the phylogenetic enterprise
 for two reasons. First, it is composed of many items of proven genealogical
 persistence \cite{Calude:2011}, with some of them potentially conserved
 beyond the conventionally assumed 10,000 ybp limit of the comparative
-method \cite{Pagel:2013}. Lexical replacement rate seems to be linked to
+method \cite{Pagel:2013}. 
+\TODO{These studies do not "prove genealogical persistence", they are circular in
+this respect since they assume families established on the assumption of
+genealogical persistence of the very same vocabulary items...}
+Lexical replacement rate seems to be linked to
 frequency of use, which is fairly comparable, at least across languages
 from the largest lingustic families in the world
 \cite{Calude:2011,Calude:2014}. Similarly, basic vocabulary is composed of
@@ -490,6 +564,7 @@ word lists can be improved with specialized linguistic knowledge, in recent
 tests on \QUOTE{simple} language families, the difference was found to have
 no systematic structure that could bias the reconstruction of phylogenies
 based on this data \cite{Steiner:11a,Hruschka:14}.
+\TODO{Rephrase from Importantly on.}
 
 Nevertheless, it is difficult to overemphasize the importance of carefully
 curated data sets that are accurate, reliable, uniformly transcribed, and
@@ -666,7 +741,7 @@ A more sophisticated scoring model that takes into account the neighboring
 phonetic context can also be estimated from the initial alignments of
 cognates. Here, we explore the utility of a bigram-based scoring model and
 compare it a simpler model with unigram scores. The idea behind the
-computation of the scoring function is the same for both model. Likely
+computation of the scoring function is the same for both model\NEW{s}. Likely
 correspondences of sounds will appear more often than expected by chance in
 an alignment of cognate words. This holds true for both unigrams and
 bigrams. In either case we therefore start from the collection of all
@@ -691,6 +766,11 @@ to define the score as
 \end{equation}
 This so-called log-odds score is theoretically justified by a simple model
 of independent evolution \cite{Durbin:98,Altschul:10}.
+\TODO{I would not be so sure it's theoretically justified in cases where you have
+few datapoints (as with small wordlists or uncommon sounds), then a Fisher
+Exact Test or something that takes the amount of evidence into account may
+be more appropriate.
+}
 
 \begin{figure}
 \begin{center}
@@ -724,6 +804,13 @@ a fairly straightforward generalization of the well known Needleman-Wunsch
 algorithm~\cite{needleman:70} used to solve unigram alignments (see
 \hyperref[AppA]{Appendix A}).
 
+\TODO{The text and formulas here are ambiguous as to whether sigma and nscore
+are defined of a pair of languages or a pair of words from two lgs.
+Presumably
+the latter but actually the sigma formula as written contains free variables
+that ranged over the full set of pairs between two languages on the previous
+page. Formulas are used for clarity so please be explicit as to what is
+defined over what and the domains of free variables.}
 Based on this, one can proceed to define the total score as the sum of all
 bigram scores $\sigma = \sum_{\alpha, \beta} \sigma_{AB}(\alpha,\beta)$
 together with the contributions of all gaps, and then a normalized score
@@ -757,7 +844,11 @@ aligned position.
 These normalized alignment scores can be used to distinguish cognates from
 non-cognates. In Fig.~\ref{fig:unibigramdist} (left), we show histograms of
 both the simple unigram scores and the bigram scores for all pairwise
-alignments of words from 11 Indo-European languages. For both scoring
+alignments of words from 11 Indo-European languages.
+\TODO{Which 11 I-E lgs and why those (and, not, say, a single pair). This matters
+as the results should look quite different for distantly vs closely
+related pairs of languages.}
+For both scoring
 models we observe two clearly separated peaks. The peak on the left,
 centered at negative score values, corresponds to alignments of unrelated
 words, \ie{} non-cognates, while the peak centered a positive score values
@@ -1107,7 +1198,7 @@ changes, was described by \citet{Hruschka:14}. Similarly, the parsimony
 approach used by \citet{Steiner:11a} inherently yields non-symmetric models
 of regular sound changes.
 
-\TB{Another difference between the phylogenetic problem in computational
+Another difference between the phylogenetic problem in computational
   biology and linguistics arises from the nature of the evidence.  Genetic
   material being analyzed comes from individuals in a population, and the
   computed phylogenetic tree is an approximation to the genealogical
@@ -1141,7 +1232,7 @@ of regular sound changes.
   approach carries over the mathematics already developed to deal with
   historical processes in biology to this domain without a false
   reduction of linguistic or cultural traits to genetic sequences or
-  genes.}
+  genes.
 
 \subsubsection{Deep phylogeny and its limitations.} 
 

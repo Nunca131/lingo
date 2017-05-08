@@ -383,7 +383,7 @@ two-fold. First, it allows us to identify the cases where \emph{the
   the very least, approximated from the observable data.} Second, as the
 amount of data increases, it allows one to \emph{systematically} improve
 the model using techniques like ancestral recombination
-graphs~\cite{Hudson:91,Griffiths:97,Arenas:13,Rasmussen:14} well known in
+graphs~\cite{Hudson:91,Griffiths:97,Arenas:13,Rasmussen:14}\NEW{,} well known in
 the biological phylogenetic literature.
 \TODO{The logic here is unclear. Cf. the comment above that we never actually
 told how only using tree-models tells us whether they are appropriate
@@ -637,7 +637,7 @@ of co-occurrence counts as the scoring model.
 \centering
 \includegraphics[width=0.5\textwidth]{figures/soundChangeLaws_vs_scoringModels.eps}
 \caption{A hypothetical language tree for 5 (proto-)languages (dark blue)
-  and one (proto-)sound (pink). Greek letter correspond to reconstructed
+  and one (proto-)sound (pink). Greek letter\NEW{s} correspond to reconstructed
   proto-languages and proto-sounds and Latin letters to the observed sounds
   and languages. Sound change laws (typically used by linguists, turquoise)
   and scoring models (used in quantitative methods, dark green) describe
@@ -647,7 +647,7 @@ of co-occurrence counts as the scoring model.
   cumulative effect of the sound changes in the languages under
   investigation. For example, the scoring model (dashed-dotted lines) would
   state that $a$ from language $A$ is often found at those positions in the
-  words where language $B$ has sound $b$. It thus indirectly imply that $a$
+  words where language $B$ has sound $b$. It thus indirectly \NEW{implies} that $a$
   and $b$ originate from the same proto-sound. The sound change laws
   (straight lines, i.e. branches of the language tree) would state that
   there is a proto-sound ${}^*\delta$ which changed into $a$ in language
@@ -922,7 +922,7 @@ capture them, k >= 3 is not necessary as adding transposition operations
 to the Needleman & Wunsch algorithm still keeps it polynominal.}
 and
 regular sound changes dependent on longer contexts, or even word harmony
-features. The definition of scores described above generalized in a
+features. The definition of scores described above generalize in a
 straightforward manner since the symbols $\alpha$ and $\beta$ may signify
 arbitrary combinations of sounds. In practice, however, the sparsity of the
 available data is a limiting factor: not all $3$-grams that are possible in
@@ -993,7 +993,7 @@ and specificity of the cognate assignment for each choice of the score
 cutoff value: sensitivity is the fraction of the true positive cognate
 pairs with an alignment score at least as large as the cutoff value;
 specificity measures the fraction of non-cognates with an alignment score
-smaller than the cutoff. Each cutoff values thus yields a pair of
+smaller than the cutoff. Each cutoff value thus yields a pair of
 sensitivity and specificity values that quantify how well the score-based
 separation between cognates and non-cognates performs. It is customary to
 summarize the values in the form of the \textit{Receiver-Operator-Curve}
@@ -1049,8 +1049,8 @@ correspondence is higher in this part of the vocabulary.
 
 \subsubsection{Comparing the two approaches.} 
 
-At face value the two approaches outlined above are quite different.  The
-focus on alignments and their score conforms more closely to the paradigm
+At face value the two approaches outlined above are quite different. The
+focus on alignments and their score\NEW{s} conforms more closely to the paradigm
 of sequence comparison in computational biology, while the comparison of
 probabilistic models focuses on the evolutionary processes and is somewhat
 closer to the traditional conceptualization in linguistics.  Nevertheless,
@@ -1886,7 +1886,7 @@ approximation of reality. With vastly incomplete knowledge, therefore, the
 choice between the likelihood based parametric approaches and the
 non-parametric approaches described earlier is, essentially, a trade-off
 between efficiency and robustness against model misspecifications, \ie{}
-producing the correct results even though some aspects or parameter of the
+producing the correct results even though some aspects or parameter\NEW{s} of the
 model are wrongly estimated.
 
 Both classes of approaches---the parametric likelihood based models and the
@@ -1898,13 +1898,13 @@ and in very heterogeneous, rapidly changing, or extremely long time
 durations the changes in process can be averaged over and approximated by
 an additional uncorrelated noise. At intermediate times that is often the
 most interesting, however, non-stationarity of the process is an important
-problem. Non-stationarity in this cases usually means that the probability
+problem. Non-stationarity in \NEW{these} cases usually means that the probability
 distributions of sound changes change over time or that the scoring model
 are different depending on the age of the words. Two partial solutions
 ameliorate this somewhat. First, one can test the assumption of
 uniformity~\cite{Hruschka:14} in the data set under consideration, so that
 this and other modes of model failure can be quantified and incorporated in
-the final confidence interval.\footnote{The confidence interval describe
+the final confidence interval.\footnote{The confidence interval describe\NEW{s}
   the range of a parameter in which one expects the true value for this
   parameter to lie. For example, if we would know that there are
   differences in the rates with which sound changes happen, we could ignore
@@ -2279,7 +2279,7 @@ $\delta=0.014$ providing an estimate for the fraction of words that have a
 similar copy with similar meaning. This simple analysis indicates that word
 paralogy is a pervasive phenomenon across essentially all language groups
 that deserves a more detailed investigation in the future since
-\textsc{all} language have a $\delta$-value larger than zero.
+\NEW{all} language\NEW{s} have a $\delta$-value larger than zero.
 
 \subsection{Polysemy.} 
 
@@ -2323,7 +2323,7 @@ by a polysemy. The figure \ref{fig:semanticnet} shows an aggregated network
 obtained from the entire set of languages. A randomization test showed that
 the polysemy relations were statistically universal across the
 languages---the network of relationships captured by any random subset of
-languages were significantly correlated with that obtained from the
+languages \NEW\{was} significantly correlated with that obtained from the
 complementary subset, but different from what one would expect merely from
 the amount of polysemy observed for the different words. With further work,
 this should be translated into an empirical prior on the capacity of
@@ -2377,8 +2377,8 @@ comparative-historical databases created by various members of the program.
 
 \section{Measuring the success of statistical methods.}
 
-We described in the previous sections several statistical \NEW{methods} and
-discussed their application of different aspects of language evolution.  We
+\NEW{In the previous sections w}e described several statistical \NEW{methods} and
+discussed their application\New{s to} different aspects of language evolution.  We
 demonstrated in sample application that the results are reasonable.  One
 might argue, however, that we chose \QUOTE{simple} cases where the answer
 is already known. This may not immediately convince the reader that the
@@ -2390,8 +2390,8 @@ method or a specific software tool has been well studied in the context of
 computational biology. In this section, we sketch these methods of
 verification with examples relevant to historical linguistics.
 
-Statistics provides measure for the confidence in the results produced by a
-computational method. Throughout this constribution we have used three of
+Statistics provides \NEW{a} measure for the confidence in the results produced by a
+computational method. Throughout this \NEW{contribution} we have used three of
 these measures: specificity, sensitivity, and the FDR (see
 Figs.~\ref{fig:DanROC} and \ref{fig:FDR}). Sensitivity and specificity are
 calculated with respect to a known ground truth, often called the
@@ -2460,10 +2460,10 @@ this paper, are model independent. They allow tests of phylolinguistic
 hypotheses even in the complete absence of mechanistic or detailed
 statistical models.
 
-\PFS{In our presentation above we have highlighted but a few aspects of
+In our presentation above we have highlighted but a few aspects of
   language evolution. There are, of course, numerous others. Grammatical
   features, for example, are subject to evolutionary turnover as well.  The
-  work of \citet{Dunn:11} highlights an important issue: on the one hand,
+  work of \citet{Dunn:11} highlights an important issue\NEW{,} on the one hand,
   features of language may well be correlated. On the other hand, most
   regularities are of a statistical nature rather than absolute
   ``universals''. Phylogenetic relatedness naturally introduces such
@@ -2481,7 +2481,7 @@ statistical models.
   a mechanistic explanation for most of the statistically signficant
   sound-meaning associations---but we could quite easily incorporate them
   into the background statistics used, e.g., for cognate detection,
-  with the effect of increasing sensitivity. }
+  with the effect of increasing sensitivity.
 
 Computational linguistics methods have the potential to carry out all the
 major steps of historical reconstruction starting with lexical data,
@@ -2560,7 +2560,7 @@ might have remained hidden from the perspective only of manual
 reconstruction. Sixth, even in the \QUOTE{hard} cases where signals are
 weak or multiple signals overlayed, computational methods can come in
 handy. Computational methods do not simply return whether a hypothesis is
-true or not but rather how likely they are. Thus, when data is noisy,
+true or not but rather how likely they are. Thus, when data \NEW{are} noisy,
 different hypotheses can be tested and unlikely hypotheses can be
 discarded. Discordant results from application of different methods may
 point to hypotheses resolving the apparently incoherent array of
@@ -2587,7 +2587,7 @@ hypotheses, but also a scored list of evidence that supports and refutes
 any hypothesis. This can focus the valuable time of researchers in
 understanding and weighting the contradictions. This then is the division
 of labor that one can envisage: linguistic knowledge alone prescribes
-\textsc{what questions are interesting and what constitutes adequate
+\NEW{what questions are interesting and what constitutes adequate
   support for or against them---how this is done is what the focus on
   computational linguistics should be.}
 
@@ -2598,11 +2598,11 @@ of labor that one can envisage: linguistic knowledge alone prescribes
   alignment algorithm}
 \label{AppA}
 
-Word alignment are performed with an extension of Needleman-Wunsch
+Word alignment\NEW{s} are performed with an extension of Needleman-Wunsch
 algorithm \cite{needleman:70} that computes optimal alignment for linear
 gap cost models such as the Levenshtein distance \cite{Levenshtein:66}. The
 linear gap model is not ideal, however. Instead, it is desirable to
-penalize longer gaps subadditively. The simplest such model are affine gap
+penalize longer gaps subadditively. The simplest such model \NEW{uses} affine gap
 costs, in which the opening of gap incurs higher costs than gap
 extensions. An efficient dynamic programming algorithm for this version of
 the problem was given by \citet{Gotoh:82}. In order to accommodate
@@ -2660,7 +2660,7 @@ frequencies:
 Here $N$ is the total number of bigrams. The small correction
 $\varepsilon$ can be interpreted as the uncertainty about the probability
 of non-observed events. The use of pseudo-counts has the benefit that all
-all scores remain finite. For the scoring model employed here we used
+scores remain finite. For the scoring model employed here we used
 $\varepsilon=3$. 
 
 \clearpage

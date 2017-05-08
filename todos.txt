@@ -258,3 +258,147 @@ on p. 13). As the admixture model and NeighborNet methods central to Bowern
 example to devote so much space to. I would reconsider whether this section
 is necessary at all, especially since Section 3.8 segues abruptly back to
 methodological matters.
+
+
+On page 2, lines 26-29 it is argued that 'individual sound-meaning correspondences encoded as lexical roots' might be particularly prone
+to homoplasy. Insofar as sound-meaning correspondences are arbitrary (i.e. excluding things like iconicity), we might expect relatively low
+rates of homoplasy in these items. Typological features of language might be a clearer example to use to illustrate the notion of homoplasy in 
+linguistic traits.
+
+Page 2, line 41: the term "neutral traits" is used. I interpret this to mean traits that are neither benificial nor detrimental to an
+individual w.r.t. selectional forces, but I am not confident that this is the interpretation intended by the authors. I recommend clarifying
+this, particularly for the benefit of readers who may not have extensive backgrounds in evolutionary theory.
+
+Page 5, line 30: What do you mean by "the more distant languages"? I could imagine this being true for poorly attested languages, and languages
+in families where the general level of documentation is poor.
+
+Page 6: The idea of automatic cognate detection is discussed in several paragraphs on this page. You may want to consider referencing List, Greenhill,
+and Gray (2017) The potential of automatic word comparison for historical linguistics. PLoS One 12(1): e0170046. doi:10.1371/journal.pone.0170046.
+That paper provides a good discussion of the problem of computational detection of cognates and compares some methods for doing so.
+
+Page 6, lines 14-25: The discussion of Swadesh lists ignores their shortcomings, specifically non-universal nature of some meanings (e.g. dog, generic 
+tree), semantic relationships that may influence forms of multiple items (e.g. moon/night, red/blood), noun-heaviness, etc.A reference to 
+an article discussing some of this would provide some balance. One article that illustrates many of these issues is Hoijer (1956) 
+Lexicostatistics: A critique. Language 32(1): 49-60. I suspect there are more recent pieces that would also suffice.
+
+Page 7, lines 10-11: Since you are discussing graphemes (orthographic units), and not necessarily different phonemes here, shouldn't you use angle
+brackets such as <k'> instead of the combination of phonemic notation slashes and parentheses currently used?
+
+Page 7, lines 14-16: Leaving the sequences of characters to be handled later leaves the reader wondering, at this point in the paper, how this will
+be resolved. A reference to where it is resolved would be useful.
+
+Page 7, lines 25-28: This is the first mention of the term "scoring model" in this section, I believe. Because this is a very important concept
+for this section I recommend that you introduce it in caps (in keeping with other technical terms), and provide a brief definition. Alternatively
+the term could be introduced in the first paragraph of the sub-section, since it is indeed the focus of this sub-section.
+
+Page 9, lines 12-15: What evidence supports this claim that there is sufficient signal in real cognate pair alignments for correct sound
+correspondences to be identified in spite of some false positives/wrong alignments?
+
+Page 10, lines 31-33: I infer that "gaps" here has to do with insertions/deletions, but the reader has no way of knowing exactly how this
+term is being used; I recommend making the intended meaning clearer.
+
+Page 10, lines 31-37: The reader may be left wondering about situations where one sound/symbol in language A corresponds to two in language B
+(e.g. Spanish puerta - Italian porta, or instances where two symbols correspond to a single sound in one language). This is one of the reasons 
+that I recommend consolidating the discussion of representational issues and being more explicit about what "gaps" are in this method.
+
+Page 14, figure 5 caption: I don't think the last sentence ("Note that although only a small detail...") is necessary given the descriptions
+earlier in the caption.
+
+Page 14, lines 44-45: The "regular correspondences" you refer to here are the same as the "table of regular correspondences" you mention on
+line 41 of page 12, correct? I suspect that some historical linguists will expect that all uses of the term "regular" in relation to sound
+changes/correspondences will mean "regular" in the strict Neogrammarian sense. It would be good to be explicit somewhere in this sub-section
+about whether "regular correspondences" does in fact mean "exceptionless" as in the Neogrammarian usage.
+
+Page 16, lines 11-25: This paragraph is a bit dense, and might be easier to read if some of the ideas were rephrased or "unpacked" a bit.
+
+Page 17, lines 13-17: There seem to be some missing references here.
+
+Page 17, lines 29-33: It is not entirely clear what this sentence means, or how to evaluate the claim here without knowing exactly what you
+mean by 'random' mutations in this linguistic context. Do you mean sporadic changes? Either some clarification or a reference to some supporting
+discussion would be very helpful.
+
+Page 20, lines 40-48: The permutation test in linguistics dates back to Oswalt (1970) The detection of remote linguistic relationships. Computer
+Studies in the Humanities and Verbal Behaviour 3: 117-129. It was also discussed in great detail in Kessler (2001). The significance of word
+lists. CSLI Publications. Diachronica papers by Haynie (2014) and Dunn and Terrill (2012) have also used permutation tests to assess relationships.
+Any of these references would be good additions to this background on permutation tests.
+
+Page 34, line 48: I cannot find any information on the EHL website cited here on the work being done there on semantic shift. If it is not possible
+to cite outcomes of that work it may be preferable to omit the discussion of that work in progress.
+
+Page 36, line 55: Though analogical change is sometimes treated as a "garbage bin" of marginal, non-regular changes, the phenomenon is really
+not that rare (certainly not in the same class of unusual "phonetic processes" as metathesis, though of course metathesis can happen by 
+analogy...). Non-regular does not mean rare. Nor is it the case that analogical changes are inherently non-regular. It's a little unclear,
+therefore, exactly what you are trying to single out here as being poorly handled by these methods.
+
+
+Awkward wording:
+
+Page 3, line 9: "with the help of"
+
+Page 6, lines 27-32: This sentence is long and difficult to parse without a second reading. I recommend rewording it.
+
+Page 8, line 46: "Another example is *due to* Heggarty"
+
+Page 9, line 8: "part of the cognate pairs"
+
+Page 11, line 26: Word boundaries aren't really an 'imperfect proxy' for syllable boundaries. Rather, they are a restricted subset of syllable boundaries
+that are recoverable from orthographic representations.
+
+Page 13, lines 33-36: "the enrichment of cognates"
+
+Page 13, line 41: "while the comparison of probabilistic models" -- do you mean the "alternative"?
+
+Page 13, line 43: These methods aren't equivalent from a traditional historical linguist's perspective, and probably wouldn't deserve any
+lengthy discussion as alternatives if they were truly equivalent. Perhaps a different word choice or a modifier on "equivalent" would make 
+more sense here.
+
+Page 18, line 28: Do you mean "typographical errors"? As written, the meaning of this sentence is unclear.
+
+Page 18, line 47: I understand the meaning you intend with "sound difference", but "patterns of sound change" might be preferable wording.
+
+Page 19, line 47: "It should be noticed" (recommended: "It should be noted")
+
+Page 20, line 17: "Let us flesh out with more detail a concrete example." (recommmended: "...flesh out a concrete example in more detail.")
+
+Page 24, lines 51-52: The final sentence of this paragraph needs to be reworded for clarity.
+
+Page 28, line 24: "After the settlement of British settlers in the island (...), native population experienced..."
+
+Page 28, line 26: "...with different accounts differing in..."
+
+Page 29, line 30: "To obtain the dates of unknown events from the dates of a few known events needs a model..." ("requires a model"?)
+
+
+
+
+Missing/superfluous/incorrect functional words:
+
+Page 7, line 32: "over evolutionary time-scale"
+
+Page 9, line 33: "compare it a simpler model"
+
+Page 11, line 28: "even for bigram model"
+
+Page 11, line 36: "the analysis where" (recommended: "the analysis for which")
+
+Page 11, line 45: "deleterious effect from false positives" (recommended: "of false positives")
+
+Page 12, line 30: "assumptions on how exactly languages evolve" (recommended: "about how...")
+
+Page 13, line 30: "In the Fig. 5" (delete "the")
+
+Page 17, line 29: "Similarity serves only a first filter"
+
+Page 26, line 18: "...but do not need to specified..."
+
+Page 31, line 26: "random places in word list"
+
+Page 33, line 47: "assessment on the patterns..." (recommended: "of the patterns")
+
+Page 33, line 54: "The figure 12" (recommended: "Figure 12")
+
+Page 35, line 7: "their application[s] of different aspects..." (recommended: "to different aspects")
+
+Page 35, line 8: "We demonstrated in sample application"
+
+Page 39, line 43: "to accommodate the systematic silencing a phone" ("of a phone"?)

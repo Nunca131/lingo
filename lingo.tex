@@ -213,7 +213,7 @@ metaphor in the history of linguistics. In: Fangerau, H., H. Geisler, T.
 Halling, and W. Martin (eds.): Classification and evolution in biology,
 linguistics and the history of science. Concepts – methods – visualization.
 Franz Steiner Verlag: Stuttgart. 111-124.
-}
+PS(Nancy): whoever had access to this, fix it! Getting access is highly complicated.}
 These early roots predate Darwin's first
 sketch of an evolutionary tree of species, possibly drawn in 1837. Early
 work on phylogenetics in biology has been grounded in detailed expert
@@ -306,8 +306,8 @@ classified as close relative of molluscs based on DNA that, as it turned
 out later, represented its food rather than the animal itself. It was later
 placed based on genome-wide sequencing data within the Deuterostomes, the
 animal clade that also includes vertebrates \cite{Bourlat:06}, only to be
-\TT{demoted} again earlier this year to one of the most basal bilaterian
-branches with the help of data for related species \cite{Rouse:16}. This
+\TT{demoted} again earlier \NEW{last} year to one of the most basal bilaterian
+branches \NEW{by means} of data for related species \cite{Rouse:16}. This
 underlines the fundamental importance of basing phylogenetic reconstruction
 on multiple, independent feature sets.
 \TODO{I fail to see that the example of Xenoturbella underlines this conclusion.
@@ -627,7 +627,7 @@ is that unlike phonemes, the elementary tokens of biological sequences are
 uniquely identifiable across the taxa; for amino acids this is rooted in
 their distinct, functionally salient, chemical properties, and for
 nucleotides it follows from the extremely slow change of the genetic code
-over evolutionary time-scale. In languages, on the other hand, the phonetic
+over evolutionary \NEW{time}. In languages, on the other hand, the phonetic
 representation of the corresponding phonemes is the fastest process of
 change, and needs to be inferred from the data. If alignments of the
 cognates were known \textit{a priori}, one could simply use log-odds ratios
@@ -694,7 +694,7 @@ create an initial, crude similarity measure to propose a tentative
 alignment. The rule can be very simple. \citet{Steiner:11a}, for example,
 only discouraged matches between vowels and consonants, disallowed
 transpositions (metathesis), and put more weights on identities of
-consonants than vowels. Another example is due to \citet{Heggarty:00}, who
+consonants than vowels. Another example is \NEW{is given by} \citet{Heggarty:00}, who
 first used the manually curated proto-forms of the words under study to
 infer matches, and then counted the number of phonetic and articulatory
 features in which the aligned segments differ. It may come as a surprise
@@ -709,7 +709,7 @@ two evolutionary unrelated words is a very low bar.
 
 These methods ultimately utilize the strength of regularities in linguistic
 correspondence. Even a very rough and simplistic model for sound changes
-suffices to identify at least part of the cognate pairs in the data
+suffices to identify at least \NEW{a proportion} of the cognate pairs in the data
 set. Given the rarity of metatheses, the pairwise alignments of these
 cognates preferentially match corresponding sounds with each other.  The
 key observation is that all this needs is an enrichment of cognates in the
@@ -740,7 +740,7 @@ model liquids and glides explicitly from the outside.
 A more sophisticated scoring model that takes into account the neighboring
 phonetic context can also be estimated from the initial alignments of
 cognates. Here, we explore the utility of a bigram-based scoring model and
-compare it a simpler model with unigram scores. The idea behind the
+compare it \NEW{to} a simpler model with unigram scores. The idea behind the
 computation of the scoring function is the same for both model\NEW{s}. Likely
 correspondences of sounds will appear more often than expected by chance in
 an alignment of cognate words. This holds true for both unigrams and
@@ -864,9 +864,13 @@ from non-cognates. This is not unexpected since regular correspondences are
 often sensitive to neighboring phonetic contexts, and a large amount of the
 context sensitivity can be accounted for by looking at one neighboring
 sound along with word boundaries, an imperfect proxy for syllable
-boundary. In more difficult cases, such as the Guaycuruan example, the
+boundary. 
+\TODO{Word boundaries aren't really an 'imperfect proxy' for syllable 
+boundaries. Rather, they are a restricted subset of syllable boundaries
+that are recoverable from orthographic representations.}
+In more difficult cases, such as the Guaycuruan example, the
 situation is far from perfect. Here the cognates are not completely
-separated from the non-cognates by the \textit{nscore} even for bigram
+separated from the non-cognates by the \textit{nscore} even for \NEW{the} bigram
 scoring model. This leaves us with two possibilities: (1) We can seek to
 further improve the scoring model. Below we will briefly discuss a few
 ideas in this direction. (2) We can accept that the computational method
@@ -875,7 +879,7 @@ does not provide us with a perfect way to identify \emph{all} cognates,
 cognates: word pairs that are not truly cognates despite their good score)
 and false negatives (unidentified cognates: word pairs that we fail to
 recognize as cognates because their score is not large enough). The choice
-of the threshold is left to us. Depending on the analysis where such
+of the threshold is left to us. Depending on the analysis \NEW{for which} such
 cognate identification is needed, we may opt for a conservative strategy
 and minimize the false positives at the expense of missing some cognate
 pairs, or we may choose to be more inclusive and allow some false positives
@@ -889,7 +893,7 @@ the authors cite, so the inability to provide a yes/no answer is
 incompleteness rather than a virtue.}
 Any further
 deductions obtained from such putative cognates can weight the evidence by
-this score, thereby lowering the deleterious effect from false positives.
+this score, thereby lowering the deleterious effect \NEW{of} false positives.
 Alternatively, of course, the permissive cognate list could be
 post-processed to identify and remove false cognates based on expert
 knowledge, with manual effort being allocated more to cognate pairs with
@@ -919,7 +923,7 @@ for $k\ge3$. Such a model would also take care of local transposition
 \TODO{These were assumed to be so few as to negligible earlier in the paper
 so that is not much of an improvement. But if it were important to
 capture them, k >= 3 is not necessary as adding transposition operations
-to the Needleman & Wunsch algorithm still keeps it polynominal.}
+to the Needleman\NEW{-}Wunsch algorithm still keeps it polynominal.}
 and
 regular sound changes dependent on longer contexts, or even word harmony
 features. The definition of scores described above generalize in a
@@ -940,7 +944,7 @@ to our knowledge, not been explored so far.
 
 The approach outlined above is designed to represent the relationships
 between the observable data as directly as possibly, without making \emph{a
-  priori} assumptions on how exactly languages evolve. An alternative
+  priori} assumptions \NEW{about} how exactly languages evolve. An alternative
 approach is to start by approximating language evolution as a stochastic
 process acting on the phonetic and lexical structure of a language. From
 the definition of the stochastic process the conditional probability
@@ -1011,7 +1015,7 @@ calculates the area under the curve (AUC), which is $1.0$ for an ideal
 test. Mathematically, the AUC represents how often the test assigns a
 higher score to a random cognate pair as compared to a random non-cognate
 pair, and is, therefore, a threshold independent characterization of the
-quality of the scoring system. In the Fig.~\ref{fig:DanROC} the AUC is
+quality of the scoring system. In Fig.~\ref{fig:DanROC} the AUC is
 $0.9$.
 
 \begin{figure}
@@ -1044,7 +1048,7 @@ subsections to detect changes conditioned by known phonetic contexts, \eg{}
 position within the word, neighboring phonemes or harmony. It is also
 possible to weight the commonly used words belonging to the core vocabulary
 more than the rare words in deriving the correspondence table, reflecting
-the expectation that the enrichment of cognates and the regularity of
+the expectation that the \NEW{proportion} of cognates and the regularity of
 correspondence is higher in this part of the vocabulary.
 
 \subsubsection{Comparing the two approaches.} 
@@ -1053,10 +1057,17 @@ At face value the two approaches outlined above are quite different. The
 focus on alignments and their score\NEW{s} conforms more closely to the paradigm
 of sequence comparison in computational biology, while the comparison of
 probabilistic models focuses on the evolutionary processes and is somewhat
-closer to the traditional conceptualization in linguistics.  Nevertheless,
+closer to the traditional conceptualization in linguistics. 
+\TODO{do you mean the "alternative"}
+Nevertheless,
 the two methods are largely equivalent and can answer essentially the same
 questions, albeit using different mathematical and computational
 techniques.
+\TODO{These methods aren't equivalent from a traditional historical 
+linguist's perspective, and probably wouldn't deserve any
+lengthy discussion as alternatives if they were truly equivalent. 
+Perhaps a different word choice or a modifier on "equivalent" would make 
+more sense here.}
 
 The likelihood method, for example, does not directly produce a scoring
 model. The results are, however, consistent with a scoring model.  First,
@@ -1070,7 +1081,7 @@ proto-sounds. Well understood methods from computational biology are
 available, however, to infer ancestral states given observable transition
 probabilities \cite{Pennisi:05,Liberles:07}. At present there is no method
 to infer sound changes rules directly from a scoring system. 
-\TODO{At least cite Holman & Wichmann's paper in Language for the discussion
+\TODO{At least cite Holman and Wichmann's paper in Language for the discussion
 even though it does not infer the direction of sound changes.}
 Mathematically
 this should be possible, however, and we take it on as an interesting open
@@ -1282,7 +1293,7 @@ Another difference between the phylogenetic problem in computational
 
 \subsubsection{Deep phylogeny and its limitations.} 
 
-Similarity serves only a first filter for relatedness. In fact, the rate of
+Similarity serves only \NEW{as} a first filter for relatedness. In fact, the rate of
 \QUOTE{random} mutations variously affecting the sounds in individual words
 is so low that the method of comparative historical linguistics stipulates
 that only regular correspondences can be invoked to support the recent
@@ -1346,6 +1357,7 @@ Markov model could be trained to learn the probabilistic patterns in the
 sequence of characters composing the words of a particular language and
 extremely rare occurences of characters or sequence of characters can then
 be flagged for manual verification.
+\TODO{Do you mean "typographical errors"? As written, the meaning of this sentence is unclear.}
 
 \subsubsection{The effects of borrowing.} 
 
@@ -1367,7 +1379,7 @@ for sequences and it is not obvious how they can be used in the manner
 mentioned).}
 
 It is generally believed that the vertically transmitted patterns of sound
-difference between two language lineages form consistent systems applying
+\NEW{change} between two language lineages form consistent systems applying
 to all or nearly-all words they affect, even if the sounds themselves have
 diverged widely. Isolated loan words may show similarities of sound
 patterning with other languages, but they should not in general assemble
@@ -1437,7 +1449,7 @@ from raw data to the estimate of trees, regular sound changes or
 alignments. However, the whole enterprise relies on the assumption that
 there is a bona fide phylogenetic signal in the data. Furthermore, we have
 listed a few factors that might account for the absence of a such a
-signal. It should be noticed that the methods discussed before will yield
+signal. It should be \NEW{noted} that the methods discussed before will yield
 an answer even if the data at hand is essentially structureless noise---in
 other words, the fact that a tree can be produced is not a guarantee that
 it bears any meaningful information with respect to genealogy.
@@ -1462,7 +1474,7 @@ related) to persist in the quest for genealogical relatedness. Even then,
 for such a postulate of relatedness to be entertained, an explanation, such
 as a large time depth, for the absence of a signal has to be given.
 
-Let us flesh out with more detail a concrete example. In the case of
+Let us flesh out \NEW{a concrete example in more detail}. In the case of
 cognate judgments based on similarity scores, for example, one could
 construct a null model to test that pairs of cognates are more similar than
 pairs of non-cognates. Let us assume that we know, for a particular scoring
@@ -1513,7 +1525,7 @@ literature, we elaborate on the example in Fig.~\ref{fig:permut}.
 \TODO{I am surprised to learn it is underappreciated. It's been all over the
 place in quantatitative linguistics at least since Oswalt (1970)
 
-Oswalt, Robert L. (1970}. The detection of remote linguistic relationships.
+Oswalt, Robert L. (1970). The detection of remote linguistic relationships.
 Computer Studies in the Humanities and Verbal Behavior 3:117-129.
 
 See also many non-quantitative papers in the long-ranger literature for the
@@ -1749,6 +1761,7 @@ dataset. Then we compared the results between the native and the
 artificially recoded set. We found that 97\% of the cognates pair called in
 at least one data set, are also called in both cognate sets (see
 Fig.~\ref{fig:encoding}a).
+\TODO{The final sentence of this paragraph needs to be reworded for clarity.}
 
 \begin{figure}
   \begin{center}
@@ -1827,7 +1840,7 @@ does not need to include the sound changes but can infer them indirectly
 from the scoring model. The exact scores for matching the observed
 characters can also be estimated based on the data. All these parameters,
 namely the phylogeny and scores, would be defined \textit{a priori} in a
-parametric method but do not need to specified in the non-parametric case.
+parametric method but do not need to \NEW{be} specified in the non-parametric case.
 
 When applying the non-parametric approaches we discussed before, one needs
 to choose the similarity measure that can be used to classify the related
@@ -1978,9 +1991,14 @@ prominent case is that of the Tasmanian languages, discussed in detail in
 settlement of British settlers in the island (mostly during the 19$^{\rm
   th}$ century), native population experienced a sharp decrease in number
 followed by what is usually perceived as a decomplexification process in
-their material culture. Little evidence about the cultural organization of
+their material culture. 
+\TODO{"After the settlement of British settlers in the island (...), 
+native population experienced..."}
+Little evidence about the cultural organization of
 the Tasmanian people has survived, with different accounts differing in the
-degree of unity or diversity across the island. To worsen the situation,
+degree of unity or diversity across the island. 
+\TODO{"...with different accounts differing in..."}
+To worsen the situation,
 few Paleolithic archeological sites exist, and the climatic conditions of
 the island do not favor the conservation of artifacts. The genetic
 information provides limited help since considerable European admixture
@@ -2044,7 +2062,7 @@ studied the expansion of the Austronesian family while constraining the age
 of some of its sub-families on evidence from archeology.
 
 To obtain the dates of unknown events from the dates of a few known events
-needs a model about the rates of change; equally, however, the known dates
+\NEW{requires} a model about the rates of change; equally, however, the known dates
 allow one to evaluate any assumption one makes about them. The original
 proposal of glottochronology was to assume that the number of cognate
 retentions of two languages diverging at a given time decays exponentially
@@ -2061,7 +2079,7 @@ rate constancy (better than Bergsland and Vogt):
 
 Blust, Robert. (2000) Why lexicostatistics doesn't work: the
 'universal constant' hypothesis and the Austronesian languages. In
-Colin Renfrew, April McMahon & Robert Lawrence Trask (eds.), Time
+Colin Renfrew, April McMahon and Robert Lawrence Trask (eds.), Time
 depth in historical linguistics (Papers in the prehistory of languages
 2), 311-331. Cambridge: McDonald Institute for Archaeological
 Research.}
@@ -2182,7 +2200,7 @@ words in word list data. As discussed above, the IDS data~\cite{IDS} are
 grouped into \QUOTE{chapters} that correspond to very broad semantic
 categories. We can therefore structure our analysis in the following
 manner: If two similar words are completely unrelated and accidental, then
-they will appear at random places in word list. On the other hand,
+they will appear at random places in \NEW{the} word list\NEW{s}. On the other hand,
 paralogous cognates will retain some semantic similarity and hence
 predominantly appear within the same chapter of the IDS word list. It is
 important to recall that our purpose is to check whether there is evidence
@@ -2311,7 +2329,7 @@ patterns of polysemy across the world's languages.
 \label{fig:semanticnet}
 \end{figure}
 
-A recent work~\cite{Youn:16} provides a quantitative assessment on the
+A recent work~\cite{Youn:16} provides a quantitative assessment \NEW{of} the
 patterns of polysemy using cross-linguistic dictionaries. When a word in a
 meta-language is translated to a language of interest, additional meanings
 may appear if the word is polysemous in the language. The study builds a
@@ -2319,11 +2337,11 @@ collection of cross-linguistic polysemies for a few concepts chosen from
 Swadesh list across a set of languages sampled to be representative of
 worldwide diversity. Then, a semantic network is constructed for each
 language where nodes denoting concepts are linked if they are represented
-by a polysemy. The figure \ref{fig:semanticnet} shows an aggregated network
+by a polysemy. \NEW{Fig.}~\ref{fig:semanticnet} shows an aggregated network
 obtained from the entire set of languages. A randomization test showed that
 the polysemy relations were statistically universal across the
 languages---the network of relationships captured by any random subset of
-languages \NEW\{was} significantly correlated with that obtained from the
+languages \NEW{was} significantly correlated with that obtained from the
 complementary subset, but different from what one would expect merely from
 the amount of polysemy observed for the different words. With further work,
 this should be translated into an empirical prior on the capacity of
@@ -2378,8 +2396,8 @@ comparative-historical databases created by various members of the program.
 \section{Measuring the success of statistical methods.}
 
 \NEW{In the previous sections w}e described several statistical \NEW{methods} and
-discussed their application\New{s to} different aspects of language evolution.  We
-demonstrated in sample application that the results are reasonable.  One
+discussed their application\NEW{s to} different aspects of language evolution.  We
+demonstrated in \NEW{the} sample application that the results are reasonable.  One
 might argue, however, that we chose \QUOTE{simple} cases where the answer
 is already known. This may not immediately convince the reader that the
 methods will also work in \QUOTE{hard} cases, where the signal is weak and
@@ -2646,7 +2664,7 @@ are the gap opening penalties, while $\delta_P(\,.\,)$ and $\delta_Q(y_j)$
 are the smaller gap extension penalties.
 
 The gap penalties may depend on the language pair and the sound, \eg{} to
-accommodate the systematic silencing a phone. Here we use language and
+accommodate the systematic silencing \NEW{of} a phone. Here we use language and
 sound independent parameters ($3.5$ for gap open and gap extent). The
 (mis)match scores are estimated according to equ.(\ref{eq:score}). Since
 the amount of available data is limited, we use the well-established method

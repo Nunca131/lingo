@@ -20,23 +20,24 @@ the issues touched by the present paper equally or better:
 
 List, J.-M. (2016): Beyond cognacy: Historical relations between words and
 their implication for phylogenetic reconstruction. Journal of Language
-Evolution 1.2. 119-136.
+Evolution 1.2. 119-136. (unsuited? Nancy)
 
 List, J.-M., J. Pathmanathan, P. Lopez, and E. Bapteste (2016): Unity and
 disunity in evolutionary sciences: process-based analogies open common
 research avenues for biology and linguistics. Biology Direct 11.39. 1-17.
+(unsuited? Nancy)
 
 Dunn, Michael. (2014) Language phylogenies. In Claire Bowern & Bethwyn
 Evans (eds.), The Routledge Handbook of Historical Linguistics,
-190-211. New York: Routledge.
+190-211. New York: Routledge. (unsuited? Nancy)
 
 Kondrak, Grzegorz. (2009) Identification of Cognates and Recurrent
 Sound Correspondences in Word Lists. Traitement Automatique des
-Langues 50(2):201-235.
+Langues 50(2):201-235. (unsuited? Nancy)
 
 Levinson, Stephen C. and Russell D. Gray. 2012. Tools
 from evolutionary biology shed new light on the diversification
-of languages. Trends in Cognitive Sciences 16(3):167–173.
+of languages. Trends in Cognitive Sciences 16(3):167–173. (unsuited? Nancy)
 
 Also on the matter of cognate identification, there's really not much that
 stands out in the present paper as opposed to the existing literature (which
@@ -333,72 +334,4 @@ therefore, exactly what you are trying to single out here as being poorly handle
 
 Awkward wording:
 
-Page 3, line 9: "with the help of"
-
-Page 6, lines 27-32: This sentence is long and difficult to parse without a second reading. I recommend rewording it.
-
-Page 8, line 46: "Another example is *due to* Heggarty"
-
-Page 9, line 8: "part of the cognate pairs"
-
-Page 11, line 26: Word boundaries aren't really an 'imperfect proxy' for syllable boundaries. Rather, they are a restricted subset of syllable boundaries
-that are recoverable from orthographic representations.
-
-Page 13, lines 33-36: "the enrichment of cognates"
-
-Page 13, line 41: "while the comparison of probabilistic models" -- do you mean the "alternative"?
-
-Page 13, line 43: These methods aren't equivalent from a traditional historical linguist's perspective, and probably wouldn't deserve any
-lengthy discussion as alternatives if they were truly equivalent. Perhaps a different word choice or a modifier on "equivalent" would make 
-more sense here.
-
-Page 18, line 28: Do you mean "typographical errors"? As written, the meaning of this sentence is unclear.
-
-Page 18, line 47: I understand the meaning you intend with "sound difference", but "patterns of sound change" might be preferable wording.
-
-Page 19, line 47: "It should be noticed" (recommended: "It should be noted")
-
-Page 20, line 17: "Let us flesh out with more detail a concrete example." (recommmended: "...flesh out a concrete example in more detail.")
-
-Page 24, lines 51-52: The final sentence of this paragraph needs to be reworded for clarity.
-
-Page 28, line 24: "After the settlement of British settlers in the island (...), native population experienced..."
-
-Page 28, line 26: "...with different accounts differing in..."
-
-Page 29, line 30: "To obtain the dates of unknown events from the dates of a few known events needs a model..." ("requires a model"?)
-
-
-
-
-Missing/superfluous/incorrect functional words:
-
-Page 7, line 32: "over evolutionary time-scale"
-
-Page 9, line 33: "compare it a simpler model"
-
-Page 11, line 28: "even for bigram model"
-
-Page 11, line 36: "the analysis where" (recommended: "the analysis for which")
-
-Page 11, line 45: "deleterious effect from false positives" (recommended: "of false positives")
-
-Page 12, line 30: "assumptions on how exactly languages evolve" (recommended: "about how...")
-
-Page 13, line 30: "In the Fig. 5" (delete "the")
-
-Page 17, line 29: "Similarity serves only a first filter"
-
-Page 26, line 18: "...but do not need to specified..."
-
-Page 31, line 26: "random places in word list"
-
-Page 33, line 47: "assessment on the patterns..." (recommended: "of the patterns")
-
-Page 33, line 54: "The figure 12" (recommended: "Figure 12")
-
-Page 35, line 7: "their application[s] of different aspects..." (recommended: "to different aspects")
-
-Page 35, line 8: "We demonstrated in sample application"
-
-Page 39, line 43: "to accommodate the systematic silencing a phone" ("of a phone"?)
+Page 6, lines 27-32: This sentence is long and difficult to parse without a second reading. I recommend rewording it. (Kann ich auch auf umliegenden Seiten nicht finden? Nancy)

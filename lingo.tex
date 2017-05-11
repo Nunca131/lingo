@@ -212,8 +212,7 @@ Geisler, H. and J.-M. List (2013): Do languages grow on trees? The tree
 metaphor in the history of linguistics. In: Fangerau, H., H. Geisler, T.
 Halling, and W. Martin (eds.): Classification and evolution in biology,
 linguistics and the history of science. Concepts – methods – visualization.
-Franz Steiner Verlag: Stuttgart. 111-124.
-PS(Nancy): whoever had access to this, fix it! Getting access is highly complicated.}
+Franz Steiner Verlag: Stuttgart. 111-124.}
 These early roots predate Darwin's first
 sketch of an evolutionary tree of species, possibly drawn in 1837. Early
 work on phylogenetics in biology has been grounded in detailed expert
@@ -267,7 +266,15 @@ An important issue to consider in the choice of traits to analyze is
   arising more than once.  If such traits are vertically inherited and
   maintained over time, they can provide clear and convincing
   classification.  On the other hand, less complex items such as individual
-  sound-meaning correspondences encoded as lexical roots might be more
+  sound-meaning correspondences encoded as lexical roots 
+  \TODO{On page 2, lines 26-29 it is argued that 'individual sound-meaning 
+  correspondences encoded as lexical roots' might be particularly prone
+to homoplasy. Insofar as sound-meaning correspondences are arbitrary (i.e.
+excluding things like iconicity), we might expect relatively low
+rates of homoplasy in these items. Typological features of language 
+might be a clearer example to use to illustrate the notion of homoplasy in 
+linguistic traits.}
+  might be more
   prone to homoplasy, i.e., they may arise independently more than
   once. The combined evidence from a large number of such co-inherited
   units can provide the same or higher degree of confidence in a
@@ -479,8 +486,11 @@ separate the bound grammatical affixes and identify cognates. These require
 a large amount of linguistic expertise for their preparation, thereby
 severely limiting both the scope and the statistical power of computational
 approaches. Small or moderate size word lists contain only very limited
-numbers of cognates, particularly for the more distant languages. The
-recognition of cognates between distant languages often requires the
+numbers of cognates, particularly for the more distant languages. 
+\TODO{What do you mean by "the more distant languages"? I could imagine 
+this being true for poorly attested languages, and languages
+in families where the general level of documentation is poor.}
+The recognition of cognates between distant languages often requires the
 intermediate reconstruction of ancestral forms, and it is difficult, if not
 impossible, to properly account for uncertainty propagation if these tasks
 need to be carried out manually. As a consequence, cognate recognition
@@ -548,6 +558,14 @@ method \cite{Pagel:2013}.
 \TODO{These studies do not "prove genealogical persistence", they are circular in
 this respect since they assume families established on the assumption of
 genealogical persistence of the very same vocabulary items...}
+\TODO{The discussion of Swadesh lists ignores their shortcomings, specifically 
+non-universal nature of some meanings (e.g. dog, generic 
+tree), semantic relationships that may influence forms of multiple items 
+(e.g. moon/night, red/blood), noun-heaviness, etc.A reference to 
+an article discussing some of this would provide some balance. One 
+article that illustrates many of these issues is Hoijer (1956) 
+Lexicostatistics: A critique. Language 32(1): 49-60. I suspect there 
+are more recent pieces that would also suffice.}
 Lexical replacement rate seems to be linked to
 frequency of use, which is fairly comparable, at least across languages
 from the largest lingustic families in the world
@@ -598,15 +616,18 @@ crucial distinctions. A related issue is that transcriptions often use
 digraphs for single segments, and their usage is sometimes inconsistent
 across the orthographies used for the various languages and various sources
 of data, even after unicode normalization. Thus, for example, an ejective
-may be denoted by superposed apostrophe (/\'k/), postposed apostrophe
-(/k'/), postposed palochka (/k$|$/), or special letters
-(/\cmr\texthtk/). Depending on the encoding, these might be represented either
+may be denoted by superposed apostrophe \NEW{$<$}\'k\NEW{$>$}, postposed apostrophe
+\NEW{$<$}k'\NEW{$>$}, postposed palochka \NEW{$<$}k$|\NEW{>}$, or special letters
+\NEW{$<$}\cmr\texthtk\NEW{$>$}. Depending on the encoding, these might be represented either
 as digraphs or unigraphs. If the language specific segmentation is
 available in the data source, these can all be converted to special
 characters---\eg{} in the private unicode space---before analysis. Most
 often, however, such information is missing from composite data sources and
 one chooses a suboptimal solution of leaving these as a sequence of
 characters to be handled later.
+\TODO{Leaving the sequences of characters to be handled later leaves 
+the reader wondering, at this point in the paper, how this will
+be resolved. A reference to where it is resolved would be useful.}
   
 A very natural starting point, then, is to regard words as sequences of
 characters that correspond, at least approximately, to phonemes. The most
@@ -621,8 +642,15 @@ character-based alignments of words have been used to measure similarity,
 In contrast to the world of biological sequence analysis, where scoring
 systems are relatively simple and the algorithmic problems of efficiently
 computing alignments of large data sets dominate \cite[see,
-e.g.][]{Notredame:07}, it is the construction of good scoring models that
-is most difficult in language comparisons. The fundamental reason for this
+e.g.][]{Notredame:07}, it is the construction of good \TT{scoring models} that
+is most difficult in language comparisons. 
+\TODO{his is the first mention of the term "scoring model" in this section, 
+I believe. Because this is a very important concept
+for this section I recommend that you introduce it in caps (in keeping 
+with other technical terms), and provide a brief definition. Alternatively
+the term could be introduced in the first paragraph of the sub-section, 
+since it is indeed the focus of this sub-section.}
+The fundamental reason for this
 is that unlike phonemes, the elementary tokens of biological sequences are
 uniquely identifiable across the taxa; for amino acids this is rooted in
 their distinct, functionally salient, chemical properties, and for
@@ -718,11 +746,18 @@ false positives and some of the alignments of cognate pairs are wrong as a
 consequence of the oversimplified scoring model, there is enough signal in
 the the correct alignments of real cognate pairs for the statistical
 machinery to identify the more common sound correspondences.
+\TODO{What evidence supports this claim that there is sufficient signal 
+in real cognate pair alignments for correct sound
+correspondences to be identified in spite of some false positives/wrong alignments?}
 
 It is interesting to note that the statistical approach accommodates many
 linguistic subtleties without explicitly building them into the
 method. Although the mapping of consonants to consonants and vowels to
-vowels in the pre-alignments is a good working assumption, there is at
+vowels in the pre-alignments 
+\TODO{[...] "pre-alignment", which appears
+by p. 9, but is introduced with small caps and sketchy definition only on
+p. 12)}
+is a good working assumption, there is at
 least one clear set of frequent exceptions: Vowels often correspond to
 consonants belonging to the classes often called glides and liquids, such
 as [w, j, l, r]. For example, [l] in the French words \textit{plein,
@@ -813,13 +848,23 @@ page. Formulas are used for clarity so please be explicit as to what is
 defined over what and the domains of free variables.}
 Based on this, one can proceed to define the total score as the sum of all
 bigram scores $\sigma = \sum_{\alpha, \beta} \sigma_{AB}(\alpha,\beta)$
-together with the contributions of all gaps, and then a normalized score
+together with the contributions of all gaps\NEW{,\ie{} insertions or 
+deletions of characters}, and then a normalized score
 (\textit{nscore}) obtained by dividing $\sigma$ by the number of score
 contributions. In the case of bigram alignments this amounts
 $\textit{nscore}=\sigma/\ell$, where $\ell$ is the length of alignment
 without \textasciicircum{} and \$. Such a normalization makes alignments of
 words with different lengths comparable by reporting an average score per
 aligned position.
+\TODO{The reader may be left wondering about situations where one 
+sound/symbol in language A corresponds to two in language B
+(e.g. Spanish puerta - Italian porta, or instances where two symbols 
+correspond to a single sound in one language). This is one of the reasons 
+that I recommend consolidating the discussion of representational 
+issues and being more explicit about what "gaps" are in this method.}
+\NR{For this todo maybe point to Fig.~\ref{fig:aln}? maybe I can find 
+another alignment where there is no deletion score used even though there 
+obviously is one.}
 
 \begin{figure}
  \begin{center}
@@ -1039,7 +1084,10 @@ $0.9$.
   non-cognates (Area-under-the-curve AUC$=0.90$). Note that although only a
   small detail of the entire data set, namely the first four meanings
   sorted by their English description, is shown on the left, the ROC uses
-  the entire dataset.  }
+  the entire dataset. 
+  \TODO{ I don't think the last sentence ("Note that although only a 
+  small detail...") is necessary given the descriptions
+earlier in the caption.}}
 \label{fig:DanROC}
 \end{figure}
 

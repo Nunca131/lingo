@@ -227,7 +227,7 @@ than other areas of the lexicon - p. 6), while other terms (including
 technical terminology central to the methods discussed) are used without
 being clearly introduced and defined (e.g. "pre-alignment", which appears
 by p. 9, but is introduced with small caps and sketchy definition only on
-p. 12).
+p. 12 --- already in text).
 
 The introduction section provides plenty of general background on
 phylolinguistic traditions and their relationships to biology, but at the
@@ -261,49 +261,16 @@ is necessary at all, especially since Section 3.8 segues abruptly back to
 methodological matters.
 
 
-On page 2, lines 26-29 it is argued that 'individual sound-meaning correspondences encoded as lexical roots' might be particularly prone
-to homoplasy. Insofar as sound-meaning correspondences are arbitrary (i.e. excluding things like iconicity), we might expect relatively low
-rates of homoplasy in these items. Typological features of language might be a clearer example to use to illustrate the notion of homoplasy in 
-linguistic traits.
 
-Page 2, line 41: the term "neutral traits" is used. I interpret this to mean traits that are neither benificial nor detrimental to an
-individual w.r.t. selectional forces, but I am not confident that this is the interpretation intended by the authors. I recommend clarifying
-this, particularly for the benefit of readers who may not have extensive backgrounds in evolutionary theory.
-
-Page 5, line 30: What do you mean by "the more distant languages"? I could imagine this being true for poorly attested languages, and languages
-in families where the general level of documentation is poor.
 
 Page 6: The idea of automatic cognate detection is discussed in several paragraphs on this page. You may want to consider referencing List, Greenhill,
 and Gray (2017) The potential of automatic word comparison for historical linguistics. PLoS One 12(1): e0170046. doi:10.1371/journal.pone.0170046.
-That paper provides a good discussion of the problem of computational detection of cognates and compares some methods for doing so.
+That paper provides a good discussion of the problem of computational detection of cognates and compares some methods for doing so. (gedruckt, Nancy)
 
 Page 6, lines 14-25: The discussion of Swadesh lists ignores their shortcomings, specifically non-universal nature of some meanings (e.g. dog, generic 
 tree), semantic relationships that may influence forms of multiple items (e.g. moon/night, red/blood), noun-heaviness, etc.A reference to 
 an article discussing some of this would provide some balance. One article that illustrates many of these issues is Hoijer (1956) 
-Lexicostatistics: A critique. Language 32(1): 49-60. I suspect there are more recent pieces that would also suffice.
-
-Page 7, lines 10-11: Since you are discussing graphemes (orthographic units), and not necessarily different phonemes here, shouldn't you use angle
-brackets such as <k'> instead of the combination of phonemic notation slashes and parentheses currently used?
-
-Page 7, lines 14-16: Leaving the sequences of characters to be handled later leaves the reader wondering, at this point in the paper, how this will
-be resolved. A reference to where it is resolved would be useful.
-
-Page 7, lines 25-28: This is the first mention of the term "scoring model" in this section, I believe. Because this is a very important concept
-for this section I recommend that you introduce it in caps (in keeping with other technical terms), and provide a brief definition. Alternatively
-the term could be introduced in the first paragraph of the sub-section, since it is indeed the focus of this sub-section.
-
-Page 9, lines 12-15: What evidence supports this claim that there is sufficient signal in real cognate pair alignments for correct sound
-correspondences to be identified in spite of some false positives/wrong alignments?
-
-Page 10, lines 31-33: I infer that "gaps" here has to do with insertions/deletions, but the reader has no way of knowing exactly how this
-term is being used; I recommend making the intended meaning clearer.
-
-Page 10, lines 31-37: The reader may be left wondering about situations where one sound/symbol in language A corresponds to two in language B
-(e.g. Spanish puerta - Italian porta, or instances where two symbols correspond to a single sound in one language). This is one of the reasons 
-that I recommend consolidating the discussion of representational issues and being more explicit about what "gaps" are in this method.
-
-Page 14, figure 5 caption: I don't think the last sentence ("Note that although only a small detail...") is necessary given the descriptions
-earlier in the caption.
+Lexicostatistics: A critique. Language 32(1): 49-60. I suspect there are more recent pieces that would also suffice. (auch schon im Text, gedruck, Nancy)
 
 Page 14, lines 44-45: The "regular correspondences" you refer to here are the same as the "table of regular correspondences" you mention on
 line 41 of page 12, correct? I suspect that some historical linguists will expect that all uses of the term "regular" in relation to sound

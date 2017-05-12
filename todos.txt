@@ -18,10 +18,6 @@ uncritical,
 promissory and platitudinal information. Other existing survey papers cover
 the issues touched by the present paper equally or better:
 
-List, J.-M. (2016): Beyond cognacy: Historical relations between words and
-their implication for phylogenetic reconstruction. Journal of Language
-Evolution 1.2. 119-136. (unsuited? Nancy)
-
 List, J.-M., J. Pathmanathan, P. Lopez, and E. Bapteste (2016): Unity and
 disunity in evolutionary sciences: process-based analogies open common
 research avenues for biology and linguistics. Biology Direct 11.39. 1-17.
@@ -30,10 +26,6 @@ research avenues for biology and linguistics. Biology Direct 11.39. 1-17.
 Dunn, Michael. (2014) Language phylogenies. In Claire Bowern & Bethwyn
 Evans (eds.), The Routledge Handbook of Historical Linguistics,
 190-211. New York: Routledge. (unsuited? Nancy)
-
-Kondrak, Grzegorz. (2009) Identification of Cognates and Recurrent
-Sound Correspondences in Word Lists. Traitement Automatique des
-Langues 50(2):201-235. (unsuited? Nancy)
 
 Levinson, Stephen C. and Russell D. Gray. 2012. Tools
 from evolutionary biology shed new light on the diversification

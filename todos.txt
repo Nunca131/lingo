@@ -99,31 +99,6 @@ No explanation is offered as to i) why the peak for non-cognates is
 negative appx -2 (rather than 0) and ii) why the Guaycuruan and IE datasets
 behave differently.
 
-* p 10-14 on the cognate detection algorithm.
-
-The method described has no conceptual improvment over that of Jäger
-(2013), and more generally fails to cite modern and old relevant work
-and position itself wrt to relevant work. It makes no advance (or even
-mentions) any of the modeling challenges existing such as partial
-cognacy, global (all words) vs local (per word) scoring of sound
-correspondences, deep vs shallow cognacy, pairwise aligment vs
-multiple alignment etc etc and the implications for the presented
-algorithm. It is also deceptive in that it fails to mention a
-parameter epsilon until in the appendix. It is not an innocuous
-parameter since it is related to the size(s) of the wordlists.
-
-Most deplorable of all is that they do with heuristics what was
-achieved a decade ago with a much more elegant model with global
-scoring and absense of a threshold by Ellison (2007).
-
-Ellison, T. Mark. (2007) Bayesian Identification of Cognates and
-Correspondences. Proceedings of Ninth Meeting of the ACL Special
-Interest Group in Computational Morphology and Phonology,
-15--22. Prague, Czech Republic.
-
-Jäger, Gerhard. (2013) Phylogenetic Inference from Word Lists Using
-Weighted Alignment with Empirically Determined Weights Language.
-Dynamics and Change 3:245–291.
 
 * p 28
 

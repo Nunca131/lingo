@@ -335,7 +335,8 @@ data.
 Lineages are not always well-separated, as in the case of \TT{ring
   species} \cite{irwin:2005} in biology and \TT{dialect continua}
 \cite{heggarty:2010,franccois2015trees}, making the tree model only an
-approximation.  Although horizontal transfer, like any other causes of
+approximation \NEW{(see~\cite{Geisler:13} for further models for language 
+relationships)}. Although horizontal transfer, like any other causes of
 incorrect tree estimation, may bias quantities such as divergence time
 estimated from trees~\cite{Greenhill:09}, there are nevertheless many
 important events in the evolutionary history that are correctly expressed
@@ -496,7 +497,8 @@ The recognition of cognates between distant languages often requires the
 intermediate reconstruction of ancestral forms, and it is difficult, if not
 impossible, to properly account for uncertainty propagation if these tasks
 need to be carried out manually. As a consequence, cognate recognition
-becomes a central issue for large-scale language phylogenetics.
+becomes a central issue for large-scale language phylogenetics. \NEW{
+See~\cite{Ellison:07,Jager:13,List:16} for automated approaches on cognate identification.}
 
 \begin{figure}
 \begin{center}
@@ -755,11 +757,7 @@ correspondences to be identified in spite of some false positives/wrong alignmen
 It is interesting to note that the statistical approach accommodates many
 linguistic subtleties without explicitly building them into the
 method. Although the mapping of consonants to consonants and vowels to
-vowels in the pre-alignments 
-\TODO{[...] "pre-alignment", which appears
-by p. 9, but is introduced with small caps and sketchy definition only on
-p. 12)}
-is a good working assumption, there is at
+vowels in the \NEW{\TT{pre-alignments}} is a good working assumption, there is at
 least one clear set of frequent exceptions: Vowels often correspond to
 consonants belonging to the classes often called glides and liquids, such
 as [w, j, l, r]. For example, [l] in the French words \textit{plein,
@@ -770,7 +768,9 @@ corresponds to [\cmr{\textopeno{}}] in Italian \textit{bono, porto}.\footnote{Th
   /we/ is orthographically $<$ue$>$ in Spanish.} These kinds of cases can
 be taken into account by relaxing the consonant-consonant and vowel-vowel
 correspondence constraint. At least some examples of this type appear in
-pre-alignments that are classified as candidate cognates. Hence in the
+pre-alignments that are classified as candidate cognates \NEW{even though
+scores were assigned, not trained in this alignment similar to editing 
+operations with similarity scores}. Hence in the
 second step they are assigned favorable log-odds scores without the need to
 model liquids and glides explicitly from the outside.
 
@@ -959,7 +959,7 @@ identification. In principle we could now iterate this workflow again,
 using the alignments of the revised cognate pairs to recompute a refined
 scoring model. Somewhat surprisingly, \citet{Steiner:11a} observed that the
 method converges already after a couple of iterations and only the first
-step from a crude \TT{pre-alignment} to detailed scoring model yields a
+step from a crude pre-alignment to detailed scoring model yields a
 dramatic improvement in the accuracy of alignments and cognate
 identification.
 
@@ -1217,7 +1217,8 @@ genomes~\cite{Pennisi:05} and ancestral sequences~\cite{Liberles:07} is
 then performed on a given tree. Inferred trees may then help to improve
 alignments, which in turn yield a better tree in an interative manner.  In
 complete analogy, word alignments can be performed independently of cognate
-identification and the identification of regular sound changes. One may
+identification and the identification of regular sound changes \NEW{(see 
+also~\cite{Kondrak:09})}. One may
 meaningfully start by first identifying regular correspondences between
 pairs of extant languages and then use the fact that these regular
 correspondences are by definition the result of sound changes from the same
@@ -2539,7 +2540,7 @@ at alignment positions change almost independently and thus almost
 identical models can be applied to all domains of life. This is not the
 case for linguistics, where the fundamental processes of evolution are not
 yet properly understood and modeled. This, however, merely cautions against
-\PFS{the uncritical use of} molecular phylogenetics programs directly for
+the uncritical use of molecular phylogenetics programs directly for
 linguistics: not against reimplementing the tools and methods that have
 been specifically developed to discover the regularities from the
 linguistic data themselves. Furthermore, permutation tests, as shown in

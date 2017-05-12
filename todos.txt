@@ -272,31 +272,7 @@ tree), semantic relationships that may influence forms of multiple items (e.g. m
 an article discussing some of this would provide some balance. One article that illustrates many of these issues is Hoijer (1956) 
 Lexicostatistics: A critique. Language 32(1): 49-60. I suspect there are more recent pieces that would also suffice. (auch schon im Text, gedruck, Nancy)
 
-Page 14, lines 44-45: The "regular correspondences" you refer to here are the same as the "table of regular correspondences" you mention on
-line 41 of page 12, correct? I suspect that some historical linguists will expect that all uses of the term "regular" in relation to sound
-changes/correspondences will mean "regular" in the strict Neogrammarian sense. It would be good to be explicit somewhere in this sub-section
-about whether "regular correspondences" does in fact mean "exceptionless" as in the Neogrammarian usage.
-
-Page 16, lines 11-25: This paragraph is a bit dense, and might be easier to read if some of the ideas were rephrased or "unpacked" a bit.
-
-Page 17, lines 13-17: There seem to be some missing references here.
-
-Page 17, lines 29-33: It is not entirely clear what this sentence means, or how to evaluate the claim here without knowing exactly what you
-mean by 'random' mutations in this linguistic context. Do you mean sporadic changes? Either some clarification or a reference to some supporting
-discussion would be very helpful.
-
-Page 20, lines 40-48: The permutation test in linguistics dates back to Oswalt (1970) The detection of remote linguistic relationships. Computer
-Studies in the Humanities and Verbal Behaviour 3: 117-129. It was also discussed in great detail in Kessler (2001). The significance of word
-lists. CSLI Publications. Diachronica papers by Haynie (2014) and Dunn and Terrill (2012) have also used permutation tests to assess relationships.
-Any of these references would be good additions to this background on permutation tests.
-
-Page 34, line 48: I cannot find any information on the EHL website cited here on the work being done there on semantic shift. If it is not possible
-to cite outcomes of that work it may be preferable to omit the discussion of that work in progress.
-
-Page 36, line 55: Though analogical change is sometimes treated as a "garbage bin" of marginal, non-regular changes, the phenomenon is really
-not that rare (certainly not in the same class of unusual "phonetic processes" as metathesis, though of course metathesis can happen by 
-analogy...). Non-regular does not mean rare. Nor is it the case that analogical changes are inherently non-regular. It's a little unclear,
-therefore, exactly what you are trying to single out here as being poorly handled by these methods.
+Page 16, lines 11-25: This paragraph is a bit dense, and might be easier to read if some of the ideas were rephrased or "unpacked" a bit. (I don't get the enumeration of lines... Nancy)
 
 
 Awkward wording:

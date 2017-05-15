@@ -241,7 +241,8 @@ lineage than the housekeeping genes. Pre-eminent among these are,
 obviously, cultural complexes that get borrowed along with the entire
 related vocabulary \cite{field2002linguistic}. In addition, in language, we
 also have grammatical and various other typological features that may or
-may not follow the same lines as the core bundle.
+may not follow the same lines as the core bundle. \NEW{For a more detailed
+discussion on parallels in both disciplines see~\citet{List:16a}.}
 
 In the following, we do not consider questions that pertain to which
 of these features \textsc{should} be defined as \TT{genetic
@@ -302,7 +303,7 @@ phenotypic characters such as specific shapes of bones, the presence or
 absence of particular neurotransmitters, or the spatial organization of
 neuronal networks. In fact, when there is no mechanistic understanding of
 the patterns of change, robust, non-parametric approaches to tree
-reconstruction are often the method of choice~\cite{Waegele:DMP}. Of course
+reconstruction are often the method of choice\NEW{~\cite{Waegele:DMP, Dunn:15}}. Of course
 no method is infallible. If features are chosen that are either too noisy
 to convey retrievable information or that are not strictly vertically
 transmitted to begin with the resulting tree might not depict the actual
@@ -797,12 +798,8 @@ to define the score as
       \beta)}{p_A(\alpha) p_B(\beta)}\right).
 \end{equation}
 This so-called log-odds score is theoretically justified by a simple model
-of independent evolution \cite{Durbin:98,Altschul:10}.
-\TODO{I would not be so sure it's theoretically justified in cases where you have
-few datapoints (as with small wordlists or uncommon sounds), then a Fisher
-Exact Test or something that takes the amount of evidence into account may
-be more appropriate.
-}
+of independent evolution \cite{Durbin:98,Altschul:10} \NEW{if there is enough
+data for training}.
 
 \begin{figure}
 \begin{center}
@@ -1078,13 +1075,7 @@ $0.9$.
   classes. Right: An ROC curve for detecting cognates within 50 meaning
   classes in Turkic shows it is possible to find an alignment score cutoff
   with high sensitivity and specificity in separating cognates from
-  non-cognates (Area-under-the-curve AUC$=0.90$). Note that although only a
-  small detail of the entire data set, namely the first four meanings
-  sorted by their English description, is shown on the left, the ROC uses
-  the entire dataset. 
-  \TODO{ I don't think the last sentence ("Note that although only a 
-  small detail...") is necessary given the descriptions
-earlier in the caption.}}
+  non-cognates (Area-under-the-curve AUC$=0.90$).}
 \label{fig:DanROC}
 \end{figure}
 
@@ -1124,11 +1115,9 @@ from the underlying stochastic model. Conversely, the scoring system
 derived in the first approach does not directly provide reconstructed
 proto-sounds. Well understood methods from computational biology are
 available, however, to infer ancestral states given observable transition
-probabilities \cite{Pennisi:05,Liberles:07}. At present there is no method
-to infer sound changes rules directly from a scoring system. 
-\TODO{At least cite Holman and Wichmann's paper in Language for the discussion
-even though it does not infer the direction of sound changes.}
-Mathematically
+probabilities \cite{Pennisi:05,Liberles:07}. \NEW{\citet{Brown:13} investigated
+the inferrence of sound change rules from a scoring model even though the
+direction of the change was not labeled.} Mathematically
 this should be possible, however, and we take it on as an interesting open
 research question to solve this problem.
 
@@ -1198,7 +1187,7 @@ accuracy, and sufficient computational capacities.  While this is becoming
 feasible at least from a computational point of view, 
 \TODO{Reference here is needed to Bouchard-Cote's book but, even more so,
 a justification for the totally unspported claim that it is feasible
-from a computational point of view is needed...}
+from a computational point of view is needed...} \NR{no book found}
 it may not be the
 most efficient approach to analyzing the data. In the context of biological
 phylogenetics it often pays to subdivide the \TT{gold standard} inference
@@ -1237,7 +1226,7 @@ between extant languages as a first step rather than trying to infer
 proto-languages and phylogenetic trees directly.
 \TODO{Please explain what experience from computational biology shows how
 this is helpful if not for computational efficiency and expediency? As
-the text stands this claim is completelty unsupported.}
+the text stands this claim is completelty unsupported.} \NR{hab es gedruckt}
 
 Depending on the research question, it is often not even the necessary to
 attempt a full reconstruction of language phylogeny. Instead, robust and
@@ -1562,7 +1551,7 @@ construction based on the empirical data itself, a prominent example being
 \textsc{permutation tests}. The general idea behind a permutation test is
 to construct the null model by randomly rearranging the observed data in an
 attempt to destroy all the regularities that can be suspected to be related
-to the effect under consideration \NEW{(see~\cite{Oswalt:70} for an example
+to the effect under consideration \NEW{(see~\citet{Oswalt:70} for an example
 on permutation tests in linguistics)}.
 
 Let us consider again cognacy as an example. Given word lists of two
@@ -1581,16 +1570,6 @@ actual contribution if this was taken seriously for a correct
 assessment of number emanating from a permutation test.}
 
 
-As this powerful method is still underappreciated in the linguistics
-literature, we elaborate on the example in Fig.~\ref{fig:permut}. 
-\TODO{I am surprised to learn it is underappreciated. It's been all over the
-place in quantatitative linguistics at least since Oswalt (1970)
-
-Oswalt, Robert L. (1970). The detection of remote linguistic relationships.
-Computer Studies in the Humanities and Verbal Behavior 3:117-129.
-
-See also many non-quantitative papers in the long-ranger literature for the
-same principle being discussed.}
 The data
 is again taken from the IDS. For each language, we have about 1000 words in
 the word list and unique identifiers for the meanings across all word
@@ -2128,21 +2107,11 @@ proposal of glottochronology was to assume that the number of cognate
 retentions of two languages diverging at a given time decays exponentially
 with constant rate~\cite{Swadesh:55}---which is analogous to the strict
 molecular clock hypothesis in molecular evolution. Rate constancy has been
-severely criticized since early on~\cite{Bergsland:62}, although some
+severely criticized since early on~\cite{Bergsland:62, Blust:00}, although some
 support for the idea still exists in other
 contexts~\cite{Ehret:00,Starostin:00,Starostin:13,Holman:11}. 
 \TODO{None of these paper support the idea of rate constancy, they support
-(emprirically) the idea of rate regularity.
-
-The earlier passage btw fails to cite the most powerful paper against
-rate constancy (better than Bergsland and Vogt):
-
-Blust, Robert. (2000) Why lexicostatistics doesn't work: the
-'universal constant' hypothesis and the Austronesian languages. In
-Colin Renfrew, April McMahon and Robert Lawrence Trask (eds.), Time
-depth in historical linguistics (Papers in the prehistory of languages
-2), 311-331. Cambridge: McDonald Institute for Archaeological
-Research.}
+(emprirically) the idea of rate regularity.}
 Within the
 context of a likelihood based approach, the relative constancy of the rates
 of various features can be tested~\cite{Hruschka:14}, as can particular
@@ -2456,7 +2425,7 @@ comparative-historical databases created by various members of the program.
 \TODO{I cannot find any information on the EHL website cited here 
 on the work being done there on semantic shift. If it is not possible
 to cite outcomes of that work it may be preferable to omit the 
-discussion of that work in progress.}
+discussion of that work in progress.} \NR{Ich kann es auch nicht finden.}
 
 \section{Measuring the success of statistical methods.}
 

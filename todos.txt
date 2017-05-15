@@ -18,15 +18,6 @@ uncritical,
 promissory and platitudinal information. Other existing survey papers cover
 the issues touched by the present paper equally or better:
 
-List, J.-M., J. Pathmanathan, P. Lopez, and E. Bapteste (2016): Unity and
-disunity in evolutionary sciences: process-based analogies open common
-research avenues for biology and linguistics. Biology Direct 11.39. 1-17.
-(unsuited? Nancy)
-
-Dunn, Michael. (2014) Language phylogenies. In Claire Bowern & Bethwyn
-Evans (eds.), The Routledge Handbook of Historical Linguistics,
-190-211. New York: Routledge. (unsuited? Nancy)
-
 Levinson, Stephen C. and Russell D. Gray. 2012. Tools
 from evolutionary biology shed new light on the diversification
 of languages. Trends in Cognitive Sciences 16(3):167–173. (unsuited? Nancy)

@@ -94,13 +94,6 @@ behave differently.
 
 * p 28
 
-There seems to be some confusion of what uniformitarianism, rates and
-process mean. If the process is the same but the rates change, then
-process is the same and did not change. Uniformitarianism usually
-means the assumption that the process does not change, which is an
-assumption since there are observations from the present but not from
-the past.
-
 * "Based on this data, researchers have argued about the unity or
 diversity of Tasmanian languages, with perhaps the most widely
 accepted opinion being that linguistic analysis can lead at most to
@@ -158,11 +151,6 @@ but sensibly, she choose to ignore that conclusion (as it springs from
 a misapplied monogenetic model, though the does not say that out loud).
 
 * p 31-32
-
-The experiment is flawed in that it removes languages like Old Prussian
-because it does not show bimodality. Either find the error is the supposed
-method or the theoretical property of the data of these languages that mean
-they do not apply.
 
 * The so-called North Caucasian family consists of languages in
 North-East Caucasian family only.
@@ -225,19 +213,9 @@ on p. 13). As the admixture model and NeighborNet methods central to Bowern
 2012 aren't directly discussed in this article, it seems like an odd
 example to devote so much space to. I would reconsider whether this section
 is necessary at all, especially since Section 3.8 segues abruptly back to
-methodological matters.
+methodological matters. (diesen Teil wieder loeschen? Auch R1 hat hier mit Probleme!)
 
 
-
-
-Page 6: The idea of automatic cognate detection is discussed in several paragraphs on this page. You may want to consider referencing List, Greenhill,
-and Gray (2017) The potential of automatic word comparison for historical linguistics. PLoS One 12(1): e0170046. doi:10.1371/journal.pone.0170046.
-That paper provides a good discussion of the problem of computational detection of cognates and compares some methods for doing so. (gedruckt, Nancy)
-
-Page 6, lines 14-25: The discussion of Swadesh lists ignores their shortcomings, specifically non-universal nature of some meanings (e.g. dog, generic 
-tree), semantic relationships that may influence forms of multiple items (e.g. moon/night, red/blood), noun-heaviness, etc.A reference to 
-an article discussing some of this would provide some balance. One article that illustrates many of these issues is Hoijer (1956) 
-Lexicostatistics: A critique. Language 32(1): 49-60. I suspect there are more recent pieces that would also suffice. (auch schon im Text, gedruck, Nancy)
 
 Page 16, lines 11-25: This paragraph is a bit dense, and might be easier to read if some of the ideas were rephrased or "unpacked" a bit. (I don't get the enumeration of lines... Nancy)
 

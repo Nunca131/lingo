@@ -291,13 +291,11 @@ absence of particular neurotransmitters, or the spatial organization of
 neuronal networks. In fact, when there is no mechanistic understanding of
 the patterns of change, robust, non-parametric approaches to tree
 reconstruction are often the method of choice\NEW{~\cite{Waegele:DMP, Dunn:15}}. Of course
-no method is infallible. If features are chosen that are either too noisy
-to convey retrievable information or that are not strictly vertically
+no method is infallible \NEW{with respest to the features chosen}. 
+If \NEW{these} are either too noisy
+to convey retrievable information or are not strictly vertically
 transmitted to begin with the resulting tree might not depict the actual
-relationships.
-\TODO{The logic here seems strange wrt to the use of infallible. Is an
-infallible method one that retrieves true conclusions from wrong data?}
-An extreme example in the phylogeny of animals is the
+relationships. An extreme example in the phylogeny of animals is the
 strange case of \emph{Xenoturbella}. This unimpressive worm-like animal was
 classified as close relative of molluscs based on DNA that, as it turned
 out later, represented its food rather than the animal itself. It was later
@@ -312,13 +310,11 @@ It just seems to illustrate that one needs to be able to correctly identify
 the data used and that the phylogenetic placement of a leaf will be wrong if
 not all relevant clades are included in the analysis.}
 
-Just like language evolution, biological evolution is neither purely
-vertical nor completely tree-like. 
-\TODO{Says the same thing twice.}
-Even in higher organisms, horizontal
-gene transfer, convergent adaptive evolution, lineage sorting, and random
-noise in the data introduce deviations from tree-likeness in the
-data. 
+Just like language evolution, biological evolution is \NEW{not} purely
+vertical \NEW{and hence not} completely tree-like. Even in higher 
+organisms, horizontal gene transfer, convergent adaptive evolution, 
+lineage sorting, and random noise in the data introduce deviations 
+from tree-likeness in the data. 
 \TODO{What is lineage sorting?}
 Lineages are not always well-separated, as in the case of \TT{ring
   species} \cite{irwin:2005} in biology and \TT{dialect continua}
@@ -346,14 +342,25 @@ evolution are, of course, available, \texttt{NeighborNet}~\cite{Huson:10}
 being by far the most popular choice. Such networks, however, do not
 necessarily directly model an evolutionary process. Nevertheless, they can
 be very useful to visualize and quantify the contribution of non-vertical
-inheritance \cite{Bowern:10}.
+inheritance~\cite{Bowern:10}. \NEW{NeighborNets reflect relationships 
+between languages given a distance measure. Other than tree producing 
+algorithms \TT{long branch attraction}, \ie{} of two languages that are 
+both dissimilar to all other languages are usually grouped together, is
+no problem since the problematic languages would be branching from the 
+center directly. In particular this means that languages without any 
+information on mutual history would result in a star-like NeighborNet.
+In contrast, languages that share a root are grouped together via 
+rectangular branches. Hence, for languages that share unusually long 
+branches than would be expected, borrowings are a reasonable explanation.}
 \TODO{(I am assuming "non-vertical inheritance" should be "non-vertical
 transmission".) The conclusion, however, does not follow from the
 citation. Bowern (2010) could have done the comparison between the
 borrowable and non-borrowable subset in the absense of any
 visualization at all, and the visualization used did not allow anyone
 to distinguish between retention/innovation and certainly did not give
-any quantification.}
+any quantification.} \NR{see Fig. 3 in this paper plus its Discussion in Results;
+maybe an explanation is needed how one could detect something like borrowings
+in these networks? see text}
 As in other loosely constrained statistical
 estimation problems, phylogenetic networks may be over-parameterized so
 that it is often difficult to discern whether they uncover patterns of the
@@ -441,11 +448,8 @@ automatic method to determine cognacy. Any progress in the development of
 such methods has to rely on a good inference of sound correspondences,
 which seems to require larger datasets.
 
-Beyond lexical data, there have been several attempts to use other kinds of
-linguistic data for the reconstruction of language history. 
-\TODO{Several? There have been hundreds. Perhaps the author mean papers with
-explicit quantification.}
-A lack of
+Beyond lexical data, there have been \NEW{many} attempts to use other kinds of
+linguistic data for the reconstruction of language history. A lack of
 reliable cognates among Papuan languages in Island Melanesia (apart from
 obvious borrowings from nearby Austronesian languages) on which to base a
 more standard lexicostatistic comparison, prompted~\citet{Dunn:05} to use

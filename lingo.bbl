@@ -1,4 +1,4 @@
-\begin{thebibliography}{127}
+\begin{thebibliography}{140}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
@@ -70,6 +70,12 @@
 \newblock \emph{Proc. Natl. Acad. Sci. USA}, 113.10818--10823.
 \newblock \doi{10.1073/pnas.1605782113}.
 
+\bibitem[{Blust(2000)}]{Blust:00}
+\textsc{Blust, Robert}, 2000.
+\newblock Why lexicostatistics doesn’t work: the ‘universal
+  constant’hypothesis and the austronesian languages.
+\newblock \emph{Time depth in historical linguistics}, 2.311--331.
+
 \bibitem[{Bonferroni(1936)}]{Bonferroni:1936}
 \textsc{Bonferroni, C.~E.}, 1936.
 \newblock Teoria statistica delle classi e calcolo delle probabilit\`{a}.
@@ -126,6 +132,13 @@
 \newblock \emph{Language}, 88.817--845.
 \newblock \doi{10.1353/lan.2012.0081}.
 
+\bibitem[{Bromham et~al.(2015)Bromham, Hua, Fitzpatrick, and
+  Greenhill}]{Bromham:15}
+\textsc{Bromham, Lindell}; \textsc{Hua, Xia}; \textsc{Fitzpatrick, Thomas~G.};
+  and \textsc{Greenhill, Simon~J.}, 2015.
+\newblock Rate of language evolution is affected by population size.
+\newblock \emph{Proc. Natl. Acad. Sci. USA}, 112.2097–2102.
+
 \bibitem[{Brown(1976)}]{Brown:76}
 \textsc{Brown, Cecil~H}, 1976.
 \newblock General principles of human anatomical partonomy and speculations on
@@ -145,6 +158,12 @@
 \newblock Where do cardinal direction terms come from?
 \newblock \emph{Anthropological Linguistics}, 25.121--161.
 \newblock \urlprefix\url{http://www.jstor.org/stable/30027665}.
+
+\bibitem[{Brown et~al.(2013)Brown, Holman, and Wichmann}]{Brown:13}
+\textsc{Brown, Cecil~H}; \textsc{Holman, Eric~W}; and \textsc{Wichmann,
+  S{\o}ren}, 2013.
+\newblock Sound correspondences in the world's languages.
+\newblock \emph{Language}, 89.4--29.
 
 \bibitem[{Buck(1949)}]{Buck:49}
 \textsc{Buck, Carl~Darling}, 1949.
@@ -259,11 +278,6 @@
   using genomic signature.
 \newblock \emph{Nucleic Acids Res.}, 33.e6.
 
-\bibitem[{Dumont~d'\ Urville(1832)}]{dUrville:1832}
-\textsc{Dumont~d'\ Urville, Jules}, 1832.
-\newblock Sur les {\^i}les du {Grand} {Oc{\'e}an}.
-\newblock \emph{Soc.\ G{\'e}ogr.\ Bull.}, 17.1--21.
-
 \bibitem[{Dunn et~al.(2011)Dunn, Greenhill, Levinson, and Gray}]{Dunn:11}
 \textsc{Dunn, M}; \textsc{Greenhill, S~J}; \textsc{Levinson, S~C}; and
   \textsc{Gray, R~D}, 2011.
@@ -281,6 +295,12 @@
 \newblock \emph{Science}, 309.2072--2075.
 \newblock \doi{10.1126/science.1114615}.
 
+\bibitem[{Dunn(2015)}]{Dunn:15}
+\textsc{Dunn, Michael}, 2015.
+\newblock Language phylogenies.
+\newblock \emph{The Routledge Handbook of Historical Linguistics. Routledge},
+  190--211.
+
 \bibitem[{Durbin et~al.(1998)Durbin, Eddy, Krogh, and Mitchison}]{Durbin:98}
 \textsc{Durbin, Richard}; \textsc{Eddy, Sean~R.}; \textsc{Krogh, Anders}; and
   \textsc{Mitchison, Graeme}, 1998.
@@ -290,7 +310,7 @@
 
 \bibitem[{EHL()}]{EHL}
 EHL, 2001.
-\newblock \urlprefix\url{http://ehl.santafe.edu/}.
+\newblock \urlprefix\url{http://ehl.santafe.edu/main.html}.
 \newblock Evolution of Human Languages.
 
 \bibitem[{Ehret(2000)}]{Ehret:00}
@@ -300,6 +320,13 @@ EHL, 2001.
 \newblock \emph{Time Depth in Historical Linguistics}, edited by Colin Renfrew;
   April McMahon; and Larry Trask, volume~2, 373--399. Oxford: McDonald
   Institute for Archaeological Research.
+
+\bibitem[{Ellison(2007)}]{Ellison:07}
+\textsc{Ellison, T~Mark}, 2007.
+\newblock Bayesian identification of cognates and correspondences.
+\newblock \emph{Proceedings of Ninth Meeting of the ACL Special Interest Group
+  in Computational Morphology and Phonology}, 15--22. Association for
+  Computational Linguistics.
 
 \bibitem[{Embleton(1986)}]{Embleton:86}
 \textsc{Embleton, Sheila~M}, 1986.
@@ -336,6 +363,14 @@ EHL, 2001.
   Identification of Cognates and False Friends; Partial Cognate
   Disambiguation}.
 \newblock Saarbr{\"u}cken, D: VDM Verlag Dr.\ M{\"u}ller.
+
+\bibitem[{Geisler and List(2013)}]{Geisler:13}
+\textsc{Geisler, Hans} and \textsc{List, Johann-Mattis}, 2013.
+\newblock Do languages grow on trees? {T}he tree metaphor in the history of
+  linguistics.
+\newblock \emph{Classification and evolution in biology, linguistics and the
+  history of science. Concepts--methods--visualization. Stuttgart: Steiner},
+  111--124.
 
 \bibitem[{Gell-Mann and Ruhlen(2011)}]{Gell-Mann:11}
 \textsc{Gell-Mann, Murray} and \textsc{Ruhlen, Merritt}, 2011.
@@ -448,6 +483,11 @@ EHL, 2001.
 \newblock \emph{Language Learning}, 8.73--75.
 \newblock \doi{10.1111/j.1467-1770.1958.tb00870.x}.
 
+\bibitem[{Hoijer(1956)}]{Hoijer:56}
+\textsc{Hoijer, Harry}, 1956.
+\newblock Lexicostatistics: a critique.
+\newblock \emph{Language}, 32.49--60.
+
 \bibitem[{Holm(1979)}]{Holm:1979}
 \textsc{Holm, Sture}, 1979.
 \newblock A simple sequentially rejective multiple test procedure.
@@ -478,7 +518,7 @@ EHL, 2001.
 \textsc{Hruschka, Daniel~J}; \textsc{Branford, Simon}; \textsc{Smith, Eric~D};
   \textsc{Wilkins, Jon}; \textsc{Meade, Andrew}; \textsc{Pagel, Mark}; and
   \textsc{Bhattacharya, Tanmoy}, 2015.
-\newblock Detecting regular sound changes in linguistics as an example of
+\newblock Detecting regular sound changes in linguistics as \new{events} of
   concerted evolution.
 \newblock \emph{Current Biology}, 25.1--9.
 \newblock \doi{10.3389/fgene.2013.00206}.
@@ -497,6 +537,13 @@ EHL, 2001.
 \newblock \emph{Phylogenetic networks}.
 \newblock Cambridge UK: Cambridge Univ.\ Press.
 
+\bibitem[{Hymes(1983)}]{Hymes:83}
+\textsc{Hymes, Dell~H}, 1983.
+\newblock Lexicostatistics and glottochronology in the nineteenth century (with
+  notes toward a general history).
+\newblock \emph{Essays in the {H}istory of {L}inguistic {A}nthropology},
+  chapter~2, 59--113. Mouton.
+
 \bibitem[{Irwin et~al.(2005)Irwin, Bensch, Irwin, and Price}]{irwin:2005}
 \textsc{Irwin, Darren~E}; \textsc{Bensch, Staffan}; \textsc{Irwin, Jessica~H};
   and \textsc{Price, Trevor~D}, 2005.
@@ -504,10 +551,21 @@ EHL, 2001.
 \newblock \emph{Science}, 307.414--416.
 \newblock \doi{10.1126/science.1105201}.
 
+\bibitem[{J{\"a}ger(2013)}]{Jager:13}
+\textsc{J{\"a}ger, Gerhard}, 2013.
+\newblock Phylogenetic inference from word lists using weighted alignment with
+  empirically determined weights.
+\newblock \emph{Language Dynamics and Change}, 3.245--291.
+
 \bibitem[{Key and Comrie(2007)}]{IDS}
 \textsc{Key, Mary~Ritchie} and \textsc{Comrie, Bernard}, 2007.
 \newblock Intercontinental dictionary series.
 \newblock \urlprefix\url{http://lingweb.eva.mpg.de/ids/}.
+
+\bibitem[{Kingman(1982)}]{Kingman:82}
+\textsc{Kingman, J. F.~C.}, 1982.
+\newblock On the genealogy of large populations.
+\newblock \emph{J. Appl. Probability}, 19.27--43.
 
 \bibitem[{Kondrak(2000)}]{Kondrak:00}
 \textsc{Kondrak, Grzegorz}, 2000.
@@ -579,6 +637,28 @@ EHL, 2001.
 \newblock \emph{Ancestral Sequence Reconstruction}.
 \newblock Oxford, UK: Oxford University Press.
 
+\bibitem[{List(2016)}]{List:16}
+\textsc{List, Johann-Mattis}, 2016.
+\newblock Beyond cognacy: historical relations between words and their
+  implication for phylogenetic reconstruction.
+\newblock \emph{Journal of Language Evolution}, 1.119.
+\newblock \doi{10.1093/jole/lzw006}.
+\newblock \urlprefix\url{+ http://dx.doi.org/10.1093/jole/lzw006}.
+
+\bibitem[{List et~al.(2017)List, Greenhill, and Gray}]{List:17}
+\textsc{List, Johann-Mattis}; \textsc{Greenhill, Simon~J}; and \textsc{Gray,
+  Russell~D}, 2017.
+\newblock The potential of automatic word comparison for historical
+  linguistics.
+\newblock \emph{PloS one}, 12.e0170046.
+
+\bibitem[{List et~al.(2016)List, Pathmanathan, Lopez, and Bapteste}]{List:16a}
+\textsc{List, Johann-Mattis}; \textsc{Pathmanathan, Jananan~Sylvestre};
+  \textsc{Lopez, Philippe}; and \textsc{Bapteste, Eric}, 2016.
+\newblock Unity and disunity in evolutionary sciences: process-based analogies
+  open common research avenues for biology and linguistics.
+\newblock \emph{Biology Direct}, 11.39.
+
 \bibitem[{Longobardi and Guardiano(2009)}]{Longobardi:09}
 \textsc{Longobardi, Giuseppe} and \textsc{Guardiano, Cristina}, 2009.
 \newblock Evidence for syntax as a signal of historical relatedness.
@@ -631,6 +711,12 @@ EHL, 2001.
 \newblock Recent evolutions of multiple sequence alignment algorithms.
 \newblock \emph{PLoS Comput Biol.}, 3.e123.
 \newblock \doi{10.1371/journal.pcbi.0030123}.
+
+\bibitem[{Oswalt(1970)}]{Oswalt:70}
+\textsc{Oswalt, Robert~L.}, 1970.
+\newblock The detection of remote linguistic relationships.
+\newblock \emph{Computer Studies in the Humanities and Verbal Behavior},
+  3.117--129.
 
 \bibitem[{Pagel et~al.(2007)Pagel, Atkinson, and Meade}]{Pagel:NatureLetter}
 \textsc{Pagel, M}; \textsc{Atkinson, Q}; and \textsc{Meade, A}, 2007.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=latex 2016.4.16)  17 MAY 2017 11:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=latex 2016.4.16)  17 MAY 2017 15:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -852,16 +852,16 @@ LaTeX Font Info:    Try loading font information for U+txsyc on input line 188.
 File: utxsyc.fd 2000/12/15 v3.1
 ) [1
 
-] [2] [3]
-[4] [5]
-File: figures/methods.eps Graphic file (type eps)
- <figures/methods.eps> [6] [7]
-File: figures/soundChangeLaws_vs_scoringModels.eps Graphic file (type eps)
-
-<figures/soundChangeLaws_vs_scoringModels.eps> [8] [9]
+] [2]
 \openout4 = `lingo.ent'.
 
- [10]
+ [3]
+[4] [5]
+File: figures/methods.eps Graphic file (type eps)
+ <figures/methods.eps> [6] [7] [8]
+File: figures/soundChangeLaws_vs_scoringModels.eps Graphic file (type eps)
+
+<figures/soundChangeLaws_vs_scoringModels.eps> [9] [10]
 File: figures/pilaga_mocovi_bigramscoring.eps Graphic file (type eps)
 
 <figures/pilaga_mocovi_bigramscoring.eps> [11]
@@ -875,7 +875,7 @@ File: figures/Hrusch.eps Graphic file (type eps)
  <figures/Hrusch.eps>
 File: figures/ROCCurve_new.eps Graphic file (type eps)
  <figures/ROCCurve_new.eps> [15] [16] [17] [18]
-[19] [20]
+[19] [20] [21]
 File: figures/G_G.eps Graphic file (type eps)
  <figures/G_G.eps>
 File: figures/M_M.eps Graphic file (type eps)
@@ -884,24 +884,24 @@ File: figures/M_G.eps Graphic file (type eps)
  <figures/M_G.eps>
 File: figures/bonficols.eps Graphic file (type eps)
 
-<figures/bonficols.eps> [21] [22] [23] [24]
+<figures/bonficols.eps> [22] [23] [24]
 File: figures/fdrcurves.eps Graphic file (type eps)
- <figures/fdrcurves.eps>
+ <figures/fdrcurves.eps> [25]
 File: figures/CH_new.eps Graphic file (type eps)
 
-<figures/CH_new.eps> [25] [26]
+<figures/CH_new.eps> [26] [27]
 File: figures/pairwiseVenn_sameMeaning_0_1.eps Graphic file (type eps)
  <figures/pairwiseVenn_sameMeaning_0_1.eps>
 File: figures/pairwiseVenn_sameMeaning.eps Graphic file (type eps)
 
-<figures/pairwiseVenn_sameMeaning.eps> [27] [28] [29] [30] [31]
-Overfull \hbox (1.95605pt too wide) in paragraph at lines 2094--2111
+<figures/pairwiseVenn_sameMeaning.eps> [28] [29] [30] [31]
+Overfull \hbox (1.95605pt too wide) in paragraph at lines 2133--2150
 \OT1/txr/m/n/12 based ap-proach, the rel-a-tive con-stancy of the rates of var-
 i-ous fea-tures can be tested ([],
  []
 
 
-Overfull \hbox (42.88803pt too wide) in paragraph at lines 2094--2111
+Overfull \hbox (42.88803pt too wide) in paragraph at lines 2133--2150
 []\OT1/txr/m/n/12 ), as can par-tic-u-lar hy-pothe-ses about fac-tors af-fect-i
 ng changes in the dif-fer-ent branches ([],
  []
@@ -912,18 +912,15 @@ Missing character: There is no € in font txr!
 Missing character: There is no ” in font txr!
  [34]
 File: figures/cutoff.eps Graphic file (type eps)
- <figures/cutoff.eps>
+ <figures/cutoff.eps> [35]
 File: figures/deltaplot.eps Graphic file (type eps)
  <figures/deltaplot.eps>
 File: figures/cg_swad.eps Graphic file (type eps)
 
-<figures/cg_swad.eps> [35]
-
-LaTeX Warning: Text page 36 contains only floats.
-
-[36]
+<figures/cg_swad.eps> [36]
 File: figures/SPM.eps Graphic file (type eps)
- <figures/SPM.eps> [37] [38] [39] [40] [41] [42] [43
+ <figures/SPM.eps> [37] [38] [39] [40] [41] [42]
+[43
 
 ] [44
 
@@ -940,8 +937,7 @@ Missing character: There is no ™ in font txr!
 Missing character: There is no â in font txr!
 Missing character: There is no € in font txr!
 Missing character: There is no “ in font txr!
-
-[45
+ [45
 
 ] [46]
 Missing character: There is no â in font txi!
@@ -953,24 +949,24 @@ l.521 ...ular sound changes in linguistics as \new
                                                   {events} of
 ? 
 [48] [49] [50]) [51] (./lingo.ent)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2814.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2853.
  [52]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2814.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2853.
  (./lingo.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2814.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2814.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2853.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2853.
 
 Package rerunfilecheck Info: File `lingo.out' has not changed.
 (rerunfilecheck)             Checksum: 15CABED06669128A063BB116515034E9;2109.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2814.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2853.
  ) 
 Here is how much of TeX's memory you used:
  10105 strings out of 495026
  139678 string characters out of 6181541
- 262036 words of memory out of 5000000
+ 261826 words of memory out of 5000000
  13141 multiletter control sequences out of 15000+600000
  29387 words of font info for 88 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  34i,13n,43p,1387b,734s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on lingo.dvi (52 pages, 395260 bytes).
+Output written on lingo.dvi (52 pages, 398880 bytes).

@@ -320,7 +320,7 @@ not all relevant clades are included in the analysis.}
   organisms. Consequently, CCA-adding enzymes are found in most
   organisms in all three kingdoms of life. However, building a
   phylogeny based only on the sequences of the CCA-adding enzymes
-  would misplace the group Holozoa (animals and \emp{Choanozoa}) as a
+  would misplace the group Holozoa (animals and \emph{Choanozoa}) as a
   sister group of the Proteoalphabacteria \TODO{(Betat et
     al. 2015)}. The reason is the loss of the original CCA-adding in
   Holozoa and the horizontal gene transfer of the CCA-adding enzyme of
@@ -340,29 +340,34 @@ organisms, horizontal gene transfer, convergent adaptive evolution,
     distant relative than to the, e.g., sister species. In the words
     of linguistics, some words in a language may be less similar to
     the cognate in the sister language than to the cognate in a more
-    distantly related language.}}, and random noise in the data introduce
-deviations from tree-likeness in the data.  \TODO{What is lineage
-  sorting?}  Lineages are not always well-separated, as in the case of
-\TT{ring species} \cite{irwin:2005} in biology and \TT{dialect
-  continua} \cite{heggarty:2010,franccois2015trees}, making the tree
-model only an approximation \NEW{(see~\cite{Geisler:13} for further
-  models for language relationships)}. Although horizontal transfer,
-like any other causes of incorrect tree estimation, may bias
-quantities such as divergence time estimated from
-trees~\cite{Greenhill:09}, there are nevertheless many important
-events in the evolutionary history that are correctly expressed by
-trees because they are primarily conserved vertically. In fact, even
-in the presence of other forms of inheritance, trees are a useful
-representation of evolutionary relationships whenever there exists a
-dominating set of vertically inherited features.  \TODO{This is a
-  circular assessment (trees are useful when the data is sufficiently
-  tree-like).
+    distantly related language.}}, and random noise in the data
+introduce deviations from tree-likeness in the data.  \TODO{What is
+  lineage sorting? \LM{I have inserted a footnote}} Lineages are not
+always well-separated, as in the case of \TT{ring species}
+\cite{irwin:2005} in biology and \TT{dialect continua}
+\cite{heggarty:2010,franccois2015trees}, making the tree model only an
+approximation \NEW{(see~\cite{Geisler:13} for further models for
+  language relationships)}. Although horizontal transfer, like any
+other causes of incorrect tree estimation, may bias quantities such as
+divergence time estimated from trees~\cite{Greenhill:09}, there are
+nevertheless many important events in the evolutionary history that
+are correctly expressed by trees because they are primarily conserved
+vertically. In fact, even in the presence of other forms of
+\LM{relationships}, trees are a useful representation of evolutionary
+relationships whenever there exists a dominating set of vertically
+inherited features.  \TODO{This is a circular assessment (trees are
+  useful when the data is sufficiently tree-like). \LM{Don't
+    understand the issue here. It is exactly what we want to say,
+    isn't it?}
 
-NB: The use of the term "other forms of inheritance" does violence
-upon the term "inheritance". Presumably it refers to the mentioned
-cases where "lineages are not well-sorted" but it's never explained
-what that means in terms of an evolutionary process and whether it's a
-form of inheritance.}
+  NB: The use of the term "other forms of inheritance" does violence
+  upon the term "inheritance". Presumably it refers to the mentioned
+  cases where "lineages are not well-sorted" but it's never explained
+  what that means in terms of an evolutionary process and whether it's
+  a form of inheritance. -- \LM{the well-sorted should be explained
+    with the footnote for the previous TODO. I also replaced the
+    'other forms of inheritance' with 'other forms of
+    relationships'. May be more generell and thus more inclusive.}}
 
 Models of evolution that allow an arbitrary network as representing the
 evolution are, of course, available, \texttt{NeighborNet}~\cite{Huson:10}
@@ -642,7 +647,7 @@ available in the data source, these can all be converted to special
 characters---\eg{} in the private unicode space---before analysis. Most
 often, however, such information is missing from composite data sources and
 one chooses a suboptimal solution of leaving these as a sequence of
-characters to be handled later.
+characters to be handled later. \LM{An example for how to solve this issue will be shown later in this section.} 
 \TODO{Leaving the sequences of characters to be handled later leaves 
 the reader wondering, at this point in the paper, how this will
 be resolved. A reference to where it is resolved would be useful.}
@@ -660,7 +665,7 @@ character-based alignments of words have been used to measure similarity,
 In contrast to the world of biological sequence analysis, where scoring
 systems are relatively simple and the algorithmic problems of efficiently
 computing alignments of large data sets dominate \cite[see,
-e.g.][]{Notredame:07}, it is the construction of good \TT{scoring models} that
+e.g.][]{Notredame:07}, it is the construction of good \TT{scoring models}\LM{,\ie{} a function or look up table providing a measurement for the similarity or distance of observed phonemes/characters,} that
 is most difficult in language comparisons. 
 \TODO{his is the first mention of the term "scoring model" in this section, 
 I believe. Because this is a very important concept
@@ -762,7 +767,7 @@ key observation is that all this needs is an enrichment of cognates in the
 initial alignments. Even if a fraction of the candidate cognate pairs are
 false positives and some of the alignments of cognate pairs are wrong as a
 consequence of the oversimplified scoring model, there is enough signal in
-the the correct alignments of real cognate pairs for the statistical
+the correct alignments of real cognate pairs for the statistical
 machinery to identify the more common sound correspondences.
 \TODO{What evidence supports this claim that there is sufficient signal 
 in real cognate pair alignments for correct sound
@@ -851,32 +856,39 @@ a fairly straightforward generalization of the well known Needleman-Wunsch
 algorithm~\cite{needleman:70} used to solve unigram alignments (see
 \hyperref[AppA]{Appendix A}).
 
-\TODO{The text and formulas here are ambiguous as to whether sigma and nscore
-are defined of a pair of languages or a pair of words from two lgs.
-Presumably
-the latter but actually the sigma formula as written contains free variables
-that ranged over the full set of pairs between two languages on the previous
-page. Formulas are used for clarity so please be explicit as to what is
-defined over what and the domains of free variables.}
-Based on this, one can proceed to define the total score as the sum of all
-bigram scores $\sigma = \sum_{\alpha, \beta} \sigma_{AB}(\alpha,\beta)$
-together with the contributions of all gaps\NEW{,\ie{} insertions or 
-deletions of characters}, and then a normalized score
-(\textit{nscore}) obtained by dividing $\sigma$ by the number of score
-contributions. In the case of bigram alignments this amounts
-$\textit{nscore}=\sigma/\ell$, where $\ell$ is the length of alignment
-without \textasciicircum{} and \$. Such a normalization makes alignments of
-words with different lengths comparable by reporting an average score per
-aligned position.
-\TODO{The reader may be left wondering about situations where one 
-sound/symbol in language A corresponds to two in language B
-(e.g. Spanish puerta - Italian porta, or instances where two symbols 
-correspond to a single sound in one language). This is one of the reasons 
-that I recommend consolidating the discussion of representational 
-issues and being more explicit about what "gaps" are in this method.}
-\NR{For this todo maybe point to Fig.~\ref{fig:aln}? maybe I can find 
-another alignment where there is no deletion score used even though there 
-obviously is one.}
+\TODO{The text and formulas here are ambiguous as to whether sigma and
+  nscore are defined of a pair of languages or a pair of words from
+  two lgs.  Presumably the latter but actually the sigma formula as
+  written contains free variables that ranged over the full set of
+  pairs between two languages on the previous page. Formulas are used
+  for clarity so please be explicit as to what is defined over what
+  and the domains of free variables.}  Based on this, one can proceed
+to define the total score \LM{of two words $u$ from language $A$ and
+  $v$ from language $B$ $\sigma(u,v)$} as the sum of all bigram scores
+\LM{of all aligned bigrams}
+$\sigma(u,v) = \sum_{\alpha \in u, \beta \in v, \alpha\text{ aligned
+    to }\beta} \sigma_{AB}(\alpha,\beta)$ together with the
+contributions of all gaps\NEW{,\ie{} insertions or deletions of
+  characters}, and then a normalized score (\textit{nscore}) obtained
+by dividing $\sigma$ by the number of score contributions. \LM{Note
+  that the similarity score $\sigma_{AB}(\alpha,\beta)$ for bigram
+  $\alpha$ from language $A$ and bigram $\beta$ from language $B$ is
+  defined in the scoring model.} In the case of bigram alignments this
+amounts $\textit{nscore}=\sigma/\ell$, where $\ell$ is the length of
+alignment without \textasciicircum{} and \$. Such a normalization
+makes alignments of words with different lengths comparable by
+reporting an average score per aligned position.  \TODO{The reader may
+  be left wondering about situations where one sound/symbol in
+  language A corresponds to two in language B (e.g. Spanish puerta -
+  Italian porta, or instances where two symbols correspond to a single
+  sound in one language). This is one of the reasons that I recommend
+  consolidating the discussion of representational issues and being
+  more explicit about what "gaps" are in this method.}  \NR{For this
+  todo maybe point to Fig.~\ref{fig:aln}? maybe I can find another
+  alignment where there is no deletion score used even though there
+  obviously is one.}\LM{Would be cool if we could use the examples
+  above, e.g. bueno and bono. Do we have an fitting scoring model for
+  this?}
 
 \begin{figure}
  \begin{center}
@@ -901,7 +913,7 @@ obviously is one.}
 These normalized alignment scores can be used to distinguish cognates from
 non-cognates. In Fig.~\ref{fig:unibigramdist} (left), we show histograms of
 both the simple unigram scores and the bigram scores for all pairwise
-alignments of words from 11 Indo-European languages.
+alignments of words from 11 Indo-European languages \LM{(Table~\ref{tab:bigramscores})}.
 \TODO{Which 11 I-E lgs and why those (and, not, say, a single pair). This matters
 as the results should look quite different for distantly vs closely
 related pairs of languages.}
@@ -920,11 +932,11 @@ the capability of the normalized alignment scores to distinguish cognates
 from non-cognates. This is not unexpected since regular correspondences are
 often sensitive to neighboring phonetic contexts, and a large amount of the
 context sensitivity can be accounted for by looking at one neighboring
-sound along with word boundaries, an imperfect proxy for syllable
+sound along with word boundaries\LM{. However, neighboring sounds are} an imperfect proxy for syllable
 boundary. 
 \TODO{Word boundaries aren't really an 'imperfect proxy' for syllable 
 boundaries. Rather, they are a restricted subset of syllable boundaries
-that are recoverable from orthographic representations.}
+that are recoverable from orthographic representations.\LM{seriously???}}
 In more difficult cases, such as the Guaycuruan example, the
 situation is far from perfect. Here the cognates are not completely
 separated from the non-cognates by the \textit{nscore} even for \NEW{the} bigram
@@ -932,7 +944,7 @@ scoring model. This leaves us with two possibilities: (1) We can seek to
 further improve the scoring model. Below we will briefly discuss a few
 ideas in this direction. (2) We can accept that the computational method
 does not provide us with a perfect way to identify \emph{all} cognates,
-\ie{} we are left with a trade-off between between false positives (false
+\ie{} we are left with a trade-off between false positives (false
 cognates: word pairs that are not truly cognates despite their good score)
 and false negatives (unidentified cognates: word pairs that we fail to
 recognize as cognates because their score is not large enough). The choice
@@ -1056,11 +1068,11 @@ pairs with an alignment score at least as large as the cutoff value;
 specificity measures the fraction of non-cognates with an alignment score
 smaller than the cutoff. Each cutoff value thus yields a pair of
 sensitivity and specificity values that quantify how well the score-based
-separation between cognates and non-cognates performs. It is customary to
+separation between cognates and non-cognates performs. \LM{One can}
 summarize the values in the form of the \textit{Receiver-Operator-Curve}
 (ROC) shown in Fig.~\ref{fig:DanROC}. 
 \TODO{It's more customary to present the f-score of the precision/recall
-corresponding to the different threshold values...}
+corresponding to the different threshold values... \LM{replaced 'It is customary to' with 'One can'}}
 Each point on the line corresponds
 to a cutoff value and is placed according to the cutoff's sensitivity and
 specificity in the plot. The diagonal line indicates equal values for

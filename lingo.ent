@@ -1,4 +1,71 @@
 \@doanenote {1}
+macro:->Incomplete
+lineage
+sorting
+describes
+the
+effect
+that
+for
+a
+small
+subset
+of
+the
+genome
+may
+contradicts
+the
+true
+phylogeny
+by
+being
+more
+similar
+to
+a
+more
+distant
+relative
+than
+to
+the,
+e.g.,
+sister
+species.
+In
+the
+words
+of
+linguistics,
+some
+words
+in
+a
+language
+may
+be
+less
+similar
+to
+the
+cognate
+in
+the
+sister
+language
+than
+to
+the
+cognate
+in
+a
+more
+distantly
+related
+language.
+\@endanenote 
+\@doanenote {2}
 macro:->The
 /we/
 is
@@ -7,7 +74,7 @@ $<$ue$>$
 in
 Spanish.
 \@endanenote 
-\@doanenote {2}
+\@doanenote {3}
 macro:->Even
 in
 word
@@ -62,7 +129,7 @@ correct
 \LING
 {Milch}.
 \@endanenote 
-\@doanenote {3}
+\@doanenote {4}
 macro:->Again,
 we
 include
@@ -84,7 +151,7 @@ word
 \QUOTE
 {change}.
 \@endanenote 
-\@doanenote {4}
+\@doanenote {5}
 macro:->The
 confidence
 interval
@@ -166,7 +233,7 @@ observed
 data
 points.
 \@endanenote 
-\@doanenote {5}
+\@doanenote {6}
 macro:->In
 a
 deeper
@@ -282,7 +349,7 @@ of
 the
 model.
 \@endanenote 
-\@doanenote {6}
+\@doanenote {7}
 macro:->We
 ignore
 for

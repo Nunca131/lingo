@@ -1,4 +1,4 @@
-\begin{thebibliography}{140}
+\begin{thebibliography}{144}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
@@ -60,15 +60,24 @@
 \newblock \emph{Basic color terms: their universality and evolution}.
 \newblock Berkeley: University of California Press.
 
-\bibitem[{Blasi et~al.(2016)Blasi, Christiansen, Hammarstr{\"o}m, Stadler, and
-  Wichmann}]{Blasi:16a}
+\bibitem[{Blasi et~al.(2016{\natexlab{a}})Blasi, Christiansen, Hammarstr{\"o}m,
+  Stadler, and Wichmann}]{Blasi:16a}
 \textsc{Blasi, Dami{\'a}n}; \textsc{Christiansen, Morten~H.};
   \textsc{Hammarstr{\"o}m, Harald}; \textsc{Stadler, Peter~F.}; and
-  \textsc{Wichmann, Soeren}, 2016.
+  \textsc{Wichmann, Soeren}, 2016{\natexlab{a}}.
 \newblock Sound-meaning association biases evidenced across thousands of
   languages.
 \newblock \emph{Proc. Natl. Acad. Sci. USA}, 113.10818--10823.
 \newblock \doi{10.1073/pnas.1605782113}.
+
+\bibitem[{Blasi et~al.(2016{\natexlab{b}})Blasi, Wichmann, Hammarstr{\"o}m,
+  Stadler, and Christiansen}]{Blasi:2016}
+\textsc{Blasi, Dami{\'a}n~E}; \textsc{Wichmann, S{\o}ren};
+  \textsc{Hammarstr{\"o}m, Harald}; \textsc{Stadler, Peter~F}; and
+  \textsc{Christiansen, Morten~H}, 2016{\natexlab{b}}.
+\newblock Sound--meaning association biases evidenced across thousands of
+  languages.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 201605782.
 
 \bibitem[{Blust(2000)}]{Blust:00}
 \textsc{Blust, Robert}, 2000.
@@ -518,7 +527,7 @@ EHL, 2001.
 \textsc{Hruschka, Daniel~J}; \textsc{Branford, Simon}; \textsc{Smith, Eric~D};
   \textsc{Wilkins, Jon}; \textsc{Meade, Andrew}; \textsc{Pagel, Mark}; and
   \textsc{Bhattacharya, Tanmoy}, 2015.
-\newblock Detecting regular sound changes in linguistics as \new{events} of
+\newblock Detecting regular sound changes in linguistics as {\NEW{events}} of
   concerted evolution.
 \newblock \emph{Current Biology}, 25.1--9.
 \newblock \doi{10.3389/fgene.2013.00206}.
@@ -645,9 +654,16 @@ EHL, 2001.
 \newblock \doi{10.1093/jole/lzw006}.
 \newblock \urlprefix\url{+ http://dx.doi.org/10.1093/jole/lzw006}.
 
-\bibitem[{List et~al.(2017)List, Greenhill, and Gray}]{List:17}
+\bibitem[{List et~al.(2017{\natexlab{a}})List, Greenhill, and Gray}]{List:2017}
 \textsc{List, Johann-Mattis}; \textsc{Greenhill, Simon~J}; and \textsc{Gray,
-  Russell~D}, 2017.
+  Russell~D}, 2017{\natexlab{a}}.
+\newblock The potential of automatic word comparison for historical
+  linguistics.
+\newblock \emph{PloS one}, 12.e0170046.
+
+\bibitem[{List et~al.(2017{\natexlab{b}})List, Greenhill, and Gray}]{List:17}
+\textsc{List, Johann-Mattis}; \textsc{Greenhill, Simon~J}; and \textsc{Gray,
+  Russell~D}, 2017{\natexlab{b}}.
 \newblock The potential of automatic word comparison for historical
   linguistics.
 \newblock \emph{PloS one}, 12.e0170046.
@@ -673,6 +689,14 @@ EHL, 2001.
 \newblock \emph{Cognition}, 109.235--250.
 \newblock
   \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0010027708001911}.
+
+\bibitem[{Misof et~al.(2014)Misof, Meusemann, von Reumont, K{\"u}ck, Prohaska,
+  and Stadler}]{Misof:14a}
+\textsc{Misof, Bernhard}; \textsc{Meusemann, Karen}; \textsc{von Reumont,
+  Bj{\"o}rn~M.}; \textsc{K{\"u}ck, Patrick}; \textsc{Prohaska, Sonja~J.}; and
+  \textsc{Stadler, Peter~F.}, 2014.
+\newblock {\it A priori} assessment of data quality in molecular phylogenetics.
+\newblock \emph{Alg. Mol. Biol.}, 9.22.
 
 \bibitem[{Needleman and Wunsch(1970)}]{needleman:70}
 \textsc{Needleman, Saul~B} and \textsc{Wunsch, Christian~D}, 1970.
@@ -764,6 +788,12 @@ EHL, 2001.
 \newblock Genome-wide inference of ancestral recombination graphs.
 \newblock \emph{PLoS Genetics}, 10.e1004342.
 \newblock \doi{10.1371/journal.pgen.1004342}.
+
+\bibitem[{Robinson and Holton(2012)}]{Robinson:2012}
+\textsc{Robinson, Laura~C} and \textsc{Holton, Gary}, 2012.
+\newblock Internal classification of the alor-pantar language family using
+  computational methods applied to the lexicon.
+\newblock \emph{Language Dynamics and Change}, 2.123--149.
 
 \bibitem[{Rouse et~al.(2016)Rouse, Wilson, Carvajal, and Vrijenhoek}]{Rouse:16}
 \textsc{Rouse, Greg~W.}; \textsc{Wilson, Nerida~G.}; \textsc{Carvajal,

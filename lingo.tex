@@ -255,16 +255,8 @@ An important issue to consider in the choice of traits to analyze is
   may be complex enough that a particular system has a very low chance of
   arising more than once.  If such traits are vertically inherited and
   maintained over time, they can provide clear and convincing
-  classification.  On the other hand, less complex items such as individual
-  sound-meaning correspondences encoded as lexical roots 
-  \TODO{On page 2, lines 26-29 it is argued that 'individual sound-meaning 
-  correspondences encoded as lexical roots' might be particularly prone
-to homoplasy. Insofar as sound-meaning correspondences are arbitrary (i.e.
-excluding things like iconicity), we might expect relatively low
-rates of homoplasy in these items. Typological features of language 
-might be a clearer example to use to illustrate the notion of homoplasy in 
-linguistic traits.}
-  might be more
+  classification.  On the other hand, other features such as individual
+  sound-meaning correspondences \cite{Blasi:2016} or high-level typological variables (such as word order and the presence of certain marking strategies, \cite{Dunn:05}) might be more
   prone to homoplasy, i.e., they may arise independently more than
   once. The combined evidence from a large number of such co-inherited
   units can provide the same or higher degree of confidence in a
@@ -329,7 +321,7 @@ not all relevant clades are included in the analysis.}
   sequences of 6 protein coding es in Paps et al., the correct
   phylogeny can be retrieved \TODO{(Paps et al 2013)}.
 }
-
+\DB{The CCA-adding enzymes example might be a tad too technical for the intended audience - what about reducing the Xentourbella example to one or two lines?}
 
 Just like language evolution, biological evolution is \NEW{not} purely
 vertical \NEW{and hence not} completely tree-like. Even in higher
@@ -358,7 +350,7 @@ relationships whenever there exists a dominating set of vertically
 inherited features.  \TODO{This is a circular assessment (trees are
   useful when the data is sufficiently tree-like). \LM{Don't
     understand the issue here. It is exactly what we want to say,
-    isn't it?}
+    isn't it?} \DB{I'm with Lydia here.}
 
   NB: The use of the term "other forms of inheritance" does violence
   upon the term "inheritance". Presumably it refers to the mentioned
@@ -392,7 +384,7 @@ visualization at all, and the visualization used did not allow anyone
 to distinguish between retention/innovation and certainly did not give
 any quantification.} \NR{see Fig. 3 in this paper plus its Discussion in Results;
 maybe an explanation is needed how one could detect something like borrowings
-in these networks? see text}
+in these networks? see text} \DB{yes for non-vertical transmission}
 As in other loosely constrained statistical
 estimation problems, phylogenetic networks may be over-parameterized so
 that it is often difficult to discern whether they uncover patterns of the
@@ -400,14 +392,14 @@ underlying linguistic history, or are merely describing the random and
 idiosyncratic noise inherent in any particular data set. It is often
 better, therefore, to stick to a tree-based phylogenetic techniques but
 express the potential existence of reticulation or conflicts by measures of
-goodness of fit, \eg{} through low likelihoods in particular branches or a
-wide spread in the posterior distributions in Bayesian settings. 
+goodness of fit, \eg{} through low likelihoods in particular branches,  a
+wide spread in the posterior distributions in Bayesian settings or explicit measures of reticulation when network approaches are applied to the same data \cite{Robinson:2012}. 
 \TODO{This is an important point which, unfortunately, is not developed in the
 paper. It would be great to be told how measuring the goodness of fit of various
 tree-models tells us whether a non-tree model fits better or worse. Also,
 the suggested paradigm of looking at the posterior in Bayesian settings
 conflates effects due to the desired quantity (tree-like-ness) and other things
-estimated (branch lengths, rates of change etc). }
+estimated (branch lengths, rates of change etc). } \DB{I disagree - the text is already too gigantic! Added some references where people can see some (suboptimal) strategies used in linguistics, e.g. compute reticulation in the same data. Wide posteriors are taken as abscence of evidence for the relation but rarely used to discuss against the tree-model.}
 The key
 question, then, is not whether one can devise a complete and sufficiently
 richly parameterized model of language evolution that takes all horizontal
@@ -426,7 +418,7 @@ the biological phylogenetic literature.
 told how only using tree-models tells us whether they are appropriate
 or not. But suppose we did, then the authors suggest we can systematically
 improve the tree-model by extending it to become ARGs. Then why not use
-ARGs to begin with? (That would be systematic, rather than ad hoc).}
+ARGs to begin with? (That would be systematic, rather than ad hoc).} \DB{I feel the whole discussion on the tree/non-tree like tension is too long already...}
 
 The purpose of this contribution is to demonstrate that quantitative
 statistical approaches that have become widely accepted and used in the
@@ -440,7 +432,7 @@ research questions but they also suggest additional research questions.
  
 \section{Lexicostatistics and language phylogenetics.}
 \TODO{is mislabeled
-because half of it is devoted to non-lexical phylogenies.}
+because half of it is devoted to non-lexical phylogenies.}\DB{good point: I'd go with Linguistic phylogenies alone}
 
 Although phylogenetic signal is present in virtually all aspects of
 language, computational work so far has concentrated primarily on cognate
@@ -461,7 +453,7 @@ process---usually, but not always, as a constant-rate and memory-free
 Poisson process~\cite{Sankoff:73}. Once one allowed different rates for
 cognate replacement in different parts of the lexicon, and when the
 analysis used only the core concepts belonging to the Swadesh
-lists---assumed to be the most closely co-inherited roots, refractory to
+lists \DB{swadesh is just one of such lists - Jakarta-Leipzig is way more common these days, for instance. I'd say axe this reference to Swadesh.}---assumed to be the most closely co-inherited roots, refractory to
 horizontal transfer---or, at least, weighted their evidence more, this gave
 a very good fit with known linguistic
 history~\cite{Lee:11,Gray:09,Dunn:11}
@@ -471,12 +463,12 @@ when we need it and it is easy to do, they don't do it. For example
 what is the Robinson-Foulds distance between the computational and
 "known linguistic history"-tree topologies in the cited papers? (And
 why cite these, esp Dunn et al 2011, rather than all studies with
-this metholodogy).}
+this metholodogy).}\DB{agree with removing Dunn et al's ref here. As for the claim: I propose we replace "very good fit" for "qualitatively agrees most of the time with" although, as a matter of fact, most of the fit is simply topological in nature (e.g. a particular branch is recovered, or two close variates show up as close sisters in a tree.)}
 , and provided a credible starting
 point in discussions on language relationships \cite{Bouckaert:12}. It is
 important to realize, though, that all these approaches crucially depend on
 manually determined cognate classes. There is not yet an equally reliable
-automatic method to determine cognacy. Any progress in the development of
+automatic method to determine cognacy, although contemporary automatic methods achieve reasonably good rates of classification \cite{List:2017} \DB{it is fair to comment here on the automatic cognate detection algorithms, some of which achieve efficiency comparable to that of humans - I added Mattis' most recent paper}. Any progress in the development of
 such methods has to rely on a good inference of sound correspondences,
 which seems to require larger datasets.
 
@@ -497,7 +489,7 @@ forms~\cite{BouchardCote:13}
 and in phylogenetic analysis of typological
 features~\cite{Gell-Mann:11,Dunn:11}.
 \TODO{There is no machine learning in the standard sense of the term in the two
-cited papers.}
+cited papers.}\DB{The sentence starting with "In addition..." seems to be out of place to me. I vote remove.}
 One must note, however, that even
 when there appears to be a phylogenetic signal in such data, there is much
 less consensus about the nature of any vertically-inherited \TT{core} and
@@ -512,11 +504,12 @@ like cognate lists, the input data required extensive manual curation to
 separate the bound grammatical affixes and identify cognates. These require
 a large amount of linguistic expertise for their preparation, thereby
 severely limiting both the scope and the statistical power of computational
-approaches. Small or moderate size word lists contain only very limited
+approaches. \DB{I remove the following sentence and comment because making statements about "number of cognates" in a given dataset is relative to the size of family, purity of data, time depth, etc, all things hinted before. BEFORE: Small or moderate size word lists contain only very limited
 numbers of cognates, particularly for the more distant languages. 
 \TODO{What do you mean by "the more distant languages"? I could imagine 
 this being true for poorly attested languages, and languages
-in families where the general level of documentation is poor.}
+in families where the general level of documentation is poor.}}
+
 The recognition of cognates between distant languages often requires the
 intermediate reconstruction of ancestral forms, and it is difficult, if not
 impossible, to properly account for uncertainty propagation if these tasks
@@ -577,7 +570,7 @@ lists not yet subjected to etymological analysis
 words with roughly corresponding meaning, but make no effort to single out
 cognates, let alone to distinguish borrowings from vertical inheritance.
 
-The core or basic vocabulary comprising the Swadesh concepts when compiled
+The core or basic vocabulary \DB{remove reference to Swadesh list: comprising the Swadesh concepts} when compiled
 into such word lists is particularly suited for the phylogenetic enterprise
 for two reasons. First, it is composed of many items of proven genealogical
 persistence \cite{Calude:2011}, with some of them potentially conserved
@@ -587,7 +580,7 @@ method \cite{Pagel:2013}.
 in which they were created and compiled had its shortcomings \cite{Hoijer:56}}
 \TODO{These studies do not "prove genealogical persistence", they are circular in
 this respect since they assume families established on the assumption of
-genealogical persistence of the very same vocabulary items...}
+genealogical persistence of the very same vocabulary items...} \DB{I agree - however, do we really need this whole section on IDS? I don't think so IMHO}
 Lexical replacement rate seems to be linked to
 frequency of use, which is fairly comparable, at least across languages
 from the largest lingustic families in the world
@@ -650,7 +643,7 @@ one chooses a suboptimal solution of leaving these as a sequence of
 characters to be handled later. \LM{An example for how to solve this issue will be shown later in this section.} 
 \TODO{Leaving the sequences of characters to be handled later leaves 
 the reader wondering, at this point in the paper, how this will
-be resolved. A reference to where it is resolved would be useful.}
+be resolved. A reference to where it is resolved would be useful.} \DB{I would change the last two sentences for a final reference in the previous sentence: "before analysis (although chances are such information is missing from composite data, which requires different strategies, ref. CHAPTER)}
   
 A very natural starting point, then, is to regard words as sequences of
 characters that correspond, at least approximately, to phonemes. The most
@@ -771,7 +764,7 @@ the correct alignments of real cognate pairs for the statistical
 machinery to identify the more common sound correspondences.
 \TODO{What evidence supports this claim that there is sufficient signal 
 in real cognate pair alignments for correct sound
-correspondences to be identified in spite of some false positives/wrong alignments?}
+correspondences to be identified in spite of some false positives/wrong alignments?} \DB{I agree on that the claim comes across as a bit vague.}
 
 It is interesting to note that the statistical approach accommodates many
 linguistic subtleties without explicitly building them into the

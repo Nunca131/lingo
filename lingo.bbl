@@ -1,4 +1,4 @@
-\begin{thebibliography}{144}
+\begin{thebibliography}{148}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
@@ -35,6 +35,11 @@
 \newblock Languages evolve in punctuational bursts.
 \newblock \emph{Science}, 319.588.
 \newblock \doi{10.1126/science.1149683}.
+
+\bibitem[{Bandelt and Dress(1992)}]{Bandelt:92}
+\textsc{Bandelt, H.~J.} and \textsc{Dress, A.~W.M.}, 1992.
+\newblock A canonical decomposition theory for metrics on a finite set.
+\newblock \emph{Advances in mathematics}, 92.47.
 
 \bibitem[{Baxter and Manaster-Ramer(2000)}]{Baxter:00}
 \textsc{Baxter, W} and \textsc{Manaster-Ramer, A}, 2000.
@@ -99,6 +104,13 @@
   models of sound change.
 \newblock \emph{Proc Natl Acad Sci USA}, 110.4224--4229.
 \newblock \doi{10.1073/pnas.1204678110}.
+
+\bibitem[{Bouchard-C{\^o}t{\'e} et~al.(2012)Bouchard-C{\^o}t{\'e},
+  Sankararaman, and Jordan}]{BouchardCote:12}
+\textsc{Bouchard-C{\^o}t{\'e}, A.}; \textsc{Sankararaman, S.}; and
+  \textsc{Jordan, M.~I.}, 2012.
+\newblock Phylogenetic inference via sequential {Monte Carlo}.
+\newblock \emph{Systematic Biology}, 61.579--593.
 
 \bibitem[{Bouckaert et~al.(2012)Bouckaert, Lemey, Dunn, Greenhill, Alekseyenko,
   Drummond, Gray, Suchard, and Atkinson}]{Bouckaert:12}
@@ -566,6 +578,13 @@ EHL, 2001.
   empirically determined weights.
 \newblock \emph{Language Dynamics and Change}, 3.245--291.
 
+\bibitem[{Joy et~al.(2016)Joy, Liang, McCloskey, Nguyen, and Poon}]{Joy:16}
+\textsc{Joy, Jeffrey~B.}; \textsc{Liang, Richard}; \textsc{McCloskey,
+  Rosemary~M.}; \textsc{Nguyen, T.}; and \textsc{Poon, Art F.~Y.}, 2016.
+\newblock Ancestral reconstruction.
+\newblock \emph{PLoS Comput Biol}, 12.e1004763.
+\newblock \doi{10.1371/journal.pcbi.1004763}.
+
 \bibitem[{Key and Comrie(2007)}]{IDS}
 \textsc{Key, Mary~Ritchie} and \textsc{Comrie, Bernard}, 2007.
 \newblock Intercontinental dictionary series.
@@ -729,6 +748,11 @@ EHL, 2001.
 \newblock Tutorial on computational linguistic phylogeny.
 \newblock \emph{Language and Linguistics Compass}, 2.760--820.
 \newblock \doi{10.1111/j.1749-818x.2008.00082.x}.
+
+\bibitem[{Nieselt-Struwe(1997)}]{Nieselt:97}
+\textsc{Nieselt-Struwe, K.}, 1997.
+\newblock Graphs in sequence spaces: a review of statistical geometry.
+\newblock \emph{Biophys Chem.}, 30.111--131.
 
 \bibitem[{Notredame(2007)}]{Notredame:07}
 \textsc{Notredame, C}, 2007.

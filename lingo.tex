@@ -408,7 +408,7 @@ representation of evolutionary relationships whenever there exists a
 dominating set of vertically inherited features. \PFS{Several measures that
   quantify the of tree-likeness of a data set are available that do not 
   presuppose a particular tree and hence can be employed without biasing 
-  subsequent phylogenetic statements \cite{Misof:14a}.} 
+  subsequent phylogenetic statements \cite{Bandelt:92,Nieselt:97,Misof:14a}.} 
 
 \par\framebox{\begin{minipage}{0.9\textwidth}\small
 \textbf{Discussion of comment: delete when resolved!}
@@ -430,6 +430,13 @@ dominating set of vertically inherited features. \PFS{Several measures that
     with the footnote for the previous TODO. I also replaced the
     'other forms of inheritance' with 'other forms of
     relationships'. May be more generell and thus more inclusive.}}
+    \PFS{I'm not sure I agree with this. We need 
+    to decide whether we want to use inheritance ONLY for \emph{vertical
+      inheritance} or if we also want to use the term inheritance for 
+    horizontally transmitted material. (The term ``horizontal inheritance''
+    is indeed used in the bio literature, but we can avoid it if necessary.
+    If so, we should mostly replace vertical inheritance with \emph{vertical 
+    transmission}, however.}
 \end{minipage}
 }
 
@@ -471,7 +478,8 @@ paper. It would be great to be told how measuring the goodness of fit of various
 tree-models tells us whether a non-tree model fits better or worse. Also,
 the suggested paradigm of looking at the posterior in Bayesian settings
 conflates effects due to the desired quantity (tree-like-ness) and other things
-estimated (branch lengths, rates of change etc). } \DB{I disagree - the text is already too gigantic! Added some references where people can see some (suboptimal) strategies used in linguistics, e.g. compute reticulation in the same data. Wide posteriors are taken as abscence of evidence for the relation but rarely used to discuss against the tree-model.}
+estimated (branch lengths, rates of change etc). } 
+\DB{I disagree - the text is already too gigantic! Added some references where people can see some (suboptimal) strategies used in linguistics, e.g. compute reticulation in the same data. Wide posteriors are taken as abscence of evidence for the relation but rarely used to discuss against the tree-model.}
 The key
 question, then, is not whether one can devise a complete and sufficiently
 richly parameterized model of language evolution that takes all horizontal
@@ -1283,6 +1291,11 @@ feasible at least from a computational point of view,
 \TODO{Reference here is needed to Bouchard-Cote's book but, even more so,
 a justification for the totally unspported claim that it is feasible
 from a computational point of view is needed...} \NR{no book found}
+\PFS{for the ''computationally feasible'' part we can point to the 
+  Bayesian phylogeny reconstruction methods and recent methods for 
+  reconstruction of ancestral states \cite{BouchardCote:12,Joy:16}
+  which solve essentially the same problem in a biological setting.} 
+
 it may not be the
 most efficient approach to analyzing the data. In the context of biological
 phylogenetics it often pays to subdivide the \TT{gold standard} inference

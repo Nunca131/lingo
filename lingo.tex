@@ -10,7 +10,7 @@
 
 \newcommand\cmr[1]{{\fontfamily{cmr}\selectfont#1}}
 
-\newcommand\maybecolor[1]{}
+\newcommand\maybecolor[1]{#1}
 \let\maybecolor=\color % Comment this out to remove author marks.
                        % \TODO needs to be removed by hand.
 
@@ -50,7 +50,9 @@
 \newcommand{\DB}[1]{\begingroup\maybecolor{Cerulean}#1\endgroup}
 \newcommand{\HY}[1]{\begingroup\maybecolor{OliveGreen}#1\endgroup}
 \newcommand{\TB}[1]{\begingroup\maybecolor{Fuchsia}#1\endgroup}
-\newcommand{\NEW}[1]{\texorpdfstring{\begingroup\maybecolor{PineGreen}#1\endgroup}{#1}} %TB
+\definecolor{pinegreen}{rgb}{0.0,0.47,0.44}
+\newcommand{\NEW}[1]{\begingroup\color{pinegreen}#1\endgroup} 
+%TB
 %mark ups for language style
 \newcommand{\LING}[1]{\textit{#1}}
 \newcommand{\TT}[1]{\textsc{#1}}
@@ -237,7 +239,7 @@
 \ifANONYMOUS
 \onehalfspacing
 \else 
-\renewcommand{\NEW}[1]{\begingroup\color{black}#1\endgroup}
+%\renewcommand{\NEW}[1]{\begingroup\color{black}#1\endgroup}
 \fi
 
 \section{Introduction.}
@@ -562,20 +564,27 @@ traits in such data that evolve neutrally on a tree has been
 questioned~\cite{Albu:06,Cysouw:08,Wichmann:07,Wichmann:10}. Other
 proposals have involved comparing morphological material~\cite{Nichols:92},
 syntactic features~\cite{Longobardi:09}, as well as the phonetic distance
-between word forms within a cognate set~\cite{Heggarty:00}. In addition,
+between word forms within a cognate set~\cite{Heggarty:00}. 
+
+\begin{tiny}
+In addition,
 machine learning approaches have been used in reconstructing ancient word
 forms~\cite{BouchardCote:13} 
+\end{tiny}
 \TODO{This information belongs in the section about lexicon.}
+\begin{tiny}
 and in phylogenetic analysis of typological
 features~\cite{Gell-Mann:11,Dunn:11}.
+\end{tiny}
 \TODO{There is no machine learning in the standard sense of the term in the two
 cited papers.}\DB{The sentence starting with "In addition..." seems to be out of place to me. I vote remove.}
-One must note, however, that even
-when there appears to be a phylogenetic signal in such data, there is much
-less consensus about the nature of any vertically-inherited \TT{core} and
-how that relates to the vertical inherited bundle of features traditionally
-used to define genetic relations in linguistics~\cite{Dediu:13}. In using
-such data, care must, therefore, be exercised.
+
+One must note, however, that even when there appears to be a phylogenetic
+signal in such data, there is much less consensus about the nature of any
+vertically-inherited \TT{core} and how that relates to the vertical
+inherited bundle of features traditionally used to define genetic relations
+in linguistics~\cite{Dediu:13}. In using such data, care must, therefore,
+be exercised.
 
 \section{Modern work flows for sound data.}
 
@@ -678,7 +687,8 @@ tests on \QUOTE{simple} language families, the difference was found to have
 no systematic structure that could bias the reconstruction of phylogenies
 based on this data \cite{Steiner:11a,Hruschka:14}.
 \TODO{Rephrase from Importantly on.}
-\NEW{For a comparison of different cognate detection algorithms see~\citet{List:17}.}
+\NEW{For a comparison of different cognate detection algorithms 
+see~\citet{List:17}.}
 
 Nevertheless, it is difficult to overemphasize the importance of carefully
 curated data sets that are accurate, reliable, uniformly transcribed, and
@@ -712,19 +722,32 @@ crucial distinctions. A related issue is that transcriptions often use
 digraphs for single segments, and their usage is sometimes inconsistent
 across the orthographies used for the various languages and various sources
 of data, even after unicode normalization. Thus, for example, an ejective
-may be denoted by superposed apostrophe \NEW{$<$}\'k\NEW{$>$}, postposed apostrophe
-\NEW{$<$}k'\NEW{$>$}, postposed palochka \NEW{$<$}k$|\NEW{>}$, or special letters
-\NEW{$<$}\cmr\texthtk\NEW{$>$}. Depending on the encoding, these might be represented either
-as digraphs or unigraphs. If the language specific segmentation is
-available in the data source, these can all be converted to special
-characters---\eg{} in the private unicode space---before analysis. Most
-often, however, such information is missing from composite data sources and
-one chooses a suboptimal solution of leaving these as a sequence of
-characters to be handled later. \LM{An example for how to solve this issue will be shown later in this section.} 
-\TODO{Leaving the sequences of characters to be handled later leaves 
-the reader wondering, at this point in the paper, how this will
-be resolved. A reference to where it is resolved would be useful.} \DB{I would change the last two sentences for a final reference in the previous sentence: "before analysis (although chances are such information is missing from composite data, which requires different strategies, ref. CHAPTER)}
-  
+may be denoted by superposed apostrophe \NEW{$<$}\'k\NEW{$>$}, postposed
+apostrophe \NEW{$<$}k'\NEW{$>$}, postposed palochka \NEW{$<$}k$|\NEW{>}$,
+or special letters \NEW{$<$}\cmr\texthtk\NEW{$>$}. Depending on the
+encoding, these might be represented either as digraphs or unigraphs. If
+the language specific segmentation is available in the data source, these
+can all be converted to special characters---\eg{} in the private unicode
+space---before analysis. Most often, however, such information is missing
+from composite data sources and one chooses a suboptimal solution of
+leaving these as a sequence of characters to be handled later. \PFS{An
+  example for how to solve this issue will be discussed in section
+  \ref{sect:QuRegCh} below.}
+ 
+\par\framebox{\begin{minipage}{0.9\textwidth}\small
+\textbf{Discussion of comment: delete when resolved!}
+
+\LM{An example for how to solve this issue will be shown later in this
+  section.}  \TODO{Leaving the sequences of characters to be handled later
+  leaves the reader wondering, at this point in the paper, how this will be
+  resolved. A reference to where it is resolved would be useful.} \DB{I
+  would change the last two sentences for a final reference in the previous
+  sentence: "before analysis (although chances are such information is
+  missing from composite data, which requires different strategies,
+  ref. CHAPTER)}
+\end{minipage}}  
+
+
 A very natural starting point, then, is to regard words as sequences of
 characters that correspond, at least approximately, to phonemes. The most
 direct approach to comparing sequences starts by aligning them. In
@@ -1837,6 +1860,7 @@ conclusion a precise evidentiary value characterized by the $p$-value of
 the test.
 
 \subsection{Quantifying regular change: the importance of representation.} 
+\label{sect:QuRegCh}
 
 The ease with which sound similarities or regular correspondences can be
 discovered depends on the encoding used to represent the sounds of the

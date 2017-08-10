@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.21)  9 AUG 2017 18:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.21)  10 AUG 2017 08:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**lingo.tex
+**lingo
 (./lingo.tex
 LaTeX2e <2011/06/27>
 Babel <3.9f> and hyphenation patterns for 2 languages loaded.
@@ -727,52 +727,52 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 ) (./lingo.aux)
 \openout1 = `lingo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 156.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 156
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 158.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 158
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 156.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 156
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 158.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 158
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 156.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 156
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 158.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 158
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 156.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 156.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 158.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 158.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 156.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 156.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 158.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 158.
 
 (/usr/share/texlive/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 156.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 158.
+LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 158.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
@@ -843,7 +843,7 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box40
-Package hyperref Info: Link coloring OFF on input line 156.
+Package hyperref Info: Link coloring OFF on input line 158.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -852,31 +852,31 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count133
 )
-LaTeX Info: Redefining \ref on input line 156.
-LaTeX Info: Redefining \pageref on input line 156.
-LaTeX Info: Redefining \nameref on input line 156.
+LaTeX Info: Redefining \ref on input line 158.
+LaTeX Info: Redefining \pageref on input line 158.
+LaTeX Info: Redefining \nameref on input line 158.
 
 (./lingo.out) (./lingo.out)
 \@outlinefile=\write5
 \openout5 = `lingo.out'.
 
-LaTeX Font Info:    Try loading font information for U+txmia on input line 233.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 235.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 233.
+LaTeX Font Info:    Try loading font information for U+msa on input line 235.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 233.
+LaTeX Font Info:    Try loading font information for U+msb on input line 235.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 233.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 235.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
@@ -891,7 +891,7 @@ File: utxsyc.fd 2000/12/15 v3.1
 File: figures/methods.pdf Graphic file (type pdf)
 
 <use figures/methods.pdf>
-Package pdftex.def Info: figures/methods.pdf used on input line 602.
+Package pdftex.def Info: figures/methods.pdf used on input line 611.
 (pdftex.def)             Requested size: 421.19714pt x 177.4154pt.
  [8 <./figures/methods.pdf>] [9] [10]
 Package epstopdf Info: Source file: <figures/soundChangeLaws_vs_scoringModels.e
@@ -905,17 +905,17 @@ ps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/soundChangeLaws_vs
 _scoringModels-eps-converted-to.pdf figures/soundChangeLaws_vs_scoringModels.ep
 s>
-(epstopdf)             \includegraphics on input line 762.
+(epstopdf)             \includegraphics on input line 785.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/soundChangeLaws_vs_scoringModels-eps-converted-to.pdf, id=791, 169.633
+<figures/soundChangeLaws_vs_scoringModels-eps-converted-to.pdf, id=792, 169.633
 74pt x 156.585pt>
 File: figures/soundChangeLaws_vs_scoringModels-eps-converted-to.pdf Graphic fil
 e (type pdf)
 
 <use figures/soundChangeLaws_vs_scoringModels-eps-converted-to.pdf>
 Package pdftex.def Info: figures/soundChangeLaws_vs_scoringModels-eps-converted
--to.pdf used on input line 762.
+-to.pdf used on input line 785.
 (pdftex.def)             Requested size: 234.0pt x 216.00867pt.
  [11 <./figures/soundChangeLaws_vs_scoringModels-eps-converted-to.pdf>] [12]
 Package epstopdf Info: Source file: <figures/aln_porto-puerto.eps>
@@ -927,15 +927,15 @@ pdf>
 (epstopdf)                    size: 28603 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/aln_porto-puerto-e
 ps-converted-to.pdf figures/aln_porto-puerto.eps>
-(epstopdf)             \includegraphics on input line 902.
+(epstopdf)             \includegraphics on input line 925.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/aln_porto-puerto-eps-converted-to.pdf, id=825, 213.79875pt x 66.2475pt
+<figures/aln_porto-puerto-eps-converted-to.pdf, id=826, 213.79875pt x 66.2475pt
 >
 File: figures/aln_porto-puerto-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/aln_porto-puerto-eps-converted-to.pdf>
 Package pdftex.def Info: figures/aln_porto-puerto-eps-converted-to.pdf used on 
-input line 902.
+input line 925.
 (pdftex.def)             Requested size: 163.80286pt x 50.75598pt.
  [13 <./figures/aln_porto-puerto-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/nscore_unigram_bigram.eps>
@@ -947,16 +947,16 @@ d-to.pdf>
 (epstopdf)                    size: 9880 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/nscore_unigram_big
 ram-eps-converted-to.pdf figures/nscore_unigram_bigram.eps>
-(epstopdf)             \includegraphics on input line 970.
+(epstopdf)             \includegraphics on input line 993.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/nscore_unigram_bigram-eps-converted-to.pdf, id=861, 800.9925pt x 534.9
+<figures/nscore_unigram_bigram-eps-converted-to.pdf, id=862, 800.9925pt x 534.9
 9875pt>
 File: figures/nscore_unigram_bigram-eps-converted-to.pdf Graphic file (type pdf
 )
  <use figures/nscore_unigram_bigram-eps-converted-to.pdf>
 Package pdftex.def Info: figures/nscore_unigram_bigram-eps-converted-to.pdf use
-d on input line 970.
+d on input line 993.
 (pdftex.def)             Requested size: 224.638pt x 150.03535pt.
 Package epstopdf Info: Source file: <figures/bi_uni_scores.eps>
 (epstopdf)                    date: 2017-08-09 17:27:32
@@ -967,23 +967,23 @@ Package epstopdf Info: Source file: <figures/bi_uni_scores.eps>
 (epstopdf)                    size: 9780 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/bi_uni_scores-eps-
 converted-to.pdf figures/bi_uni_scores.eps>
-(epstopdf)             \includegraphics on input line 972.
+(epstopdf)             \includegraphics on input line 995.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/bi_uni_scores-eps-converted-to.pdf, id=863, 776.9025pt x 566.115pt>
+<figures/bi_uni_scores-eps-converted-to.pdf, id=864, 776.9025pt x 566.115pt>
 File: figures/bi_uni_scores-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/bi_uni_scores-eps-converted-to.pdf>
 Package pdftex.def Info: figures/bi_uni_scores-eps-converted-to.pdf used on inp
-ut line 972.
+ut line 995.
 (pdftex.def)             Requested size: 205.92114pt x 150.04567pt.
- [14 <./figures/nscore_unigram_bigram-eps-converted-to.pdf> <./figures/bi_uni_s
-cores-eps-converted-to.pdf>]
-[15] [16] <figures/Hrusch.pdf, id=913, 662.475pt x 659.46375pt>
+ [14] [15 <./figures/nscore_unigram_bigram-eps-converted-to.pdf> <./figures/bi_
+uni_scores-eps-converted-to.pdf>] [16] <figures/Hrusch.pdf, id=914, 662.475pt x
+ 659.46375pt>
 File: figures/Hrusch.pdf Graphic file (type pdf)
 
 <use figures/Hrusch.pdf>
-Package pdftex.def Info: figures/Hrusch.pdf used on input line 1166.
+Package pdftex.def Info: figures/Hrusch.pdf used on input line 1189.
 (pdftex.def)             Requested size: 210.59857pt x 209.634pt.
 Package epstopdf Info: Source file: <figures/ROCCurve_new.eps>
 (epstopdf)                    date: 2017-08-09 17:27:32
@@ -994,15 +994,15 @@ Package epstopdf Info: Source file: <figures/ROCCurve_new.eps>
 (epstopdf)                    size: 9616 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/ROCCurve_new-eps-c
 onverted-to.pdf figures/ROCCurve_new.eps>
-(epstopdf)             \includegraphics on input line 1167.
+(epstopdf)             \includegraphics on input line 1190.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/ROCCurve_new-eps-converted-to.pdf, id=914, 499.8675pt x 484.81125pt>
+<figures/ROCCurve_new-eps-converted-to.pdf, id=915, 499.8675pt x 484.81125pt>
 File: figures/ROCCurve_new-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/ROCCurve_new-eps-converted-to.pdf>
 Package pdftex.def Info: figures/ROCCurve_new-eps-converted-to.pdf used on inpu
-t line 1167.
+t line 1190.
 (pdftex.def)             Requested size: 210.59857pt x 204.25552pt.
  [17] [18 <./figures/Hrusch.pdf> <./figures/ROCCurve_new-eps-converted-to.pdf>]
  [19] [20] [21] [22] [23]
@@ -1014,15 +1014,15 @@ Package epstopdf Info: Source file: <figures/G_G.eps>
 (epstopdf)                    size: 8458 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/G_G-eps-converted-
 to.pdf figures/G_G.eps>
-(epstopdf)             \includegraphics on input line 1571.
+(epstopdf)             \includegraphics on input line 1594.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/G_G-eps-converted-to.pdf, id=1040, 252.945pt x 252.945pt>
+<figures/G_G-eps-converted-to.pdf, id=1039, 252.945pt x 252.945pt>
 File: figures/G_G-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/G_G-eps-converted-to.pdf>
 Package pdftex.def Info: figures/G_G-eps-converted-to.pdf used on input line 15
-71.
+94.
 (pdftex.def)             Requested size: 98.28314pt x 98.28534pt.
 Package epstopdf Info: Source file: <figures/M_M.eps>
 (epstopdf)                    date: 2017-08-09 17:27:32
@@ -1032,15 +1032,15 @@ Package epstopdf Info: Source file: <figures/M_M.eps>
 (epstopdf)                    size: 8253 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/M_M-eps-converted-
 to.pdf figures/M_M.eps>
-(epstopdf)             \includegraphics on input line 1573.
+(epstopdf)             \includegraphics on input line 1596.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/M_M-eps-converted-to.pdf, id=1042, 252.945pt x 252.945pt>
+<figures/M_M-eps-converted-to.pdf, id=1041, 252.945pt x 252.945pt>
 File: figures/M_M-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/M_M-eps-converted-to.pdf>
 Package pdftex.def Info: figures/M_M-eps-converted-to.pdf used on input line 15
-73.
+96.
 (pdftex.def)             Requested size: 98.28314pt x 98.28534pt.
 Package epstopdf Info: Source file: <figures/M_G.eps>
 (epstopdf)                    date: 2017-08-09 17:27:32
@@ -1050,15 +1050,15 @@ Package epstopdf Info: Source file: <figures/M_G.eps>
 (epstopdf)                    size: 8459 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/M_G-eps-converted-
 to.pdf figures/M_G.eps>
-(epstopdf)             \includegraphics on input line 1575.
+(epstopdf)             \includegraphics on input line 1598.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/M_G-eps-converted-to.pdf, id=1044, 252.945pt x 252.945pt>
+<figures/M_G-eps-converted-to.pdf, id=1043, 252.945pt x 252.945pt>
 File: figures/M_G-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/M_G-eps-converted-to.pdf>
 Package pdftex.def Info: figures/M_G-eps-converted-to.pdf used on input line 15
-75.
+98.
 (pdftex.def)             Requested size: 98.28314pt x 98.28534pt.
 Package epstopdf Info: Source file: <figures/bonficols.eps>
 (epstopdf)                    date: 2017-08-09 17:27:32
@@ -1068,15 +1068,15 @@ Package epstopdf Info: Source file: <figures/bonficols.eps>
 (epstopdf)                    size: 9813 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/bonficols-eps-conv
 erted-to.pdf figures/bonficols.eps>
-(epstopdf)             \includegraphics on input line 1577.
+(epstopdf)             \includegraphics on input line 1600.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/bonficols-eps-converted-to.pdf, id=1046, 289.08pt x 252.945pt>
+<figures/bonficols-eps-converted-to.pdf, id=1045, 289.08pt x 252.945pt>
 File: figures/bonficols-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/bonficols-eps-converted-to.pdf>
 Package pdftex.def Info: figures/bonficols-eps-converted-to.pdf used on input l
-ine 1577.
+ine 1600.
 (pdftex.def)             Requested size: 112.3261pt x 98.28314pt.
  [24 <./figures/G_G-eps-converted-to.pdf> <./figures/M_M-eps-converted-to.pdf> 
 <./figures/M_G-eps-converted-to.pdf> <./figures/bonficols-eps-converted-to.pdf>
@@ -1089,30 +1089,30 @@ Package epstopdf Info: Source file: <figures/fdrcurves.eps>
 (epstopdf)                    size: 12277 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/fdrcurves-eps-conv
 erted-to.pdf figures/fdrcurves.eps>
-(epstopdf)             \includegraphics on input line 1778.
+(epstopdf)             \includegraphics on input line 1801.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/fdrcurves-eps-converted-to.pdf, id=1137, 666.49pt x 480.79625pt>
+<figures/fdrcurves-eps-converted-to.pdf, id=1136, 666.49pt x 480.79625pt>
 File: figures/fdrcurves-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/fdrcurves-eps-converted-to.pdf>
 Package pdftex.def Info: figures/fdrcurves-eps-converted-to.pdf used on input l
-ine 1778.
+ine 1801.
 (pdftex.def)             Requested size: 234.0pt x 168.80208pt.
- [27 <./figures/fdrcurves-eps-converted-to.pdf>] <figures/CH_new.pdf, id=1158, 
+ [27 <./figures/fdrcurves-eps-converted-to.pdf>] <figures/CH_new.pdf, id=1157, 
 432.61626pt x 354.32375pt>
 File: figures/CH_new.pdf Graphic file (type pdf)
 
 <use figures/CH_new.pdf>
-Package pdftex.def Info: figures/CH_new.pdf used on input line 1820.
+Package pdftex.def Info: figures/CH_new.pdf used on input line 1843.
 (pdftex.def)             Requested size: 234.0pt x 191.65096pt.
  [28 <./figures/CH_new.pdf>] [29]
-<figures/pairwiseVenn_sameMeaning_0_1.pdf, id=1183, 406.51875pt x 198.7425pt>
+<figures/pairwiseVenn_sameMeaning_0_1.pdf, id=1182, 406.51875pt x 198.7425pt>
 File: figures/pairwiseVenn_sameMeaning_0_1.pdf Graphic file (type pdf)
 
 <use figures/pairwiseVenn_sameMeaning_0_1.pdf>
 Package pdftex.def Info: figures/pairwiseVenn_sameMeaning_0_1.pdf used on input
- line 1917.
+ line 1941.
 (pdftex.def)             Requested size: 210.59857pt x 102.95851pt.
 Package epstopdf Info: Source file: <figures/pairwiseVenn_sameMeaning.eps>
 (epstopdf)                    date: 2017-08-09 17:27:32
@@ -1123,16 +1123,16 @@ rted-to.pdf>
 (epstopdf)                    size: 183546 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pairwiseVenn_sameM
 eaning-eps-converted-to.pdf figures/pairwiseVenn_sameMeaning.eps>
-(epstopdf)             \includegraphics on input line 1918.
+(epstopdf)             \includegraphics on input line 1942.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/pairwiseVenn_sameMeaning-eps-converted-to.pdf, id=1185, 692.5875pt x 4
+<figures/pairwiseVenn_sameMeaning-eps-converted-to.pdf, id=1184, 692.5875pt x 4
 58.71375pt>
 File: figures/pairwiseVenn_sameMeaning-eps-converted-to.pdf Graphic file (type 
 pdf)
  <use figures/pairwiseVenn_sameMeaning-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pairwiseVenn_sameMeaning-eps-converted-to.pdf 
-used on input line 1918.
+used on input line 1942.
 (pdftex.def)             Requested size: 210.59857pt x 139.48402pt.
 
 [30 <./figures/pairwiseVenn_sameMeaning_0_1.pdf> <./figures/pairwiseVenn_sameMe
@@ -1141,11 +1141,11 @@ Missing character: There is no â in font txr!
 Missing character: There is no € in font txr!
 Missing character: There is no ” in font txr!
  [36]
-<figures/cutoff.pdf, id=1381, 887.44684pt x 218.12793pt>
+<figures/cutoff.pdf, id=1380, 887.44684pt x 218.12793pt>
 File: figures/cutoff.pdf Graphic file (type pdf)
 
 <use figures/cutoff.pdf>
-Package pdftex.def Info: figures/cutoff.pdf used on input line 2383.
+Package pdftex.def Info: figures/cutoff.pdf used on input line 2407.
 (pdftex.def)             Requested size: 421.19714pt x 103.5253pt.
 Package epstopdf Info: Source file: <figures/deltaplot.eps>
 (epstopdf)                    date: 2017-08-09 17:27:32
@@ -1155,28 +1155,28 @@ Package epstopdf Info: Source file: <figures/deltaplot.eps>
 (epstopdf)                    size: 10435 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/deltaplot-eps-conv
 erted-to.pdf figures/deltaplot.eps>
-(epstopdf)             \includegraphics on input line 2415.
+(epstopdf)             \includegraphics on input line 2439.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/deltaplot-eps-converted-to.pdf, id=1383, 508.90125pt x 476.78125pt>
+<figures/deltaplot-eps-converted-to.pdf, id=1382, 508.90125pt x 476.78125pt>
 File: figures/deltaplot-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/deltaplot-eps-converted-to.pdf>
 Package pdftex.def Info: figures/deltaplot-eps-converted-to.pdf used on input l
-ine 2415.
+ine 2439.
 (pdftex.def)             Requested size: 210.59857pt x 197.30762pt.
  [37 <./figures/cutoff.pdf>]
-<figures/cg_swad.pdf, id=1431, 488.82625pt x 388.45125pt>
+<figures/cg_swad.pdf, id=1430, 488.82625pt x 388.45125pt>
 File: figures/cg_swad.pdf Graphic file (type pdf)
 
 <use figures/cg_swad.pdf>
-Package pdftex.def Info: figures/cg_swad.pdf used on input line 2453.
+Package pdftex.def Info: figures/cg_swad.pdf used on input line 2477.
 (pdftex.def)             Requested size: 234.0pt x 185.95065pt.
  [38 <./figures/deltaplot-eps-converted-to.pdf>]
-<figures/SPM.pdf, id=1462, 768.8725pt x 293.095pt>
+<figures/SPM.pdf, id=1461, 768.8725pt x 293.095pt>
 File: figures/SPM.pdf Graphic file (type pdf)
  <use figures/SPM.pdf>
-Package pdftex.def Info: figures/SPM.pdf used on input line 2490.
+Package pdftex.def Info: figures/SPM.pdf used on input line 2514.
 (pdftex.def)             Requested size: 304.19714pt x 115.96132pt.
 
 [39 <./figures/cg_swad.pdf>] [40 <./figures/SPM.pdf>] [41] [42] [43] [44]
@@ -1205,26 +1205,26 @@ Missing character: There is no â in font txi!
 Missing character: There is no € in font txi!
 Missing character: There is no ™ in font txi!
  [49] [50] [51] [52]) [53] (./lingo.ent)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2931.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2955.
 
 [54]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2931.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2955.
  (./lingo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2931.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2931.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2955.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2955.
 
 Package rerunfilecheck Info: File `lingo.out' has not changed.
 (rerunfilecheck)             Checksum: 15CABED06669128A063BB116515034E9;2109.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2931.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2955.
  ) 
 Here is how much of TeX's memory you used:
- 11020 strings out of 495035
- 153678 string characters out of 6181702
- 273164 words of memory out of 5000000
- 13721 multiletter control sequences out of 15000+600000
+ 11022 strings out of 495035
+ 153708 string characters out of 6181702
+ 274303 words of memory out of 5000000
+ 13723 multiletter control sequences out of 15000+600000
  52166 words of font info for 125 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,13n,43p,1387b,738s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,13n,43p,1383b,738s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist
@@ -1237,10 +1237,10 @@ xmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
 mes/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
 >
-Output written on lingo.pdf (54 pages, 1001770 bytes).
+Output written on lingo.pdf (54 pages, 1002595 bytes).
 PDF statistics:
- 1777 PDF objects out of 2073 (max. 8388607)
- 1414 compressed objects within 15 object streams
+ 1776 PDF objects out of 2073 (max. 8388607)
+ 1413 compressed objects within 15 object streams
  264 named destinations out of 1000 (max. 500000)
  378 words of extra memory for PDF output out of 10000 (max. 10000000)
 

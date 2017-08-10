@@ -1,4 +1,4 @@
-\begin{thebibliography}{148}
+\begin{thebibliography}{149}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
@@ -508,6 +508,14 @@ EHL, 2001.
 \textsc{Hoijer, Harry}, 1956.
 \newblock Lexicostatistics: a critique.
 \newblock \emph{Language}, 32.49--60.
+
+\bibitem[{Holden and Gray(2006)}]{Holden:06}
+\textsc{Holden, Clare~J.} and \textsc{Gray, Russel~D.}, 2006.
+\newblock Rapid radiation, borrowing and dialect continua in the {Bantu}
+  languages.
+\newblock \emph{Phylogenetic methods and the prehistory of languages}, edited
+  by Peter Forster and Colin Renfrew, 19--31. Cambridge, UK: McDonald Institute
+  for Archeological Research.
 
 \bibitem[{Holm(1979)}]{Holm:1979}
 \textsc{Holm, Sture}, 1979.

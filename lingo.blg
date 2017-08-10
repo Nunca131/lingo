@@ -4,44 +4,44 @@ The top-level auxiliary file: lingo.aux
 The style file: language.bst
 Database file #1: lingo.bib
 Database file #2: ourstuff.bib
-You've used 148 entries,
+You've used 149 entries,
             2946 wiz_defined-function locations,
-            1640 strings with 31133 characters,
-and the built_in function-call counts, 90275 in all, are:
-= -- 7072
-> -- 3369
-< -- 110
-+ -- 1290
-- -- 1083
-* -- 6754
-:= -- 13587
-add.period$ -- 532
-call.type$ -- 148
-change.case$ -- 1067
-chr.to.int$ -- 149
-cite$ -- 148
-duplicate$ -- 6970
-empty$ -- 7544
-format.name$ -- 1469
-if$ -- 18200
+            1646 strings with 31309 characters,
+and the built_in function-call counts, 91039 in all, are:
+= -- 7133
+> -- 3396
+< -- 111
++ -- 1299
+- -- 1091
+* -- 6809
+:= -- 13692
+add.period$ -- 536
+call.type$ -- 149
+change.case$ -- 1074
+chr.to.int$ -- 150
+cite$ -- 149
+duplicate$ -- 7034
+empty$ -- 7610
+format.name$ -- 1483
+if$ -- 18364
 int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 1302
-newline$ -- 813
-num.names$ -- 607
-pop$ -- 2740
+missing$ -- 1313
+newline$ -- 818
+num.names$ -- 612
+pop$ -- 2766
 preamble$ -- 1
-purify$ -- 941
+purify$ -- 947
 quote$ -- 0
-skip$ -- 2506
+skip$ -- 2532
 stack$ -- 0
-substring$ -- 4414
-swap$ -- 3479
+substring$ -- 4445
+swap$ -- 3516
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1269
+type$ -- 1278
 warning$ -- 0
-while$ -- 632
+while$ -- 638
 width$ -- 0
-write$ -- 2067
+write$ -- 2081

@@ -1,17 +1,20 @@
 \documentclass[final,12pt,3p,times,authoryear]{elsarticle}
+\newif\ifANONYMOUS\ANONYMOUStrue
+\newif\iffrontonly\frontonlyfalse
+%%% RENOVE THE FOLLOWING LINE TO REMOVE THE AUTHOR NAMES AUTHOR REFERENCES
+\ANONYMOUSfalse
+%%%%%%%%%%%%%%%%%%%%
 
 \usepackage[dvipsnames,svgnames,x11names]{xcolor}
 \usepackage{array}
 
 \newcommand\cmr[1]{{\fontfamily{cmr}\selectfont#1}}
 
-\newcommand\maybecolor[1]{}
+\newcommand\maybecolor[1]{#1}
 \let\maybecolor=\color % Comment this out to remove author marks.
                        % \TODO needs to be removed by hand.
 
-\newif\ifANONYMOUS\ANONYMOUStrue
-\newif\iffrontonly\frontonlyfalse
-\ANONYMOUSfalse
+
 
 \newcommand{\eg}[1]{{\it e.g.\spacefactor1000\relax#1}}
 \newcommand{\ie}[1]{{\it i.e.\spacefactor1000\relax#1}}
@@ -47,7 +50,9 @@
 \newcommand{\DB}[1]{\begingroup\maybecolor{Cerulean}#1\endgroup}
 \newcommand{\HY}[1]{\begingroup\maybecolor{OliveGreen}#1\endgroup}
 \newcommand{\TB}[1]{\begingroup\maybecolor{Fuchsia}#1\endgroup}
-\newcommand{\NEW}[1]{\texorpdfstring{\begingroup\maybecolor{PineGreen}#1\endgroup}{#1}} %TB
+\definecolor{pinegreen}{rgb}{0.0,0.47,0.44}
+\newcommand{\NEW}[1]{\begingroup\color{pinegreen}#1\endgroup} 
+%TB
 %mark ups for language style
 \newcommand{\LING}[1]{\textit{#1}}
 \newcommand{\TT}[1]{\textsc{#1}}
@@ -157,7 +162,49 @@
 \ifANONYMOUS
 \author{}
 \else
-\author{}
+\author[SFI,LANL]{Tanmoy Bhattacharya\corref{cor}}
+\author[ZURI,SHH]{Dami\'{a}n E. Blasi}
+\author[UNM]{William Croft}
+\author[Marburg]{Michael Cysouw}
+\author[ASU]{Daniel Hruschka}
+\author[UNM]{Ian Maddieson}
+\author[Leipzig]{Lydia M{\"u}ller}
+\author[Leipzig,MIS]{Nancy Retzlaff}
+\author[SFI,GMU,RI]{Eric Smith}
+\author[SFI,MPI,Leipzig]{Peter F. Stadler\corref{cor}}
+\author[Moscow]{George Starostin}
+\author[SFI,Oxford]{Hyejin Youn}
+\address[SFI]{Santa Fe Institute, 1399 Hyde Park Rd., Santa Fe, NM
+             87501, USA}
+\address[LANL]{Theoretical Division, Los Alamos National Laboratory,
+             Los Alamos, NM 87545-0285, USA}
+\address[MIS]{Max Planck Institute for Mathematics in the Sciences,
+            D-04103 Leipzig, Germany}
+\address[ZURI]{University of Z\"{u}rich,
+            Z\"{u}rich, Switzerland}
+\address[SHH]{Max Planck Institute for the Science of Human History,
+            Jena, Germany}
+\address[EVA]{Max Planck Institute for Evolutionary Anthropology,
+            D-04103 Leipzig, Germany}
+\address[UNM]{Linguistics, University of New Mexico, Albuquerque,
+             NM 87131-0001, USA}
+\address[Marburg]{Forschungszentrum Deutscher Sprachatlas, Philipps
+                 Universit\"at Marburg, Marburg, Germany}
+\address[ASU]{School of Human Evolution and Social Change, Arizona State 
+            University, Tempe AZ 85287, USA}
+\address[Leipzig]{Bioinformatics Group, Department of Computer 
+                 Sciences, University of Leipzig, Leipzig 04107,
+                 Germany}
+\address[GMU]{Krasnow Institute for Advanced Study, George Mason
+             University, Fairfax, VA 22030, USA}
+\address[RI]{Ronin Institute, Montclair, NJ 07043}
+\address[Moscow]{Centre for Comparative Linguistics, Russian
+                State University for the Humanities, Moscow, Russia}
+\address[Oxford]{The Institute for New Economic Thinking at the 
+                Oxford Martin School, Oxford, OX2 6ED, UK}
+\cortext[cor]{Correspondence should be addressed to TB and PFS. emails:
+            \email{tanmoy@santafe.edu} and 
+            \email{stadler@bioinf.uni-lepzig.de}.}
 \fi
 
 \title{Studying Language Evolution in the Age of Big Data}
@@ -192,7 +239,7 @@
 \ifANONYMOUS
 \onehalfspacing
 \else 
-\renewcommand{\NEW}[1]{\begingroup\color{black}#1\endgroup}
+%\renewcommand{\NEW}[1]{\begingroup\color{black}#1\endgroup}
 \fi
 
 \section{Introduction.}
@@ -288,26 +335,36 @@ If \NEW{these} are either too noisy
 to convey retrievable information or are not strictly vertically
 transmitted to begin with the resulting tree might not depict the actual
 relationships. An extreme example in the phylogeny of animals is the
-strange case of \emph{Xenoturbella}. This unimpressive worm-like animal was
+strange case of \emph{Xenoturbella}, \PFS{which was placed at vastly
+  different positions in the animal tree based on different choices of 
+  data sets and taxa included for comparion \cite{Bourlat:06,Rouse:16}.}
+\TODO{DELETE: \begin{tiny} 
+This unimpressive worm-like animal was
 classified as close relative of molluscs based on DNA that, as it turned
 out later, represented its food rather than the animal itself. It was later
 placed based on genome-wide sequencing data within the Deuterostomes, the
 animal clade that also includes vertebrates \cite{Bourlat:06}, only to be
 \TT{demoted} again earlier \NEW{last} year to one of the most basal bilaterian
-branches \NEW{by means} of data for related species \cite{Rouse:16}. This
-underlines the fundamental importance of basing phylogenetic reconstruction
-on multiple, independent feature sets.
+branches \NEW{by means} of data for related species \cite{Rouse:16}.
+\end{tiny}} This underlines the fundamental importance of basing
+phylogenetic reconstruction on multiple, independent feature sets
+\PFS{because it is often not obvious \textit{a priori} which features are
+  informative and which taxa are relevant for comparison in a given
+  context.}
+
+\par\framebox{\begin{minipage}{0.9\textwidth}\small
+\textbf{Discussion of comment: delete when resolved!}
+
 \TODO{I fail to see that the example of Xenoturbella underlines this conclusion.
 It just seems to illustrate that one needs to be able to correctly identify
 the data used and that the phylogenetic placement of a leaf will be wrong if
 not all relevant clades are included in the analysis.}
 
 \LM{ 
-
   I do understand the argument of the reviewer since it is wrong data
   rather than really wrong feature. What about a less fancy example
   like CCA-adding enzyme?
-
+\\
   For example, the class of CCA-adding enzymes is essential for
   organisms. Consequently, CCA-adding enzymes are found in most
   organisms in all three kingdoms of life. However, building a
@@ -322,35 +379,50 @@ not all relevant clades are included in the analysis.}
   phylogeny can be retrieved \TODO{(Paps et al 2013)}.
 }
 \DB{The CCA-adding enzymes example might be a tad too technical for the intended audience - what about reducing the Xentourbella example to one or two lines?}
+\\
+\PFS{I tried above. The whole point of the example is that it is not
+  always/often clear \emph{a priori} WHICH data and taxa are the
+  correct/relevant ones.}
+\end{minipage}}
 
 Just like language evolution, biological evolution is \NEW{not} purely
 vertical \NEW{and hence not} completely tree-like. Even in higher
 organisms, horizontal gene transfer, convergent adaptive evolution,
-\LM{incomplete} lineage sorting \LM{\footnote{Incomplete lineage
-    sorting describes the effect that for a small subset of the genome
-    may contradicts the true phylogeny by being more similar to a more
-    distant relative than to the, e.g., sister species. In the words
-    of linguistics, some words in a language may be less similar to
-    the cognate in the sister language than to the cognate in a more
-    distantly related language.}}, and random noise in the data
-introduce deviations from tree-likeness in the data.  \TODO{What is
-  lineage sorting? \LM{I have inserted a footnote}} Lineages are not
-always well-separated, as in the case of \TT{ring species}
-\cite{irwin:2005} in biology and \TT{dialect continua}
-\cite{heggarty:2010,franccois2015trees}, making the tree model only an
-approximation \NEW{(see~\cite{Geisler:13} for further models for
-  language relationships)}. Although horizontal transfer, like any
-other causes of incorrect tree estimation, may bias quantities such as
-divergence time estimated from trees~\cite{Greenhill:09}, there are
-nevertheless many important events in the evolutionary history that
-are correctly expressed by trees because they are primarily conserved
-vertically. In fact, even in the presence of other forms of
-\LM{relationships}, trees are a useful representation of evolutionary
-relationships whenever there exists a dominating set of vertically
-inherited features.  \TODO{This is a circular assessment (trees are
+\LM{incomplete} lineage sorting \LM{\footnote{Incomplete lineage sorting
+    describes the effect that for a small subset of the genome may
+    contradicts the true phylogeny by being more similar to a more distant
+    relative than to the, e.g., sister species. In the words of
+    linguistics, some words in a language may be less similar to the
+    cognate in the sister language than to the cognate in a more distantly
+    related language.}}, and random noise in the data introduce deviations
+from tree-likeness in the data.  \TODO{What is lineage sorting? \LM{I have
+    inserted a footnote}} Lineages are not always well-separated, as in the
+case of \TT{ring species} \cite{irwin:2005} in biology and \TT{dialect
+  continua} \cite{heggarty:2010,franccois2015trees}, making the tree model
+only an approximation \NEW{(see~\cite{Geisler:13} for further models for
+  language relationships)}. Although horizontal transfer, like any other
+causes of incorrect tree estimation, may bias quantities such as divergence
+time estimated from trees~\cite{Greenhill:09}, there are nevertheless many
+important events in the evolutionary history that are correctly expressed
+by trees because they are primarily conserved vertically. In fact, even in
+the presence of other forms of \LM{relationships}, trees are a useful
+representation of evolutionary relationships whenever there exists a
+dominating set of vertically inherited features. \PFS{Several measures that
+  quantify the of tree-likeness of a data set are available that do not 
+  presuppose a particular tree and hence can be employed without biasing 
+  subsequent phylogenetic statements \cite{Bandelt:92,Nieselt:97,Misof:14a}.} 
+
+\par\framebox{\begin{minipage}{0.9\textwidth}\small
+\textbf{Discussion of comment: delete when resolved!}
+
+\TODO{This is a circular assessment (trees are
   useful when the data is sufficiently tree-like). \LM{Don't
     understand the issue here. It is exactly what we want to say,
     isn't it?} \DB{I'm with Lydia here.}
+
+  \PFS{Indeed: treelikeness can be quantified independent of phylogenetic
+    reconstruction -- I included as review paper we recently wrote about
+    this very issue. We should answer that this is indeed NOT circular.} 
 
   NB: The use of the term "other forms of inheritance" does violence
   upon the term "inheritance". Presumably it refers to the mentioned
@@ -360,31 +432,51 @@ inherited features.  \TODO{This is a circular assessment (trees are
     with the footnote for the previous TODO. I also replaced the
     'other forms of inheritance' with 'other forms of
     relationships'. May be more generell and thus more inclusive.}}
+    \PFS{I'm not sure I agree with this. We need 
+    to decide whether we want to use inheritance ONLY for \emph{vertical
+      inheritance} or if we also want to use the term inheritance for 
+    horizontally transmitted material. (The term ``horizontal inheritance''
+    is indeed used in the bio literature, but we can avoid it if necessary.
+    If so, we should mostly replace vertical inheritance with \emph{vertical 
+    transmission}, however.}
+\end{minipage}
+}
 
 Models of evolution that allow an arbitrary network as representing the
 evolution are, of course, available, \texttt{NeighborNet}~\cite{Huson:10}
 being by far the most popular choice. Such networks, however, do not
 necessarily directly model an evolutionary process. Nevertheless, they can
 be very useful to visualize and quantify the contribution of non-vertical
-inheritance~\cite{Bowern:10}. \NEW{NeighborNets reflect relationships 
-between languages given a distance measure. Other than tree producing 
-algorithms \TT{long branch attraction}, \ie{} of two languages that are 
-both dissimilar to all other languages are usually grouped together, is
-no problem since the problematic languages would be branching from the 
-center directly. In particular this means that languages without any 
-information on mutual history would result in a star-like NeighborNet.
-In contrast, languages that share a root are grouped together via 
-rectangular branches. Hence, for languages that share unusually long 
-branches than would be expected, borrowings are a reasonable explanation.}
+\NEW{transmission}~\cite{Holden:06,Bowern:10}. \NEW{Network graphs reflect
+  relationships between languages given a distance measure. Other than tree
+  producing algorithms \TT{long branch attraction}, \ie{} of two languages
+  that are both dissimilar to all other languages are usually grouped
+  together, is no problem since the problematic languages would be
+  branching from the center directly. In particular this means that
+  languages without any information on mutual history would result in a
+  star-like \texttt{NeighborNet}.  In contrast, languages that share a root
+  are grouped together via rectangular branches. Hence, for languages that
+  share unusually long branches than would be expected, borrowings are a
+  reasonable explanation.}
+
+\par\framebox{\begin{minipage}{0.9\textwidth}\small
+\textbf{Discussion of comment: delete when resolved!}
+
 \TODO{(I am assuming "non-vertical inheritance" should be "non-vertical
-transmission".) The conclusion, however, does not follow from the
-citation. Bowern (2010) could have done the comparison between the
-borrowable and non-borrowable subset in the absense of any
-visualization at all, and the visualization used did not allow anyone
-to distinguish between retention/innovation and certainly did not give
-any quantification.} \NR{see Fig. 3 in this paper plus its Discussion in Results;
-maybe an explanation is needed how one could detect something like borrowings
-in these networks? see text} \DB{yes for non-vertical transmission}
+  transmission".) The conclusion, however, does not follow from the
+  citation. Bowern (2010) could have done the comparison between the
+  borrowable and non-borrowable subset in the absense of any visualization
+  at all, and the visualization used did not allow anyone to distinguish
+  between retention/innovation and certainly did not give any
+  quantification.} \NR{see Fig. 3 in this paper plus its Discussion in
+  Results; maybe an explanation is needed how one could detect something
+  like borrowings in these networks? see text. I also added Holden \& Gray
+  on Borrowing in Bantu Languages, that explicitly makes use of network graphs} 
+\DB{yes for non-vertical
+  transmission}
+\end{minipage}}
+
+
 As in other loosely constrained statistical
 estimation problems, phylogenetic networks may be over-parameterized so
 that it is often difficult to discern whether they uncover patterns of the
@@ -399,7 +491,8 @@ paper. It would be great to be told how measuring the goodness of fit of various
 tree-models tells us whether a non-tree model fits better or worse. Also,
 the suggested paradigm of looking at the posterior in Bayesian settings
 conflates effects due to the desired quantity (tree-like-ness) and other things
-estimated (branch lengths, rates of change etc). } \DB{I disagree - the text is already too gigantic! Added some references where people can see some (suboptimal) strategies used in linguistics, e.g. compute reticulation in the same data. Wide posteriors are taken as abscence of evidence for the relation but rarely used to discuss against the tree-model.}
+estimated (branch lengths, rates of change etc). } 
+\DB{I disagree - the text is already too gigantic! Added some references where people can see some (suboptimal) strategies used in linguistics, e.g. compute reticulation in the same data. Wide posteriors are taken as abscence of evidence for the relation but rarely used to discuss against the tree-model.}
 The key
 question, then, is not whether one can devise a complete and sufficiently
 richly parameterized model of language evolution that takes all horizontal
@@ -482,20 +575,27 @@ traits in such data that evolve neutrally on a tree has been
 questioned~\cite{Albu:06,Cysouw:08,Wichmann:07,Wichmann:10}. Other
 proposals have involved comparing morphological material~\cite{Nichols:92},
 syntactic features~\cite{Longobardi:09}, as well as the phonetic distance
-between word forms within a cognate set~\cite{Heggarty:00}. In addition,
+between word forms within a cognate set~\cite{Heggarty:00}. 
+
+\begin{tiny}
+In addition,
 machine learning approaches have been used in reconstructing ancient word
 forms~\cite{BouchardCote:13} 
+\end{tiny}
 \TODO{This information belongs in the section about lexicon.}
+\begin{tiny}
 and in phylogenetic analysis of typological
 features~\cite{Gell-Mann:11,Dunn:11}.
+\end{tiny}
 \TODO{There is no machine learning in the standard sense of the term in the two
 cited papers.}\DB{The sentence starting with "In addition..." seems to be out of place to me. I vote remove.}
-One must note, however, that even
-when there appears to be a phylogenetic signal in such data, there is much
-less consensus about the nature of any vertically-inherited \TT{core} and
-how that relates to the vertical inherited bundle of features traditionally
-used to define genetic relations in linguistics~\cite{Dediu:13}. In using
-such data, care must, therefore, be exercised.
+
+One must note, however, that even when there appears to be a phylogenetic
+signal in such data, there is much less consensus about the nature of any
+vertically-inherited \TT{core} and how that relates to the vertical
+inherited bundle of features traditionally used to define genetic relations
+in linguistics~\cite{Dediu:13}. In using such data, care must, therefore,
+be exercised.
 
 \section{Modern work flows for sound data.}
 
@@ -598,7 +698,8 @@ tests on \QUOTE{simple} language families, the difference was found to have
 no systematic structure that could bias the reconstruction of phylogenies
 based on this data \cite{Steiner:11a,Hruschka:14}.
 \TODO{Rephrase from Importantly on.}
-\NEW{For a comparison of different cognate detection algorithms see~\citet{List:17}.}
+\NEW{For a comparison of different cognate detection algorithms 
+see~\citet{List:17}.}
 
 Nevertheless, it is difficult to overemphasize the importance of carefully
 curated data sets that are accurate, reliable, uniformly transcribed, and
@@ -632,19 +733,32 @@ crucial distinctions. A related issue is that transcriptions often use
 digraphs for single segments, and their usage is sometimes inconsistent
 across the orthographies used for the various languages and various sources
 of data, even after unicode normalization. Thus, for example, an ejective
-may be denoted by superposed apostrophe \NEW{$<$}\'k\NEW{$>$}, postposed apostrophe
-\NEW{$<$}k'\NEW{$>$}, postposed palochka \NEW{$<$}k$|\NEW{>}$, or special letters
-\NEW{$<$}\cmr\texthtk\NEW{$>$}. Depending on the encoding, these might be represented either
-as digraphs or unigraphs. If the language specific segmentation is
-available in the data source, these can all be converted to special
-characters---\eg{} in the private unicode space---before analysis. Most
-often, however, such information is missing from composite data sources and
-one chooses a suboptimal solution of leaving these as a sequence of
-characters to be handled later. \LM{An example for how to solve this issue will be shown later in this section.} 
-\TODO{Leaving the sequences of characters to be handled later leaves 
-the reader wondering, at this point in the paper, how this will
-be resolved. A reference to where it is resolved would be useful.} \DB{I would change the last two sentences for a final reference in the previous sentence: "before analysis (although chances are such information is missing from composite data, which requires different strategies, ref. CHAPTER)}
-  
+may be denoted by superposed apostrophe \NEW{$<$}\'k\NEW{$>$}, postposed
+apostrophe \NEW{$<$}k'\NEW{$>$}, postposed palochka \NEW{$<$}k$|\NEW{>}$,
+or special letters \NEW{$<$}\cmr\texthtk\NEW{$>$}. Depending on the
+encoding, these might be represented either as digraphs or unigraphs. If
+the language specific segmentation is available in the data source, these
+can all be converted to special characters---\eg{} in the private unicode
+space---before analysis. Most often, however, such information is missing
+from composite data sources and one chooses a suboptimal solution of
+leaving these as a sequence of characters to be handled later. \PFS{An
+  example for how to solve this issue will be discussed in section
+  \ref{sect:QuRegCh} below.}
+ 
+\par\framebox{\begin{minipage}{0.9\textwidth}\small
+\textbf{Discussion of comment: delete when resolved!}
+
+\LM{An example for how to solve this issue will be shown later in this
+  section.}  \TODO{Leaving the sequences of characters to be handled later
+  leaves the reader wondering, at this point in the paper, how this will be
+  resolved. A reference to where it is resolved would be useful.} \DB{I
+  would change the last two sentences for a final reference in the previous
+  sentence: "before analysis (although chances are such information is
+  missing from composite data, which requires different strategies,
+  ref. CHAPTER)}
+\end{minipage}}  
+
+
 A very natural starting point, then, is to regard words as sequences of
 characters that correspond, at least approximately, to phonemes. The most
 direct approach to comparing sequences starts by aligning them. In
@@ -1211,6 +1325,11 @@ feasible at least from a computational point of view,
 \TODO{Reference here is needed to Bouchard-Cote's book but, even more so,
 a justification for the totally unspported claim that it is feasible
 from a computational point of view is needed...} \NR{no book found}
+\PFS{for the ''computationally feasible'' part we can point to the 
+  Bayesian phylogeny reconstruction methods and recent methods for 
+  reconstruction of ancestral states \cite{BouchardCote:12,Joy:16}
+  which solve essentially the same problem in a biological setting.} 
+
 it may not be the
 most efficient approach to analyzing the data. In the context of biological
 phylogenetics it often pays to subdivide the \TT{gold standard} inference
@@ -1752,6 +1871,7 @@ conclusion a precise evidentiary value characterized by the $p$-value of
 the test.
 
 \subsection{Quantifying regular change: the importance of representation.} 
+\label{sect:QuRegCh}
 
 The ease with which sound similarities or regular correspondences can be
 discovered depends on the encoding used to represent the sounds of the

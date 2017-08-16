@@ -1,52 +1,47 @@
-This is BibTeX, Version 0.99d (TeX Live 2014)
+This is BibTeX, Version 0.99d (TeX Live 2013)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: lingo.aux
 The style file: language.bst
 Database file #1: lingo.bib
-Repeated entry---line 1327 of file lingo.bib
- : @article{Kondrak:09
- :                    ,
-I'm skipping whatever remains of this entry
 Database file #2: ourstuff.bib
-You've used 140 entries,
+You've used 149 entries,
             2946 wiz_defined-function locations,
-            1597 strings with 29888 characters,
-and the built_in function-call counts, 84975 in all, are:
-= -- 6671
-> -- 3119
-< -- 107
-+ -- 1195
-- -- 1002
-* -- 6315
-:= -- 12801
-add.period$ -- 507
-call.type$ -- 140
-change.case$ -- 1000
-chr.to.int$ -- 141
-cite$ -- 140
-duplicate$ -- 6569
-empty$ -- 7144
-format.name$ -- 1362
-if$ -- 17156
-int.to.chr$ -- 1
+            1646 strings with 31309 characters,
+and the built_in function-call counts, 91039 in all, are:
+= -- 7133
+> -- 3396
+< -- 111
++ -- 1299
+- -- 1091
+* -- 6809
+:= -- 13692
+add.period$ -- 536
+call.type$ -- 149
+change.case$ -- 1074
+chr.to.int$ -- 150
+cite$ -- 149
+duplicate$ -- 7034
+empty$ -- 7610
+format.name$ -- 1483
+if$ -- 18364
+int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 1228
-newline$ -- 772
-num.names$ -- 575
-pop$ -- 2582
+missing$ -- 1313
+newline$ -- 818
+num.names$ -- 612
+pop$ -- 2766
 preamble$ -- 1
-purify$ -- 882
+purify$ -- 947
 quote$ -- 0
-skip$ -- 2363
+skip$ -- 2532
 stack$ -- 0
-substring$ -- 4177
-swap$ -- 3259
+substring$ -- 4445
+swap$ -- 3516
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1197
+type$ -- 1278
 warning$ -- 0
-while$ -- 599
+while$ -- 638
 width$ -- 0
-write$ -- 1961
-(There was 1 error message)
+write$ -- 2081

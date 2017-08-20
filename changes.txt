@@ -1,0 +1,377 @@
+1) I fail to see that the example of Xenoturbella underlines this conclusion.
+It just seems to illustrate that one needs to be able to correctly identify
+the data used and that the phylogenetic placement of a leaf will be wrong if
+not all relevant clades are included in the analysis.
+
+TODO Tanmoy: is it done?
+
+
+2) This is a circular assessment (trees are
+  useful when the data is sufficiently tree-like)
+
+NB: The use of the term "other forms of inheritance" does violence
+  upon the term "inheritance". Presumably it refers to the mentioned
+  cases where "lineages are not well-sorted" but it's never explained
+  what that means in terms of an evolutionary process and whether it's
+  a form of inheritance. -- \LM{the well-sorted should be explained
+    with the footnote for the previous TODO. I also replaced the
+    'other forms of inheritance' with 'other forms of
+    relationships'. May be more generell and thus more inclusive.
+
+TODO Tanmoy: is it done?
+
+
+3) (I am assuming "non-vertical inheritance" should be "non-vertical
+  transmission".) The conclusion, however, does not follow from the
+  citation. Bowern (2010) could have done the comparison between the
+  borrowable and non-borrowable subset in the absense of any visualization
+  at all, and the visualization used did not allow anyone to distinguish
+  between retention/innovation and certainly did not give any
+  quantification.
+
+rewrote to: Nevertheless, they can be very
+useful to visualize and quantify the contribution of non-vertical transmission (Holden and Gray,
+2006; Bowern, 2010). Network graphs reflect relationships between languages given a distance
+measure. Other than tree producing algorithms long branch attraction, that is, of two languages
+that are both dissimilar to all other languages are usually grouped together, is no problem since the
+problematic languages would be branching from the center directly. In particular this means that
+languages without any information on mutual history would result in a star-like NeighborNet.
+In contrast, languages that share a root are grouped together via rectangular branches. Hence, for
+languages that share unusually long branches than would be expected, borrowings are a reasonable
+explanation.
+
+
+4) This is an important point which, unfortunately, is not developed in the
+paper. It would be great to be told how measuring the goodness of fit of various
+tree-models tells us whether a non-tree model fits better or worse. Also,
+the suggested paradigm of looking at the posterior in Bayesian settings
+conflates effects due to the desired quantity (tree-like-ness) and other things
+estimated (branch lengths, rates of change etc).
+
+TODO PETER
+
+
+5) The logic here is unclear. Cf. the comment above that we never actually
+told how only using tree-models tells us whether they are appropriate
+or not. But suppose we did, then the authors suggest we can systematically
+improve the tree-model by extending it to become ARGs. Then why not use
+ARGs to begin with? (That would be systematic, rather than ad hoc).
+
+TODO Tanmoy
+
+
+6) "Lexicostatistics and language phylogenetics." is mislabeled
+because half of it is devoted to non-lexical phylogenies.
+
+Renamed section to "Linguistic phylogenies."
+
+
+7) {What is meant by "very good fit"? The whole paper argues we should
+use quantification to answer such questions but for some reason
+when we need it and it is easy to do, they don't do it. For example
+what is the Robinson-Foulds distance between the computational and
+"known linguistic history"-tree topologies in the cited papers? (And
+why cite these, esp Dunn et al 2011, rather than all studies with
+this metholodogy)
+
+TODO Tanmoy
+
+
+8) In addition, machine learning approaches have been used in reconstructing ancient word forms (Bouchard-Côté et al., 2013) "This information belongs in the
+section about lexicon." and in phylogenetic analysis of typological features (Gell-Mann and Ruhlen, 2011; Dunn et al., 2011). "There is no machine
+learning in the standard sense of the term in the two cited papers."
+
+deleted sentence
+
+9) Small or moderate size word lists contain only very limited
+numbers of cognates, particularly for the more distant languages. 
+"What do you mean by "the more distant languages"? I could imagine 
+this being true for poorly attested languages, and languages
+in families where the general level of documentation is poor." 
+
+deleted sentence
+
+
+10) These studies do not "prove genealogical persistence", they are circular in this respect since they assume families established on the assumption of genealogical persistence of the very same vocabulary items...
+
+several changes:
+
+a) The core or basic vocabulary comprising the Swadesh concepts when compiled into such word lists is particularly suited for the phylogenetic enterprise for two reasons.
+
+deleted reference to Swadesh list: "The core or basic vocabulary when compiled into such word lists is particularly suited for the phylogenetic enterprise for two reasons."
+
+b) discussion point on Swadesh lists added: Even though Swadesh lists offer an initial starting point, the manner in which they were created and compiled had its shortcomings (Hoijer, 1956)
+
+c) changes proven genealogical persistence to  plausible genealogical
+persistence
+
+d) TODO Tanmoy: why are word lists still a useful?
+
+
+11) Importantly, though cognate judgments made purely from the phonetic structure captured in these semantically aligned word lists can be improved with specialized linguistic knowledge, in recent tests on ‘simple’ language families, the difference was found to have no systematic structure that could bias the reconstruction of phylogenies based on this data (Steiner et al., 2011; Hruschka et al., 2015). "Rephrase from Importantly on."
+
+DID WE REPHRASE??? 
+added: "For a comparison of different cognate detection algorithms see List et al. (2017b)."
+
+
+12) Leaving the sequences of characters to be handled later leaves the reader wondering, at this point in the paper, how this will be resolved. A reference to where it is resolved would be useful.
+
+added: "An example for how to solve this issue will be discussed in section 3.5 below."
+
+13) This is the first mention of the term "scoring model" in this section, I believe. Because this is a very important concept
+for this section I recommend that you introduce it in caps (in keeping 
+with other technical terms), and provide a brief definition. Alternatively the term could be introduced in the first paragraph of the sub-section, since it is indeed the focus of this sub-section.
+
+rewrote: "it is the construction of good scoring models, that is, a
+function or look up table providing a measurement for the similarity or distance of observed phonemes/characters, that is most difficult in language comparisons.
+
+
+14) What evidence supports this claim that there is sufficient signal 
+in real cognate pair alignments for correct sound correspondences to be identified in spite of some false positives/wrong alignments?
+
+TODO Tanmoy
+
+
+15) The text and formulas here are ambiguous as to whether sigma and
+  nscore are defined of a pair of languages or a pair of words from
+  two lgs.  Presumably the latter but actually the sigma formula as
+  written contains free variables that ranged over the full set of
+  pairs between two languages on the previous page. Formulas are used
+  for clarity so please be explicit as to what is defined over what
+  and the domains of free variables.
+
+TODO Peter: check Lydia's changes and simplify Index in sum over all bigram scores
+
+16) The reader may be left wondering about situations where one sound/symbol in language A corresponds to two in language B (e.g. Spanish puerta - Italian porta, or instances where two symbols correspond to a single sound in one language). This is one of the reasons that I recommend consolidating the discussion of representational issues and being more explicit about what "gaps" are in this method.
+
+TODO Nancy
+
+
+17) Which 11 I-E lgs and why those (and, not, say, a single pair). This matters as the results should look quite different for distantly vs closely related pairs of languages.
+
+added the reference to the appendix where the languages are listed "(Table B3)". These were chosen since we chose an example from a previous study.
+
+
+18) Word boundaries aren't really an 'imperfect proxy' for syllable 
+boundaries. Rather, they are a restricted subset of syllable boundaries
+that are recoverable from orthographic representations.
+
+TODO Damian: any further idea to Lydias edits?
+
+
+19)But cognacy is a yes/no property and modeled as such in the work
+the authors cite, so the inability to provide a yes/no answer is
+incompleteness rather than a virtue.
+
+TODO Tanmoy
+
+
+20) These were assumed to be so few as to negligible earlier in the paper
+so that is not much of an improvement. But if it were important to
+capture them, k >= 3 is not necessary as adding transposition operations
+to the Needleman Wunsch algorithm still keeps it polynominal.
+
+TODO Peter
+
+
+21) It should be mentioned that i) the results do not necessarily generalize to deeper families/cognacy and ii) that cognates in the Hruschka et al 2015 come in sets whereas the method described in the paper identifies cognates pairwise and may thus give inconsistent results of the type A is cognate with B and B is cognate with C but A is not cognate with C.
+
+TODO Tanmoy
+
+
+22) It's more customary to present the f-score of the precision/recall
+corresponding to the different threshold values...
+
+a) replaced 'It is customary to' with 'One can'
+b) TODO Tanmoy: do you think f-score should be mentioned here? Peter would leave it like it is
+
+
+23) do you mean the "alternative"
+
+TODO Damian
+
+
+24) These methods aren't equivalent from a traditional historical 
+linguist's perspective, and probably wouldn't deserve any lengthy discussion as alternatives if they were truly equivalent. Perhaps a different word choice or a modifier on "equivalent" would make more sense here.
+
+TODO Damian
+
+
+25) Later in the paper sound change processes are argued be universal (a la Ohala) which means that there is a specific answer to the incertitude expressed in the above passage.
+
+TODO Tanmoy
+
+
+26) The "regular correspondences" you refer to here are the same as the "table of regular correspondences" you mention on line 41 of page 12, correct? I suspect that some historical linguists will expect that all uses of the term "regular" in relation to sound changes/correspondences will mean "regular" in the strict Neogrammarian
+sense. It would be good to be explicit somewhere in this sub-section
+about whether "regular correspondences" does in fact mean "exceptionless" as in the Neogrammarian usage.
+
+TODO Tanmoy
+
+
+27) Reference here is needed to Bouchard-Cote's book but, even more so,
+a justification for the totally unspported claim that it is feasible
+from a computational point of view is needed...
+
+TODO Peter
+
+
+28) This is an important question, but unfortunately not prudently
+discussed in this passage. Since the components depend on each other,
+it is not probabilistically correct to do it in the iterative manner,
+and, as argued elsewhere in the paper (p 16) it is not a correct
+approach from the perspective of propagating uncertainty.
+
+TODO Tanmoy
+
+28) Please explain what experience from computational biology shows how
+this is helpful if not for computational efficiency and expediency? As
+the text stands this claim is completelty unsupported. 
+
+TODO Peter
+
+
+29) How do you know the subgrouping in Bowern, 2012; Bowern and
+Atkinson, 2012 is reliable? The data is not given, the tree inference
+method uses exactly the tree priors taken over blindly from biology
+that the present paper warns about, and is squarely at odds with the
+flat subgrouping espoused by the earlier non-computational work.
+
+NB: reconstruction of the subgrouping is misphrased, presumbly
+just "subgrouping" is meant as there is no reconstruction in
+those papers.
+
+TODO Damian
+
+
+30) It is not entirely clear what this sentence means, or how to evaluate the claim here without knowing exactly what you mean by 'random' mutations in this linguistic context. Do you mean sporadic changes? Either some clarification or a reference to some supporting discussion would be very helpful.
+
+TODO Tanmoy
+
+
+31) Do you mean "typographical errors"? As written, the meaning of this sentence is unclear.
+
+TODO Damian
+
+
+32) {Please explain what this HMM does? (HMM is an extremely general technique for sequences and it is not obvious how they can be used in the manner mentioned).
+
+TODO Peter
+
+
+33) This idea is limited by regularities in the meaning space of the kind discussed in 4.1-4.2 (as well as synonyms). The paper would make an actual contribution if this was taken seriously for a correct
+assessment of number emanating from a permutation test.
+
+TODO Tanmoy: do you know know what could be meant here?
+
+
+34) Is the math correct here? 7 x 6 / 2 = 21 according to me.
+
+changed it to 21 language pais
+
+
+35) Do alphabetic scripts do that? Or is segmental phonology rather than "phonetics" intended?
+
+TODO Damian
+
+
+36) The final sentence of this paragraph needs to be reworded for clarity.
+
+TODO Peter
+
+
+37) This conclusion should be qualified by the fact that only closely related languages were used in the tests. Of course, then a small amoutn of error drowns in the flood cognates. More interesting would be to assess the impact in a case where the error amound would compete against a similarly small amount of cognates.
+
+TODO Damian: is there a paper by List? 
+TODO Tanmoy: example with Turkic languages here?
+
+
+38) Is this a language independent result?
+
+TODO Damian
+TODO Tanmoy
+
+
+39) "After the settlement of British settlers in the island (...), 
+native population experienced..."
+
+-TODO Damian
+
+
+40) "...with different accounts differing in..."
+
+TODO Damian
+
+
+41) None of these paper support the idea of rate constancy, they support (emprirically) the idea of rate regularity.
+
+TODO Tanmoy
+
+
+42) It is never declared how synonyms are treated in the IDS and in the
+experiments of Section 4 and how prevalent that is.
+
+TODO George
+
+
+43) As it is written this is two assumptions. Actually the first is
+the definition of paralogous and what you assume is the second
+one (that only paralogous cognates have sim in form and meaning).
+
+TODO Nancy
+
+
+44) The removal of identical words is contrary to the stated interest
+which was "This element of cognacy across meaning category is
+analogous to an important mode of biological evolution—the duplication
+and subsequent functional divergence of genes.". Surely identical
+words are (always or sometimes) instances of this process. For example,
+mouse is an animal and now also a computer device, with its own life
+in the different senses (e.g., the computer device can have a different
+plural).
+
+TODO Nancy 
+
+
+45) I cannot find any information on the EHL website cited here 
+on the work being done there on semantic shift. If it is not possible
+to cite outcomes of that work it may be preferable to omit the 
+discussion of that work in progress.
+
+TODO Tanmoy can you resolve this? Otherwise: do you know who wrote this?
+
+
+46) The conclusion contains information not in the body of the paper and should thus be reorganized.
+
+TODO Tanmoy
+TODO Damian
+TODO Peter
+TODO Nancy
+
+
+47) Though analogical change is sometimes treated as a "garbage 
+bin" of marginal, non-regular changes, the phenomenon is really
+not that rare (certainly not in the same class of unusual "phonetic 
+processes" as metathesis, though of course metathesis can happen by 
+analogy...). Non-regular does not mean rare. Nor is it the case that 
+analogical changes are inherently non-regular. It's a little unclear,
+therefore, exactly what you are trying to single out here as being 
+poorly handled by these methods.
+
+TODO Tanmoy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

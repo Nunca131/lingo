@@ -953,7 +953,7 @@ Based on this, one can proceed to define the total score \NEW{$\sigma(u,v)$
   bigrams that contain one or more gap characters, as shown in the example
   in Fig.~\ref{fig:aln}. This ansatz makes it possible to account also for
   cases in which one sound/character in one language corresponds to two in
-  another.  The collection of the parameters $\sigma_{AB}(\alpha,\beta)$
+  another. The collection of the parameters $\sigma_{AB}(\alpha,\beta)$
   completely defines the scoring model for the comparison of languages $A$
   and $B$. In order to account for differences in the length of alignments,
   it is preferrable to used a} normalized \NEW{similarity} score
@@ -963,6 +963,7 @@ $\textit{nscore}=\sigma/\ell$, where $\ell$ is the length of alignment
 without \textasciicircum{} and \$. \NEW{The normalized values of
   $\sigma_{AB}(u,v)$ are naturally interpreted as average similarity per
   alignment column.}
+
 
 \begin{figure}
  \begin{center}
@@ -2323,7 +2324,11 @@ which is ongoing work, for a subsequent publication.
 
 We have to make one single assumption about paralogous cognates, namely
 that they inherit both their phonological form and their meaning from a
-common ancestor. Conversely, we assume that a simultaneous similarity of
+common ancestor. \NR{Both traits can undergo language specific changes 
+resulting in differences in at least their pronology, i.e. this is the 
+defining trait for distinction since we do not want to capture polysemy
+of words.}
+Conversely, we assume that a simultaneous similarity \NR{(but not equality)} of
 meaning and phonological form, if not explanable by chance, can result only
 from paralogous cognates: 
 \TODO{As it is written this is two assumptions. Actually the first is
@@ -2367,7 +2372,7 @@ and subsequent functional divergence of genes.". Surely identical
 words are (always or sometimes) instances of this process. For example,
 mouse is an animal and now also a computer device, with its own life
 in the different senses (e.g., the computer device can have a different
-plural). NANCY refer to the paralog definition before}
+plural). NANCY \NR{see senctences before. Should be clear now?}}
 The
 first sample comprises word pairs from the same chapter. In the second
 sample we only include word pairs from two different chapters. Then we
@@ -2615,6 +2620,8 @@ should thus be reorganized. TANMOY DAMIAN PETER NANCY - new section heading
 \end{minipage}}
 
 \section{Conclusion \PFS{and Future Directions}.} 
+
+\NR{Conclusion and Additional Remarks}
 
 Biological and language data share enough properties to argue that methods
 developed in one domain are also applicable in the other. Comparative

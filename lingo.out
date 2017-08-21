@@ -1,5 +1,5 @@
 \BOOKMARK [1][-]{section.1}{Introduction.}{}% 1
-\BOOKMARK [1][-]{section.2}{Lexicostatistics and language phylogenetics.}{}% 2
+\BOOKMARK [1][-]{section.2}{Linguistic phylogenies.}{}% 2
 \BOOKMARK [1][-]{section.3}{Modern work flows for sound data.}{}% 3
 \BOOKMARK [2][-]{subsection.3.1}{IDS as an example of word list data.}{section.3}% 4
 \BOOKMARK [2][-]{subsection.3.2}{Identifying similarities.}{section.3}% 5
@@ -21,7 +21,7 @@
 \BOOKMARK [2][-]{subsection.4.1}{Paralogous words.}{section.4}% 21
 \BOOKMARK [2][-]{subsection.4.2}{Polysemy.}{section.4}% 22
 \BOOKMARK [1][-]{section.5}{Measuring the success of statistical methods.}{}% 23
-\BOOKMARK [1][-]{section.6}{Conclusion.}{}% 24
+\BOOKMARK [1][-]{section.6}{Conclusion and Future Directions}{}% 24
 \BOOKMARK [1][-]{section*.9}{Appendix a: bigram alignment algorithm}{}% 25
 \BOOKMARK [1][-]{section*.10}{Appendix b: tables of languages}{}% 26
 \BOOKMARK [1][-]{section*.11}{Bibliography}{}% 27

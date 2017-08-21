@@ -1,4 +1,4 @@
-\begin{thebibliography}{149}
+\begin{thebibliography}{152}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
@@ -393,12 +393,6 @@ EHL, 2001.
   history of science. Concepts--methods--visualization. Stuttgart: Steiner},
   111--124.
 
-\bibitem[{Gell-Mann and Ruhlen(2011)}]{Gell-Mann:11}
-\textsc{Gell-Mann, Murray} and \textsc{Ruhlen, Merritt}, 2011.
-\newblock The origin and evolution of word order.
-\newblock \emph{Proc.\ Natl.\ Acad.\ Sci.\ USA}, 108.17290--17295.
-\newblock \doi{10.1073/pnas.1113716108}.
-
 \bibitem[{Gotoh(1982)}]{Gotoh:82}
 \textsc{Gotoh, O.}, 1982.
 \newblock An improved algorithm for matching biological sequences.
@@ -492,6 +486,15 @@ EHL, 2001.
 \newblock \emph{Philosophical Transactions of the Royal Society of London B:
   Biological Sciences}, 365.3829--3843.
 \newblock \doi{10.1098/rstb.2010.0099}.
+
+\bibitem[{Herman et~al.(2014)Herman, Challis, Nov{\'a}k, Hein, and
+  Schmidler}]{Heman:14}
+\textsc{Herman, J~L}; \textsc{Challis, C~J}; \textsc{Nov{\'a}k, {\'A}};
+  \textsc{Hein, J}; and \textsc{Schmidler, S~C}, 2014.
+\newblock Simultaneous {Bayesian} estimation of alignment and phylogeny under a
+  joint model of protein sequence and structure.
+\newblock \emph{Mol Biol Evol}, 31.2251--2266.
+\newblock \doi{10.1093/molbev/msu184}.
 
 \bibitem[{Hochberg(1988)}]{Hochberg:1988}
 \textsc{Hochberg, Yosef}, 1988.
@@ -639,6 +642,12 @@ EHL, 2001.
 \newblock Timing the ancestor of the {HIV-1} pandemic strains.
 \newblock \emph{Science}, 288.1789--1796.
 
+\bibitem[{Kruskal(1983)}]{Kruskal:83}
+\textsc{Kruskal, Joseph~B.}, 1983.
+\newblock An overview of sequence comparison: Time warps, string edits, and
+  macromolecules.
+\newblock \emph{SIAM Review}, 25.201--237.
+
 \bibitem[{Lawrence et~al.(1993)Lawrence, Altschul, Boguski, Liu, Neuwald, and
   Wootton}]{Lawrence:93}
 \textsc{Lawrence, C.~E.}; \textsc{Altschul, S.~F.}; \textsc{Boguski, M.~S.};
@@ -708,6 +717,13 @@ EHL, 2001.
 \newblock \emph{Lingua}, 119.1679--1706.
 \newblock \doi{10.1016/j.lingua.2008.09.012}.
 
+\bibitem[{Lunter et~al.(2005)Lunter, Mikl{\'o}s, Drummond, Jensen, and
+  Hein}]{Lunter:05}
+\textsc{Lunter, G}; \textsc{Mikl{\'o}s, I}; \textsc{Drummond, A};
+  \textsc{Jensen, J~L}; and \textsc{Hein, J}, 2005.
+\newblock Bayesian coestimation of phylogeny and sequence alignment.
+\newblock \emph{BMC Bioinformatics}, 6.83.
+
 \bibitem[{Majid et~al.(2008)Majid, Boster, and Bowerman}]{Majid:08}
 \textsc{Majid, Asifa}; \textsc{Boster, James~S}; and \textsc{Bowerman,
   Melissa}, 2008.
@@ -767,6 +783,12 @@ EHL, 2001.
 \newblock Recent evolutions of multiple sequence alignment algorithms.
 \newblock \emph{PLoS Comput Biol.}, 3.e123.
 \newblock \doi{10.1371/journal.pcbi.0030123}.
+
+\bibitem[{Oommen and Loke(1997)}]{Oommen:97}
+\textsc{Oommen, B.~J.} and \textsc{Loke, R. K.~S}, 1997.
+\newblock Pattern recognition of strings with substitutions, insertions,
+  deletions and generalized transpositions.
+\newblock \emph{Pattern Recognition}, 30.789--800.
 
 \bibitem[{Oswalt(1970)}]{Oswalt:70}
 \textsc{Oswalt, Robert~L.}, 1970.

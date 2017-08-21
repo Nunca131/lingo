@@ -459,47 +459,60 @@ be very useful to visualize and quantify the contribution of non-vertical
   share unusually long branches than would be expected, borrowings are a
   reasonable explanation.}
 
-  
-  
-As in other loosely constrained statistical
-estimation problems, phylogenetic networks may be over-parameterized so
-that it is often difficult to discern whether they uncover patterns of the
-underlying linguistic history, or are merely describing the random and
-idiosyncratic noise inherent in any particular data set. It is often
-better, therefore, to stick to a tree-based phylogenetic techniques but
-express the potential existence of reticulation or conflicts by measures of
-goodness of fit, \eg{} through low likelihoods in particular branches,  a
-wide spread in the posterior distributions in Bayesian settings or explicit 
-measures of reticulation when network approaches are applied to the same data \cite{Robinson:2012}. 
-\TODO{This is an important point which, unfortunately, is not developed in the
-paper. It would be great to be told how measuring the goodness of fit of various
-tree-models tells us whether a non-tree model fits better or worse. Also,
-the suggested paradigm of looking at the posterior in Bayesian settings
-conflates effects due to the desired quantity (tree-like-ness) and other things
-estimated (branch lengths, rates of change etc). PETER} 
-\DB{I disagree - the text is already too gigantic! Added some references where people 
-can see some (suboptimal) strategies used in linguistics, e.g. compute reticulation 
-in the same data. Wide posteriors are taken as abscence of evidence for the 
-relation but rarely used to discuss against the tree-model.} The key
-question, then, is not whether one can devise a complete and sufficiently
-richly parameterized model of language evolution that takes all horizontal
-effects into account. Instead, we have to ask whether and how it is
-possible to reliably disentangle the vertical phylogenetic signal from
-superimposed horizontal influences. The advantage of this approach is
+As in other loosely constrained statistical estimation problems,
+phylogenetic networks may be over-parameterized so that it is often
+difficult to discern whether they uncover patterns of the underlying
+linguistic history, or are merely describing the random and idiosyncratic
+noise inherent in any particular data set. It is often better, therefore,
+to stick to a tree-based phylogenetic techniques but express the potential
+existence of reticulation or conflicts by measures of goodness of fit.
+\PFS{In particular, low likelihoods in particular branches and a wide
+  spread in the posterior distributions in Bayesian settings may be caused
+  not only by insufficient signal but also by reticulate patterns in the
+  data. It is advisable, therefore, to compute explicit measures of
+  tree-likeness \cite{Bandelt:92,Nieselt:97} and to use methods that
+  reconstruct reticulate networks alongside with tree reconstruction
+  methods.  The latter also can provide direct measures of the amount of
+  reticulation when network approaches are applied to the same data
+  \cite{Robinson:2012}.}
+
+\par\framebox{\begin{minipage}{0.9\textwidth}\small
+\textbf{Discussion of comment: delete when resolved!}
+\par
+\TODO{This is an important point which, unfortunately, is not developed in
+  the paper. It would be great to be told how measuring the goodness of fit
+  of various tree-models tells us whether a non-tree model fits better or
+  worse. Also, the suggested paradigm of looking at the posterior in
+  Bayesian settings conflates effects due to the desired quantity
+  (tree-like-ness) and other things estimated (branch lengths, rates of
+  change etc).} \DB{I disagree - the text is already too gigantic!  Added
+  some references where people can see some (suboptimal) strategies used in
+  linguistics, e.g. compute reticulation in the same data. Wide posteriors
+  are taken as abscence of evidence for the relation but rarely used to
+  discuss against the tree-model.  \PFS{says: any more references that we
+    should add in the colored text above?}}
+\end{minipage}}
+
+The key question, then, is not whether one can devise a complete and
+sufficiently richly parameterized model of language evolution that takes
+all horizontal effects into account. Instead, we have to ask whether and
+how it is possible to reliably disentangle the vertical phylogenetic signal
+from superimposed horizontal influences. The advantage of this approach is
 two-fold. First, it allows us to identify the cases where \emph{the
   underlying tree-like structure induced by the vertical process of
   inheritance is such a strong regularity that it can be recognized and, at
   the very least, approximated from the observable data.} Second, as the
 amount of data increases, it allows one to \emph{systematically} improve
 the model using techniques like ancestral recombination
-graphs~\cite{Hudson:91,Griffiths:97,Arenas:13,Rasmussen:14}\NEW{,} well known in
-the biological phylogenetic literature.
-\TODO{The logic here is unclear. Cf. the comment above that we never actually
-told how only using tree-models tells us whether they are appropriate
-or not. But suppose we did, then the authors suggest we can systematically
-improve the tree-model by extending it to become ARGs. Then why not use
-ARGs to begin with? (That would be systematic, rather than ad hoc). TANMOY} 
-\DB{I feel the whole discussion on the tree/non-tree like tension is too long already...}
+graphs~\cite{Hudson:91,Griffiths:97,Arenas:13,Rasmussen:14}\NEW{,} well
+known in the biological phylogenetic literature.  \TODO{The logic here is
+  unclear. Cf. the comment above that we never actually told how only using
+  tree-models tells us whether they are appropriate or not. But suppose we
+  did, then the authors suggest we can systematically improve the
+  tree-model by extending it to become ARGs. Then why not use ARGs to begin
+  with? (That would be systematic, rather than ad hoc). TANMOY} \DB{I feel
+  the whole discussion on the tree/non-tree like tension is too long
+  already...}
 
 The purpose of this contribution is to demonstrate that quantitative
 statistical approaches that have become widely accepted and used in the
@@ -924,40 +937,58 @@ a fairly straightforward generalization of the well known Needleman-Wunsch
 algorithm~\cite{needleman:70} used to solve unigram alignments (see
 \hyperref[AppA]{Appendix A}).
 
+\par\framebox{\begin{minipage}{0.9\textwidth}\small
+\textbf{Discussion of comment: delete when resolved!}
+
 \TODO{The text and formulas here are ambiguous as to whether sigma and
-  nscore are defined of a pair of languages or a pair of words from
-  two lgs.  Presumably the latter but actually the sigma formula as
-  written contains free variables that ranged over the full set of
-  pairs between two languages on the previous page. Formulas are used
-  for clarity so please be explicit as to what is defined over what
-  and the domains of free variables. PETER check, wheter we keep Lydia's 
-  changes and simplify long index in sum over all bigram scores}  Based on this, one can proceed
-to define the total score \LM{of two words $u$ from language $A$ and
-  $v$ from language $B$ $\sigma(u,v)$} as the sum of all bigram scores
-\LM{of all aligned bigrams}
-$\sigma(u,v) = \sum_{\alpha \in u, \beta \in v, \alpha\text{ aligned
-    to }\beta} \sigma_{AB}(\alpha,\beta)$ together with the
-contributions of all gaps\NEW{,\ie{} insertions or deletions of
-  characters}, and then a normalized score (\textit{nscore}) obtained
-by dividing $\sigma$ by the number of score contributions. \LM{Note
-  that the similarity score $\sigma_{AB}(\alpha,\beta)$ for bigram
-  $\alpha$ from language $A$ and bigram $\beta$ from language $B$ is
-  defined in the scoring model.} In the case of bigram alignments this
-amounts $\textit{nscore}=\sigma/\ell$, where $\ell$ is the length of
-alignment without \textasciicircum{} and \$. Such a normalization
-makes alignments of words with different lengths comparable by
-reporting an average score per aligned position.  \TODO{The reader may
-  be left wondering about situations where one sound/symbol in
-  language A corresponds to two in language B (e.g. Spanish puerta -
-  Italian porta, or instances where two symbols correspond to a single
-  sound in one language). This is one of the reasons that I recommend
-  consolidating the discussion of representational issues and being
-  more explicit about what "gaps" are in this method.}  \NR{For this
+  nscore are defined of a pair of languages or a pair of words from two
+  lgs.  Presumably the latter but actually the sigma formula as written
+  contains free variables that ranged over the full set of pairs between
+  two languages on the previous page. Formulas are used for clarity so
+  please be explicit as to what is defined over what and the domains of
+  free variables. PETER check, wheter we keep Lydia's changes and simplify
+  long index in sum over all bigram scores} \PFS{check rephrased text and
+  expressions below!}
+
+\TODO{The reader may be left wondering about situations where one
+  sound/symbol in language A corresponds to two in language B (e.g. Spanish
+  puerta - Italian porta, or instances where two symbols correspond to a
+  single sound in one language). This is one of the reasons that I
+  recommend consolidating the discussion of representational issues and
+  being more explicit about what "gaps" are in this method.}  \NR{For this
   todo maybe point to Fig.~\ref{fig:aln}? maybe I can find another
   alignment where there is no deletion score used even though there
-  obviously is one.}\LM{Would be cool if we could use the examples
-  above, e.g. bueno and bono. Do we have an fitting scoring model for
-  this?}
+  obviously is one.}\LM{Would be cool if we could use the examples above,
+  e.g. bueno and bono. Do we have an fitting scoring model for this?}
+
+\PFS{I think this is really taken core of in the Figure the new text.}
+
+\end{minipage}}
+
+Based on this, one can proceed to define the total score \NEW{$\sigma(u,v)$
+  of two words $u$ from language $A$ and $v$ from language $B$ as the sum
+  of the scores of all aligned bigrams and the score contributions
+  involving gaps, \ie{} insertions or deletions
+  of characters. We can write this in form 
+  \begin{equation} 
+    \sigma_{AB}(u,v) = 
+    \sum_{\alpha\in u \textrm{ aligned with } \beta\in v} 
+    \sigma_{AB}(\alpha,\beta)
+  \end{equation}
+  noting that the gap contributions can also be encoded as pairs of formal
+  bigrams that contain one or more gap characters, as shown in the example
+  in Fig.~\ref{fig:aln}. This ansatz makes it possible also to account for
+  cases in which one sound/character in one language corresponds to two in
+  another.  The collection of the parameters $\sigma_{AB}(\alpha,\beta)$
+  completely defines the scoring model for the comparison of languages $A$
+  and $B$. In order to account for differences in the length of alignments,
+  it is preferrable to used a} normalized \NEW{similarity} score
+(\textit{nscore}) obtained by dividing $\sigma$ by the number of score
+contributions. In the case of bigram alignments this amounts
+$\textit{nscore}=\sigma/\ell$, where $\ell$ is the length of alignment
+without \textasciicircum{} and \$. \NEW{The normalized values of
+  $\sigma_{AB}(u,v)$ are naturally interpreted as average similarity per
+  alignment column.}
 
 \begin{figure}
  \begin{center}
@@ -1051,28 +1082,40 @@ step from a crude pre-alignment to detailed scoring model yields a
 dramatic improvement in the accuracy of alignments and cognate
 identification.
 
+
+\par\framebox{\begin{minipage}{0.9\textwidth}\small
+\textbf{Discussion of comment: delete when resolved!}
+
+\TODO{These [local transpositions] were assumed to be so few as to
+  negligible earlier in the paper so that is not much of an
+  improvement. But if it were important to capture them, k >= 3 is not
+  necessary as adding transposition operations to the Needleman Wunsch
+  algorithm still keeps it polynominal. PETER}
+  \PFS{see text below} 
+\end{minipage}}
+
 Further improvements to the scoring model are possible in principle.  In
 order to capture more of the correlations implied by the phonetics of the
 languages in question it may be desirable to go beyond bigrams to $k$-grams
-for $k\ge3$. Such a model would also take care of local transposition 
-\TODO{These were assumed to be so few as to negligible earlier in the paper
-so that is not much of an improvement. But if it were important to
-capture them, k >= 3 is not necessary as adding transposition operations
-to the Needleman Wunsch algorithm still keeps it polynominal. PETER}
-and
+for $k\ge3$. Such a model would also take care of local transposition and
 regular sound changes dependent on longer contexts, or even word harmony
-features. The definition of scores described above generalize in a
-straightforward manner since the symbols $\alpha$ and $\beta$ may signify
-arbitrary combinations of sounds. In practice, however, the sparsity of the
+features. \PFS{Transpositions, for instance, could be built explicitly into
+  the pairwise alignment algorithms \cite{Kruskal:83,Oommen:97}. They are
+  difficult parametrize due to the need of an explicit comparison of
+  alternative evolutionary models for the same alignment data.} The
+definition of scores described above, generalize in a straightforward
+manner since the symbols $\alpha$ and $\beta$ may signify arbitrary
+combinations of sounds.  In practice, however, the sparsity of the
 available data is a limiting factor: not all $3$-grams that are possible in
 given language will appear sufficiently often in word list data to get
 reliable estimates of their frequencies. A possible remedy is to use
 \QUOTE{mixed} scoring models that use $k$-grams with variable length
-depending on their frequency in the data. Related techniques have been used
-in bioinformatics as means of describing sequence patterns
-\cite{Begleiter:04}. The use of such methods, and, in fact, the entire
-issue of discovering statistically significant contexts automatically has,
-to our knowledge, not been explored so far.
+depending on their frequency in the data. \PFS{One of the advantages of
+  this approach is that it identifies transpositions without additional
+  effort.} Related techniques have been used in bioinformatics as means of
+describing sequence patterns \cite{Begleiter:04}. The use of such methods,
+and, in fact, the entire issue of discovering statistically significant
+contexts automatically has, to our knowledge, not been explored so far.
 
 \subsubsection{A probabilistic model of lexical evolution.}
 \label{sec:tanmethod}
@@ -1281,7 +1324,18 @@ their support. This amounts to a comprehensive stochastic model of language
 evolution. While this approach is certainly the gold standard, it requires
 sufficient data to actually parameterize the model with sufficient
 accuracy, and sufficient computational capacities.  While this is becoming
-feasible at least from a computational point of view, 
+feasible at least from a computational point of view, \PFS{as examplified
+  by large-scale applications of Bayesian methods and ancestral state
+  reconstruction methods to resolving essentially analogous questions in a
+  biological setting \cite{BouchardCote:12,Joy:16},} it may not be the most
+efficient approach to analyzing the data. In the context of biological
+phylogenetics it often pays to subdivide the \TT{gold standard} inference
+task into individual components that can be solved independently from one
+another.
+
+\par\framebox{\begin{minipage}{0.9\textwidth}\small
+\textbf{Discussion of comment: delete when resolved!}
+
 \TODO{Reference here is needed to Bouchard-Cote's book but, even more so,
 a justification for the totally unspported claim that it is feasible
 from a computational point of view is needed... PETER}
@@ -1289,12 +1343,7 @@ from a computational point of view is needed... PETER}
   Bayesian phylogeny reconstruction methods and recent methods for 
   reconstruction of ancestral states \cite{BouchardCote:12,Joy:16}
   which solve essentially the same problem in a biological setting.} 
-
-it may not be the
-most efficient approach to analyzing the data. In the context of biological
-phylogenetics it often pays to subdivide the \TT{gold standard} inference
-task into individual components that can be solved independently from one
-another.
+\end{minipage}}
 
 It is common practice in computational biology to compute sequence
 alignments first and to use them as starting point for the reconstruction
@@ -1303,32 +1352,47 @@ genomes~\cite{Pennisi:05} and ancestral sequences~\cite{Liberles:07} is
 then performed on a given tree. Inferred trees may then help to improve
 alignments, which in turn yield a better tree in an interative manner.  In
 complete analogy, word alignments can be performed independently of cognate
-identification and the identification of regular sound changes \NEW{(see 
-also~\cite{Kondrak:09})}. One may
-meaningfully start by first identifying regular correspondences between
-pairs of extant languages and then use the fact that these regular
-correspondences are by definition the result of sound changes from the same
-proto-language along the two independent lineages to piece this information
-together to approximately reconstruct proto-languages and then the
-regularities of sound change. 
-\TODO{This is an important question, but unfortunately not prudently
-discussed in this passage. Since the components depend on each other,
-it is not probabilistically correct to do it in the iterative manner,
-and, as argued elsewhere in the paper (p 16) it is not a correct
-approach from the perspective of propagating uncertainty. TANMOY}
-This separation of tasks is merely a matter
-of computational efficiency and expediency. In fact, both maximum
-likelihood and maximum parsimony methods necessarily use this kind of
-separation internally: likelihoods or parsimony scores are computed for a
-given tree, and then used to compare trees. Experience from computational
-biology, furthermore, shows that it is often pragmatically favorable to
-perform as much of the analysis as possible on directly observable
-data. For example, it can be helpful to identify regular correspondences
-between extant languages as a first step rather than trying to infer
-proto-languages and phylogenetic trees directly.
-\TODO{Please explain what experience from computational biology shows how
-this is helpful if not for computational efficiency and expediency? As
-the text stands this claim is completelty unsupported. PETER}
+identification and the identification of regular sound changes \NEW{(see
+  also~\cite{Kondrak:09})}. One may meaningfully start by first identifying
+regular correspondences between pairs of extant languages and then use the
+fact that these regular correspondences are by definition the result of
+sound changes from the same proto-language along the two independent
+lineages to piece this information together to approximately reconstruct
+proto-languages and then the regularities of sound change.  \TODO{This is
+  an important question, but unfortunately not prudently discussed in this
+  passage. Since the components depend on each other, it is not
+  probabilistically correct to do it in the iterative manner, and, as
+  argued elsewhere in the paper (p 16) it is not a correct approach from
+  the perspective of propagating uncertainty. TANMOY} This separation of
+tasks is merely a matter of computational efficiency and expediency. In
+fact, both maximum likelihood and maximum parsimony methods necessarily use
+this kind of separation internally: likelihoods or parsimony scores are
+computed for a given tree, and then used to compare trees. Experience from
+computational biology, furthermore, shows that it is often pragmatically
+favorable to perform as much of the analysis as possible on directly
+observable data. \PFS{For example, methods that attempt to concurrently
+  estimate alignments and phylogenetic trees \cite{Lunter:05,Heman:14} have
+  been devised and applied with success, it appears that the gain in
+  accuracy over the common practise (of treating alignment and phylogeny
+  reconstructing as independent tasks) is very moderate and often does not
+  justify the high experimental costs.}  For example, it can be helpful to
+identify regular correspondences between extant languages as a first step
+rather than trying to infer proto-languages and phylogenetic trees
+directly. \PFS{The regular correspondences between all pairs of languages
+  makes it possible to construct multiple alignments of cognates, which in
+  turn considerably simplify both the inference of phylogenetic trees and
+  the reconstruction of ancestral states.}
+
+
+\par\framebox{\begin{minipage}{0.9\textwidth}\small
+\textbf{Discussion of comment: delete when resolved!}
+
+ \TODO{Please
+  explain what experience from computational biology shows how this is
+  helpful if not for computational efficiency and expediency? As the text
+  stands this claim is completelty unsupported. PETER}
+
+\end{minipage}}
 
 Depending on the research question, it is often not even the necessary to
 attempt a full reconstruction of language phylogeny. Instead, robust and
@@ -1524,11 +1588,21 @@ and borrowing might make it impossible for purely computational methods to
 disentangle vertically and horizontally inherited words. This is also an
 issue in bioinformatics, where Hidden Markov Models have been quite
 successful in recognizing sequences that have been acquired by horizontal
-transfer \cite{Dufraigne:05}. It will remain to be seen whether a similar
-approach can also be successful in cases of large scale borrowing.
+transfer \cite{Dufraigne:05}. \PFS{The key idea there is that horizontally
+  acquired genes have different nucleotide patterns, which are detectable
+  by a model trained to distinguish vertically transmitted from other
+  sequences.  Differences in patterns of sound correspondences should be
+  detectable by the same approach. It will remain to be seen whether this}
+can be successful in cases of large scale borrowing.
+
+\par\framebox{\begin{minipage}{0.9\textwidth}\small
+\textbf{Discussion of comment: delete when resolved!}
+
 \TODO{Please explain what this HMM does? (HMM is an extremely general technique
 for sequences and it is not obvious how they can be used in the manner
 mentioned). PETER}
+
+\end{minipage}}
 
 It is generally believed that the vertically transmitted patterns of sound
 \NEW{change} between two language lineages form consistent systems applying
@@ -1901,10 +1975,18 @@ different data sets. We therefore used permutation tests on each data set
 to obtain the score-cutoff that corresponds to an FDR of 10\% and used
 these score cutoff values to make the cognates assignments for each
 dataset. Then we compared the results between the native and the
-artificially recoded set. We found that 97\% of the cognates pair called in
-at least one data set, are also called in both cognate sets (see
-Fig.~\ref{fig:encoding}a).
-\TODO{The final sentence of this paragraph needs to be reworded for clarity. PETER}
+artificially recoded set. We found that 97\% of the cognates \PFS{pairs
+  computationally proposed in the data with of the encodings are also
+  identified in the other one (see Fig.~\ref{fig:encoding}a), suggesting
+  that the computational machinery is largely unaffected by details of the
+  encoding.}
+
+\par\framebox{\begin{minipage}{0.9\textwidth}\small
+\textbf{Discussion of comment: delete when resolved!}
+\TODO{The final sentence of this paragraph needs to be reworded for
+  clarity. PETER}
+\end{minipage}}
+
 
 \begin{figure}
   \begin{center}
@@ -2595,11 +2677,15 @@ predict how the uncertainty in estimation resulting from sampling biases
 and variances changes with sample size, and tests with sub-samples of
 various sizes can verify these predictions.
 
-\section{Conclusion.} 
+\section{Conclusion and Future Directions} 
 
+\par\framebox{\begin{minipage}{0.9\textwidth}\small
+\textbf{Discussion of comment: delete when resolved!}
 \TODO{The conclusion contains information not in the body of the paper and
 should thus be reorganized. TANMOY DAMIAN PETER NANCY - new section heading 
 ``Conclusion and ...''}
+\end{minipage}}
+
 
 Biological and language data share enough properties to argue that methods
 developed in one domain are also applicable in the other. Comparative

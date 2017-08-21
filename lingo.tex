@@ -2323,49 +2323,15 @@ demonstrate how these questions can be addressed by means of a suitable
 statistical approach. We will leave a more detailed analysis of the topic,
 which is ongoing work, for a subsequent publication.
 
-We have to make one single assumption about paralogous cognates, namely
-that they inherit both their phonological form and their meaning from a
-common ancestor. \NR{Both traits can undergo language specific changes 
-resulting in differences in at least their pronology, i.e. this is the 
-defining trait for distinction since we do not want to capture polysemy
-of words.}
-Conversely, we assume that a simultaneous similarity \NR{(but not equality)} of
-meaning and phonological form, if not explanable by chance, can result only
-from paralogous cognates: 
+\par\framebox{\begin{minipage}{0.9\textwidth}\small
+\textbf{Discussion of comment: delete when resolved!}
+
 \TODO{As it is written this is two assumptions. Actually the first is
 the definition of paralogous and what you assume is the second
 one (that only paralogous cognates have sim in form and meaning). NANCY
 def paralog and what is the process behind their generation plus same 
 word for same meaning not counted as paralog}
-\ie{} processes like sound symbolism are
-sufficiently weak that they can be ignored for this purpose. If paralogous
-cognates exist, they will therefore be recognizable in the data as similar
-words that also fall into the same broad semantic groups of meanings. We
-have already seen above how phonological forms can be compared in the
-context of computational cognate detection. We will adapt this approach to
-become applicable to words from the same language. The comparison of
-meanings is conceptually more difficult. However, we do not need a detailed
-theory or representation of meaning. For our purposes it is sufficient to
-be able to decide whether some word pairs are semantically closer than
-others. We can therefore make use of the semantic classification of the
-words in word list data. As discussed above, the IDS data~\cite{IDS} are
-grouped into \QUOTE{chapters} that correspond to very broad semantic
-categories. We can therefore structure our analysis in the following
-manner: If two similar words are completely unrelated and accidental, then
-they will appear at random places in \NEW{the} word list\NEW{s}. On the other hand,
-paralogous cognates will retain some semantic similarity and hence
-predominantly appear within the same chapter of the IDS word list. It is
-important to recall that our purpose is to check whether there is evidence
-for paralogous cognates in the first place, not to understand them in full
-detail. We therefore devise a simple test for the association of similar
-words with similar meanings: we simply ask whether there are more pairs of
-similar words within a chapter than between chapters, and if so, whether
-the difference is statistically significant.
 
-To do this in practice, we compare for each language two samples of 1000
-pairs of non-identical words. We remove identical words with different
-meanings since we only interested in paralogs, \ie{} words that are
-distinct, not in words that have simply expanded their semantic scope. 
 \TODO{The removal of identical words is contrary to the stated interest
 which was "This element of cognacy across meaning category is
 analogous to an important mode of biological evolution—the duplication
@@ -2374,8 +2340,47 @@ words are (always or sometimes) instances of this process. For example,
 mouse is an animal and now also a computer device, with its own life
 in the different senses (e.g., the computer device can have a different
 plural). NANCY \NR{see senctences before. Should be clear now?}}
-The
-first sample comprises word pairs from the same chapter. In the second
+
+\PFS{language clarified below} 
+\end{minipage}}
+
+We make \PFS{the} assumption \PFS{that} paralogous cognates inherit both
+their phonological form and their meaning from a common
+ancestor. \PFS{Paralogy is a concept diffent from polysemy: paralogous
+  words are by definition distinct, and thus phologically distinguished,
+  lexical items.}  Conversely, we assume that a simultaneous similarity
+\PFS{(but not equality)} of meaning and phonological form, if not
+explanable by chance, can result only from paralogous cognates, \ie{}
+processes such sound symbolism are sufficiently weak that they can be
+ignored for this purpose. If paralogous cognates exist, they will therefore
+be recognizable in the data as similar words that also fall into the same
+broad semantic groups of meanings. We have already seen above how
+phonological forms can be compared in the context of computational cognate
+detection. We will adapt this approach to become applicable to words from
+the same language. The comparison of meanings is conceptually more
+difficult. However, we do not need a detailed theory or representation of
+meaning. For our purposes it is sufficient to be able to decide whether
+some word pairs are semantically closer than others. We can therefore make
+use of the semantic classification of the words in word list data. As
+discussed above, the IDS data~\cite{IDS} are grouped into \QUOTE{chapters}
+that correspond to very broad semantic categories. We can therefore
+structure our analysis in the following manner: If two similar words are
+completely unrelated and accidental, then they will appear at random places
+in \NEW{the} word list\NEW{s}. On the other hand, paralogous cognates will
+retain some semantic similarity and hence predominantly appear within the
+same chapter of the IDS word list. It is important to recall that our
+purpose is to check whether there is evidence for paralogous cognates in
+the first place, not to understand them in full detail. We therefore devise
+a simple test for the association of similar words with similar meanings:
+we simply ask whether there are more pairs of similar words within a
+chapter than between chapters, and if so, whether the difference is
+statistically significant.
+
+To do this in practice, we compare for each language two samples of 1000
+pairs of non-identical words. We remove identical words with different
+meanings since we only interested in paralogs, \ie{} words that are
+distinct, not in words that have simply expanded their semantic scope. 
+The first sample comprises word pairs from the same chapter. In the second
 sample we only include word pairs from two different chapters. Then we
 determine, separately for each sample, the number of word pairs that are
 phonologically similar using the same alignment scores that we have
@@ -2387,11 +2392,10 @@ estimated from the word list data in complete analogy to the thresholds
 used earlier for cognate detection. Again, the bimodal form of the
 distribution of the scores of all word pairs for language $A$ is the key,
 and we remove languages from this study when the bimodality is not obvious
-\NEW{, \ie{} there is only little data for these languages}
-(see Fig.~\ref{fig:cutoffChoice}). Our pairs of similar words therefore
-have the same statistical characteristics as cognates, except that they are
-taken from the same language, and may not correspond in meaning too
-closely.
+\NEW{, \ie{} there is only little data for these languages} (see
+Fig.~\ref{fig:cutoffChoice}). Our pairs of similar words therefore have the
+same statistical characteristics as cognates, except that they are taken
+from the same language, and may not correspond in meaning too closely.
 		
 \begin{figure}
 \begin{center}
@@ -2621,8 +2625,6 @@ should thus be reorganized. TANMOY DAMIAN PETER NANCY - new section heading
 \end{minipage}}
 
 \section{Conclusion \PFS{and Future Directions}.} 
-
-\NR{Conclusion and Additional Remarks}
 
 Biological and language data share enough properties to argue that methods
 developed in one domain are also applicable in the other. Comparative

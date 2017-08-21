@@ -139,7 +139,7 @@ noting that the gap contributions can also be encoded as pairs of formal bigrams
 
 16) The reader may be left wondering about situations where one sound/symbol in language A corresponds to two in language B (e.g. Spanish puerta - Italian porta, or instances where two symbols correspond to a single sound in one language). This is one of the reasons that I recommend consolidating the discussion of representational issues and being more explicit about what "gaps" are in this method.
 
-TODO Nancy
+See 15)
 
 
 17) Which 11 I-E lgs and why those (and, not, say, a single pair). This matters as the results should look quite different for distantly vs closely related pairs of languages.

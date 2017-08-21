@@ -41,14 +41,11 @@ languages that share unusually long branches than would be expected, borrowings 
 explanation.
 
 
-4) This is an important point which, unfortunately, is not developed in the
-paper. It would be great to be told how measuring the goodness of fit of various
-tree-models tells us whether a non-tree model fits better or worse. Also,
-the suggested paradigm of looking at the posterior in Bayesian settings
-conflates effects due to the desired quantity (tree-like-ness) and other things
-estimated (branch lengths, rates of change etc).
+4) This is an important point which, unfortunately, is not developed in the paper. It would be great to be told how measuring the goodness of fit of various tree-models tells us whether a non-tree model fits better or worse. Also, the suggested paradigm of looking at the posterior in Bayesian settings conflates effects due to the desired quantity (tree-like-ness) and other things estimated (branch lengths, rates of change etc).
 
-TODO PETER
+rewrote "It is often better, therefore, to stick to a tree-based phylogenetic techniques but express the potential existence of reticulation or conflicts by measures of goodness of fit, for example, through low likelihoods in particular branches, a wide spread in the posterior distributions in Bayesian settings or explicit measures of reticulation when network approaches are applied to the same data (Robinson and Holton, 2012)." 
+NOW: "In particular, low likelihoods in particular branches and a wide spread in the posterior distributions in Bayesian settings may be caused not only by insufficient signal but also by reticulate patterns
+in the data. It is advisable, therefore, to compute explicit measures of tree-likeness (Bandelt and Dress, 1992; Nieselt-Struwe, 1997) and to use methods that reconstruct reticulate networks alongside with tree reconstruction methods. The latter also can provide direct measures of the amount of reticulation when network approaches are applied to the same data (Robinson and Holton, 2012)."
 
 
 5) The logic here is unclear. Cf. the comment above that we never actually
@@ -132,15 +129,13 @@ in real cognate pair alignments for correct sound correspondences to be identifi
 TODO Tanmoy
 
 
-15) The text and formulas here are ambiguous as to whether sigma and
-  nscore are defined of a pair of languages or a pair of words from
-  two lgs.  Presumably the latter but actually the sigma formula as
-  written contains free variables that ranged over the full set of
-  pairs between two languages on the previous page. Formulas are used
-  for clarity so please be explicit as to what is defined over what
-  and the domains of free variables.
+15) The text and formulas here are ambiguous as to whether sigma and nscore are defined of a pair of languages or a pair of words from two lgs.  Presumably the latter but actually the sigma formula as written contains free variables that ranged over the full set of pairs between two languages on the previous page. Formulas are used for clarity so please be explicit as to what is defined over what and the domains of free variables.
 
-TODO Peter: check Lydia's changes and simplify Index in sum over all bigram scores
+NEW: Based on this, one can proceed to define the total score σ(u, v) of two words u from language A and v from language B as the sum of the scores of all aligned bigrams and the score contributions involving gaps, that is, insertions or deletions of characters. We can write this in form
+
+σ_AB (u, v) = sum over all σ_AB (α, β) for all α∈u aligned with β∈v
+
+noting that the gap contributions can also be encoded as pairs of formal bigrams that contain one or more gap characters, as shown in the example in Fig. 3. This ansatz makes it possible also to account for cases in which one sound/character in one language corresponds to two in another. The collection of the parameters σ AB (α, β) completely defines the scoring model for the comparison of languages A and B. In order to account for differences in the length of alignments, it is preferrable to used a normalized similarity score (nscore) obtained by dividing σ by the number of score contributions. In the case of bigram alignments this amounts nscore = σ/l, where l is the length of alignment without ˆ and $. The normalized values of σ AB (u, v) are naturally interpreted as average similarity per alignment column.
 
 16) The reader may be left wondering about situations where one sound/symbol in language A corresponds to two in language B (e.g. Spanish puerta - Italian porta, or instances where two symbols correspond to a single sound in one language). This is one of the reasons that I recommend consolidating the discussion of representational issues and being more explicit about what "gaps" are in this method.
 
@@ -166,12 +161,9 @@ incompleteness rather than a virtue.
 TODO Tanmoy
 
 
-20) These were assumed to be so few as to negligible earlier in the paper
-so that is not much of an improvement. But if it were important to
-capture them, k >= 3 is not necessary as adding transposition operations
-to the Needleman Wunsch algorithm still keeps it polynominal.
+20) These [local transpositions] were assumed to be so few as to negligible earlier in the paper so that is not much of an improvement. But if it were important to capture them, k >= 3 is not necessary as adding transposition operations to the Needleman Wunsch algorithm still keeps it polynominal.
 
-TODO Peter
+added: "Transpositions, for instance, could be built explicitly into the pairwise alignment algorithms (Kruskal, 1983; Oommen and Loke, 1997). They are difficult parametrize due to the need of an explicit comarison of alternative evolutionary models for the same alignment data." [...] "One of the advantages of this approach is that it identifies transpositions without additional effort."
 
 
 21) It should be mentioned that i) the results do not necessarily generalize to deeper families/cognacy and ii) that cognates in the Hruschka et al 2015 come in sets whereas the method described in the paper identifies cognates pairwise and may thus give inconsistent results of the type A is cognate with B and B is cognate with C but A is not cognate with C.
@@ -213,7 +205,7 @@ TODO Tanmoy
 a justification for the totally unspported claim that it is feasible
 from a computational point of view is needed...
 
-TODO Peter
+added a phrase: While this is becoming feasible at least from a computational point of view, "as examplified by large-scale applications of Bayesian methods and ancestral state reconstruction methods to resolving essentially analogous questions in a biological setting (Bouchard-Côté et al., 2012; Joy et al., 2016)," it may not be the most efficient approach to analyzing the data.
 
 
 28) This is an important question, but unfortunately not prudently
@@ -228,7 +220,7 @@ TODO Tanmoy
 this is helpful if not for computational efficiency and expediency? As
 the text stands this claim is completelty unsupported. 
 
-TODO Peter
+added "For example, methods that attempt to concurrently estimate alignments and phylogenetic trees (Lunter et al., 2005; Herman et al., 2014) have been devised and applied with success, it appears that the gain in accuracy over the common practise (of treating alignment and phylogeny reconstructing as independent tasks) is very moderate and often does not justify the high experimental costs." [...]"The regular correspondences between all pairs of languages makes it possible to construct multiple alignments of cognates, which in turn considerably simplify both the inference of phylogenetic trees and the reconstruction of ancestral states."
 
 
 29) How do you know the subgrouping in Bowern, 2012; Bowern and
@@ -256,7 +248,7 @@ TODO Damian
 
 32) {Please explain what this HMM does? (HMM is an extremely general technique for sequences and it is not obvious how they can be used in the manner mentioned).
 
-TODO Peter
+adde "The key idea there is that horizontally acquired genes have different nucleotide patterns, which are detectable by a model trained to distinguish vertically transmitted from other sequences.  Differences in patterns of sound correspondences should be detectable by the same approach. It will remain to be seen whether this" can be successful in cases of large scale borrowing.
 
 
 33) This idea is limited by regularities in the meaning space of the kind discussed in 4.1-4.2 (as well as synonyms). The paper would make an actual contribution if this was taken seriously for a correct
@@ -277,7 +269,7 @@ TODO Damian
 
 36) The final sentence of this paragraph needs to be reworded for clarity.
 
-TODO Peter
+changed: We found that 97% of the "cognate pairs computationally proposed in the data with of the encodings are also identified in the other one (see Fig. 9a), suggesting that the computational machinery is largely unaffected by details of the encoding."
 
 
 37) This conclusion should be qualified by the fact that only closely related languages were used in the tests. Of course, then a small amoutn of error drowns in the flood cognates. More interesting would be to assess the impact in a case where the error amound would compete against a similarly small amount of cognates.

@@ -466,7 +466,7 @@ linguistic history, or are merely describing the random and idiosyncratic
 noise inherent in any particular data set. It is often better, therefore,
 to stick to a tree-based phylogenetic techniques but express the potential
 existence of reticulation or conflicts by measures of goodness of fit.
-\PFS{In particular, low likelihoods in particular branches and a wide
+\NEW{In particular, low likelihoods in particular branches and a wide
   spread in the posterior distributions in Bayesian settings may be caused
   not only by insufficient signal but also by reticulate patterns in the
   data. It is advisable, therefore, to compute explicit measures of
@@ -476,22 +476,6 @@ existence of reticulation or conflicts by measures of goodness of fit.
   reticulation when network approaches are applied to the same data
   \cite{Robinson:2012}.}
 
-\par\framebox{\begin{minipage}{0.9\textwidth}\small
-\textbf{Discussion of comment: delete when resolved!}
-\par
-\TODO{This is an important point which, unfortunately, is not developed in
-  the paper. It would be great to be told how measuring the goodness of fit
-  of various tree-models tells us whether a non-tree model fits better or
-  worse. Also, the suggested paradigm of looking at the posterior in
-  Bayesian settings conflates effects due to the desired quantity
-  (tree-like-ness) and other things estimated (branch lengths, rates of
-  change etc).} \DB{I disagree - the text is already too gigantic!  Added
-  some references where people can see some (suboptimal) strategies used in
-  linguistics, e.g. compute reticulation in the same data. Wide posteriors
-  are taken as abscence of evidence for the relation but rarely used to
-  discuss against the tree-model.  \PFS{says: any more references that we
-    should add in the colored text above?}}
-\end{minipage}}
 
 The key question, then, is not whether one can devise a complete and
 sufficiently richly parameterized model of language evolution that takes
@@ -940,22 +924,12 @@ algorithm~\cite{needleman:70} used to solve unigram alignments (see
 \par\framebox{\begin{minipage}{0.9\textwidth}\small
 \textbf{Discussion of comment: delete when resolved!}
 
-\TODO{The text and formulas here are ambiguous as to whether sigma and
-  nscore are defined of a pair of languages or a pair of words from two
-  lgs.  Presumably the latter but actually the sigma formula as written
-  contains free variables that ranged over the full set of pairs between
-  two languages on the previous page. Formulas are used for clarity so
-  please be explicit as to what is defined over what and the domains of
-  free variables. PETER check, wheter we keep Lydia's changes and simplify
-  long index in sum over all bigram scores} \PFS{check rephrased text and
-  expressions below!}
-
 \TODO{The reader may be left wondering about situations where one
   sound/symbol in language A corresponds to two in language B (e.g. Spanish
   puerta - Italian porta, or instances where two symbols correspond to a
   single sound in one language). This is one of the reasons that I
   recommend consolidating the discussion of representational issues and
-  being more explicit about what "gaps" are in this method.}  \NR{For this
+  being more explicit about what "gaps" are in this method. NANCY}  \NR{For this
   todo maybe point to Fig.~\ref{fig:aln}? maybe I can find another
   alignment where there is no deletion score used even though there
   obviously is one.}\LM{Would be cool if we could use the examples above,
@@ -1083,23 +1057,12 @@ dramatic improvement in the accuracy of alignments and cognate
 identification.
 
 
-\par\framebox{\begin{minipage}{0.9\textwidth}\small
-\textbf{Discussion of comment: delete when resolved!}
-
-\TODO{These [local transpositions] were assumed to be so few as to
-  negligible earlier in the paper so that is not much of an
-  improvement. But if it were important to capture them, k >= 3 is not
-  necessary as adding transposition operations to the Needleman Wunsch
-  algorithm still keeps it polynominal. PETER}
-  \PFS{see text below} 
-\end{minipage}}
-
 Further improvements to the scoring model are possible in principle.  In
 order to capture more of the correlations implied by the phonetics of the
 languages in question it may be desirable to go beyond bigrams to $k$-grams
 for $k\ge3$. Such a model would also take care of local transposition and
 regular sound changes dependent on longer contexts, or even word harmony
-features. \PFS{Transpositions, for instance, could be built explicitly into
+features. \NEW{Transpositions, for instance, could be built explicitly into
   the pairwise alignment algorithms \cite{Kruskal:83,Oommen:97}. They are
   difficult parametrize due to the need of an explicit comparison of
   alternative evolutionary models for the same alignment data.} The
@@ -1110,7 +1073,7 @@ available data is a limiting factor: not all $3$-grams that are possible in
 given language will appear sufficiently often in word list data to get
 reliable estimates of their frequencies. A possible remedy is to use
 \QUOTE{mixed} scoring models that use $k$-grams with variable length
-depending on their frequency in the data. \PFS{One of the advantages of
+depending on their frequency in the data. \NEW{One of the advantages of
   this approach is that it identifies transpositions without additional
   effort.} Related techniques have been used in bioinformatics as means of
 describing sequence patterns \cite{Begleiter:04}. The use of such methods,
@@ -1333,17 +1296,6 @@ phylogenetics it often pays to subdivide the \TT{gold standard} inference
 task into individual components that can be solved independently from one
 another.
 
-\par\framebox{\begin{minipage}{0.9\textwidth}\small
-\textbf{Discussion of comment: delete when resolved!}
-
-\TODO{Reference here is needed to Bouchard-Cote's book but, even more so,
-a justification for the totally unspported claim that it is feasible
-from a computational point of view is needed... PETER}
-\PFS{for the ''computationally feasible'' part we can point to the 
-  Bayesian phylogeny reconstruction methods and recent methods for 
-  reconstruction of ancestral states \cite{BouchardCote:12,Joy:16}
-  which solve essentially the same problem in a biological setting.} 
-\end{minipage}}
 
 It is common practice in computational biology to compute sequence
 alignments first and to use them as starting point for the reconstruction
@@ -1370,7 +1322,7 @@ this kind of separation internally: likelihoods or parsimony scores are
 computed for a given tree, and then used to compare trees. Experience from
 computational biology, furthermore, shows that it is often pragmatically
 favorable to perform as much of the analysis as possible on directly
-observable data. \PFS{For example, methods that attempt to concurrently
+observable data. \NEW{For example, methods that attempt to concurrently
   estimate alignments and phylogenetic trees \cite{Lunter:05,Heman:14} have
   been devised and applied with success, it appears that the gain in
   accuracy over the common practise (of treating alignment and phylogeny
@@ -1378,21 +1330,12 @@ observable data. \PFS{For example, methods that attempt to concurrently
   justify the high experimental costs.}  For example, it can be helpful to
 identify regular correspondences between extant languages as a first step
 rather than trying to infer proto-languages and phylogenetic trees
-directly. \PFS{The regular correspondences between all pairs of languages
+directly. \NEW{The regular correspondences between all pairs of languages
   makes it possible to construct multiple alignments of cognates, which in
   turn considerably simplify both the inference of phylogenetic trees and
   the reconstruction of ancestral states.}
 
 
-\par\framebox{\begin{minipage}{0.9\textwidth}\small
-\textbf{Discussion of comment: delete when resolved!}
-
- \TODO{Please
-  explain what experience from computational biology shows how this is
-  helpful if not for computational efficiency and expediency? As the text
-  stands this claim is completelty unsupported. PETER}
-
-\end{minipage}}
 
 Depending on the research question, it is often not even the necessary to
 attempt a full reconstruction of language phylogeny. Instead, robust and
@@ -1588,21 +1531,13 @@ and borrowing might make it impossible for purely computational methods to
 disentangle vertically and horizontally inherited words. This is also an
 issue in bioinformatics, where Hidden Markov Models have been quite
 successful in recognizing sequences that have been acquired by horizontal
-transfer \cite{Dufraigne:05}. \PFS{The key idea there is that horizontally
+transfer \cite{Dufraigne:05}. \NEW{The key idea there is that horizontally
   acquired genes have different nucleotide patterns, which are detectable
   by a model trained to distinguish vertically transmitted from other
   sequences.  Differences in patterns of sound correspondences should be
   detectable by the same approach. It will remain to be seen whether this}
 can be successful in cases of large scale borrowing.
 
-\par\framebox{\begin{minipage}{0.9\textwidth}\small
-\textbf{Discussion of comment: delete when resolved!}
-
-\TODO{Please explain what this HMM does? (HMM is an extremely general technique
-for sequences and it is not obvious how they can be used in the manner
-mentioned). PETER}
-
-\end{minipage}}
 
 It is generally believed that the vertically transmitted patterns of sound
 \NEW{change} between two language lineages form consistent systems applying
@@ -1975,17 +1910,11 @@ different data sets. We therefore used permutation tests on each data set
 to obtain the score-cutoff that corresponds to an FDR of 10\% and used
 these score cutoff values to make the cognates assignments for each
 dataset. Then we compared the results between the native and the
-artificially recoded set. We found that 97\% of the cognates \PFS{pairs
+artificially recoded set. We found that 97\% of the \NEW{cognate pairs
   computationally proposed in the data with of the encodings are also
   identified in the other one (see Fig.~\ref{fig:encoding}a), suggesting
   that the computational machinery is largely unaffected by details of the
   encoding.}
-
-\par\framebox{\begin{minipage}{0.9\textwidth}\small
-\textbf{Discussion of comment: delete when resolved!}
-\TODO{The final sentence of this paragraph needs to be reworded for
-  clarity. PETER}
-\end{minipage}}
 
 
 \begin{figure}

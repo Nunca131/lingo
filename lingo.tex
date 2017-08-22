@@ -52,6 +52,7 @@
 \newcommand{\TB}[1]{\begingroup\maybecolor{Fuchsia}#1\endgroup}
 \definecolor{pinegreen}{rgb}{0.0,0.47,0.44}
 \newcommand{\NEW}[1]{\begingroup\color{pinegreen}#1\endgroup} 
+\newcommand{\GS}[1]{\begingroup\color{gray}#1\endgroup}
 %TB
 %mark ups for language style
 \newcommand{\LING}[1]{\textit{#1}}
@@ -623,11 +624,13 @@ form of the entries varies across the languages. For most languages, a
 phonemic-style transcription using IPA, Americanist, or extended Cyrillic
 traditions is used. For others an established orthography is used.
 
-All word list are kept in the same format, and the organization is based on
+All \GS{the} word list\GS{s} are kept in the same format, and the organization is based on
 Buck's dictionary~\cite{Buck:49} which was topically subdivided into 23
 chapters and had in total about 1200 potential entries for each word
 list. The IDS revised the chapter structure such that the IDS word lists
-have potentially 22 chapters and in total 1310 potential entries. Entries
+have potentially 22 chapters and in total 1310 potential entries\GS{(or more,
+since multiple synonyms are allowed for a single term if it is difficult
+to elicit one perfect equivalent for the general meaning of the entry)}. Entries
 for which no word exists in a language are left blank for this
 language. Chapters are semantic groups such as \QUOTE{The physical world}
 (chapter 1) or \QUOTE{Emotions and values} (chapter 16). Each entry is
@@ -2224,12 +2227,11 @@ proposal of glottochronology was to assume that the number of cognate
 retentions of two languages diverging at a given time decays exponentially
 with constant rate~\cite{Swadesh:55}---which is analogous to the strict
 molecular clock hypothesis in molecular evolution. Rate constancy has been
-severely criticized since early on~\cite{Bergsland:62, Blust:00}, although some
-support for the idea still exists in other
-contexts~\cite{Ehret:00,Starostin:00,Starostin:13,Holman:11}. 
-\TODO{None of these paper support the idea of rate constancy, they support
-(emprirically) the idea of rate regularity. TANMOY}
-Within the
+severely criticized since early on~\cite{Bergsland:62, Blust:00}, 
+\GS{although some support for the idea of a constant rate of a change within 
+particular subsets of the basic lexicon, or at least for that of certain 
+chronological regularities in lexical evolution, is still found in empirical 
+evidence}~\cite{Ehret:00,Starostin:00,Starostin:13,Holman:11}. Within the
 context of a likelihood based approach, the relative constancy of the rates
 of various features can be tested~\cite{Hruschka:14}, as can particular
 hypotheses about factors affecting changes in the different
@@ -2260,8 +2262,6 @@ realistic confidence intervals for the inferred dates.
 
 \section{Models of meaning.} 
 
-\TODO{It is never declared how synonyms are treated in the IDS and in the
-experiments of Section 4 and how prevalent that is.}
 
 Discussion of lexical connections between different languages often suffer
 from the fact that the meanings expressed by these lexical items have not
@@ -2323,33 +2323,13 @@ demonstrate how these questions can be addressed by means of a suitable
 statistical approach. We will leave a more detailed analysis of the topic,
 which is ongoing work, for a subsequent publication.
 
-\par\framebox{\begin{minipage}{0.9\textwidth}\small
-\textbf{Discussion of comment: delete when resolved!}
 
-\TODO{As it is written this is two assumptions. Actually the first is
-the definition of paralogous and what you assume is the second
-one (that only paralogous cognates have sim in form and meaning). NANCY
-def paralog and what is the process behind their generation plus same 
-word for same meaning not counted as paralog}
-
-\TODO{The removal of identical words is contrary to the stated interest
-which was "This element of cognacy across meaning category is
-analogous to an important mode of biological evolution—the duplication
-and subsequent functional divergence of genes.". Surely identical
-words are (always or sometimes) instances of this process. For example,
-mouse is an animal and now also a computer device, with its own life
-in the different senses (e.g., the computer device can have a different
-plural). NANCY \NR{see senctences before. Should be clear now?}}
-
-\PFS{language clarified below} 
-\end{minipage}}
-
-We make \PFS{the} assumption \PFS{that} paralogous cognates inherit both
+We make \NEW{the} assumption \NEW{that} paralogous cognates inherit both
 their phonological form and their meaning from a common
-ancestor. \PFS{Paralogy is a concept diffent from polysemy: paralogous
+ancestor. \NEW{Paralogy is a concept diffent from polysemy: paralogous
   words are by definition distinct, and thus phologically distinguished,
   lexical items.}  Conversely, we assume that a simultaneous similarity
-\PFS{(but not equality)} of meaning and phonological form, if not
+\NEW{(but not equality)} of meaning and phonological form, if not
 explanable by chance, can result only from paralogous cognates, \ie{}
 processes such sound symbolism are sufficiently weak that they can be
 ignored for this purpose. If paralogous cognates exist, they will therefore
@@ -2549,11 +2529,23 @@ into account the possibility of \QUOTE{trivial} semantic shifts, based on a
 preset listing of such shifts that is being extracted from polysemies and
 indisputable low-level semantic change, elicited within the
 comparative-historical databases created by various members of the program.
+\par\framebox{\begin{minipage}{0.9\textwidth}\small
+\textbf{Discussion of comment: delete when resolved!}
+
 \TODO{I cannot find any information on the EHL website cited here 
 on the work being done there on semantic shift. If it is not possible
 to cite outcomes of that work it may be preferable to omit the 
 discussion of that work in progress. TANMOY can you resolve this? 
-Otherwise: do you know who wrote this?} \NR{Ich kann es auch nicht finden.}
+Otherwise: do you know who wrote this? \GS{This is problematic, because research 
+on 400-item lists and semantic connections between their elements is still 
+ongoing, and the results have not yet been published. We could delete the 
+reference, but I think that this brief mention might be useful from a 
+"PR aspect". One way to deal with the remark would be for me to put up a 
+partially completed 400-item database in a corner of our website, which 
+is something that I have been planning to do for a while anyway, and 
+provide a link to the online resource. If everybody is okay with that, 
+it might take me a week or two to do it properly, maybe even less.}} 
+\end{minipage}}
 
 \section{Measuring the success of statistical methods.}
 

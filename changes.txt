@@ -297,20 +297,27 @@ TODO Damian
 
 41) None of these paper support the idea of rate constancy, they support (emprirically) the idea of rate regularity.
 
-TODO Tanmoy
+Rate constancy has been severely criticized since early on (Bergsland and Vogt, 1962; Blust, 2000), "although some support for the idea of a constant rate of a change within particular subsets of the basic lexicon, or at least for that of certain chronological regularities in
+lexical evolution, is still found in empirical evidence" (Ehret, 2000; Starostin, 2000, 2013; Holman et al., 2011).
 
 
 42) It is never declared how synonyms are treated in the IDS and in the
 experiments of Section 4 and how prevalent that is.
 
-TODO George
+addition to the IDS chapter:
+"All "the" word list"s" are kept in the same format, and the organization is based on Buck’s dictionary (Buck, 1949) which was topically subdivided into 23 chapters and had in total about 1200 potential entries for each word list. The IDS revised the chapter structure such that the IDS word lists have potentially 22 chapters and in total 1310 potential entries "(or more, since multiple synonyms are allowed for a single term if it is difficult to elicit one perfect equivalent for the general meaning of the entry)"."
 
 
 43) As it is written this is two assumptions. Actually the first is
 the definition of paralogous and what you assume is the second
 one (that only paralogous cognates have sim in form and meaning).
 
-TODO Nancy
+We make the assumption that paralogous cognates inherit both their phonological form and their meaning from a common
+ancestor. Paralogy is a concept diffent from polysemy: paralogous words are by definition distinct, and thus phologically distinguished, lexical items.  Conversely, we assume that a simultaneous similarity
+(but not equality) of meaning and phonological form, if not
+explanable by chance, can result only from paralogous cognates, \ie{}
+processes such sound symbolism are sufficiently weak that they can be
+ignored for this purpose.
 
 
 44) The removal of identical words is contrary to the stated interest
@@ -322,7 +329,7 @@ mouse is an animal and now also a computer device, with its own life
 in the different senses (e.g., the computer device can have a different
 plural).
 
-TODO Nancy 
+should be clarified in changes from 43.
 
 
 45) I cannot find any information on the EHL website cited here 
@@ -330,7 +337,7 @@ on the work being done there on semantic shift. If it is not possible
 to cite outcomes of that work it may be preferable to omit the 
 discussion of that work in progress.
 
-TODO Tanmoy can you resolve this? Otherwise: do you know who wrote this?
+TODO George provides link
 
 
 46) The conclusion contains information not in the body of the paper and should thus be reorganized.

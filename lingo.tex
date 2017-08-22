@@ -52,6 +52,7 @@
 \newcommand{\TB}[1]{\begingroup\maybecolor{Fuchsia}#1\endgroup}
 \definecolor{pinegreen}{rgb}{0.0,0.47,0.44}
 \newcommand{\NEW}[1]{\begingroup\color{pinegreen}#1\endgroup} 
+\newcommand{\GS}[1]{\begingroup\color{gray}#1\endgroup}
 %TB
 %mark ups for language style
 \newcommand{\LING}[1]{\textit{#1}}
@@ -313,44 +314,35 @@ An important issue to consider in the choice of traits to analyze is
   processes like contact phenomena, areal diffusion, and sound symbolism
   and other psycholinguistic effects.
 
-One of the key take-home lessons from phylogenetic studies in both biology
-and linguistics is that a detailed understanding of the mechanisms of
-change is helpful, but \TT{not} a necessary prerequisite, for the
-reconstruction of phylogenetic relationships. The causal structure imposed
-by vertical inheritance on a branching \TT{tree} dictates that similarity
-of randomly originating features follows a hierarchically nested structure
-consistent with the partitions of the tree. If the feature set under study
-happens to contain enough independently evolving, vertically inherited
-neutral traits, their similarity alone can be used to reconstruct the
-phylogeny. While detailed stochastic models of mutational change have
-become the method of choice at the level of DNA and protein sequences,
-perfectly valid phylogenies can be obtained by investigating complex
-phenotypic characters such as specific shapes of bones, the presence or
-absence of particular neurotransmitters, or the spatial organization of
-neuronal networks. In fact, when there is no mechanistic understanding of
-the patterns of change, robust, non-parametric approaches to tree
-reconstruction are often the method of choice\NEW{~\cite{Waegele:DMP, Dunn:15}}. Of course
-no method is infallible \NEW{with \TB{respect} to the features chosen}. 
-If \NEW{these} are either too noisy
-to convey retrievable information or are not \TB{transmitted along the same tree}
-to begin with the \TB{reconstructed} tree might not depict \TB{any} actual
-relationships. An extreme example in the phylogeny of animals is the
-strange case of \emph{Xenoturbella}, \PFS{which was placed at vastly
-  different positions in the animal tree based on different choices of 
-  data sets and taxa included for comparion \cite{Bourlat:06,Rouse:16}.}
-\TODO{DELETE: \begin{tiny} 
-This unimpressive worm-like animal was
-classified as close relative of molluscs based on DNA that, as it turned
-out later, represented its food rather than the animal itself. It was later
-placed based on genome-wide sequencing data within the Deuterostomes, the
-animal clade that also includes vertebrates \cite{Bourlat:06}, only to be
-\TT{demoted} again earlier \NEW{last} year to one of the most basal bilaterian
-branches \NEW{by means} of data for related species \cite{Rouse:16}.
-\end{tiny}} This underlines the fundamental importance of basing
-phylogenetic reconstruction on multiple, independent feature sets
-\PFS{because it is often not obvious \textit{a priori} which features are
-  informative\TB{ DELETE because it is introducing a new concept:
- \begin{tiny}and which taxa are relevant for comparison\end{tiny}} in a given context.}
+  One of the key take-home lessons from phylogenetic studies in both
+  biology and linguistics is that a detailed understanding of the
+  mechanisms of change is helpful, but \TT{not} a necessary prerequisite,
+  for the reconstruction of phylogenetic relationships. The causal
+  structure imposed by vertical inheritance on a branching \TT{tree}
+  dictates that similarity of randomly originating features follows a
+  hierarchically nested structure consistent with the partitions of the
+  tree. If the feature set under study happens to contain enough
+  independently evolving, vertically inherited neutral traits, their
+  similarity alone can be used to reconstruct the phylogeny. While detailed
+  stochastic models of mutational change have become the method of choice
+  at the level of DNA and protein sequences, perfectly valid phylogenies
+  can be obtained by investigating complex phenotypic characters such as
+  specific shapes of bones, the presence or absence of particular
+  neurotransmitters, or the spatial organization of neuronal networks. In
+  fact, when there is no mechanistic understanding of the patterns of
+  change, robust, non-parametric approaches to tree reconstruction are
+  often the method of choice\NEW{~\cite{Waegele:DMP, Dunn:15}}. Of course no
+  method is infallible \NEW{with \TB{respect} to the features chosen}. If
+  \NEW{these} are either too noisy to convey retrievable information or are
+  not \TB{transmitted along the same tree} to begin with, the \TB{reconstructed} tree
+  might not depict \TB{any} actual relationships. An extreme example in the
+  phylogeny of animals is the strange case of \emph{Xenoturbella},
+  \PFS{which was placed at vastly different positions in the animal tree
+    based on different choices of data sets and taxa included for comparion
+    \cite{Bourlat:06,Rouse:16}.}  This underlines the fundamental
+  importance of basing phylogenetic reconstruction on multiple, independent
+  feature sets \PFS{because it is often not obvious \textit{a priori} which
+    features are informative for comparison in a given context.}
 
 \par\framebox{\begin{minipage}{0.9\textwidth}\small
 \textbf{Discussion of comment: delete when resolved!}
@@ -387,6 +379,15 @@ not all relevant clades are included in the analysis.}
 \TB{I prefere the CCA-adding enzyme example, primarily because I think moving away from the
 Xenoturbella example will be easier to argue---give the referee a win---but reduced to 1-2 lines
 like the current Xenoturbella discussion.}
+\\
+DELETED:
+This unimpressive worm-like animal was
+classified as close relative of molluscs based on DNA that, as it turned
+out later, represented its food rather than the animal itself. It was later
+placed based on genome-wide sequencing data within the Deuterostomes, the
+animal clade that also includes vertebrates \cite{Bourlat:06}, only to be
+\TT{demoted} again earlier \NEW{last} year to one of the most basal bilaterian
+branches \NEW{by means} of data for related species \cite{Rouse:16}.
 \end{minipage}}
 
 Just like language evolution, biological evolution is \NEW{not} purely
@@ -626,20 +627,23 @@ form of the entries varies across the languages. For most languages, a
 phonemic-style transcription using IPA, Americanist, or extended Cyrillic
 traditions is used. For others an established orthography is used.
 
-All word list are kept in the same format, and the organization is based on
-Buck's dictionary~\cite{Buck:49} which was topically subdivided into 23
-chapters and had in total about 1200 potential entries for each word
-list. The IDS revised the chapter structure such that the IDS word lists
-have potentially 22 chapters and in total 1310 potential entries. Entries
-for which no word exists in a language are left blank for this
-language. Chapters are semantic groups such as \QUOTE{The physical world}
-(chapter 1) or \QUOTE{Emotions and values} (chapter 16). Each entry is
-assigned to exactly one chapter. Entries within each chapter are roughly
-sorted by their semantics, with semantic concepts assigned identifiers of
-the form \QUOTE{chapter.meaning}. Both chapter and meaning are numerical
-values with the entries within each chapter intuitively sorted by their
-meaning.  Furthermore, each entry has translation into English and at least
-one additional language, \eg{} Spanish.
+All \NEW{the} word list\NEW{s} are kept in the same format, and the
+organization is based on Buck's dictionary~\cite{Buck:49} which was
+topically subdivided into 23 chapters and had in total about 1200 potential
+entries for each word list. The IDS revised the chapter structure such that
+the IDS word lists have potentially 22 chapters and in total 1310 potential
+entries \NEW{(or more, since multiple synonyms are allowed for a single term
+  if it is difficult to elicit one perfect equivalent for the general
+  meaning of the entry)}. Entries for which no word exists in a language
+are left blank for this language. Chapters are semantic groups such as
+\QUOTE{The physical world} (chapter 1) or \QUOTE{Emotions and values}
+(chapter 16). Each entry is assigned to exactly one chapter. Entries within
+each chapter are roughly sorted by their semantics, with semantic concepts
+assigned identifiers of the form \QUOTE{chapter.meaning}. Both chapter and
+meaning are numerical values with the entries within each chapter
+intuitively sorted by their meaning.  Furthermore, each entry has
+translation into English and at least one additional language, \eg{}
+Spanish.
 
 In order to bypass manual cognate identification as the initial step one
 may start with a much more accessible set of data, namely comparative word
@@ -675,10 +679,8 @@ purely from the phonetic structure captured in these semantically aligned
 word lists can be improved with specialized linguistic knowledge, in recent
 tests on \QUOTE{simple} language families, the difference was found to have
 no systematic structure that could bias the reconstruction of phylogenies
-based on this data \cite{Steiner:11a,Hruschka:14}.
-\TODO{Rephrase from Importantly on.}
-\NEW{For a comparison of different cognate detection algorithms 
-see~\citet{List:17}.}
+based on this data \cite{Steiner:11a,Hruschka:14}.  \NEW{For a comparison
+  of different cognate detection algorithms see~\citet{List:17}.}
 
 Nevertheless, it is difficult to overemphasize the importance of carefully
 curated data sets that are accurate, reliable, uniformly transcribed, and
@@ -933,7 +935,8 @@ algorithm~\cite{needleman:70} used to solve unigram alignments (see
   puerta - Italian porta, or instances where two symbols correspond to a
   single sound in one language). This is one of the reasons that I
   recommend consolidating the discussion of representational issues and
-  being more explicit about what "gaps" are in this method. NANCY}  \NR{For this
+  being more explicit about what "gaps" are in this method. NANCY}  
+  \NR{For this
   todo maybe point to Fig.~\ref{fig:aln}? maybe I can find another
   alignment where there is no deletion score used even though there
   obviously is one.}\LM{Would be cool if we could use the examples above,
@@ -2227,12 +2230,11 @@ proposal of glottochronology was to assume that the number of cognate
 retentions of two languages diverging at a given time decays exponentially
 with constant rate~\cite{Swadesh:55}---which is analogous to the strict
 molecular clock hypothesis in molecular evolution. Rate constancy has been
-severely criticized since early on~\cite{Bergsland:62, Blust:00}, although some
-support for the idea still exists in other
-contexts~\cite{Ehret:00,Starostin:00,Starostin:13,Holman:11}. 
-\TODO{None of these paper support the idea of rate constancy, they support
-(emprirically) the idea of rate regularity. TANMOY}
-Within the
+severely criticized since early on~\cite{Bergsland:62, Blust:00}, 
+\NEW{although some support for the idea of a constant rate of a change within 
+particular subsets of the basic lexicon, or at least for that of certain 
+chronological regularities in lexical evolution, is still found in empirical 
+evidence}~\cite{Ehret:00,Starostin:00,Starostin:13,Holman:11}. Within the
 context of a likelihood based approach, the relative constancy of the rates
 of various features can be tested~\cite{Hruschka:14}, as can particular
 hypotheses about factors affecting changes in the different
@@ -2263,8 +2265,6 @@ realistic confidence intervals for the inferred dates.
 
 \section{Models of meaning.} 
 
-\TODO{It is never declared how synonyms are treated in the IDS and in the
-experiments of Section 4 and how prevalent that is.}
 
 Discussion of lexical connections between different languages often suffer
 from the fact that the meanings expressed by these lexical items have not
@@ -2326,59 +2326,44 @@ demonstrate how these questions can be addressed by means of a suitable
 statistical approach. We will leave a more detailed analysis of the topic,
 which is ongoing work, for a subsequent publication.
 
-We have to make one single assumption about paralogous cognates, namely
-that they inherit both their phonological form and their meaning from a
-common ancestor. \NR{Both traits can undergo language specific changes 
-resulting in differences in at least their pronology, i.e. this is the 
-defining trait for distinction since we do not want to capture polysemy
-of words.}
-Conversely, we assume that a simultaneous similarity \NR{(but not equality)} of
-meaning and phonological form, if not explanable by chance, can result only
-from paralogous cognates: 
-\TODO{As it is written this is two assumptions. Actually the first is
-the definition of paralogous and what you assume is the second
-one (that only paralogous cognates have sim in form and meaning). NANCY
-def paralog and what is the process behind their generation plus same 
-word for same meaning not counted as paralog}
-\ie{} processes like sound symbolism are
-sufficiently weak that they can be ignored for this purpose. If paralogous
-cognates exist, they will therefore be recognizable in the data as similar
-words that also fall into the same broad semantic groups of meanings. We
-have already seen above how phonological forms can be compared in the
-context of computational cognate detection. We will adapt this approach to
-become applicable to words from the same language. The comparison of
-meanings is conceptually more difficult. However, we do not need a detailed
-theory or representation of meaning. For our purposes it is sufficient to
-be able to decide whether some word pairs are semantically closer than
-others. We can therefore make use of the semantic classification of the
-words in word list data. As discussed above, the IDS data~\cite{IDS} are
-grouped into \QUOTE{chapters} that correspond to very broad semantic
-categories. We can therefore structure our analysis in the following
-manner: If two similar words are completely unrelated and accidental, then
-they will appear at random places in \NEW{the} word list\NEW{s}. On the other hand,
-paralogous cognates will retain some semantic similarity and hence
-predominantly appear within the same chapter of the IDS word list. It is
-important to recall that our purpose is to check whether there is evidence
-for paralogous cognates in the first place, not to understand them in full
-detail. We therefore devise a simple test for the association of similar
-words with similar meanings: we simply ask whether there are more pairs of
-similar words within a chapter than between chapters, and if so, whether
-the difference is statistically significant.
+
+We make \NEW{the} assumption \NEW{that} paralogous cognates inherit both
+their phonological form and their meaning from a common
+ancestor. \NEW{Paralogy is a concept diffent from polysemy: paralogous
+  words are by definition distinct, and thus phologically distinguished,
+  lexical items.}  Conversely, we assume that a simultaneous similarity
+\NEW{(but not equality)} of meaning and phonological form, if not
+explanable by chance, can result only from paralogous cognates, \ie{}
+processes such sound symbolism are sufficiently weak that they can be
+ignored for this purpose. If paralogous cognates exist, they will therefore
+be recognizable in the data as similar words that also fall into the same
+broad semantic groups of meanings. We have already seen above how
+phonological forms can be compared in the context of computational cognate
+detection. We will adapt this approach to become applicable to words from
+the same language. The comparison of meanings is conceptually more
+difficult. However, we do not need a detailed theory or representation of
+meaning. For our purposes it is sufficient to be able to decide whether
+some word pairs are semantically closer than others. We can therefore make
+use of the semantic classification of the words in word list data. As
+discussed above, the IDS data~\cite{IDS} are grouped into \QUOTE{chapters}
+that correspond to very broad semantic categories. We can therefore
+structure our analysis in the following manner: If two similar words are
+completely unrelated and accidental, then they will appear at random places
+in \NEW{the} word list\NEW{s}. On the other hand, paralogous cognates will
+retain some semantic similarity and hence predominantly appear within the
+same chapter of the IDS word list. It is important to recall that our
+purpose is to check whether there is evidence for paralogous cognates in
+the first place, not to understand them in full detail. We therefore devise
+a simple test for the association of similar words with similar meanings:
+we simply ask whether there are more pairs of similar words within a
+chapter than between chapters, and if so, whether the difference is
+statistically significant.
 
 To do this in practice, we compare for each language two samples of 1000
 pairs of non-identical words. We remove identical words with different
 meanings since we only interested in paralogs, \ie{} words that are
 distinct, not in words that have simply expanded their semantic scope. 
-\TODO{The removal of identical words is contrary to the stated interest
-which was "This element of cognacy across meaning category is
-analogous to an important mode of biological evolution—the duplication
-and subsequent functional divergence of genes.". Surely identical
-words are (always or sometimes) instances of this process. For example,
-mouse is an animal and now also a computer device, with its own life
-in the different senses (e.g., the computer device can have a different
-plural). NANCY \NR{see senctences before. Should be clear now?}}
-The
-first sample comprises word pairs from the same chapter. In the second
+The first sample comprises word pairs from the same chapter. In the second
 sample we only include word pairs from two different chapters. Then we
 determine, separately for each sample, the number of word pairs that are
 phonologically similar using the same alignment scores that we have
@@ -2390,11 +2375,10 @@ estimated from the word list data in complete analogy to the thresholds
 used earlier for cognate detection. Again, the bimodal form of the
 distribution of the scores of all word pairs for language $A$ is the key,
 and we remove languages from this study when the bimodality is not obvious
-\NEW{, \ie{} there is only little data for these languages}
-(see Fig.~\ref{fig:cutoffChoice}). Our pairs of similar words therefore
-have the same statistical characteristics as cognates, except that they are
-taken from the same language, and may not correspond in meaning too
-closely.
+\NEW{, \ie{} there is only little data for these languages} (see
+Fig.~\ref{fig:cutoffChoice}). Our pairs of similar words therefore have the
+same statistical characteristics as cognates, except that they are taken
+from the same language, and may not correspond in meaning too closely.
 		
 \begin{figure}
 \begin{center}
@@ -2548,11 +2532,28 @@ into account the possibility of \QUOTE{trivial} semantic shifts, based on a
 preset listing of such shifts that is being extracted from polysemies and
 indisputable low-level semantic change, elicited within the
 comparative-historical databases created by various members of the program.
+\par\framebox{\begin{minipage}{0.9\textwidth}\small
+\textbf{Discussion of comment: delete when resolved!}
+
 \TODO{I cannot find any information on the EHL website cited here 
 on the work being done there on semantic shift. If it is not possible
 to cite outcomes of that work it may be preferable to omit the 
 discussion of that work in progress. TANMOY can you resolve this? 
-Otherwise: do you know who wrote this?} \NR{Ich kann es auch nicht finden.}
+Otherwise: do you know who wrote this? 
+
+\GS{This is problematic, because research 
+on 400-item lists and semantic connections between their elements is still 
+ongoing, and the results have not yet been published. We could delete the 
+reference, but I think that this brief mention might be useful from a 
+"PR aspect". One way to deal with the remark would be for me to put up a 
+partially completed 400-item database in a corner of our website, which 
+is something that I have been planning to do for a while anyway, and 
+provide a link to the online resource. If everybody is okay with that, 
+it might take me a week or two to do it properly, maybe even less.}} 
+
+\TODO{PFS says: I think this is an excellent idea!}
+
+\end{minipage}}
 
 \section{Measuring the success of statistical methods.}
 
@@ -2623,9 +2624,7 @@ should thus be reorganized. TANMOY DAMIAN PETER NANCY - new section heading
 ``Conclusion and ...''}
 \end{minipage}}
 
-\section{Conclusion \PFS{and Future Directions}.} 
-
-\NR{Conclusion and Additional Remarks}
+\section{Conclusion \NEW{and Future Directions}.} 
 
 Biological and language data share enough properties to argue that methods
 developed in one domain are also applicable in the other. Comparative

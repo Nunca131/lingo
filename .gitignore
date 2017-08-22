@@ -1,1 +1,10 @@
 *~
+*.bbl
+*.out
+*.spl
+*.ent
+*.aux
+*.blg
+*.log
+lingo.pdf
+titlepage.pdf

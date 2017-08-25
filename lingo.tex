@@ -494,7 +494,18 @@ two-fold. First, it allows us to identify the cases where \emph{the
 amount of data increases, it allows one to \emph{systematically} improve
 the model using techniques like ancestral recombination
 graphs~\cite{Hudson:91,Griffiths:97,Arenas:13,Rasmussen:14}\NEW{,} well
-known in the biological phylogenetic literature.  \TODO{The logic here is
+known in the biological phylogenetic literature. \TB{This graded
+  approach of considering only a dominant subset of effects is a
+  general feature of what statistical analysis can be used to quantify
+  in order to avoid the loss of predictive capability in
+  an attempt to fit complex models with limited data. In this case,
+  the value of this approach can be explained as follows: since typically
+  the vertical inheritance arises from starkly different processes
+  like population migration and fission than contact phenomena that
+  lead to horizontal influences, building trees rather than
+  reticulated networks allows us to
+  answer the former questions even when the data are not sufficient to
+  parameterize the entire process.} \TODO{The logic here is
   unclear. Cf. the comment above that we never actually told how only using
   tree-models tells us whether they are appropriate or not. But suppose we
   did, then the authors suggest we can systematically improve the
@@ -1035,7 +1046,13 @@ to sneak in and contribute to disruption of expected patterns at these
 later stages. Importantly, however, the automatic cognate recognition path
 provides these later stages of analysis not merely with a binary decision
 of whether or not a pair is a cognate, but rather with a score that
-represents the weight of phonetic evidence in favor of cognacy. 
+represents the weight of phonetic evidence in favor of cognacy.
+\TB{Even though cognacy itself is a binary property, keeping track of
+  the weight of evidence that establishes a set as cognate is
+  essential to any quantitative further analyses based on cognate
+  sets. Proper procedures for propagating uncertainties from one stage
+  of the calculation to the next is a key strength of formal methods
+  we advocate.}
 \TODO{But cognacy is a yes/no property and modeled as such in the work
 the authors cite, so the inability to provide a yes/no answer is
 incompleteness rather than a virtue. TANMOY}
@@ -1150,7 +1167,7 @@ smaller than the cutoff. Each cutoff value thus yields a pair of
 sensitivity and specificity values that quantify how well the score-based
 separation between cognates and non-cognates performs. \LM{One can}
 summarize the values in the form of the \textit{Receiver-Operator-Curve}
-(ROC) shown in Fig.~\ref{fig:DanROC}. 
+(ROC) shown in Fig.~\ref{fig:DanROC}.  
 \TODO{It's more customary to present the f-score of the precision/recall
 corresponding to the different threshold values... TANMOY 
 \LM{replaced 'It is customary to' with 'One can'}}
@@ -1166,7 +1183,11 @@ test. Mathematically, the AUC represents how often the test assigns a
 higher score to a random cognate pair as compared to a random non-cognate
 pair, and is, therefore, a threshold independent characterization of the
 quality of the scoring system. In Fig.~\ref{fig:DanROC} the AUC is
-$0.9$.
+$0.9$. \TB{Since the ROC curves show
+  intrinsic properties of the test---displaying the sensitivity and specificity
+  as a function of threshold---various other summary
+  statistics like precision, recall, or the customary $f$-score can be
+  derived from it if one knows the total fraction of positives in the data set.}
 
 \begin{figure}
 \begin{center}
@@ -1245,10 +1266,28 @@ from the data and represent only information that is contained in the data
 set that is actually used in the analysis. As such, one might miss regular
 correspondences that are not sufficiently prevalent in the word
 lists. Furthermore, the scores are explicitly dependent on the languages
-that are compared. Alternative approaches using a scoring system based on
+that are compared. \TB{At the same time, neither method makes a
+  methodological commitment to the strict Neogrammarian position of
+  exception-free regular correspondences, nor can they distinguish
+  between true sporadic change and undetected rare, but regular,
+  contexts. The only structural commitment is that regular
+  correspondences {\em could} provide a better explanation of the observed
+  data than independent processes acting on each item in the
+  lexicon. In fact, within the likelihood framework, simple analyses 
+  based on Akaike Information Criteria~\cite{AIC} or Bayesian
+  Information Criteria~\cite{BIC} readily show that the increase in
+  explanatory power of regular correspondences outweighs the added
+  model complexity.~\cite{Hruschka:14}.}
+Alternative approaches using a scoring system based on
 linguistic expertise also exist \cite{Covington:96,Kondrak:03} and such
 models could also be designed to be more or less specific for particular
-language pairs or language families.
+language pairs or language families.  \TB{Again, such data-driven
+  approaches are agnostic as to whether the sound change processes are
+  indeed universal across all language families.  In stead, given any
+  data set, one can determine the weight of evidence for unique
+  processes in each language family (or other classification unit),
+  versus universal, but probabilistic, laws that are variously
+  instantiated in the families.}
 \TODO{Later in the paper sound change processes are argued be universal (a
 la Ohala) which means that there is a specific answer to the
 incertitude expressed in the above passage. TANMOY}

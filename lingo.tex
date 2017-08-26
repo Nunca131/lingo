@@ -496,16 +496,15 @@ the model using techniques like ancestral recombination
 graphs~\cite{Hudson:91,Griffiths:97,Arenas:13,Rasmussen:14}\NEW{,} well
 known in the biological phylogenetic literature. \TB{This graded
   approach of considering only a dominant subset of effects is a
-  general feature of what statistical analysis can be used to quantify
-  in order to avoid the loss of predictive capability in
-  an attempt to fit complex models with limited data. In this case,
-  the value of this approach can be explained as follows: since typically
-  the vertical inheritance arises from starkly different processes
-  like population migration and fission than contact phenomena that
-  lead to horizontal influences, building trees rather than
-  reticulated networks allows us to
+  general feature of statistical methods. Standard techniques exist to compare
+  the predictive capability of incomplete models whose parameters are
+  well constrained by the data available against complex models that
+  cannot be so constrained. Furthermore, since typically the vertical
+  inheritance arises from starkly different processes like population
+  migration and fission than contact phenomena that lead to horizontal
+  influences, building trees rather than reticulated networks allows us to
   answer the former questions even when the data are not sufficient to
-  parameterize the entire process.} \TODO{The logic here is
+  parameterize the entire process.} \TODO{DONE The logic here is
   unclear. Cf. the comment above that we never actually told how only using
   tree-models tells us whether they are appropriate or not. But suppose we
   did, then the authors suggest we can systematically improve the
@@ -548,10 +547,9 @@ analysis used only the core concepts belonging to the Swadesh
 lists \DB{swadesh is just one of such lists - Jakarta-Leipzig is way more 
 common these days, for instance. I'd say axe this reference to Swadesh.}
 ---assumed to be the most closely co-inherited roots, refractory to
-horizontal transfer---or, at least, weighted their evidence more, this gave
-a very good fit with known linguistic
-history~\cite{Lee:11,Gray:09,Dunn:11}
-\TODO{What is meant by "very good fit"? The whole paper argues we should
+horizontal transfer---or, at least, weighted their evidence more, this 
+often reproduced known events in linguistic history~\cite{Lee:11,Gray:09,Dunn:11}
+\TODO{DONE What is meant by "very good fit"? The whole paper argues we should
 use quantification to answer such questions but for some reason
 when we need it and it is easy to do, they don't do it. For example
 what is the Robinson-Foulds distance between the computational and
@@ -671,7 +669,7 @@ beyond the conventionally assumed 10,000 ybp limit of the comparative
 method \cite{Pagel:2013}. 
 \NEW{Even though Swadesh lists offer an initial starting point, the manner
 in which they were created and compiled had its shortcomings \cite{Hoijer:56}}
-\TODO{These studies do not "prove genealogical persistence", they are circular in
+\TODO{DONE These studies do not "prove genealogical persistence", they are circular in
 this respect since they assume families established on the assumption of
 genealogical persistence of the very same vocabulary items... TANMOY} 
 \DB{I agree - however, do we really need this whole section on IDS? I don't think so IMHO}
@@ -843,14 +841,21 @@ These methods ultimately utilize the strength of regularities in linguistic
 correspondence. Even a very rough and simplistic model for sound changes
 suffices to identify at least \NEW{a proportion} of the cognate pairs in the data
 set. Given the rarity of metatheses, the pairwise alignments of these
-cognates preferentially match corresponding sounds with each other.  The
+cognates preferentially match corresponding sounds with each other.
+\TB{One can then introduce gaps in the alignment to improve thr match
+  according to this draft correspondence table. Iteration of this
+  process of improving the correspondence table followed by improving
+  the alignment rapidly reduces the number of unexplained changes and
+  refines the correspondence table~\cite{Hrushka:14}.} The
 key observation is that all this needs is an enrichment of cognates in the
 initial alignments. Even if a fraction of the candidate cognate pairs are
 false positives and some of the alignments of cognate pairs are wrong as a
 consequence of the oversimplified scoring model, there is enough signal in
 the correct alignments of real cognate pairs for the statistical
-machinery to identify the more common sound correspondences.
-\TODO{What evidence supports this claim that there is sufficient signal 
+machinery to identify the more common sound correspondences.  
+\TODO{DONE ABOUT WRONG ALIGNMENTS.  THE CASE WHERE THE COGNATES ARE
+  NOT KNOWN IS NOT YET TESTED EXCEPT SOME WORK WITH HRUSCHKA. What
+  evidence supports this claim that there is sufficient signal  
 in real cognate pair alignments for correct sound
 correspondences to be identified in spite of some false positives/wrong alignments? 
 TANMOY} \DB{I agree on that the claim comes across as a bit vague.}
@@ -1053,7 +1058,7 @@ represents the weight of phonetic evidence in favor of cognacy.
   sets. Proper procedures for propagating uncertainties from one stage
   of the calculation to the next is a key strength of formal methods
   we advocate.}
-\TODO{But cognacy is a yes/no property and modeled as such in the work
+\TODO{DONE But cognacy is a yes/no property and modeled as such in the work
 the authors cite, so the inability to provide a yes/no answer is
 incompleteness rather than a virtue. TANMOY}
 Any further
@@ -1168,8 +1173,9 @@ sensitivity and specificity values that quantify how well the score-based
 separation between cognates and non-cognates performs. \LM{One can}
 summarize the values in the form of the \textit{Receiver-Operator-Curve}
 (ROC) shown in Fig.~\ref{fig:DanROC}.  
-\TODO{It's more customary to present the f-score of the precision/recall
-corresponding to the different threshold values... TANMOY 
+\TODO{DONE SEE END OF PARA It's more customary to present the f-score
+  of the precision/recall corresponding to the different threshold
+  values... TANMOY  
 \LM{replaced 'It is customary to' with 'One can'}}
 Each point on the line corresponds
 to a cutoff value and is placed according to the cutoff's sensitivity and
@@ -1288,10 +1294,10 @@ language pairs or language families.  \TB{Again, such data-driven
   processes in each language family (or other classification unit),
   versus universal, but probabilistic, laws that are variously
   instantiated in the families.}
-\TODO{Later in the paper sound change processes are argued be universal (a
-la Ohala) which means that there is a specific answer to the
-incertitude expressed in the above passage. TANMOY}
-\TODO{The "regular correspondences" you refer to here are the same as the 
+\TODO{DONE Later in the paper sound change processes are argued be
+  universal (a la Ohala) which means that there is a specific answer
+  to the incertitude expressed in the above passage. TANMOY}
+\TODO{DONE The "regular correspondences" you refer to here are the same as the 
 "table of regular correspondences" you mention on
 line 41 of page 12, correct? I suspect that some historical linguists 
 will expect that all uses of the term "regular" in relation to sound
@@ -1357,23 +1363,30 @@ regular correspondences between pairs of extant languages and then use the
 fact that these regular correspondences are by definition the result of
 sound changes from the same proto-language along the two independent
 lineages to piece this information together to approximately reconstruct
-proto-languages and then the regularities of sound change.  \TODO{This is
+proto-languages and then the regularities of sound change.  \TODO{DONE
+  This is
   an important question, but unfortunately not prudently discussed in this
   passage. Since the components depend on each other, it is not
   probabilistically correct to do it in the iterative manner, and, as
   argued elsewhere in the paper (p 16) it is not a correct approach from
   the perspective of propagating uncertainty. TANMOY} This separation of
-tasks is merely a matter of computational efficiency and expediency. In
+tasks is \TB{DELETE WORD: merely} a matter of computational efficiency
+and expediency \TB{at our current computational capability.} In
 fact, both maximum likelihood and maximum parsimony methods necessarily use
 this kind of separation internally: likelihoods or parsimony scores are
-computed for a given tree, and then used to compare trees. Experience from
-computational biology, furthermore, shows that it is often pragmatically
-favorable to perform as much of the analysis as possible on directly
-observable data. \NEW{For example, methods that attempt to concurrently
-  estimate alignments and phylogenetic trees \cite{Lunter:05,Heman:14} have
-  been devised and applied with success, it appears that the gain in
-  accuracy over the common practise (of treating alignment and phylogeny
-  reconstructing as independent tasks) is very moderate and often does not
+computed for a given tree, and then used to compare trees. \TB{The
+  question is actually of propagating the alignment uncertainty into
+  phylogenetic reconstruction.} Experience from
+computational biology \TB{DELETE:, furthermore,} shows that
+\TB{DELETE: it is
+often pragmatically favorable to perform as much of the analysis as
+possible on directly observable data.} \NEW{\TB{DELETE: For example,}
+  \TB{though} methods that attempt to concurrently estimate alignments and
+  phylogenetic trees \cite{Lunter:05,Heman:14} \TB{can be}
+  devised and applied with success, it appears \TB{to} gain
+  \TB{little} in accuracy over the common practise \TB{DELETE: (} of
+  treating alignment and phylogeny reconstructing as independent tasks
+  \TB{DELETE: ) is very moderate} and often does not
   justify the high experimental costs.}  For example, it can be helpful to
 identify regular correspondences between extant languages as a first step
 rather than trying to infer proto-languages and phylogenetic trees
@@ -1493,11 +1506,12 @@ Another difference between the phylogenetic problem in computational
 \subsubsection{Deep phylogeny and its limitations.} 
 
 Similarity serves only \NEW{as} a first filter for relatedness. In fact, the rate of
-\QUOTE{random} mutations variously affecting the sounds in individual words
+\QUOTE{random} mutations \TB{(either sporadic changes or
+  misconstruction of rare processes)} variously affecting the sounds in individual words
 is so low that the method of comparative historical linguistics stipulates
 that only regular correspondences can be invoked to support the recent
 relatedness of languages. 
-\TODO{It is not entirely clear what this sentence means, or how to evaluate 
+\TODO{DONE It is not entirely clear what this sentence means, or how to evaluate 
 the claim here without knowing exactly what you
 mean by 'random' mutations in this linguistic context. Do you mean 
 sporadic changes? Either some clarification or a reference to some supporting
@@ -1723,7 +1737,9 @@ horizontal transfer and sound symbolic shared patterns
 ~\cite{dingemanse2015}---a statistically significant difference between
 real and permuted similarity distributions supports a non-trivial
 genealogical relationship between the languages.
-\TODO{This idea is limited by regularities in the meaning space of the kind
+\TODO{DONE THIS NEEDS ANALYSIS BEYOND THE SCOPE OF THE PAPER. THE IDEA
+  IS TO USE MEANING SIMILARITIES \emph{DISCUSSED IN 4.1-2} TO DO THE
+  PERMUTATION TEST. This idea is limited by regularities in the meaning space of the kind
 discussed in 4.1-4.2 (as well as synonyms). The paper would make an
 actual contribution if this was taken seriously for a correct
 assessment of number emanating from a permutation test. TANMOY: do you 
@@ -2010,7 +2026,7 @@ These experiments demonstrate that automated cognate detection is very
 robust against small differences in the encoding used for the word list and
 thus tolerates occasional errors in the data. In our \QUOTE{easy} example
 we found a residual level of about 3\% discrepancies, 
-\TODO{This conclusion should be qualified by the fact that only closely related
+\TODO{DONE This conclusion should be qualified by the fact that only closely related
 languages were used in the tests. Of course, then a small amoutn of error
 drowns in the flood cognates. More interesting would be to assess the
 impact in a case where the error amound would compete against a similarly
@@ -2019,7 +2035,11 @@ TANMOY: example with Turkic languages appropriate here?}
 which is small enough
 to be tolerated in further analysis. Even for completely different encoding
 schemes that follow different traditions we observe that the majority of
-cognate call is independent of the encoding scheme. Substantially different
+cognate call is independent of the encoding scheme. \TB{It is to be
+  admitted, however, that these robustness results might change as one looks at
+  lists with substantially lower frequency of cognates, as expected
+  for deeper families or languages undergoing large amount of
+  lexical replacement.} Substantially different
 encodings, furthermore, mostly lead to a loss of sensitivity, \ie{} an
 underprediction of cognates. In cases where the residual levels
 discrepancies might be problematic, the automatically produced cognate
@@ -2054,8 +2074,9 @@ different from vowels in word recognition~\cite{Cutler:2000}.
 \footnote{Again, we include changes in presence and absence of cognates as
   well as sound changes in the word \QUOTE{change}.} The most efficient use
 of lexical data for determining deep language relationships, therefore,
-should weight the stable words and consonantal identity more. 
-\TODO{Is this a language independent result? DAMIAN TANMOY}
+should weight the stable words and \TB{sounds (e.g., consonants in
+  most language families)} more. 
+\TODO{DONE Is this a language independent result? DAMIAN TANMOY}
 The signal
 from vowels is more informative when the vowel inventory is larger than
 average.  In the non-parametric approaches, such choices of variously
@@ -2574,7 +2595,8 @@ comparative-historical databases created by various members of the program.
 \par\framebox{\begin{minipage}{0.9\textwidth}\small
 \textbf{Discussion of comment: delete when resolved!}
 
-\TODO{I cannot find any information on the EHL website cited here 
+\TODO{DONE ASSUMING GEORGE CARRIES OUT HIS PLAN I cannot find any
+  information on the EHL website cited here  
 on the work being done there on semantic shift. If it is not possible
 to cite outcomes of that work it may be preferable to omit the 
 discussion of that work in progress. TANMOY can you resolve this? 
@@ -2658,7 +2680,7 @@ various sizes can verify these predictions.
 
 \par\framebox{\begin{minipage}{0.9\textwidth}\small
 \textbf{Discussion of comment: delete when resolved!}
-\TODO{The conclusion contains information not in the body of the paper and
+\TODO{DONE AGREED The conclusion contains information not in the body of the paper and
 should thus be reorganized. TANMOY DAMIAN PETER NANCY - new section heading 
 ``Conclusion and ...''}
 \end{minipage}}

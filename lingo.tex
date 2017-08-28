@@ -481,12 +481,9 @@ of sound correspondences, which seems to require larger datasets.
 
 \TODO{Regarding rewrites in the paragraph above:}
 
-
 \DB{swadesh is just one of such lists - Jakarta-Leipzig is way more common
   these days, for instance. I'd say axe this reference to Swadesh.}
 \TODO{OK deleted} 
-
-
 
 \TODO{DONE What is meant by "very good fit"? The whole paper argues we should
 use quantification to answer such questions but for some reason
@@ -984,40 +981,46 @@ the capability of the normalized alignment scores to distinguish cognates
 from non-cognates. This is not unexpected since regular correspondences are
 often sensitive to neighboring phonetic contexts, and a large amount of the
 context sensitivity can be accounted for by looking at one neighboring
-sound along with word boundaries\LM{. However, neighboring sounds are} an imperfect proxy for syllable
-boundary. 
+sound along with word boundaries. \NEW{However, neighboring sounds are} an
+imperfect proxy for syllable \NEW{boundaries}.
+ 
+\par\framebox{\begin{minipage}{0.9\textwidth}\small
+\textbf{Discussion of comment: delete when resolved!}
+
 \TODO{Word boundaries aren't really an 'imperfect proxy' for syllable 
 boundaries. Rather, they are a restricted subset of syllable boundaries
 that are recoverable from orthographic representations.\LM{seriously???}}
-In more difficult cases, such as the Guaycuruan example, the
-situation is far from perfect. Here the cognates are not completely
-separated from the non-cognates by the \textit{nscore} even for \NEW{the} bigram
-scoring model. This leaves us with two possibilities: (1) We can seek to
-further improve the scoring model. Below we will briefly discuss a few
-ideas in this direction. (2) We can accept that the computational method
-does not provide us with a perfect way to identify \emph{all} cognates,
-\ie{} we are left with a trade-off between false positives (false
-cognates: word pairs that are not truly cognates despite their good score)
-and false negatives (unidentified cognates: word pairs that we fail to
-recognize as cognates because their score is not large enough). The choice
-of the threshold is left to us. Depending on the analysis \NEW{for which} such
-cognate identification is needed, we may opt for a conservative strategy
-and minimize the false positives at the expense of missing some cognate
-pairs, or we may choose to be more inclusive and allow some false positives
-to sneak in and contribute to disruption of expected patterns at these
-later stages. Importantly, however, the automatic cognate recognition path
+
+\end{minipage}}
+
+In more difficult cases, such as the Guaycuruan example, the situation is
+far from perfect. Here the cognates are not completely separated from the
+non-cognates by the \textit{nscore} even for \NEW{the} bigram scoring
+model. This leaves us with two possibilities: (1) We can seek to further
+improve the scoring model. Below we will briefly discuss a few ideas in
+this direction. (2) We can accept that the computational method does not
+provide us with a perfect way to identify \emph{all} cognates, \ie{} we are
+left with a trade-off between false positives (false cognates: word pairs
+that are not truly cognates despite their good score) and false negatives
+(unidentified cognates: word pairs that we fail to recognize as cognates
+because their score is not large enough). The choice of the threshold is
+left to us. Depending on the analysis \NEW{for which} such cognate
+identification is needed, we may opt for a conservative strategy and
+minimize the false positives at the expense of missing some cognate pairs,
+or we may choose to be more inclusive and allow some false positives to
+sneak in and contribute to disruption of expected patterns at these later
+stages. Importantly, however, the automatic cognate recognition path
 provides these later stages of analysis not merely with a binary decision
 of whether or not a pair is a cognate, but rather with a score that
-represents the weight of phonetic evidence in favor of cognacy.
-\NEW{Even though cognacy itself is a binary property, keeping track of
-  the weight of evidence that establishes a set as cognate is
-  essential to any quantitative further analyses based on cognate
-  sets. Proper procedures for propagating uncertainties from one stage
-  of the calculation to the next is a key strength of formal methods
-  we advocate.} Any further
+represents the weight of phonetic evidence in favor of cognacy.  \NEW{Even
+  though cognacy itself is a binary property, keeping track of the weight
+  of evidence that establishes a set as cognate is essential to any
+  quantitative further analyses based on cognate sets. Proper procedures
+  for propagating uncertainties from one stage of the calculation to the
+  next is a key strength of formal methods we advocate.} Any further
 deductions obtained from such putative cognates can weight the evidence by
-this score, thereby lowering the deleterious effect \NEW{of} false positives.
-Alternatively, of course, the permissive cognate list could be
+this score, thereby lowering the deleterious effect \NEW{of} false
+positives.  Alternatively, of course, the permissive cognate list could be
 post-processed to identify and remove false cognates based on expert
 knowledge, with manual effort being allocated more to cognate pairs with
 low scores. Erroneous cognate detection may also result from erroneous or
@@ -1107,14 +1110,22 @@ randomly chosen words from different languages. The main advantage of using
 the Turkic languages as an example is that relatively comparable phonetic
 transcriptions were available, the language family has a relatively shallow
 time depth, and words had already been categorized into probable
-descendants of common ancestors, 
+descendants of common ancestors, so that the results could easily be
+compared against expert linguistic judgements.
+
+
+\par\framebox{\begin{minipage}{0.9\textwidth}\small
+\textbf{Discussion of comment: delete when resolved!}
+
 \TODO{It should be mentioned that i) the results do not necessarily generalize
 to deeper families/cognacy and ii) that cognates in the Hruschka et al 2015
 come in sets whereas the method described in the paper identifies
 cognates pairwise and may thus give inconsistent results of the type
 A is cognate with B and B is cognate with C but A is not cognate with C.}
-so that the results could easily be
-compared against expert linguistic judgements.
+
+\PFS{PFS will try draft something ...} 
+
+\end{minipage}}
 
 Since cognates are known for this data set, we can compute the sensitivity
 and specificity of the cognate assignment for each choice of the score
@@ -1660,33 +1671,39 @@ horizontal transfer and sound symbolic shared patterns
 ~\cite{dingemanse2015}---a statistically significant difference between
 real and permuted similarity distributions supports a non-trivial
 genealogical relationship between the languages.
-\TODO{DONE THIS NEEDS ANALYSIS BEYOND THE SCOPE OF THE PAPER. THE IDEA
-  IS TO USE MEANING SIMILARITIES \emph{DISCUSSED IN 4.1-2} TO DO THE
-  PERMUTATION TEST. This idea is limited by regularities in the meaning space of the kind
-discussed in 4.1-4.2 (as well as synonyms). The paper would make an
-actual contribution if this was taken seriously for a correct
-assessment of number emanating from a permutation test. TANMOY: do you 
-know know what could be meant here?}
 
+\par\framebox{\begin{minipage}{0.9\textwidth}\small
+\textbf{Discussion of comment: delete when resolved!}
 
-The data
-is again taken from the IDS. For each language, we have about 1000 words in
-the word list and unique identifiers for the meanings across all word
-lists. We took the similarity scores from~\cite{Steiner:11a} and calculated
-the similarity of a word pair as the alignment score of the best alignment
-between the two words with respect to the scoring model. While this can be
-done in theory for all word pairs, we only chose word pairs with identical
-meanings originating from different languages. Furthermore, we split up the
-data into alignments within Mataco, within Guaycuruan, and between Mataco
-and Guaycuruan. The distributions of the scores, \ie{} the frequency of
-each score, is then shown as black lines in Fig.~\ref{fig:permut}
-(a)--(c). The entire procedure was then repeated with the permuted word
-lists. As explained above, the permutation is performed by re-assigning
-each word of the language to a meaning randomly and independently for each
-language. In this way, we measure how much similarity we would expect
-between words that typically do not have the same origin, \ie{}
-non-cognates. In other words, we estimate the \TT{null model} for the score
-distribution and show them as superimposed gray lines.
+\TODO{ This idea is limited by regularities in the meaning space of the
+  kind discussed in 4.1-4.2 (as well as synonyms). The paper would make an
+  actual contribution if this was taken seriously for a correct assessment
+  of number emanating from a permutation test. TANMOY: do you know know
+  what could be meant here?}
+
+RELPY LETTER ONLY: THIS NEEDS ANALYSIS BEYOND THE SCOPE OF THE PAPER.  THE
+IDEA IS TO USE MEANING SIMILARITIES \emph{DISCUSSED IN 4.1-2} TO DO THE
+PERMUTATION TEST.
+\end{minipage}}
+
+The data is again taken from the IDS. For each language, we have about 1000
+words in the word list and unique identifiers for the meanings across all
+word lists. We took the similarity scores from~\cite{Steiner:11a} and
+calculated the similarity of a word pair as the alignment score of the best
+alignment between the two words with respect to the scoring model. While
+this can be done in theory for all word pairs, we only chose word pairs
+with identical meanings originating from different languages. Furthermore,
+we split up the data into alignments within Mataco, within Guaycuruan, and
+between Mataco and Guaycuruan. The distributions of the scores, \ie{} the
+frequency of each score, is then shown as black lines in
+Fig.~\ref{fig:permut} (a)--(c). The entire procedure was then repeated with
+the permuted word lists. As explained above, the permutation is performed
+by re-assigning each word of the language to a meaning randomly and
+independently for each language. In this way, we measure how much
+similarity we would expect between words that typically do not have the
+same origin, \ie{} non-cognates. In other words, we estimate the \TT{null
+  model} for the score distribution and show them as superimposed gray
+lines.
 
 If we now want to answer the question of whether there is a non-trivial
 relationship between two languages, we need to test whether the score
@@ -1996,14 +2013,17 @@ different from vowels in word recognition~\cite{Cutler:2000}.
 \footnote{Again, we include changes in presence and absence of cognates as
   well as sound changes in the word \QUOTE{change}.} The most efficient use
 of lexical data for determining deep language relationships, therefore,
-should weight the stable words and \NEW{sounds (e.g., consonants in
-  most language families)} more. 
+should weight the stable words and \NEW{sounds (e.g., consonants in most
+  language families)} more. The signal from vowels is more informative when
+the vowel inventory is larger than average.  In the non-parametric
+approaches, such choices of variously weighting the evidence are choices
+external to the evidence, and made \textit{a priori.}
+
+\par\framebox{\begin{minipage}{0.9\textwidth}\small
+\textbf{Discussion of comment: delete when resolved!}
+
 \TODO{DONE Is this a language independent result? DAMIAN}
-The signal
-from vowels is more informative when the vowel inventory is larger than
-average.  In the non-parametric approaches, such choices of variously
-weighting the evidence are choices external to the evidence, and made
-\textit{a priori.}
+\end{minipage}}
 
 In contrast, likelihood approaches depend on detailed models in which all
 the parameters are simultaneously and consistently estimated. It can be

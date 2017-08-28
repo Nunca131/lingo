@@ -1,13 +1,22 @@
-1) I fail to see that the example of Xenoturbella underlines this conclusion.
+0) I fail to see that the example of Xenoturbella underlines this conclusion.
 It just seems to illustrate that one needs to be able to correctly identify
 the data used and that the phylogenetic placement of a leaf will be wrong if
 not all relevant clades are included in the analysis.
 
-TODO Tanmoy: is it done?
+DELETED: This unimpressive worm-like animal was classified as close relative of molluscs
+based on DNA that, as it turned out later, represented its food rather than the animal itself. It was
+later placed based on genome-wide sequencing data within the Deuterostomes, the animal clade
+that also includes vertebrates (Bourlat et al., 2006), only to be demoted again earlier last year
+to one of the most basal bilaterian branches by means of data for related species (Rouse et al.,
+2016).
 
+Partially new: "Of course no method is infallible with respect to the features chosen. If these are either too noisy to convey retrievable information or are not transmitted along the same tree to begin with, the reconstructed tree might not depict any actual relationships. An extreme example in the phylogeny of animals is the strange case of Xenoturbella, which was placed at vastly different positions in the animal tree based on different choices of data sets and taxa included for comparion (Bourlat et al., 2006; Rouse et al., 2016). This underlines the fundamental importance of basing phylogenetic reconstruction on multiple, independent feature sets because it is often not obvious a priori which features are informative for comparison in a given context.
 
-2) This is a circular assessment (trees are
-  useful when the data is sufficiently tree-like)
+1) What is lineage sorting?
+Added a footnote: Incomplete lineage sorting describes the effect that for a small subset of the genome may contradicts the true phylogeny by being more similar to a more distant relative than to the, e.g., sister species. In the words of linguistics, some words in a language may be less similar to the cognate in the sister language than to the cognate in a more distantly related language.
+
+2) This is a circular assessment (trees are useful when the data is sufficiently tree-like)
+reply: Indeed: treelikeness can be quantified independent of phylogenetic reconstruction -- I included as review paper we recently wrote about this very issue. We should answer that this is indeed NOT circular.
 
 NB: The use of the term "other forms of inheritance" does violence
   upon the term "inheritance". Presumably it refers to the mentioned
@@ -18,7 +27,8 @@ NB: The use of the term "other forms of inheritance" does violence
     'other forms of inheritance' with 'other forms of
     relationships'. May be more generell and thus more inclusive.
 
-TODO Tanmoy: is it done?
+changed to "forms of relationships" 
+and added: "Several measures that quantify the of tree-likeness of a data set are available that do not presuppose a particular tree and hence can be employed without biasing subsequent phylogenetic statements (Bandelt and Dress, 1992; Nieselt-Struwe, 1997; Misof et al., 2014)."
 
 
 3) (I am assuming "non-vertical inheritance" should be "non-vertical
@@ -54,7 +64,7 @@ or not. But suppose we did, then the authors suggest we can systematically
 improve the tree-model by extending it to become ARGs. Then why not use
 ARGs to begin with? (That would be systematic, rather than ad hoc).
 
-TODO Tanmoy
+This graded approach of considering only a dominant subset of effects is a general feature of statistical methods. Standard techniques exist to compare the predictive capability of incomplete models whose parameters are well constrained by the data available against complex models that cannot be so constrained. Furthermore, since typically the vertical inheritance arises from starkly dierent processes like population migration and fission than contact phenomena that lead to horizontal influences, building trees rather than reticulated networks allows us to answer the former questions even when the data are not sufficient to parameterize the entire process.
 
 
 6) "Lexicostatistics and language phylogenetics." is mislabeled
@@ -158,7 +168,7 @@ TODO Damian: any further idea to Lydias edits?
 the authors cite, so the inability to provide a yes/no answer is
 incompleteness rather than a virtue.
 
-TODO Tanmoy
+NEW: "Even though cognacy itself is a binary property, keeping track of the weight of evidence that establishes a set as cognate is essential to any quantitative further analyses based on cognate sets. Proper procedures for propagating uncertainties from one stage of the calculation to the next is a key strength of formal methods we advocate."
 
 
 20) These [local transpositions] were assumed to be so few as to negligible earlier in the paper so that is not much of an improvement. But if it were important to capture them, k >= 3 is not necessary as adding transposition operations to the Needleman Wunsch algorithm still keeps it polynominal.
@@ -175,7 +185,7 @@ TODO Tanmoy
 corresponding to the different threshold values...
 
 a) replaced 'It is customary to' with 'One can'
-b) TODO Tanmoy: do you think f-score should be mentioned here? Peter would leave it like it is
+b) Since the ROC curves show intrinsic properties of the test—displaying the sensitivity and specificity as a function of threshold—various other summary statistics like precision, recall, or the customary f-score can be derived from it if one knows the total fraction of positives in the data set.
 
 
 23) do you mean the "alternative"
@@ -191,14 +201,15 @@ TODO Damian
 
 25) Later in the paper sound change processes are argued be universal (a la Ohala) which means that there is a specific answer to the incertitude expressed in the above passage.
 
-TODO Tanmoy
+added: "Again, such data-driven approaches are agnostic as to whether the sound change processes are indeed universal across all language families. In stead, given any data set, one can determine the weight of evidence for unique processes in each language family (or other classification unit), versus universal,
+but probabilistic, laws that are variously instantiated in the families."
 
 
 26) The "regular correspondences" you refer to here are the same as the "table of regular correspondences" you mention on line 41 of page 12, correct? I suspect that some historical linguists will expect that all uses of the term "regular" in relation to sound changes/correspondences will mean "regular" in the strict Neogrammarian
 sense. It would be good to be explicit somewhere in this sub-section
 about whether "regular correspondences" does in fact mean "exceptionless" as in the Neogrammarian usage.
 
-TODO Tanmoy
+added: "At the same time, neither method makes a methodological commitment to the strict Neogrammarian position of exception-free regular correspondences, nor can they distinguish between true sporadic change and undetected rare, but regular, contexts. The only structural commitment is that regular correspondences could provide a better explanation of the observed data than independent processes acting on each item in the lexicon. In fact, within the likelihood framework, simple analyses based on Akaike Information Criteria (Akaike, 1974) or Bayesian Information Criteria (Schwarz, 1978) readily show that the increase in explanatory power of regular correspondences outweighs the added model complexity (Hruschka et al., 2015)."
 
 
 27) Reference here is needed to Bouchard-Cote's book but, even more so,
@@ -208,19 +219,21 @@ from a computational point of view is needed...
 added a phrase: While this is becoming feasible at least from a computational point of view, "as examplified by large-scale applications of Bayesian methods and ancestral state reconstruction methods to resolving essentially analogous questions in a biological setting (Bouchard-Côté et al., 2012; Joy et al., 2016)," it may not be the most efficient approach to analyzing the data.
 
 
-28) This is an important question, but unfortunately not prudently
-discussed in this passage. Since the components depend on each other,
-it is not probabilistically correct to do it in the iterative manner,
-and, as argued elsewhere in the paper (p 16) it is not a correct
-approach from the perspective of propagating uncertainty.
+28) This is an important question, but unfortunately not prudently discussed in this passage. Since the components depend on each other, it is not probabilistically correct to do it in the iterative manner,
+and, as argued elsewhere in the paper (p 16) it is not a correct approach from the perspective of propagating uncertainty.
 
 TODO Tanmoy
+rewrote partially: This separation of tasks is a matter of computational efficiency and expediency "at our current computational capability". In fact, both maximum likelihood and maximum parsimony methods necessarily use this kind of separation internally: likelihoods or parsimony scores are computed for a given tree, and then used to compare trees. "The question is actually of propagating the alignment uncertainty into phylogenetic reconstruction".
 
 28) Please explain what experience from computational biology shows how
 this is helpful if not for computational efficiency and expediency? As
 the text stands this claim is completelty unsupported. 
 
-added "For example, methods that attempt to concurrently estimate alignments and phylogenetic trees (Lunter et al., 2005; Herman et al., 2014) have been devised and applied with success, it appears that the gain in accuracy over the common practise (of treating alignment and phylogeny reconstructing as independent tasks) is very moderate and often does not justify the high experimental costs." [...]"The regular correspondences between all pairs of languages makes it possible to construct multiple alignments of cognates, which in turn considerably simplify both the inference of phylogenetic trees and the reconstruction of ancestral states."
+added/rewrote: Experience from computational biology shows that "though methods that attempt
+to concurrently estimate alignments and phylogenetic trees (Lunter et al., 2005; Herman et al.,
+2014) can be devised and applied with success, it appears to gain little in accuracy over the com-
+mon practise of treating alignment and phylogeny reconstructing as independent tasks and often
+does not justify the high experimental costs."
 
 
 29) How do you know the subgrouping in Bowern, 2012; Bowern and
@@ -238,7 +251,7 @@ TODO Damian
 
 30) It is not entirely clear what this sentence means, or how to evaluate the claim here without knowing exactly what you mean by 'random' mutations in this linguistic context. Do you mean sporadic changes? Either some clarification or a reference to some supporting discussion would be very helpful.
 
-TODO Tanmoy
+added: Similarity serves only as a first filter for relatedness. In fact, the rate of ‘random’ mutations "(either sporadic changes or misconstruction of rare processes)" variously affecting the sounds in individual words is so low that the method of comparative historical linguistics stipulates that only regular correspondences can be invoked to support the recent relatedness of languages.
 
 
 31) Do you mean "typographical errors"? As written, the meaning of this sentence is unclear.
@@ -274,14 +287,16 @@ changed: We found that 97% of the "cognate pairs computationally proposed in the
 
 37) This conclusion should be qualified by the fact that only closely related languages were used in the tests. Of course, then a small amoutn of error drowns in the flood cognates. More interesting would be to assess the impact in a case where the error amound would compete against a similarly small amount of cognates.
 
+added: "It is to be admitted, however, that these robustness results might change as one looks at lists with substantially lower frequency of cognates, as expected for deeper families or languages undergoing large amount of lexical replacement."
+
 TODO Damian: is there a paper by List? 
-TODO Tanmoy: example with Turkic languages here?
 
 
 38) Is this a language independent result?
 
+added: The most efficient use of lexical data for determining deep language relationships, therefore, should weight the stable words and "sounds (e.g., consonants in most language families) more."
+
 TODO Damian
-TODO Tanmoy
 
 
 39) "After the settlement of British settlers in the island (...), 
@@ -348,16 +363,9 @@ TODO Peter
 TODO Nancy
 
 
-47) Though analogical change is sometimes treated as a "garbage 
-bin" of marginal, non-regular changes, the phenomenon is really
-not that rare (certainly not in the same class of unusual "phonetic 
-processes" as metathesis, though of course metathesis can happen by 
-analogy...). Non-regular does not mean rare. Nor is it the case that 
-analogical changes are inherently non-regular. It's a little unclear,
-therefore, exactly what you are trying to single out here as being 
-poorly handled by these methods.
+47) Though analogical change is sometimes treated as a "garbage bin" of marginal, non-regular changes, the phenomenon is really not that rare (certainly not in the same class of unusual "phonetic processes" as metathesis, though of course metathesis can happen by analogy...). Non-regular does not mean rare. Nor is it the case that analogical changes are inherently non-regular. It's a little unclear, therefore, exactly what you are trying to single out here as being poorly handled by these methods.
 
-TODO Tanmoy
+rewrote: Even though these methods do not currently "explicitly" incorporate "the regularities in" rare phonetic processes like metathesis and "other irregular processes like" analogical change "(treating them, rather, as instances of independent sporadic changes)", nor do they evaluate the reasonableness of the phonetic system in their inferences, such additional processes and constraints are reasonably straightforward to add in when and where they become important.
 
 
 

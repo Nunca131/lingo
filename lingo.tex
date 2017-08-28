@@ -461,12 +461,33 @@ processes, is quantified and modeled as a discrete random
 process---usually, but not always, as a constant-rate and memory-free
 Poisson process~\cite{Sankoff:73}. Once one allowed different rates for
 cognate replacement in different parts of the lexicon, and when the
-analysis used only the core concepts belonging to the Swadesh
-lists \DB{swadesh is just one of such lists - Jakarta-Leipzig is way more 
-common these days, for instance. I'd say axe this reference to Swadesh.}
+analysis used only the core concepts \PFS{included in work lists} \TODO{add
+  a few references to word lists here?}
 ---assumed to be the most closely co-inherited roots, refractory to
-horizontal transfer---or, at least, weighted their evidence more, this 
-often reproduced known events in linguistic history~\cite{Lee:11,Gray:09,Dunn:11}
+horizontal transfer---or, at least, weighted their evidence more, this
+often reproduced known events in linguistic history \TODO{can we simply
+  expand the following list by a few more references?}
+\cite{Lee:11,Gray:09,Dunn:11}, and provided a credible starting point in
+discussions on language relationships \cite{Bouckaert:12}.  It is important
+to realize, though, that all these approaches crucially depend on manually
+determined cognate classes. There is not yet an equally reliable automatic
+method to determine cognacy, although contemporary automatic methods
+achieve reasonably good rates of classification \cite{List:2017}. Any
+progress in the development of such methods has to rely on a good inference
+of sound correspondences, which seems to require larger datasets.
+
+\par\framebox{\begin{minipage}{0.9\textwidth}\small
+\textbf{Discussion of comment: delete when resolved!}
+
+\TODO{Regarding rewrites in the paragraph above:}
+
+
+\DB{swadesh is just one of such lists - Jakarta-Leipzig is way more common
+  these days, for instance. I'd say axe this reference to Swadesh.}
+\TODO{OK deleted} 
+
+
+
 \TODO{DONE What is meant by "very good fit"? The whole paper argues we should
 use quantification to answer such questions but for some reason
 when we need it and it is easy to do, they don't do it. For example
@@ -478,13 +499,13 @@ for the claim: I propose we replace "very good fit" for "qualitatively
 agrees most of the time with" although, as a matter of fact, most of the 
 fit is simply topological in nature (e.g. a particular branch is 
 recovered, or two close variates show up as close sisters in a tree.)}
-, and provided a credible starting
-point in discussions on language relationships \cite{Bouckaert:12}. It is
-important to realize, though, that all these approaches crucially depend on
-manually determined cognate classes. There is not yet an equally reliable
-automatic method to determine cognacy, although contemporary automatic methods achieve reasonably good rates of classification \cite{List:2017} \DB{it is fair to comment here on the automatic cognate detection algorithms, some of which achieve efficiency comparable to that of humans - I added Mattis' most recent paper}. Any progress in the development of
-such methods has to rely on a good inference of sound correspondences,
-which seems to require larger datasets.
+
+\DB{it is fair to comment here on the automatic cognate
+  detection algorithms, some of which achieve efficiency comparable to that
+  of humans - I added Mattis' most recent paper}.
+\end{minipage}}
+
+
 
 Beyond lexical data, there have been \NEW{many} attempts to use other kinds of
 linguistic data for the reconstruction of language history. A lack of
@@ -579,26 +600,33 @@ lists not yet subjected to etymological analysis
 words with roughly corresponding meaning, but make no effort to single out
 cognates, let alone to distinguish borrowings from vertical inheritance.
 
-The core or basic vocabulary when compiled
-into such word lists is particularly suited for the phylogenetic enterprise
-for two reasons. First, it is composed of many items of \NEW{plausible} genealogical
-persistence \cite{Calude:2011}, with some of them potentially conserved
-beyond the conventionally assumed 10,000 ybp limit of the comparative
-method \cite{Pagel:2013}. 
-\NEW{Even though Swadesh lists offer an initial starting point, the manner
-in which they were created and compiled had its shortcomings \cite{Hoijer:56}}
-\TODO{DONE These studies do not "prove genealogical persistence", they are circular in
-this respect since they assume families established on the assumption of
-genealogical persistence of the very same vocabulary items... TANMOY} 
-\DB{I agree - however, do we really need this whole section on IDS? I don't think so IMHO}
-Lexical replacement rate seems to be linked to
-frequency of use, which is fairly comparable, at least across languages
-from the largest lingustic families in the world
+The core or basic vocabulary when compiled into such word lists is
+particularly suited for the phylogenetic enterprise for two reasons. First,
+it is composed of many items of \NEW{plausible} genealogical persistence
+\cite{Calude:2011}, with some of them potentially conserved beyond the
+conventionally assumed 10,000 ybp limit of the comparative method
+\cite{Pagel:2013}.  \NEW{Even though Swadesh lists offer an initial
+  starting point, the manner in which they were created and compiled had
+  its shortcomings \cite{Hoijer:56}.}  Lexical replacement rate seems to be
+linked to frequency of use, which is fairly comparable, at least across
+languages from the largest lingustic families in the world
 \cite{Calude:2011,Calude:2014}. Similarly, basic vocabulary is composed of
 the lexical elements that are the most resistant to borrowing
 \cite{Haspelmath:2009}. For all these reasons, \textit{ceteris paribus},
 basic vocabulary items are often considered to provide a more reliable
-phylogenetic signal than other non-basic elements. 
+phylogenetic signal than other non-basic elements.
+
+\par\framebox{\begin{minipage}{0.9\textwidth}\small 
+    \textbf{Discussion of comment: delete when resolved!}
+
+    \TODO{DONE These studies do not "prove genealogical persistence", they
+      are circular in this respect since they assume families established
+      on the assumption of genealogical persistence of the very same
+      vocabulary items... TANMOY} \DB{I agree - however, do we really need
+      this whole section on IDS? I don't think so IMHO} \TODO{Since
+      previous reviewers insisted on the IDS detail, we should keep this
+      discussion here.}
+\end{minipage}}
 
 As we shall see below, it is possible to extract very good approximations
 to cognate sets from such data. Importantly, though cognate judgments made
@@ -742,61 +770,73 @@ create an initial, crude similarity measure to propose a tentative
 alignment. The rule can be very simple. \citet{Steiner:11a}, for example,
 only discouraged matches between vowels and consonants, disallowed
 transpositions (metathesis), and put more weights on identities of
-consonants than vowels. Another example is \NEW{is given by} \citet{Heggarty:00}, who
-first used the manually curated proto-forms of the words under study to
-infer matches, and then counted the number of phonetic and articulatory
-features in which the aligned segments differ. It may come as a surprise
-that the model of \citet{Steiner:11a}, which is clearly over-simplified,
-nevertheless can identify an initial set of cognates between related
-languages. In fact, even these weak assumptions are actually unnecessary:
-an alternate approach with even fewer assumption described in
-subsection~\ref{sec:tanmethod} can be used to infer the initial
-alignment. This works because phoneme evolution proceeds through small
-phonetic changes, and cognate pairs having a higher similarity score than
-two evolutionary unrelated words is a very low bar.
+consonants than vowels. Another example is \NEW{is given by}
+\citet{Heggarty:00}, who first used the manually curated proto-forms of the
+words under study to infer matches, and then counted the number of phonetic
+and articulatory features in which the aligned segments differ. It may come
+as a surprise that the model of \citet{Steiner:11a}, which is clearly
+over-simplified, nevertheless can identify an initial set of cognates
+between related languages. In fact, even these weak assumptions are
+actually unnecessary: an alternate approach with even fewer assumption
+described in subsection~\ref{sec:tanmethod} can be used to infer the
+initial alignment. This works because phoneme evolution proceeds through
+small phonetic changes, and cognate pairs having a higher similarity score
+than two evolutionary unrelated words is a very low bar.
 
 These methods ultimately utilize the strength of regularities in linguistic
 correspondence. Even a very rough and simplistic model for sound changes
-suffices to identify at least \NEW{a proportion} of the cognate pairs in the data
-set. Given the rarity of metatheses, the pairwise alignments of these
-cognates preferentially match corresponding sounds with each other.
-\TB{One can then introduce gaps in the alignment to improve their match
-  according to this draft correspondence table. Iteration of this
-  process of improving the correspondence table followed by improving
-  the alignment rapidly reduces the number of unexplained changes and
-  refines the correspondence table~\cite{Hruschka:14}.} The
-key observation is that all this needs is an enrichment of cognates in the
-initial alignments. Even if a fraction of the candidate cognate pairs are
-false positives and some of the alignments of cognate pairs are wrong as a
-consequence of the oversimplified scoring model, there is enough signal in
-the correct alignments of real cognate pairs for the statistical
-machinery to identify the more common sound correspondences.  
-\TODO{DONE ABOUT WRONG ALIGNMENTS.  THE CASE WHERE THE COGNATES ARE
-  NOT KNOWN IS NOT YET TESTED EXCEPT SOME WORK WITH HRUSCHKA. What
-  evidence supports this claim that there is sufficient signal  
-in real cognate pair alignments for correct sound
-correspondences to be identified in spite of some false positives/wrong alignments? 
-TANMOY} \DB{I agree on that the claim comes across as a bit vague.}
+suffices to identify at least \NEW{a proportion} of the cognate pairs in
+the data set. Given the rarity of metatheses, the pairwise alignments of
+these cognates preferentially match corresponding sounds with each other.
+\NEW{One can then introduce gaps in the alignment to improve their match
+  according to this draft correspondence table. Iteration of this process
+  of improving the correspondence table followed by improving the alignment
+  rapidly reduces the number of unexplained changes and refines the
+  correspondence table~\cite{Hruschka:14}.} The key observation is that all
+this needs is an enrichment of cognates in the initial alignments. 
+
+\par\framebox{\begin{minipage}{0.9\textwidth}\small
+\textbf{Discussion of comment: delete when resolved!}
+
+\TODO{DONE ABOUT WRONG ALIGNMENTS.
+  THE CASE WHERE THE COGNATES ARE NOT KNOWN IS NOT YET TESTED EXCEPT SOME
+  WORK WITH HRUSCHKA. What evidence supports this claim that there is
+  sufficient signal in real cognate pair alignments for correct sound
+  correspondences to be identified in spite of some false positives/wrong
+  alignments?  TANMOY} \DB{I agree on that the claim comes across as a bit
+  vague.}
+
+\PFS{Given Tanmoy's reply, I suggest that we simply delete the following 
+sentence:
+\begin{small} 
+  Even if a fraction of the candidate cognate pairs are false positives and
+  some of the alignments of cognate pairs are wrong as a consequence of the
+  oversimplified scoring model, there is enough signal in the correct
+  alignments of real cognate pairs for the statistical machinery to
+  identify the more common sound correspondences.
+\end{small}}
+\end{minipage}}
 
 It is interesting to note that the statistical approach accommodates many
 linguistic subtleties without explicitly building them into the
 method. Although the mapping of consonants to consonants and vowels to
-vowels in the \NEW{\TT{pre-alignments}} is a good working assumption, there is at
-least one clear set of frequent exceptions: Vowels often correspond to
-consonants belonging to the classes often called glides and liquids, such
-as [w, j, l, r]. For example, [l] in the French words \textit{plein,
+vowels in the \NEW{\TT{pre-alignments}} is a good working assumption, there
+is at least one clear set of frequent exceptions: Vowels often correspond
+to consonants belonging to the classes often called glides and liquids,
+such as [w, j, l, r]. For example, [l] in the French words \textit{plein,
   plaine, place} corresponds to [i] in Italian \textit{pieno, pianura,
   piazza}. These consonants plus a vowel often also correspond to a single
 vowel. For example, /we/ in the Spanish words \textit{bueno, puerto}
-corresponds to [\cmr{\textopeno{}}] in Italian \textit{bono, porto}.\footnote{The
-  /we/ is orthographically $<$ue$>$ in Spanish.} These kinds of cases can
-be taken into account by relaxing the consonant-consonant and vowel-vowel
-correspondence constraint. At least some examples of this type appear in
-pre-alignments that are classified as candidate cognates \NEW{even though
-scores were assigned, not trained in this alignment similar to editing 
-operations with similarity scores}. Hence in the
-second step they are assigned favorable log-odds scores without the need to
-model liquids and glides explicitly from the outside.
+corresponds to [\cmr{\textopeno{}}] in Italian \textit{bono,
+  porto}.\footnote{The /we/ is orthographically $<$ue$>$ in Spanish.} These
+kinds of cases can be taken into account by relaxing the
+consonant-consonant and vowel-vowel correspondence constraint. At least
+some examples of this type appear in pre-alignments that are classified as
+candidate cognates \NEW{even though scores were assigned, not trained in
+  this alignment similar to editing operations with similarity
+  scores}. Hence in the second step they are assigned favorable log-odds
+scores without the need to model liquids and glides explicitly from the
+outside.
 
 A more sophisticated scoring model that takes into account the neighboring
 phonetic context can also be estimated from the initial alignments of
@@ -869,11 +909,10 @@ algorithm~\cite{needleman:70} used to solve unigram alignments (see
   puerta - Italian porta, or instances where two symbols correspond to a
   single sound in one language). This is one of the reasons that I
   recommend consolidating the discussion of representational issues and
-  being more explicit about what "gaps" are in this method. NANCY}  
-  \NR{For this
-  todo maybe point to Fig.~\ref{fig:aln}? maybe I can find another
+  being more explicit about what "gaps" are in this method. NANCY} \NR{For
+  this todo maybe point to Fig.~\ref{fig:aln}? maybe I can find another
   alignment where there is no deletion score used even though there
-  obviously is one.}\LM{Would be cool if we could use the examples above,
+  obviously is one.} \LM{Would be cool if we could use the examples above,
   e.g. bueno and bono. Do we have an fitting scoring model for this?}
 
 \PFS{I think this is really taken core of in the Figure the new text.}

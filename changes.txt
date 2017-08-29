@@ -64,7 +64,7 @@ or not. But suppose we did, then the authors suggest we can systematically
 improve the tree-model by extending it to become ARGs. Then why not use
 ARGs to begin with? (That would be systematic, rather than ad hoc).
 
-This graded approach of considering only a dominant subset of effects is a general feature of statistical methods. Standard techniques exist to compare the predictive capability of incomplete models whose parameters are well constrained by the data available against complex models that cannot be so constrained. Furthermore, since typically the vertical inheritance arises from starkly dierent processes like population migration and fission than contact phenomena that lead to horizontal influences, building trees rather than reticulated networks allows us to answer the former questions even when the data are not sufficient to parameterize the entire process.
+This graded approach of considering only a dominant subset of effects is a general feature of statistical methods. Standard techniques exist to compare the predictive capability of incomplete models whose parameters are well constrained by the data available against complex models that cannot be so constrained. Furthermore, since typically the vertical inheritance arises from starkly different processes like population migration and fission than contact phenomena that lead to horizontal influences, building trees rather than reticulated networks allows us to answer the former questions even when the data are not sufficient to parameterize the entire process.
 
 
 6) "Lexicostatistics and language phylogenetics." is mislabeled
@@ -107,12 +107,10 @@ a) The core or basic vocabulary comprising the Swadesh concepts when compiled in
 
 deleted reference to Swadesh list: "The core or basic vocabulary when compiled into such word lists is particularly suited for the phylogenetic enterprise for two reasons."
 
-b) discussion point on Swadesh lists added: Even though Swadesh lists offer an initial starting point, the manner in which they were created and compiled had its shortcomings (Hoijer, 1956)
+b) discussion point on Swadesh lists added: Even though Swadesh lists offer an initial starting point, the manner in which they were created and compiled had its shortcomings (Hoijer, 1956).
 
 c) changes proven genealogical persistence to  plausible genealogical
 persistence
-
-d) TODO Tanmoy: why are word lists still a useful?
 
 
 11) Importantly, though cognate judgments made purely from the phonetic structure captured in these semantically aligned word lists can be improved with specialized linguistic knowledge, in recent tests on ‘simple’ language families, the difference was found to have no systematic structure that could bias the reconstruction of phylogenies based on this data (Steiner et al., 2011; Hruschka et al., 2015). "Rephrase from Importantly on."
@@ -136,7 +134,7 @@ function or look up table providing a measurement for the similarity or distance
 14) What evidence supports this claim that there is sufficient signal 
 in real cognate pair alignments for correct sound correspondences to be identified in spite of some false positives/wrong alignments?
 
-TODO Tanmoy
+deleted: "Even if a fraction of the candidate cognate pairs are false positives and some of the alignments of cognate pairs are wrong as a consequence of the oversimplified scoring model, there is enough signal in the correct alignments of real cognate pairs for the statistical machinery to identify the more common sound correspondences."
 
 
 15) The text and formulas here are ambiguous as to whether sigma and nscore are defined of a pair of languages or a pair of words from two lgs.  Presumably the latter but actually the sigma formula as written contains free variables that ranged over the full set of pairs between two languages on the previous page. Formulas are used for clarity so please be explicit as to what is defined over what and the domains of free variables.
@@ -178,7 +176,7 @@ added: "Transpositions, for instance, could be built explicitly into the pairwis
 
 21) It should be mentioned that i) the results do not necessarily generalize to deeper families/cognacy and ii) that cognates in the Hruschka et al 2015 come in sets whereas the method described in the paper identifies cognates pairwise and may thus give inconsistent results of the type A is cognate with B and B is cognate with C but A is not cognate with C.
 
-TODO Tanmoy
+TODO Peter
 
 
 22) It's more customary to present the f-score of the precision/recall
@@ -222,7 +220,6 @@ added a phrase: While this is becoming feasible at least from a computational po
 28) This is an important question, but unfortunately not prudently discussed in this passage. Since the components depend on each other, it is not probabilistically correct to do it in the iterative manner,
 and, as argued elsewhere in the paper (p 16) it is not a correct approach from the perspective of propagating uncertainty.
 
-TODO Tanmoy
 rewrote partially: This separation of tasks is a matter of computational efficiency and expediency "at our current computational capability". In fact, both maximum likelihood and maximum parsimony methods necessarily use this kind of separation internally: likelihoods or parsimony scores are computed for a given tree, and then used to compare trees. "The question is actually of propagating the alignment uncertainty into phylogenetic reconstruction".
 
 28) Please explain what experience from computational biology shows how
@@ -267,7 +264,7 @@ adde "The key idea there is that horizontally acquired genes have different nucl
 33) This idea is limited by regularities in the meaning space of the kind discussed in 4.1-4.2 (as well as synonyms). The paper would make an actual contribution if this was taken seriously for a correct
 assessment of number emanating from a permutation test.
 
-TODO Tanmoy: do you know know what could be meant here?
+Reply to the reviewer: This needs analysis beyond the scope of this paper. The idea is to use meaning similarities *discussed in 4.1-4.2* to do the permutation test.
 
 
 34) Is the math correct here? 7 x 6 / 2 = 21 according to me.
@@ -357,10 +354,7 @@ TODO George provides link
 
 46) The conclusion contains information not in the body of the paper and should thus be reorganized.
 
-TODO Tanmoy
-TODO Damian
-TODO Peter
-TODO Nancy
+Heading now: "Conclusion and Future Directions"
 
 
 47) Though analogical change is sometimes treated as a "garbage bin" of marginal, non-regular changes, the phenomenon is really not that rare (certainly not in the same class of unusual "phonetic processes" as metathesis, though of course metathesis can happen by analogy...). Non-regular does not mean rare. Nor is it the case that analogical changes are inherently non-regular. It's a little unclear, therefore, exactly what you are trying to single out here as being poorly handled by these methods.

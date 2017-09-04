@@ -269,7 +269,7 @@ Reply to the reviewer: This needs analysis beyond the scope of this paper. The i
 
 34) Is the math correct here? 7 x 6 / 2 = 21 according to me.
 
-changed it to 21 language pais
+changed it to 21 language pairs
 
 
 35) Do alphabetic scripts do that? Or is segmental phonology rather than "phonetics" intended?
@@ -287,6 +287,8 @@ changed: We found that 97% of the "cognate pairs computationally proposed in the
 added: "It is to be admitted, however, that these robustness results might change as one looks at lists with substantially lower frequency of cognates, as expected for deeper families or languages undergoing large amount of lexical replacement."
 
 TODO Damian: is there a paper by List? 
+
+Answer: very interesting question but a study at itself and beyond the scope of this paper since a large number of well understood test cases is necessary.
 
 
 38) Is this a language independent result?

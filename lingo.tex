@@ -51,7 +51,8 @@
 \newcommand{\HY}[1]{\begingroup\maybecolor{OliveGreen}#1\endgroup}
 \newcommand{\TB}[1]{\begingroup\maybecolor{Fuchsia}#1\endgroup}
 \definecolor{pinegreen}{rgb}{0.0,0.47,0.44}
-\newcommand{\NEW}[1]{\begingroup\color{pinegreen}#1\endgroup} 
+\ifx\texorpdfstring\relax\def\texorpdfstring#2{#1}\fi
+\newcommand{\NEW}[1]{\texorpdfstring{\begingroup\color{pinegreen}#1\endgroup}{#1}}
 \newcommand{\GS}[1]{\begingroup\color{gray}#1\endgroup}
 %TB
 %mark ups for language style
@@ -351,11 +352,15 @@ vertical \NEW{and hence not} completely tree-like. Even in higher
 organisms, horizontal gene transfer, convergent adaptive evolution,
 \NEW{incomplete} lineage sorting \NEW{\footnote{Incomplete lineage sorting
     describes the effect that for a small subset of the genome may
-    contradicts the true phylogeny by being more similar to a more distant
-    relative than to the, e.g., sister species. In the words of
-    linguistics, some words in a language may be less similar to the
-    cognate in the sister language than to the cognate in a more distantly
-    related language.}}, and random noise in the data introduce deviations
+    contradicts the true phylogeny by \TB{an ancestral form being retained 
+    alongside a derived form at intermediate times and dominating in
+    some, but not all, descendant branches. This leads to them being
+    more similar to the genome of a more distant relative than to the,
+    e.g., sister species. In linguistics, a similar phenomenon may
+    lead to some archaically or dialectically retained words in a
+    language being less similar to the word in a sister language than
+    to a cognate in a more distantly related language.}}}, and random noise
+  in the data introduce deviations 
 from tree-likeness in the data. Lineages are not always well-separated, as
 in the case of \TT{ring species} \cite{irwin:2005} in biology and
 \TT{dialect continua} \cite{heggarty:2010,franccois2015trees}, making the
@@ -367,8 +372,8 @@ nevertheless many important events in the evolutionary history that are
 correctly expressed by trees because they are primarily conserved
 vertically. In fact, even in the presence of other forms of
 \NEW{relationships}, trees are a useful representation of evolutionary
-relationships whenever there exists a dominating set of vertically
-inherited features. \PFS{Several measures that quantify the of
+relationships whenever there exists a dominating set of \TB{co-inherited}
+features. \PFS{Several measures that quantify the of
   tree-likeness of a data set are available that do not presuppose a
   particular tree and hence can be employed without biasing subsequent
   phylogenetic statements \cite{Bandelt:92,Nieselt:97,Misof:14a}.}
@@ -1072,11 +1077,15 @@ the Turkic languages as an example is that relatively comparable phonetic
 transcriptions were available, the language family has a relatively shallow
 time depth, and words had already been categorized into probable
 descendants of common ancestors, so that the results could easily be
-compared against expert linguistic judgements. \PFS{It remains an open
-  question at this point how well computational approaches to cognate
-  identification will generalize to deep divergence times; the success of
+compared against expert linguistic judgements. \PFS{\TB{If 
+  these computational approaches to alignment of attested forms,
+  not requiring knowledge of the true phylogeny or of
+  reconstruction of intermediate ancestral forms, generalizes 
+  to deep divergence times, the procedure outlined here should be able
+  to detect cognates in such siturations as well.  Whether this really
+  holds is as yet an open question}; the success of
   computational biology in the analogous task of detecting remote
-  homologies \cite{Noble:05,Haggerty:14,Chen:16} certainly is encouraging.}
+  homologies \cite{Noble:05,Haggerty:14,Chen:16} \TB{is certainly} encouraging.}
 
 
 \par\framebox{\begin{minipage}{0.9\textwidth}\small
@@ -1088,7 +1097,7 @@ come in sets whereas the method described in the paper identifies
 cognates pairwise and may thus give inconsistent results of the type
 A is cognate with B and B is cognate with C but A is not cognate with C.}
 
-\PFS{PLEASE CHECK THE LIGHT GREEN TEXT ABOVE AND BELOW!} 
+\PFS{PLEASE CHECK THE LIGHT GREEN TEXT ABOVE AND BELOW! DONE} 
 
 \end{minipage}}
 
@@ -1150,19 +1159,20 @@ possible to weight the commonly used words belonging to the core vocabulary
 more than the rare words in deriving the correspondence table, reflecting
 the expectation that the \NEW{proportion} of cognates and the regularity of
 correspondence is higher in this part of the vocabulary.  \PFS{Finally,
-  cognacy is defined as a binary relations between words. When word pairs
+  cognacy \TB{computed in this fashion is} a binary relations between words. When word pairs
   are considered independently, the inferred relation might fail to be
   transitive, i.e., while $A-B$ and $B-C$ are classified as cognates, $A-C$
-  may be missed. To deal with such situations multiple alignments may be
-  scored directly, either using the same probabilistic model that generated
-  the initial cognate calls, or with the help of consistency-based scoring
+  may \TB{not be so classified}. To deal with such situations multiple alignments may be
+  scored directly, either \TB{using the same probabilistic model that generated
+  the initial cognate calls, as done somewhat heuristically in
+    \citet{Hruschka:14}, or} with the help of consistency-based scoring
   functions akin to those used in computational biology as measures of the
   reliability of sequence alignment or structure prediction
   \cite{Will:12a}. }
 
 \TODO{TANMOY: is the a better place for this comment? I couldn't really fit
   it into text elsewhere. Maybe add a sentence or just a reference how this
-  is handled in Hruschka 2015?}
+  is handled in Hruschka 2015? DONE}
   
 \subsubsection{Comparing the two approaches.} 
 

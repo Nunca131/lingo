@@ -13,7 +13,7 @@ to one of the most basal bilaterian branches by means of data for related specie
 Partially new: "Of course no method is infallible with respect to the features chosen. If these are either too noisy to convey retrievable information or are not transmitted along the same tree to begin with, the reconstructed tree might not depict any actual relationships. An extreme example in the phylogeny of animals is the strange case of Xenoturbella, which was placed at vastly different positions in the animal tree based on different choices of data sets and taxa included for comparion (Bourlat et al., 2006; Rouse et al., 2016). This underlines the fundamental importance of basing phylogenetic reconstruction on multiple, independent feature sets because it is often not obvious a priori which features are informative for comparison in a given context.
 
 1) What is lineage sorting?
-Added a footnote: Incomplete lineage sorting describes the effect that for a small subset of the genome may contradicts the true phylogeny by being more similar to a more distant relative than to the, e.g., sister species. In the words of linguistics, some words in a language may be less similar to the cognate in the sister language than to the cognate in a more distantly related language.
+Added a footnote: Incomplete lineage sorting describes the effect that for a small subset of the genome may contradicts the true phylogeny by "an ancestral form being retained alongside a derived form at intermediate times and dominating in some, but not all, descendant branches. This leads to them being more similar to the genome of a more distant relative than to the, e.g., sister species. In linguistics, a similar phenomenon may lead to some archaically or dialectically retained words in a language being less similar to the word in a sister language than to a cognate in a more distantly related language."
 
 2) This is a circular assessment (trees are useful when the data is sufficiently tree-like)
 reply: Indeed: treelikeness can be quantified independent of phylogenetic reconstruction -- I included as review paper we recently wrote about this very issue. We should answer that this is indeed NOT circular.
@@ -27,8 +27,8 @@ NB: The use of the term "other forms of inheritance" does violence
     'other forms of inheritance' with 'other forms of
     relationships'. May be more generell and thus more inclusive.
 
-changed to "forms of relationships" 
-and added: "Several measures that quantify the of tree-likeness of a data set are available that do not presuppose a particular tree and hence can be employed without biasing subsequent phylogenetic statements (Bandelt and Dress, 1992; Nieselt-Struwe, 1997; Misof et al., 2014)."
+changed: In fact, even in the presence of other "forms of relationships", trees are a useful representation of evolutionary relationships whenever there exists a dominating set of "co-inherited" features.
+and added: "Several measures that quantify the tree-likeness of a data set are available that do not presuppose a particular tree and hence can be employed without biasing subsequent phylogenetic statements (Bandelt and Dress, 1992; Nieselt-Struwe, 1997; Misof et al., 2014)."
 
 
 3) (I am assuming "non-vertical inheritance" should be "non-vertical
@@ -81,7 +81,13 @@ what is the Robinson-Foulds distance between the computational and
 why cite these, esp Dunn et al 2011, rather than all studies with
 this metholodogy)
 
-TODO Tanmoy
+added some references: Once one allowed different rates for cognate replacement in different
+parts of the lexicon, and when the analysis used only the core concepts "included in word lists
+(Key and Comrie, 2007; Starostin and Krylov, 2011; Wichmann et al., 2010b; Swadesh, 1971)
+—assumed to be the most closely co-inherited roots, refractory to horizontal transfer—or, at least,
+weighted their evidence more, this often reproduced known events in linguistic history (Lee and
+Hasegawa, 2011; Gray et al., 2009; Dunn et al., 2011; Gell-Mann and Ruhlen, 2011)", and pro-
+vided a credible starting point in discussions on language relationships (Bouckaert et al., 2012).
 
 
 8) In addition, machine learning approaches have been used in reconstructing ancient word forms (Bouchard-Côté et al., 2013) "This information belongs in the
@@ -176,7 +182,10 @@ added: "Transpositions, for instance, could be built explicitly into the pairwis
 
 21) It should be mentioned that i) the results do not necessarily generalize to deeper families/cognacy and ii) that cognates in the Hruschka et al 2015 come in sets whereas the method described in the paper identifies cognates pairwise and may thus give inconsistent results of the type A is cognate with B and B is cognate with C but A is not cognate with C.
 
-TODO Peter
+added: "If these computational approaches to alignment of attested forms, not requiring knowledge of the true phylogeny or of reconstruction of intermediate ancestral forms, generalizes to deep divergence times, the procedure outlined here should be able to detect cognates in such siturations as well. Whether this really holds is as yet an open question; the success of computational biology in the analogous task of detecting remote homologies (Noble et al., 2005; Haggerty et al., 2014; Chen et al., 2016) is certainly encouraging."
+
+and later on: "Finally, cognacy computed in this fashion is a binary relations between words. When word pairs are considered independently, the inferred relation might fail to be transitive, i.e., while A − B and B − C are classified as cognates, A − C may not be so classified. To
+deal with such situations multiple alignments may be scored directly, either using the same probabilistic model that generated the initial cognate calls, as done somewhat heuristically in Hruschka et al. (2015), or with the help of consistency-based scoring functions akin to those used in computational biology as measures of the reliability of sequence alignment or structure prediction (Will et al., 2012)."
 
 
 22) It's more customary to present the f-score of the precision/recall

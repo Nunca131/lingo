@@ -81,13 +81,9 @@ what is the Robinson-Foulds distance between the computational and
 why cite these, esp Dunn et al 2011, rather than all studies with
 this metholodogy)
 
-added some references: Once one allowed different rates for cognate replacement in different
-parts of the lexicon, and when the analysis used only the core concepts "included in word lists
-(Key and Comrie, 2007; Starostin and Krylov, 2011; Wichmann et al., 2010b; Swadesh, 1971)
-—assumed to be the most closely co-inherited roots, refractory to horizontal transfer—or, at least,
-weighted their evidence more, this often reproduced known events in linguistic history (Lee and
-Hasegawa, 2011; Gray et al., 2009; Dunn et al., 2011; Gell-Mann and Ruhlen, 2011)", and pro-
-vided a credible starting point in discussions on language relationships (Bouckaert et al., 2012).
+We added additional references and made it clear that they are a selection
+from a larger list of works; it seems impractical to attempt to list
+"all" studies of this type.
 
 
 8) In addition, machine learning approaches have been used in reconstructing ancient word forms (Bouchard-Côté et al., 2013) "This information belongs in the
@@ -375,15 +371,15 @@ rewrote: Even though these methods do not currently "explicitly" incorporate "th
 
 
 
+**** REPLY
 
 
 
 
 
+\TODO{(And
+why cite these, esp Dunn et al 2011, rather than all studies with
+this metholodogy). \NR{delete the Dunn 2011 ref? Plus what do we 
+want to write in the letter?}}
 
-
-
-
-
-
-
+\end{minipage}}

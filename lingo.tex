@@ -908,7 +908,8 @@ from non-cognates. This is not unexpected since regular correspondences are
 often sensitive to neighboring phonetic contexts, and a large amount of the
 context sensitivity can be accounted for by looking at one neighboring
 sound along with word boundaries. \NEW{However, neighboring sounds are} an
-imperfect proxy for syllable \NEW{boundaries}.
+imperfect proxy for syllable \NEW{boundaries} \DB{(namely, those recoverable 
+from orthographic representations)}.
  
 \par\framebox{\begin{minipage}{0.9\textwidth}\small
 \textbf{Discussion of comment: delete when resolved!}
@@ -956,8 +957,9 @@ achieved by the automatic procedure. It is also important to note that
 although the choice of the score cutoff is left to the user, it is not
 arbitrary. The shape of the score distribution provides quantitative
 information on the expected number of false positives and false negatives
-for each choice of the cutoff. We will return to this point again several
-times throughout this contribution.
+for each choice of the cutoff. \DB{Finally, these scores can be 
+dichotomized into cognate/non-cognate categories to be used with 
+phylogenetic methods that cannot handle graded evidence for cognacy.}
 
 We have seen that the improved scoring model leads to refined cognate
 identification. In principle we could now iterate this workflow again,
@@ -1034,7 +1036,8 @@ choosing an appropriate cutoff for the best alignment score between
 randomly chosen words from different languages. The main advantage of using
 the Turkic languages as an example is that relatively comparable phonetic
 transcriptions were available, the language family has a relatively shallow
-time depth, and words had already been categorized into probable
+time depth \DB{(so that cognacy is likely to be reflected in the surface 
+form of words)}, and words had already been categorized into probable
 descendants of common ancestors, so that the results could easily be
 compared against expert linguistic judgements. \NEW{If 
   these computational approaches to alignment of attested forms,
@@ -1119,11 +1122,17 @@ correspondence is higher in this part of the vocabulary. \NEW{Finally,
 \subsubsection{Comparing the two approaches.} 
 
 At face value the two approaches outlined above are quite different. The
-focus on alignments and their score\NEW{s} conforms more closely to the paradigm
+focus on alignments and their scores conforms more closely to the paradigm
 of sequence comparison in computational biology, while the comparison of
-probabilistic models focuses on the evolutionary processes and is somewhat
-closer to the traditional conceptualization in linguistics. 
-\TODO{do you mean the "alternative" DAMIAN}
+probabilistic models focuses on the evolutionary processes\DB{. Nevertheless, 
+and in spite of these conceptual differences, the two methods can answer 
+essentially the same} questions, albeit using different mathematical and 
+computational techniques \DB{and different prior information or expert knowledge}.
+\TODO{These methods aren't equivalent from a traditional historical 
+linguist's perspective, and probably wouldn't deserve any
+lengthy discussion as alternatives if they were truly equivalent. 
+Perhaps a different word choice or a modifier on "equivalent" would make 
+more sense here. DAMIAN}
 Nevertheless,
 the two methods are largely equivalent and can answer essentially the same
 questions, albeit using different mathematical and computational
@@ -1273,8 +1282,8 @@ Depending on the research question, it is often not even the necessary to
 attempt a full reconstruction of language phylogeny. Instead, robust and
 reliable statements on language evolution can be derived with much more
 modest approaches at both the level of modeling and at the pragmatic level
-of computational methodology. For example, reliable reconstruction of the
-subgrouping within a language family or identification of macro-families
+of computational methodology. For example, \DB{hypotheses about the 
+genealogical grouping of languages at different scales}
 can be conducted on the basis of presence and absence of cognates without
 the necessity to model sound changes explicitly
 \cite{Bowern:12a,Bowern:12b}.
@@ -1436,11 +1445,11 @@ languages together are likely to lead to major progress in deep
 phylogenetics of languages. The need for a drastic expansion of the data
 sets in phylolinguistics implies that efficient computational methods are
 needed to help with preparation and quality control of the input data sets
-at an early stage. Thus, for example, typological errors often introduce
+at an early stage. Thus, for example, \DB{errors in the coding of linguistic data} often introduce
 rare characters or unusual sequence of characters into the data; a hidden
 Markov model could be trained to learn the probabilistic patterns in the
 sequence of characters composing the words of a particular language and
-extremely rare occurences of characters or sequence of characters can then
+extremely rare occurrences of characters or sequence of characters can then
 be flagged for manual verification.
 \TODO{Do you mean "typographical errors"? As written, the meaning of this 
 sentence is unclear. DAMIAN}
@@ -1772,7 +1781,7 @@ representation. Scripts and languages are often inherited from different
 sources, and orthography often encodes orthographic history, in addition to
 current distinctions. It also frequently fails to indicate important
 distinctions, or represents distinct sounds in ambiguous ways.  Finally,
-many non-alphabetic writing systems do not directly encode the phonetics at
+many \DB{remove: non-alphabetic} writing systems do not directly encode the phonetics at
 all.
 \TODO{Do alphabetic scripts do that? Or is segmental phonology rather than
 "phonetics" intended? DAMIAN}
@@ -1904,7 +1913,12 @@ discrepancies might be problematic, the automatically produced cognate
 calls provide at least a very good starting point for further manual
 curation of cognate assignments. And, of course, there is the possibility
 to choose a smaller FDR value to obtain a smaller but more accurate set of
-cognate pairs.
+cognate pairs. \DB{Naturally, these claims are subject to regularities that 
+are detectable at this level of representation, more likely to be found 
+between languages with a relatively recent common history. Deeper genealogical 
+relations are discussed on the basis of painstaking combinations of linguistic 
+and historical knowledge, with little or no surface regularities on which 
+contemporary methods could hinge on (e.g. \cite{robbeets2005}).}
 
 \subsection{From non-parametric overviews to detailed probabilistic models.}
 
@@ -2144,13 +2158,13 @@ allow one to evaluate any assumption one makes about them. The original
 proposal of glottochronology was to assume that the number of cognate
 retentions of two languages diverging at a given time decays exponentially
 with constant rate~\cite{Swadesh:55}---which is analogous to the strict
-molecular clock hypothesis in molecular evolution. Rate constancy has been
+molecular clock hypothesis in molecular evolution. Rate \DB{regularity} has been
 severely criticized since early on~\cite{Bergsland:62, Blust:00}, 
 \NEW{although some support for the idea of a constant rate of a change within 
 particular subsets of the basic lexicon, or at least for that of certain 
 chronological regularities in lexical evolution, is still found in empirical 
 evidence}~\cite{Ehret:00,Starostin:00,Starostin:13,Holman:11}. Within the
-context of a likelihood based approach, the relative constancy of the rates
+context of a likelihood based approach, the \DB{regularity} of the rates
 of various features can be tested~\cite{Hruschka:14}, as can particular
 hypotheses about factors affecting changes in the different
 branches~\cite{Pagel_rates}.

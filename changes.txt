@@ -1,12 +1,12 @@
+The remarks of the reviewers are addressed in the following even though minor changes have been introduced to the text directly and thus will not be considered here. We tried to color every change to the text (even spelling mistakes) though.
+
 0) I fail to see that the example of Xenoturbella underlines this conclusion.
 It just seems to illustrate that one needs to be able to correctly identify
 the data used and that the phylogenetic placement of a leaf will be wrong if
 not all relevant clades are included in the analysis.
 
-DELETED: This unimpressive worm-like animal was classified as close relative of molluscs
-based on DNA that, as it turned out later, represented its food rather than the animal itself. It was
-later placed based on genome-wide sequencing data within the Deuterostomes, the animal clade
-that also includes vertebrates (Bourlat et al., 2006), only to be demoted again earlier last year
+DELETED: This unimpressive worm-like animal was classified as close relative of molluscs based on DNA that, as it turned out later, represented its food rather than the animal itself. It was
+later placed based on genome-wide sequencing data within the Deuterostomes, the animal clade that also includes vertebrates (Bourlat et al., 2006), only to be demoted again earlier last year
 to one of the most basal bilaterian branches by means of data for related species (Rouse et al.,
 2016).
 
@@ -161,7 +161,9 @@ added the reference to the appendix where the languages are listed "(Table B3)".
 boundaries. Rather, they are a restricted subset of syllable boundaries
 that are recoverable from orthographic representations.
 
-TODO Damian: any further idea to Lydias edits?
+rewrote: "However, neighboring sounds are" an imperfect proxy for syllable "boundaries (namely, those recoverable from orthographic representations)".
+
+added later: "Finally, these scores can be dichotomized into cognate/non-cognate categories to be used with phylogenetic methods that cannot handle graded evidence for cognacy."
 
 
 19)But cognacy is a yes/no property and modeled as such in the work
@@ -178,7 +180,7 @@ added: "Transpositions, for instance, could be built explicitly into the pairwis
 
 21) It should be mentioned that i) the results do not necessarily generalize to deeper families/cognacy and ii) that cognates in the Hruschka et al 2015 come in sets whereas the method described in the paper identifies cognates pairwise and may thus give inconsistent results of the type A is cognate with B and B is cognate with C but A is not cognate with C.
 
-added: "If these computational approaches to alignment of attested forms, not requiring knowledge of the true phylogeny or of reconstruction of intermediate ancestral forms, generalizes to deep divergence times, the procedure outlined here should be able to detect cognates in such siturations as well. Whether this really holds is as yet an open question; the success of computational biology in the analogous task of detecting remote homologies (Noble et al., 2005; Haggerty et al., 2014; Chen et al., 2016) is certainly encouraging."
+added: The main advantage of using the Turkic languages as an example is that relatively comparable phonetic transcriptions were available, the language family has a relatively shallow time depth "(so that cognacy is likely to be reflected in the surface form of words)", and words had already been categorized into probable descendants of common ancestors, so that the results could easily be compared against expert linguistic judgements. "If these computational approaches to alignment of attested forms, not requiring knowledge of the true phylogeny or of reconstruction of intermediate ancestral forms, generalizes to deep divergence times, the procedure outlined here should be able to detect cognates in such siturations as well. Whether this really holds is as yet an open question; the success of computational biology in the analogous task of detecting remote homologies (Noble et al., 2005; Haggerty et al., 2014; Chen et al., 2016) is certainly encouraging."
 
 and later on: "Finally, cognacy computed in this fashion is a binary relations between words. When word pairs are considered independently, the inferred relation might fail to be transitive, i.e., while A − B and B − C are classified as cognates, A − C may not be so classified. To
 deal with such situations multiple alignments may be scored directly, either using the same probabilistic model that generated the initial cognate calls, as done somewhat heuristically in Hruschka et al. (2015), or with the help of consistency-based scoring functions akin to those used in computational biology as measures of the reliability of sequence alignment or structure prediction (Will et al., 2012)."
@@ -199,7 +201,8 @@ TODO Damian
 24) These methods aren't equivalent from a traditional historical 
 linguist's perspective, and probably wouldn't deserve any lengthy discussion as alternatives if they were truly equivalent. Perhaps a different word choice or a modifier on "equivalent" would make more sense here.
 
-TODO Damian
+rewrote and added:At face value the two approaches outlined above are quite different. The focus on alignments and their scores conforms more closely to the paradigm of sequence comparison in computational biology, while the comparison of probabilistic models focuses on the evolutionary processes". Nevertheless, and in spite of these conceptual differences, the two methods can answer essentially the same" questions, albeit using different mathematical and 
+computational techniques "and different prior information or expert knowledge."
 
 
 25) Later in the paper sound change processes are argued be universal (a la Ohala) which means that there is a specific answer to the incertitude expressed in the above passage.
@@ -248,7 +251,7 @@ NB: reconstruction of the subgrouping is misphrased, presumbly
 just "subgrouping" is meant as there is no reconstruction in
 those papers.
 
-TODO Damian
+rewrote: For example, "hypotheses about the genealogical grouping of languages at different scales" can be tested on the basis of presence and absence of cognates without the necessity to model sound changes explicitly (Bowern, 2012; Bowern and Atkinson, 2012).
 
 
 30) It is not entirely clear what this sentence means, or how to evaluate the claim here without knowing exactly what you mean by 'random' mutations in this linguistic context. Do you mean sporadic changes? Either some clarification or a reference to some supporting discussion would be very helpful.
@@ -258,7 +261,7 @@ added: Similarity serves only as a first filter for relatedness. In fact, the ra
 
 31) Do you mean "typographical errors"? As written, the meaning of this sentence is unclear.
 
-TODO Damian
+rewrote: Thus, for example, "errors in the coding of linguistic data" often introduce rare characters or unusual sequence of characters into the data; a hidden Markov model could be trained to learn the probabilistic patterns in the sequence of characters composing the words of a particular language and extremely rare occurrences of characters or sequence of characters can then be flagged for manual verification.
 
 
 32) {Please explain what this HMM does? (HMM is an extremely general technique for sequences and it is not obvious how they can be used in the manner mentioned).
@@ -279,7 +282,7 @@ changed it to 21 language pairs
 
 35) Do alphabetic scripts do that? Or is segmental phonology rather than "phonetics" intended?
 
-TODO Damian
+We removed "alphabetic" since a discussion would have extended this paper further.
 
 
 36) The final sentence of this paragraph needs to be reworded for clarity.
@@ -291,7 +294,7 @@ changed: We found that 97% of the "cognate pairs computationally proposed in the
 
 added: "It is to be admitted, however, that these robustness results might change as one looks at lists with substantially lower frequency of cognates, as expected for deeper families or languages undergoing large amount of lexical replacement."
 
-TODO Damian: is there a paper by List? 
+added: Naturally, these claims are subject to regularities that are detectable at this level of representation, more likely to be found between languages with a relatively recent common history. Deeper genealogical relations are discussed on the basis of painstaking combinations of linguistic and historical knowledge, with little or no surface regularities on which contemporary methods could hinge on (e.g. (Robbeets, 2005)).
 
 Answer: very interesting question but a study at itself and beyond the scope of this paper since a large number of well understood test cases is necessary.
 
@@ -315,6 +318,8 @@ TODO Damian
 
 
 41) None of these paper support the idea of rate constancy, they support (emprirically) the idea of rate regularity.
+
+Rate "regularity" has been severely criticized since early on (Bergsland and Vogt, 1962; Blust, 2000), "although some support for the idea of a constant rate of a change within particular subsets of the basic lexicon, or at least for that of certain chronological regularities in lexical evolution, is still found in empirical evidence" (Ehret, 2000; Starostin, 2000, 2013; Holman et al., 2011). Within the context of a likelihood based approach, the "regularity" of the rates of various features can be tested (Hruschka et al., 2015), as can particular hypotheses about factors affecting changes in the different branches (Atkinson et al., 2008).
 
 Rate constancy has been severely criticized since early on (Bergsland and Vogt, 1962; Blust, 2000), "although some support for the idea of a constant rate of a change within particular subsets of the basic lexicon, or at least for that of certain chronological regularities in
 lexical evolution, is still found in empirical evidence" (Ehret, 2000; Starostin, 2000, 2013; Holman et al., 2011).

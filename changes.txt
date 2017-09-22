@@ -1,4 +1,5 @@
-The remarks of the reviewers are addressed in the following even though minor changes have been introduced to the text directly and thus will not be considered here. We tried to color every change to the text (even spelling mistakes) though.
+The remarks of the reviewers are addressed in the following even though minor changes have been introduced to the text directly and thus will not be considered here. We tried to color every change to the text (even spelling mistakes) though. We have extensively rewritten the text of abstract and introduction, considerably shortened the presentation in particular of section 3.7 and expanded other 
+section as suggested by the reviewers.
 
 0) I fail to see that the example of Xenoturbella underlines this conclusion.
 It just seems to illustrate that one needs to be able to correctly identify

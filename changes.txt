@@ -302,7 +302,7 @@ Answer: very interesting question but a study at itself and beyond the scope of 
 
 38) Is this a language independent result?
 
-added: The most efficient use of lexical data for determining deep language relationships, therefore, should weight the stable words and "sounds (e.g., consonants in most language families) more."
+added: The most efficient use of lexical data for determining deep language relationships, therefore, should weight the stable words and "sounds (e.g., word-initial nasals) as these are truly robust across many families."
 
 TODO Damian
 

@@ -1,8 +1,5 @@
 \documentclass[final,12pt,3p,times,authoryear]{elsarticle}
-\newif\ifANONYMOUS\ANONYMOUStrue
-\newif\iffrontonly\frontonlyfalse
 %%% RENOVE THE FOLLOWING LINE TO REMOVE THE AUTHOR NAMES AUTHOR REFERENCES
-\ANONYMOUSfalse
 %%%%%%%%%%%%%%%%%%%%
 
 \usepackage[dvipsnames,svgnames,x11names]{xcolor}
@@ -37,25 +34,9 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amssymb}
-%\usepackage{multirow}
 \usepackage{longtable}
 \usepackage{tipa}
 \usepackage{float}
-%\usepackage{subfigure}
-%\newcommand{\TODO}[1]{\begingroup\color{red}#1\endgroup}
-%\newcommand{\LM}[1]{\begingroup\maybecolor{magenta}#1\endgroup}
-%\newcommand{\PFS}[1]{\begingroup\maybecolor{green}#1\endgroup}
-%\newcommand{\NOTE}[1]{\begingroup\maybecolor{blue}#1\endgroup}
-%\newcommand{\NR}[1]{\begingroup\maybecolor{Orange}#1\endgroup}
-%\newcommand{\DB}[1]{\begingroup\maybecolor{Cerulean}#1\endgroup}
-%\newcommand{\HY}[1]{\begingroup\maybecolor{OliveGreen}#1\endgroup}
-%\newcommand{\TB}[1]{\begingroup\maybecolor{Fuchsia}#1\endgroup}
-\definecolor{pinegreen}{rgb}{0.0,0.47,0.44}
-\ifx\texorpdfstring\relax\def\texorpdfstring#2{#1}\fi
-\newcommand{\NEW}[1]{\texorpdfstring{\begingroup\color{pinegreen}#1\endgroup}{#1}}
-%\newcommand{\GS}[1]{\begingroup\color{gray}#1\endgroup}
-%TB
-%mark ups for language style
 \newcommand{\LING}[1]{\textit{#1}}
 \newcommand{\TT}[1]{\textsc{#1}}
 \newcommand{\QUOTE}[1]{`#1'}
@@ -160,10 +141,6 @@
 \begin{document}
 \begin{frontmatter}
 
-
-\ifANONYMOUS
-\author{}
-\else
 \author[SFI,LANL]{Tanmoy Bhattacharya\corref{cor}}
 \author[ZURI,SHH]{Dami\'{a}n E. Blasi}
 \author[UNM]{William Croft}
@@ -172,13 +149,14 @@
 \author[UNM]{Ian Maddieson}
 \author[Leipzig]{Lydia M{\"u}ller}
 \author[Leipzig,MIS]{Nancy Retzlaff}
-\author[SFI,GMU,RI]{Eric Smith}
+\author[SFI,GIT,ELSI]{Eric Smith}
 \author[SFI,MPI,Leipzig]{Peter F. Stadler\corref{cor}}
-\author[Moscow]{George Starostin}
-\author[SFI,Oxford]{Hyejin Youn}
+\author[SFI,Moscow1,Moscow2]{George Starostin}
+\author[Kellog,NWCSLondMath]{Hyejin Youn}
 \address[SFI]{Santa Fe Institute, 1399 Hyde Park Rd., Santa Fe, NM
              87501, USA}
-\address[LANL]{Theoretical Division, Los Alamos National Laboratory,
+\address[LANL]{Theoretical Division, MS B285, Group T2, 
+             Los Alamos National Laboratory,
              Los Alamos, NM 87545-0285, USA}
 \address[MIS]{Max Planck Institute for Mathematics in the Sciences,
             D-04103 Leipzig, Germany}
@@ -197,17 +175,22 @@
 \address[Leipzig]{Bioinformatics Group, Department of Computer 
                  Sciences, University of Leipzig, Leipzig 04107,
                  Germany}
-\address[GMU]{Krasnow Institute for Advanced Study, George Mason
-             University, Fairfax, VA 22030, USA}
-\address[RI]{Ronin Institute, Montclair, NJ 07043}
-\address[Moscow]{Centre for Comparative Linguistics, Russian
-                State University for the Humanities, Moscow, Russia}
-\address[Oxford]{The Institute for New Economic Thinking at the 
-                Oxford Martin School, Oxford, OX2 6ED, UK}
+\address[GIT]{Department of Biology, Georgia Institute of Technology, 
+              310 Ferst Dr NW, Atlanta, GA 30332, USA}
+\address[ELSI]{Earth-Life Science Institute, Tokyo Institute of Technology, 
+              2-12-1-IE-1 Ookayama, Meguro-ku, Tokyo 152-8550, Japan}
+\address[Moscow1]{Sector for Comparative Linguistics, Russian
+                State University for the Humanities, 125993 Moscow, Russia}
+\address[Moscow2]{Institute for Oriental and Classical Studies, Higher School of
+   Economics, 105066 Moscow, Russia}
+\address[Kellog]{Kellogg School of Management at Northwestern University, 
+                 Evanston, IL 60208, USA}
+\address[NWCS]{Northwestern Institute on Complex Systems, Evanston, 
+                 IL 60208, USA}
+\address[LondMath]{London Mathematical Lab, London WC2N 6DF, UK}
 \cortext[cor]{Correspondence should be addressed to 
   TB (\email{tanmoy@santafe.edu}) and 
   PFS (\email{stadler@bioinf.uni-lepzig.de}).}
-\fi
 
 \title{Studying Language Evolution in the Age of Big Data}
 
@@ -218,98 +201,88 @@
   features to more global patterns amenable to rigorous, but statistical,
   analyses. This engenders an approach based on successive approximations
   where models with simplified assumptions result in frameworks that can
-  then be systematically refined\NEW{, always keeping} explicit the
+  then be systematically refined, always keeping explicit the
   methodological commitments and the assumed prior knowledge. Therefore,
   they can resolve disputes between competing frameworks quantitatively by
   separating the support provided by the data from the underlying
-  assumptions. \NEW{These methods, though, often appear as a `black box' to
-    traditional practitioners.  In fact, the switch to a statistical view
-    complicates comparison of the results from these newer methods with
-    traditional understanding, sometimes leading to misinterpretation and
-    overly broad claims.}  We describe here this evolving methodological
-  shift, attributed to the advent of big\NEW{, but often incomplete and
-    poorly curated,} data, \NEW{emphasizing the underlying similarity of
-    the newer quantitative to the traditional comparative methods and
-    discussing when and to what extent the former have advantages over the
-    latter. In this review, we cover briefly both} randomization tests for
-  detecting patterns in a largely model-independent fashion and
-  phylolinguistic methods for a more model-based analysis of these
-  patterns. We foresee a fruitful division of labor between the ability to
-  computationally process large volumes of data and the trained linguistic
-  insight declaring worthy prior commitments and interesting hypotheses in
-  need of comparison.
-  
+  assumptions. These methods, though, often appear as a `black box' to
+  traditional practitioners.  In fact, the switch to a statistical view
+  complicates comparison of the results from these newer methods with
+  traditional understanding, sometimes leading to misinterpretation and
+  overly broad claims.  We describe here this evolving methodological
+  shift, attributed to the advent of big, but often incomplete and poorly
+  curated, data, emphasizing the underlying similarity of the newer
+  quantitative to the traditional comparative methods and discussing when
+  and to what extent the former have advantages over the latter. In this
+  review, we cover briefly both randomization tests for detecting patterns
+  in a largely model-independent fashion and phylolinguistic methods for a
+  more model-based analysis of these patterns. We foresee a fruitful
+  division of labor between the ability to computationally process large
+  volumes of data and the trained linguistic insight declaring worthy prior
+  commitments and interesting hypotheses in need of comparison.
 \end{abstract}
 
 \end{frontmatter}
 \let\footnote=\endnote
-\iffrontonly\end{document}\fi
-
-\ifANONYMOUS
-\onehalfspacing
-\else 
-%\renewcommand{\NEW}[1]{\begingroup\color{black}#1\endgroup}
-\fi
 
 \section{Introduction.}
 
 The evolutionary relationships of languages have been a lively field of
 research for nearly two centuries, ever since Schleicher's evolutionary
 trees~\cite{Schleicher:1853} and Dumont d'Urville's attempt to introduce a
-quantitative aspect into the comparison of Oceanic
-languages \NEW{(see~\citet{Hymes:83} on d'Urville's work in 1834)}. 
-These early roots predate Darwin's first
-sketch of an evolutionary tree of species, possibly drawn in 1837. Early
-work on phylogenetics in biology has been grounded in detailed expert
-descriptions of morphology. The advent of a deluge of molecular data and
-the relative simplicity of the mechanisms underlying sequence evolution has
-transformed molecular phylogenetics into a data-driven, computational
-science.
+quantitative aspect into the comparison of Oceanic languages
+(see~\citet{Hymes:83} on d'Urville's work in 1834).  These early roots
+predate Darwin's first sketch of an evolutionary tree of species, possibly
+drawn in 1837. Early work on phylogenetics in biology has been grounded in
+detailed expert descriptions of morphology. The advent of a deluge of
+molecular data and the relative simplicity of the mechanisms underlying
+sequence evolution has transformed molecular phylogenetics into a
+data-driven, computational science.
 
 In contrast to biological evolution, the detailed forces and mechanisms
 shaping language change over time are much less thoroughly
 understood. Nevertheless, it seems safe to assume that spoken languages
 include a set of core features that are mainly uniparentally co-inherited
 with occasional horizontal influences from other speech communities. Such
-vertically inherited features range from \NEW{phonology} to individual
-lexical items and entire grammatical structures. Just like the genotype
-comprising a biological system has a core subset of housekeeping genes that
-form a bundle that is frequently, but not always, co-inherited, it is
-likely that language has a core that can be used to define a \TT{vertical
-  descent}.  Many other traits would be more or less coherent with respect
-to this bundle of features, with deviations defining \TT{horizontal}
+vertically inherited features range from phonology to individual lexical
+items and entire grammatical structures. Just like the genotype comprising
+a biological system has a core subset of housekeeping genes that form a
+bundle that is frequently, but not always, co-inherited, it is likely that
+language has a core that can be used to define a \TT{vertical descent}.
+Many other traits would be more or less coherent with respect to this
+bundle of features, with deviations defining \TT{horizontal}
 admixtures. One may find clusters that, like pathogen islands in a
 bacterial genome, are also mutually co-inherited, but along a different
 lineage than the housekeeping genes. Pre-eminent among these are,
 obviously, cultural complexes that get borrowed along with the entire
 related vocabulary \cite{field2002linguistic}. In addition, in language, we
 also have grammatical and various other typological features that may or
-may not follow the same lines as the core bundle. \NEW{For a more detailed
-  discussion on parallels in both disciplines see~\citet{List:16a}.}
+may not follow the same lines as the core bundle. For a more detailed
+discussion on parallels in both disciplines see~\citet{List:16a}.
 
-\NEW{It is an entirely empirical question which features belongs to which
-  co-inheritance bundle and membership may be restricted to a particular
-  phylogenetic scope or time scale. Biology provides examples that even
-  core components of indispensable subsystems can be transmitted
-  horizontally between phylogenetically very distant group---albeit such
-  horizontal transfer events are extremely rare in the evolutionary history
-  of any particular core gene, see \citet{Betat:15a} for a case study.}  In
-the following, we \NEW{therefore} do not consider questions that pertain to
-which of these features \textsc{should} be defined as \TT{genetic
-  inheritance,} in fact we shall studiously refrain from privileging a
-single co-inheritance bundle as \textsc{the} defining feature of genetic
-relationship of a cultural trait such as language, but, instead, will
-concern ourselves solely with reconstructing the phylogeny of any of these
-sets of features. When we are confident\NEW{---for the analysis of the
-  available data---}that a set of features belongs to the same bundle, a
-phylogeny built primarily on the basis of evidence from one set of features
-can provide a historical reconstruction for the other features. In any
-case, we consider all these features as useful subjects for historical
-inquiry, though their relative merit for answering a given question of
-interest to individual researchers will vary. For concreteness and because
-of large amounts of available data, we shall talk about
-\TT{phylolinguistic} analysis of lexical features but much of the
-discussion also translates to phylogenies constructed from other features.
+It is an entirely empirical question which features belongs to which
+co-inheritance bundle and membership may be restricted to a particular
+phylogenetic scope or time scale. Biology provides examples that even core
+components of indispensable subsystems can be transmitted horizontally
+between phylogenetically very distant group---albeit such horizontal
+transfer events are extremely rare in the evolutionary history of any
+particular core gene, see \citet{Betat:15a} for a case study.  In the
+following, we therefore do not consider questions that pertain to which of
+these features \textsc{should} be defined as \TT{genetic inheritance,} in
+fact we shall studiously refrain from privileging a single co-inheritance
+bundle as \textsc{the} defining feature of genetic relationship of a
+cultural trait such as language, but, instead, will concern ourselves
+solely with reconstructing the phylogeny of any of these sets of
+features. When we are confident---for the analysis of the available
+data---that a set of features belongs to the same bundle, a phylogeny built
+primarily on the basis of evidence from one set of features can provide a
+historical reconstruction for the other features. In any case, we consider
+all these features as useful subjects for historical inquiry, though their
+relative merit for answering a given question of interest to individual
+researchers will vary. For concreteness and because of large amounts of
+available data, we shall talk about \TT{phylolinguistic} analysis of
+lexical features but much of the discussion also translates to phylogenies
+constructed from other features.
 
 An important issue to consider in the choice of traits to analyze is the
 importance of synapomorphies, or shared derived traits that set a
@@ -345,68 +318,63 @@ phenotypic characters such as specific shapes of bones, the presence or
 absence of particular neurotransmitters, or the spatial organization of
 neuronal networks. In fact, when there is no mechanistic understanding of
 the patterns of change, robust, non-parametric approaches to tree
-reconstruction are often the method of choice\NEW{~\cite{Waegele:DMP,
-    Dunn:15}}. Of course no method is infallible \NEW{with respect to the
-  features chosen}. If \NEW{these} are either too noisy to convey
-retrievable information or are not \NEW{transmitted along the same tree} to
-begin with, the \NEW{reconstructed} tree might not depict \NEW{any} actual
-relationships. An extreme example in the phylogeny of animals is the
-strange case of \emph{Xenoturbella}, \NEW{which was placed at vastly
-  different positions in the animal tree based on different choices of data
-  sets and taxa included for comparison \cite{Bourlat:06,Rouse:16}.}  This
-underlines the fundamental importance of basing phylogenetic reconstruction
-on multiple, independent feature sets \NEW{because it is often not obvious
-  \textit{a priori} which features are informative for comparison in a
-  given context.}
+reconstruction are often the method of
+choice~\cite{Waegele:DMP,Dunn:15}. Of course no method is infallible with
+respect to the features chosen. If these are either too noisy to convey
+retrievable information or are not transmitted along the same tree to begin
+with, the reconstructed tree might not depict any actual relationships. An
+extreme example in the phylogeny of animals is the strange case of
+\emph{Xenoturbella}, which was placed at vastly different positions in the
+animal tree based on different choices of data sets and taxa included for
+comparison \cite{Bourlat:06,Rouse:16}.  This underlines the fundamental
+importance of basing phylogenetic reconstruction on multiple, independent
+feature sets because it is often not obvious \textit{a priori} which
+features are informative for comparison in a given context.
 
-
-Just like language evolution, biological evolution is \NEW{not} purely
-vertical \NEW{and hence not} completely tree-like. Even in higher
-organisms, horizontal gene transfer, convergent adaptive evolution,
-\NEW{incomplete} lineage sorting \footnote{\NEW{Incomplete lineage sorting
-    describes the effect that for a small subset of the genome may
-    contradicts the true phylogeny by an ancestral form being retained 
-    alongside a derived form at intermediate times and dominating in
-    some, but not all, descendant branches. This leads to them being
-    more similar to the genome of a more distant relative than to the,
-    e.g., sister species. In linguistics, a similar phenomenon may
-    lead to some archaically or dialectically retained words in a
-    language being less similar to the word in a sister language than
-    to a cognate in a more distantly related language.}}, and random noise
-  in the data introduce deviations 
-from tree-likeness in the data. Lineages are not always well-separated, as
-in the case of \TT{ring species} \cite{irwin:2005} in biology and
-\TT{dialect continua} \cite{heggarty:2010,franccois2015trees}, making the
-tree model only an approximation \NEW{(see~\cite{Geisler:13} for further
-  models for language relationships)}. Although horizontal transfer, like
-any other causes of incorrect tree estimation, may bias quantities such as
-divergence time estimated from trees~\cite{Greenhill:09}, there are
+Just like language evolution, biological evolution is not purely vertical
+and hence not completely tree-like. Even in higher organisms, horizontal
+gene transfer, convergent adaptive evolution, incomplete lineage sorting
+\footnote{Incomplete lineage sorting describes the effect that for a small
+  subset of the genome may contradicts the true phylogeny by an ancestral
+  form being retained alongside a derived form at intermediate times and
+  dominating in some, but not all, descendant branches. This leads to them
+  being more similar to the genome of a more distant relative than to the,
+  e.g., sister species. In linguistics, a similar phenomenon may lead to
+  some archaically or dialectically retained words in a language being less
+  similar to the word in a sister language than to a cognate in a more
+  distantly related language.}, and random noise in the data introduce
+deviations from tree-likeness in the data. Lineages are not always
+well-separated, as in the case of \TT{ring species} \cite{irwin:2005} in
+biology and \TT{dialect continua} \cite{heggarty:2010,franccois2015trees},
+making the tree model only an approximation (see~\cite{Geisler:13} for
+further models for language relationships). Although horizontal transfer,
+like any other causes of incorrect tree estimation, may bias quantities
+such as divergence time estimated from trees~\cite{Greenhill:09}, there are
 nevertheless many important events in the evolutionary history that are
 correctly expressed by trees because they are primarily conserved
-vertically. In fact, even in the presence of other forms of
-\NEW{relationships}, trees are a useful representation of evolutionary
-relationships whenever there exists a dominating set of \NEW{co-inherited}
-features. \NEW{Several measures that quantify the of
-  tree-likeness of a data set are available that do not presuppose a
-  particular tree and hence can be employed without biasing subsequent
-  phylogenetic statements \cite{Bandelt:92,Nieselt:97,Misof:14a}.}
+vertically. In fact, even in the presence of other forms of relationships,
+trees are a useful representation of evolutionary relationships whenever
+there exists a dominating set of co-inherited features. Several measures
+that quantify the of tree-likeness of a data set are available that do not
+presuppose a particular tree and hence can be employed without biasing
+subsequent phylogenetic statements \cite{Bandelt:92,Nieselt:97,Misof:14a}.
 
 Models of evolution that allow an arbitrary network as representing the
 evolution are, of course, available, \texttt{NeighborNet}~\cite{Huson:10}
 being by far the most popular choice. Such networks, however, do not
 necessarily directly model an evolutionary process. Nevertheless, they can
 be very useful to visualize and quantify the contribution of non-vertical
-\NEW{transmission}~\cite{Holden:06,Bowern:10}. \NEW{Network graphs reflect
-  relationships between languages given a distance measure. Other than tree
-  producing algorithms \TT{long branch attraction}, \ie{} of two languages
-  that are both dissimilar to all other languages are usually grouped
-  together, is no problem since the problematic languages would be
-  branching from the center directly. In particular this means that
-  languages without any information on mutual history would result in a
-  star-like \texttt{NeighborNet}.  In contrast, languages that share a root
-  are grouped together via rectangular branches. Hence, for languages that
-  share unusually long branches than would be expected, borrowings are a
-  reasonable explanation.}
+transmission~\cite{Holden:06,Bowern:10}. Network graphs reflect
+relationships between languages given a distance measure. Other than tree
+producing algorithms \TT{long branch attraction}, \ie{} of two languages
+that are both dissimilar to all other languages are usually grouped
+together, is no problem since the problematic languages would be branching
+from the center directly. In particular this means that languages without
+any information on mutual history would result in a star-like
+\texttt{NeighborNet}.  In contrast, languages that share a root are grouped
+together via rectangular branches. Hence, for languages that share
+unusually long branches than would be expected, borrowings are a reasonable
+explanation.
 
 As in other loosely constrained statistical estimation problems,
 phylogenetic networks may be over-parameterized so that it is often
@@ -414,16 +382,15 @@ difficult to discern whether they uncover patterns of the underlying
 linguistic history, or are merely describing the random and idiosyncratic
 noise inherent in any particular data set. It is often better, therefore,
 to stick to a tree-based phylogenetic techniques but express the potential
-existence of reticulation or conflicts by measures of goodness of fit.
-\NEW{In particular, low likelihoods in particular branches and a wide
-  spread in the posterior distributions in Bayesian settings may be caused
-  not only by insufficient signal but also by reticulated patterns in the
-  data. It is advisable, therefore, to compute explicit measures of
-  tree-likeness \cite{Bandelt:92,Nieselt:97} and to use methods that
-  reconstruct reticulate networks alongside with tree reconstruction
-  methods.  The latter also can provide direct measures of the amount of
-  reticulation when network approaches are applied to the same data
-  \cite{Robinson:2012}.}
+existence of reticulation or conflicts by measures of goodness of fit.  In
+particular, low likelihoods in particular branches and a wide spread in the
+posterior distributions in Bayesian settings may be caused not only by
+insufficient signal but also by reticulated patterns in the data. It is
+advisable, therefore, to compute explicit measures of tree-likeness
+\cite{Bandelt:92,Nieselt:97} and to use methods that reconstruct reticulate
+networks alongside with tree reconstruction methods.  The latter also can
+provide direct measures of the amount of reticulation when network
+approaches are applied to the same data \cite{Robinson:2012}.
 
 
 The key question, then, is not whether one can devise a complete and
@@ -437,19 +404,18 @@ two-fold. First, it allows us to identify the cases where \emph{the
   the very least, approximated from the observable data.} Second, as the
 amount of data increases, it allows one to \emph{systematically} improve
 the model using techniques like ancestral recombination
-graphs~\cite{Hudson:91,Griffiths:97,Arenas:13,Rasmussen:14}\NEW{,} well
-known in the biological phylogenetic literature. \NEW{This graded
-  approach of considering only a dominant subset of effects is a
-  general feature of statistical methods. Standard techniques exist to compare
-  the predictive capability of incomplete models whose parameters are
-  well constrained by the data available against complex models that
-  cannot be so constrained. Furthermore, since typically the vertical
-  inheritance arises from starkly different processes like population
-  migration and fission than contact phenomena that lead to horizontal
-  influences, building trees rather than reticulated networks allows us to
-  answer the former questions even when the data are not sufficient to
-  parameterize the entire process.} 
-The purpose of this contribution is to demonstrate that quantitative
+graphs~\cite{Hudson:91,Griffiths:97,Arenas:13,Rasmussen:14}, well known in
+the biological phylogenetic literature. This graded approach of considering
+only a dominant subset of effects is a general feature of statistical
+methods. Standard techniques exist to compare the predictive capability of
+incomplete models whose parameters are well constrained by the data
+available against complex models that cannot be so
+constrained. Furthermore, since typically the vertical inheritance arises
+from starkly different processes like population migration and fission than
+contact phenomena that lead to horizontal influences, building trees rather
+than reticulated networks allows us to answer the former questions even
+when the data are not sufficient to parameterize the entire process. The
+purpose of this contribution is to demonstrate that quantitative
 statistical approaches that have become widely accepted and used in the
 life sciences can be generalized and adapted to the analysis of languages
 and their relationships. Of course, the use of such methods is not new in
@@ -479,13 +445,12 @@ processes, is quantified and modeled as a discrete random
 process---usually, but not always, as a constant-rate and memory-free
 Poisson process~\cite{Sankoff:73}. Once one allowed different rates for
 cognate replacement in different parts of the lexicon, and when the
-analysis used only the core concepts \NEW{included in word lists
-  \cite{IDS,Starostin:11,Wichmann:10a,Swadesh:71} ---assumed to be the most
-  closely co-inherited roots, refractory to horizontal transfer---or, at
-  least, weighted their evidence more, this often reproduced known events
-  in linguistic history
-  \citep[e.g.][]{Lee:11,Gray:09,Dunn:11,Gell-Mann:11}}, and provided a
-credible starting point in discussions on language relationships
+analysis used only the core concepts included in word lists
+\cite{IDS,Starostin:11,Wichmann:10a,Swadesh:71} ---assumed to be the most
+closely co-inherited roots, refractory to horizontal transfer---or, at
+least, weighted their evidence more, this often reproduced known events in
+linguistic history \citep[e.g.][]{Lee:11,Gray:09,Dunn:11,Gell-Mann:11}, and
+provided a credible starting point in discussions on language relationships
 \cite{Bouckaert:12}.  It is important to realize, though, that all these
 approaches crucially depend on manually determined cognate classes. There
 is not yet an equally reliable automatic method to determine cognacy,
@@ -495,7 +460,7 @@ methods has to rely on a good inference of sound correspondences, which
 seems to require larger datasets.
 
 
-Beyond lexical data, there have been \NEW{many} attempts to use other kinds of
+Beyond lexical data, there have been many attempts to use other kinds of
 linguistic data for the reconstruction of language history. A lack of
 reliable cognates among Papuan languages in Island Melanesia (apart from
 obvious borrowings from nearby Austronesian languages) on which to base a
@@ -505,7 +470,7 @@ traits in such data that evolve neutrally on a tree has been
 questioned~\cite{Albu:06,Cysouw:08,Wichmann:07,Wichmann:10}. Other
 proposals have involved comparing morphological material~\cite{Nichols:92},
 syntactic features~\cite{Longobardi:09}, as well as the phonetic distance
-between word forms within a cognate set~\cite{Heggarty:00}. 
+between word forms within a cognate set~\cite{Heggarty:00}.
 
 One must note, however, that even when there appears to be a phylogenetic
 signal in such data, there is much less consensus about the nature of any
@@ -529,8 +494,8 @@ intermediate reconstruction of ancestral forms, and it is difficult, if not
 impossible, to properly account for uncertainty propagation if these tasks
 need to be carried out manually. As a consequence, cognate recognition
 becomes a central issue for large-scale language
-phylogenetics. \NEW{See~\cite{Ellison:07,Jager:13,List:16} for automated
-  approaches on cognate identification.}
+phylogenetics. See~\cite{Ellison:07,Jager:13,List:16} for automated
+approaches on cognate identification.
 
 \begin{figure}
 \begin{center}
@@ -563,23 +528,22 @@ form of the entries varies across the languages. For most languages, a
 phonemic-style transcription using IPA, Americanist, or extended Cyrillic
 traditions is used. For others an established orthography is used.
 
-All \NEW{the} word list\NEW{s} are kept in the same format, and the
-organization is based on Buck's dictionary~\cite{Buck:49} which was
-topically subdivided into 23 chapters and had in total about 1200 potential
-entries for each word list. The IDS revised the chapter structure such that
-the IDS word lists have potentially 22 chapters and in total 1310 potential
-entries \NEW{(or more, since multiple synonyms are allowed for a single term
-  if it is difficult to elicit one perfect equivalent for the general
-  meaning of the entry)}. Entries for which no word exists in a language
-are left blank for this language. Chapters are semantic groups such as
-\QUOTE{The physical world} (chapter 1) or \QUOTE{Emotions and values}
-(chapter 16). Each entry is assigned to exactly one chapter. Entries within
-each chapter are roughly sorted by their semantics, with semantic concepts
-assigned identifiers of the form \QUOTE{chapter.meaning}. Both chapter and
-meaning are numerical values with the entries within each chapter
-intuitively sorted by their meaning.  Furthermore, each entry has
-translation into English and at least one additional language, \eg{}
-Spanish.
+All the word lists are kept in the same format, and the organization is
+based on Buck's dictionary~\cite{Buck:49} which was topically subdivided
+into 23 chapters and had in total about 1200 potential entries for each
+word list. The IDS revised the chapter structure such that the IDS word
+lists have potentially 22 chapters and in total 1310 potential entries (or
+more, since multiple synonyms are allowed for a single term if it is
+difficult to elicit one perfect equivalent for the general meaning of the
+entry). Entries for which no word exists in a language are left blank for
+this language. Chapters are semantic groups such as \QUOTE{The physical
+  world} (chapter 1) or \QUOTE{Emotions and values} (chapter 16). Each
+entry is assigned to exactly one chapter. Entries within each chapter are
+roughly sorted by their semantics, with semantic concepts assigned
+identifiers of the form \QUOTE{chapter.meaning}. Both chapter and meaning
+are numerical values with the entries within each chapter intuitively
+sorted by their meaning.  Furthermore, each entry has translation into
+English and at least one additional language, \eg{} Spanish.
 
 In order to bypass manual cognate identification as the initial step one
 may start with a much more accessible set of data, namely comparative word
@@ -590,14 +554,14 @@ cognates, let alone to distinguish borrowings from vertical inheritance.
 
 The core or basic vocabulary when compiled into such word lists is
 particularly suited for the phylogenetic enterprise for two reasons. First,
-it is composed of many items of \NEW{plausible} genealogical persistence
+it is composed of many items of plausible genealogical persistence
 \cite{Calude:2011}, with some of them potentially conserved beyond the
 conventionally assumed 10,000 ybp limit of the comparative method
-\cite{Pagel:2013}.  \NEW{Even though Swadesh lists offer an initial
-  starting point, the manner in which they were created and compiled had
-  its shortcomings \cite{Hoijer:56}.}  Lexical replacement rate seems to be
-linked to frequency of use, which is fairly comparable, at least across
-languages from the largest linguistic families in the world
+\cite{Pagel:2013}. Even though Swadesh lists offer an initial starting
+point, the manner in which they were created and compiled had its
+shortcomings \cite{Hoijer:56}. Lexical replacement rate seems to be linked
+to frequency of use, which is fairly comparable, at least across languages
+from the largest linguistic families in the world
 \cite{Calude:2011,Calude:2014}. Similarly, basic vocabulary is composed of
 the lexical elements that are the most resistant to borrowing
 \cite{Haspelmath:2009}. For all these reasons, \textit{ceteris paribus},
@@ -610,8 +574,8 @@ purely from the phonetic structure captured in these semantically aligned
 word lists can be improved with specialized linguistic knowledge, in recent
 tests on \QUOTE{simple} language families, the difference was found to have
 no systematic structure that could bias the reconstruction of phylogenies
-based on this data \cite{Steiner:11a,Hruschka:14}.  \NEW{For a comparison
-  of different cognate detection algorithms see~\citet{List:17}.}
+based on this data \cite{Steiner:11a,Hruschka:14}. For a comparison of
+different cognate detection algorithms see~\citet{List:17}.
 
 Nevertheless, it is difficult to overemphasize the importance of carefully
 curated data sets that are accurate, reliable, uniformly transcribed, and
@@ -645,19 +609,17 @@ crucial distinctions. A related issue is that transcriptions often use
 digraphs for single segments, and their usage is sometimes inconsistent
 across the orthographies used for the various languages and various sources
 of data, even after Unicode normalization. Thus, for example, an ejective
-may be denoted by superposed apostrophe \NEW{$<$}\'k\NEW{$>$}, postposed
-apostrophe \NEW{$<$}k'\NEW{$>$}, postposed palochka \NEW{$<$}k$|\NEW{>}$,
-or special letters \NEW{$<$}\cmr\texthtk\NEW{$>$}. Depending on the
-encoding, these might be represented either as digraphs or unigraphs. If
-the language specific segmentation is available in the data source, these
-can all be converted to special characters---\eg{} in the private Unicode
-space---before analysis. Most often, however, such information is missing
-from composite data sources and one chooses a suboptimal solution of
-leaving these as a sequence of characters to be handled later. \NEW{An
-  example for how to solve this issue will be discussed in section
-  \ref{sect:QuRegCh} below.}
+may be denoted by superposed apostrophe $<$\'k$>$, postposed apostrophe
+$<$k'$>$, postposed palochka $<$k$|>$, or special letters
+$<$\cmr\texthtk$>$. Depending on the encoding, these might be represented
+either as digraphs or unigraphs. If the language specific segmentation is
+available in the data source, these can all be converted to special
+characters---\eg{} in the private Unicode space---before analysis. Most
+often, however, such information is missing from composite data sources and
+one chooses a suboptimal solution of leaving these as a sequence of
+characters to be handled later. An example for how to solve this issue will
+be discussed in section \ref{sect:QuRegCh} below.
  
-
 A very natural starting point, then, is to regard words as sequences of
 characters that correspond, at least approximately, to phonemes. The most
 direct approach to comparing sequences starts by aligning them. In
@@ -671,15 +633,15 @@ character-based alignments of words have been used to measure similarity,
 In contrast to the world of biological sequence analysis, where scoring
 systems are relatively simple and the algorithmic problems of efficiently
 computing alignments of large data sets dominate \cite[see,
-e.g.][]{Notredame:07}, it is the construction of good \TT{scoring models}
-\NEW{, \ie{} a function or look up table providing a measurement for the 
-similarity or distance of observed phonemes/characters,} that
-is most difficult in language comparisons. The fundamental reason for this
-is that unlike phonemes, the elementary tokens of biological sequences are
-uniquely identifiable across the taxa; for amino acids this is rooted in
-their distinct, functionally salient, chemical properties, and for
-nucleotides it follows from the extremely slow change of the genetic code
-over evolutionary \NEW{time}. In languages, on the other hand, the phonetic
+e.g.][]{Notredame:07}, it is the construction of good \TT{scoring models},
+\ie{} a function or look up table providing a measurement for the
+similarity or distance of observed phonemes/characters, that is most
+difficult in language comparisons. The fundamental reason for this is that
+unlike phonemes, the elementary tokens of biological sequences are uniquely
+identifiable across the taxa; for amino acids this is rooted in their
+distinct, functionally salient, chemical properties, and for nucleotides it
+follows from the extremely slow change of the genetic code over
+evolutionary time. In languages, on the other hand, the phonetic
 representation of the corresponding phonemes is the fastest process of
 change, and needs to be inferred from the data. If alignments of the
 cognates were known \textit{a priori}, one could simply use log-odds ratios
@@ -689,7 +651,7 @@ of co-occurrence counts as the scoring model.
 \centering
 \includegraphics[width=0.5\textwidth]{figures/soundChangeLaws_vs_scoringModels.eps}
 \caption{A hypothetical language tree for 5 (proto-)languages (dark blue)
-  and one (proto-)sound (pink). Greek letter\NEW{s} correspond to reconstructed
+  and one (proto-)sound (pink). Greek letters correspond to reconstructed
   proto-languages and proto-sounds and Latin letters to the observed sounds
   and languages. Sound change laws (typically used by linguists, turquoise)
   and scoring models (used in quantitative methods, dark green) describe
@@ -699,8 +661,8 @@ of co-occurrence counts as the scoring model.
   cumulative effect of the sound changes in the languages under
   investigation. For example, the scoring model (dashed-dotted lines) would
   state that $a$ from language $A$ is often found at those positions in the
-  words where language $B$ has sound $b$. It thus indirectly \NEW{implies} that $a$
-  and $b$ originate from the same proto-sound. The sound change laws
+  words where language $B$ has sound $b$. It thus indirectly implies that
+  $a$ and $b$ originate from the same proto-sound. The sound change laws
   (straight lines, i.e. branches of the language tree) would state that
   there is a proto-sound ${}^*\delta$ which changed into $a$ in language
   $A$ and $b$ in language $B$.}
@@ -743,43 +705,43 @@ In a scenario more conducive to the analysis of large-scale data sets
 without \textit{a priori} known alignments, two approaches have been
 developed. The first of them uses a small amount of linguistic knowledge to
 create an initial, crude similarity measure to propose a tentative
-alignment, \NEW{which we call \TT{pre-alignments}, that is then used to
-  extract more detailed information about sound correspondences.}  The
-\NEW{initial rules} can be very simple. \citet{Steiner:11a}, for example,
-only discouraged matches between vowels and consonants, disallowed
-transpositions (metathesis), and put more weights on identities of
-consonants than vowels. Another example is \NEW{is given by}
-\citet{Heggarty:00}, who first used the manually curated proto-forms of the
-words under study to infer matches, and then counted the number of phonetic
-and articulatory features in which the aligned segments differ. It may come
-as a surprise that the model of \citet{Steiner:11a}, which is clearly
-over-simplified, nevertheless can identify an initial set of cognates
-between related languages. In fact, even these weak assumptions are
-actually unnecessary: an alternate approach with even fewer assumption
-described in subsection~\ref{sec:tanmethod} can be used to infer the
-initial alignment. This works because phoneme evolution proceeds through
-small phonetic changes, and cognate pairs having a higher similarity score
-than two evolutionary unrelated words is a very low bar.
+alignment, which we call \TT{pre-alignments}, that is then used to extract
+more detailed information about sound correspondences.  The initial rules
+can be very simple. \citet{Steiner:11a}, for example, only discouraged
+matches between vowels and consonants, disallowed transpositions
+(metathesis), and put more weights on identities of consonants than
+vowels. Another example is given by \citet{Heggarty:00}, who first used the
+manually curated proto-forms of the words under study to infer matches, and
+then counted the number of phonetic and articulatory features in which the
+aligned segments differ. It may come as a surprise that the model of
+\citet{Steiner:11a}, which is clearly over-simplified, nevertheless can
+identify an initial set of cognates between related languages. In fact,
+even these weak assumptions are actually unnecessary: an alternate approach
+with even fewer assumption described in subsection~\ref{sec:tanmethod} can
+be used to infer the initial alignment. This works because phoneme
+evolution proceeds through small phonetic changes, and cognate pairs having
+a higher similarity score than two evolutionary unrelated words is a very
+low bar.
 
 These methods ultimately utilize the strength of regularities in linguistic
 correspondence. Even a very rough and simplistic model for sound changes
-suffices to identify at least \NEW{a proportion} of the cognate pairs in
-the data set. Given the rarity of metatheses, the pairwise alignments of
-these cognates preferentially match corresponding sounds with each other.
-\NEW{One can then introduce gaps in the alignment to improve their match
-  according to this draft correspondence table. Iteration of this process
-  of improving the correspondence table followed by improving the alignment
-  rapidly reduces the number of unexplained changes and refines the
-  correspondence table~\cite{Hruschka:14}.} The key observation is that all
-this needs is an enrichment of cognates in the initial alignments. 
+suffices to identify at least a proportion of the cognate pairs in the data
+set. Given the rarity of metatheses, the pairwise alignments of these
+cognates preferentially match corresponding sounds with each other.  One
+can then introduce gaps in the alignment to improve their match according
+to this draft correspondence table. Iteration of this process of improving
+the correspondence table followed by improving the alignment rapidly
+reduces the number of unexplained changes and refines the correspondence
+table~\cite{Hruschka:14}. The key observation is that all this needs is an
+enrichment of cognates in the initial alignments.
 
 It is interesting to note that the statistical approach accommodates many
 linguistic subtleties without explicitly building them into the
 method. Although the mapping of consonants to consonants and vowels to
-vowels in the \NEW{\TT{pre-alignments}} is a good working assumption, there
-is at least one clear set of frequent exceptions: Vowels often correspond
-to consonants belonging to the classes often called glides and liquids,
-such as [w, j, l, r]. For example, [l] in the French words \textit{plein,
+vowels in the \TT{pre-alignments} is a good working assumption, there is at
+least one clear set of frequent exceptions: Vowels often correspond to
+consonants belonging to the classes often called glides and liquids, such
+as [w, j, l, r]. For example, [l] in the French words \textit{plein,
   plaine, place} corresponds to [i] in Italian \textit{pieno, pianura,
   piazza}. These consonants plus a vowel often also correspond to a single
 vowel. For example, /we/ in the Spanish words \textit{bueno, puerto}
@@ -788,17 +750,16 @@ corresponds to [\cmr{\textopeno{}}] in Italian \textit{bono,
 kinds of cases can be taken into account by relaxing the
 consonant-consonant and vowel-vowel correspondence constraint. At least
 some examples of this type appear in pre-alignments that are classified as
-candidate cognates \NEW{even though scores were assigned, not trained in
-  this alignment similar to editing operations with similarity
-  scores}. Hence in the second step they are assigned favorable log-odds
-scores without the need to model liquids and glides explicitly from the
-outside.
+candidate cognates even though scores were assigned, not trained in this
+alignment similar to editing operations with similarity scores. Hence in
+the second step they are assigned favorable log-odds scores without the
+need to model liquids and glides explicitly from the outside.
 
 A more sophisticated scoring model that takes into account the neighboring
 phonetic context can also be estimated from the initial alignments of
 cognates. Here, we explore the utility of a bigram-based scoring model and
-compare it \NEW{to} a simpler model with unigram scores. The idea behind the
-computation of the scoring function is the same for both model\NEW{s}. Likely
+compare it to a simpler model with unigram scores. The idea behind the
+computation of the scoring function is the same for both models. Likely
 correspondences of sounds will appear more often than expected by chance in
 an alignment of cognate words. This holds true for both unigrams and
 bigrams. In either case we therefore start from the collection of all
@@ -822,18 +783,18 @@ to define the score as
       \beta)}{p_A(\alpha) p_B(\beta)}\right).
 \end{equation}
 This so-called log-odds score is theoretically justified by a simple model
-of independent evolution \cite{Durbin:98,Altschul:10} \NEW{if there is enough
-data for training}.
+of independent evolution \cite{Durbin:98,Altschul:10} if there is enough
+data for training.
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.35\textwidth]{figures/aln_porto-puerto}
 \end{center}
-\caption{Example alignment for words from \NEW{Italian and Spanish}
-  representing the concept \NEW{\QUOTE{port}}. Each bigram pair in the alignment
-  is scored separately, resulting in a total score \NEW{$\sigma=27.29$} in this
+\caption{Example alignment for words from Italian and Spanish representing
+  the concept \QUOTE{port}. Each bigram pair in the alignment is scored
+  separately, resulting in a total score $\sigma=27.29$ in this
   example. Thus the normalized score is
-  \NEW{$\textit{nscore}=27.29/(8-2)=4.55$.}}
+  $\textit{nscore}=27.29/(8-2)=4.55$.}
 \label{fig:aln}
 \end{figure}
 
@@ -858,30 +819,28 @@ algorithm~\cite{needleman:70} used to solve unigram alignments (see
 \hyperref[AppA]{Appendix A}).
 
 
-Based on this, one can proceed to define the total score \NEW{$\sigma(u,v)$
-  of two words $u$ from language $A$ and $v$ from language $B$ as the sum
-  of the scores of all aligned bigrams and the score contributions
-  involving gaps, \ie{} insertions or deletions of characters. We can write
-  this in form
-  \begin{equation} 
-    \sigma_{AB}(u,v) = 
-    \sum_{\alpha\in u \textrm{ aligned with } \beta\in v} 
-    \sigma_{AB}(\alpha,\beta)
-  \end{equation}
-  noting that the gap contributions can also be encoded as pairs of formal
-  bigrams that contain one or more gap characters, as shown in the example
-  in Fig.~\ref{fig:aln}. This ansatz makes it possible to account also for
-  cases in which one sound/character in one language corresponds to two in
-  another. The collection of the parameters $\sigma_{AB}(\alpha,\beta)$
-  completely defines the scoring model for the comparison of languages $A$
-  and $B$. In order to account for differences in the length of alignments,
-  it is preferable to used a} normalized \NEW{similarity} score
-(\textit{nscore}) obtained by dividing $\sigma$ by the number of score
-contributions. In the case of bigram alignments this amounts
-$\textit{nscore}=\sigma/\ell$, where $\ell$ is the length of alignment
-without \textasciicircum{} and \$. \NEW{The normalized values of
-  $\sigma_{AB}(u,v)$ are naturally interpreted as average similarity per
-  alignment column.}
+Based on this, one can proceed to define the total score $\sigma(u,v)$ of
+two words $u$ from language $A$ and $v$ from language $B$ as the sum of the
+scores of all aligned bigrams and the score contributions involving gaps,
+\ie{} insertions or deletions of characters. We can write this in form
+\begin{equation} 
+  \sigma_{AB}(u,v) = 
+  \sum_{\alpha\in u \textrm{ aligned with } \beta\in v} 
+  \sigma_{AB}(\alpha,\beta)
+\end{equation}
+noting that the gap contributions can also be encoded as pairs of formal
+bigrams that contain one or more gap characters, as shown in the example in
+Fig.~\ref{fig:aln}. This ansatz makes it possible to account also for cases
+in which one sound/character in one language corresponds to two in
+another. The collection of the parameters $\sigma_{AB}(\alpha,\beta)$
+completely defines the scoring model for the comparison of languages $A$
+and $B$. In order to account for differences in the length of alignments,
+it is preferable to used a normalized similarity score (\textit{nscore})
+obtained by dividing $\sigma$ by the number of score contributions. In the
+case of bigram alignments this amounts $\textit{nscore}=\sigma/\ell$, where
+$\ell$ is the length of alignment without \textasciicircum{} and \$. The
+normalized values of $\sigma_{AB}(u,v)$ are naturally interpreted as
+average similarity per alignment column.
 
 \begin{figure}
   \begin{center}
@@ -907,20 +866,19 @@ These normalized alignment scores can be used to distinguish cognates from
 non-cognates. In Fig.~\ref{fig:unibigramdist} (left), we show histograms of
 both the simple unigram scores and the bigram scores for all pairwise
 alignments of words from 11 Indo-European languages
-\NEW{(Table~\ref{tab:bigramscores})}.  For both scoring models we observe
-two clearly separated peaks. The peak on the left, centered at negative
-score values, corresponds to alignments of unrelated words, \ie{}
-non-cognates, while the peak centered a positive score values corresponds
-to cognates.\footnote{\NEW{We note that the unrelated words are slightly
-    more \emph{dissimilar} than one would expect random pairs to be.  We do
-    not study this further here, but it would be expected if, on average,
-    distinct words in a language `repelled' each other phonetically.}} The
+(Table~\ref{tab:bigramscores}).  For both scoring models we observe two
+clearly separated peaks. The peak on the left, centered at negative score
+values, corresponds to alignments of unrelated words, \ie{} non-cognates,
+while the peak centered a positive score values corresponds to
+cognates.\footnote{We note that the unrelated words are slightly more
+  \emph{dissimilar} than one would expect random pairs to be.  We do not
+  study this further here, but it would be expected if, on average,
+  distinct words in a language `repelled' each other phonetically.} The
 right panel shows analogous data for the Guaycuruan language family. Here
 the separation between cognates and non-cognates is much less perfect than
-in Indo-European, but the two peak structure is still visible. \NEW{The
-  difference is not necessarily significant---the exact distributions
-  depend strongly on the amount of training data available.}
-
+in Indo-European, but the two peak structure is still visible. The
+difference is not necessarily significant---the exact distributions depend
+strongly on the amount of training data available.
 
 Note that the peaks are smoother and more clearly separated from each other
 when the bigram score is used. The use of the bigram score thus improves
@@ -928,51 +886,49 @@ the capability of the normalized alignment scores to distinguish cognates
 from non-cognates. This is not unexpected since regular correspondences are
 often sensitive to neighboring phonetic contexts, and a large amount of the
 context sensitivity can be accounted for by looking at one neighboring
-sound along with word boundaries. \NEW{However, neighboring sounds are} an
-imperfect proxy for syllable \NEW{boundaries} \NEW{(namely, those recoverable 
-from orthographic representations)}.
-
+sound along with word boundaries. However, neighboring sounds are an
+imperfect proxy for syllable boundaries (namely, those recoverable from
+orthographic representations).
 
 In more difficult cases, such as the Guaycuruan example, the situation is
 far from perfect. Here the cognates are not completely separated from the
-non-cognates by the \textit{nscore} even for \NEW{the} bigram scoring
-model. This leaves us with two possibilities: (1) We can seek to further
-improve the scoring model. Below we will briefly discuss a few ideas in
-this direction. (2) We can accept that the computational method does not
-provide us with a perfect way to identify \emph{all} cognates, \ie{} we are
-left with a trade-off between false positives (false cognates: word pairs
-that are not truly cognates despite their good score) and false negatives
+non-cognates by the \textit{nscore} even for the bigram scoring model. This
+leaves us with two possibilities: (1) We can seek to further improve the
+scoring model. Below we will briefly discuss a few ideas in this
+direction. (2) We can accept that the computational method does not provide
+us with a perfect way to identify \emph{all} cognates, \ie{} we are left
+with a trade-off between false positives (false cognates: word pairs that
+are not truly cognates despite their good score) and false negatives
 (unidentified cognates: word pairs that we fail to recognize as cognates
 because their score is not large enough). The choice of the threshold is
-left to us. Depending on the analysis \NEW{for which} such cognate
-identification is needed, we may opt for a conservative strategy and
-minimize the false positives at the expense of missing some cognate pairs,
-or we may choose to be more inclusive and allow some false positives to
-sneak in and contribute to disruption of expected patterns at these later
-stages. Importantly, however, the automatic cognate recognition path
-provides these later stages of analysis not merely with a binary decision
-of whether or not a pair is a cognate, but rather with a score that
-represents the weight of phonetic evidence in favor of cognacy.  \NEW{Even
-  though cognacy itself is a binary property, keeping track of the weight
-  of evidence that establishes a set as cognate is essential to any
-  quantitative further analyses based on cognate sets. Proper procedures
-  for propagating uncertainties from one stage of the calculation to the
-  next is a key strength of formal methods we advocate.} Any further
-deductions obtained from such putative cognates can weight the evidence by
-this score, thereby lowering the deleterious effect \NEW{of} false
-positives.  Alternatively, of course, the permissive cognate list could be
-post-processed to identify and remove false cognates based on expert
-knowledge, with manual effort being allocated more to cognate pairs with
-low scores. Erroneous cognate detection may also result from erroneous or
-inconsistent orthography, manual effort may also therefore be useful in
+left to us. Depending on the analysis for which such cognate identification
+is needed, we may opt for a conservative strategy and minimize the false
+positives at the expense of missing some cognate pairs, or we may choose to
+be more inclusive and allow some false positives to sneak in and contribute
+to disruption of expected patterns at these later stages. Importantly,
+however, the automatic cognate recognition path provides these later stages
+of analysis not merely with a binary decision of whether or not a pair is a
+cognate, but rather with a score that represents the weight of phonetic
+evidence in favor of cognacy.  Even though cognacy itself is a binary
+property, keeping track of the weight of evidence that establishes a set as
+cognate is essential to any quantitative further analyses based on cognate
+sets. Proper procedures for propagating uncertainties from one stage of the
+calculation to the next is a key strength of formal methods we
+advocate. Any further deductions obtained from such putative cognates can
+weight the evidence by this score, thereby lowering the deleterious effect
+of false positives.  Alternatively, of course, the permissive cognate list
+could be post-processed to identify and remove false cognates based on
+expert knowledge, with manual effort being allocated more to cognate pairs
+with low scores. Erroneous cognate detection may also result from erroneous
+or inconsistent orthography, manual effort may also therefore be useful in
 improving the transcription, so that better cognate recognition will be
 achieved by the automatic procedure. It is also important to note that
 although the choice of the score cutoff is left to the user, it is not
 arbitrary. The shape of the score distribution provides quantitative
 information on the expected number of false positives and false negatives
-for each choice of the cutoff. \NEW{Finally, these scores can be 
-dichotomized into cognate/non-cognate categories to be used with 
-phylogenetic methods that cannot handle graded evidence for cognacy.}
+for each choice of the cutoff. Finally, these scores can be dichotomized
+into cognate/non-cognate categories to be used with phylogenetic methods
+that cannot handle graded evidence for cognacy.
 
 We have seen that the improved scoring model leads to refined cognate
 identification. In principle we could now iterate this workflow again,
@@ -988,30 +944,30 @@ order to capture more of the correlations implied by the phonetics of the
 languages in question it may be desirable to go beyond bigrams to $k$-grams
 for $k\ge3$. Such a model would also take care of local transposition and
 regular sound changes dependent on longer contexts, or even word harmony
-features. \NEW{Transpositions, for instance, could be built explicitly into
-  the pairwise alignment algorithms \cite{Kruskal:83,Oommen:97}. They are
-  difficult parameterize due to the need of an explicit comparison of
-  alternative evolutionary models for the same alignment data.} The
-definition of scores described above, generalize in a straightforward
-manner since the symbols $\alpha$ and $\beta$ may signify arbitrary
-combinations of sounds.  In practice, however, the sparsity of the
-available data is a limiting factor: not all $3$-grams that are possible in
-given language will appear sufficiently often in word list data to get
-reliable estimates of their frequencies. A possible remedy is to use
-\QUOTE{mixed} scoring models that use $k$-grams with variable length
-depending on their frequency in the data. \NEW{One of the advantages of
-  this approach is that it identifies transpositions without additional
-  effort.} Related techniques have been used in bioinformatics as means of
-describing sequence patterns \cite{Begleiter:04}. The use of such methods,
-and, in fact, the entire issue of discovering statistically significant
-contexts automatically has, to our knowledge, not been explored so far.
+features. Transpositions, for instance, could be built explicitly into the
+pairwise alignment algorithms \cite{Kruskal:83,Oommen:97}. They are
+difficult parameterize due to the need of an explicit comparison of
+alternative evolutionary models for the same alignment data. The definition
+of scores described above, generalize in a straightforward manner since the
+symbols $\alpha$ and $\beta$ may signify arbitrary combinations of sounds.
+In practice, however, the sparsity of the available data is a limiting
+factor: not all $3$-grams that are possible in given language will appear
+sufficiently often in word list data to get reliable estimates of their
+frequencies. A possible remedy is to use \QUOTE{mixed} scoring models that
+use $k$-grams with variable length depending on their frequency in the
+data. One of the advantages of this approach is that it identifies
+transpositions without additional effort. Related techniques have been used
+in bioinformatics as means of describing sequence patterns
+\cite{Begleiter:04}. The use of such methods, and, in fact, the entire
+issue of discovering statistically significant contexts automatically has,
+to our knowledge, not been explored so far.
 
 \subsubsection{A probabilistic model of lexical evolution.}
 \label{sec:tanmethod}
 
 The approach outlined above is designed to represent the relationships
 between the observable data as directly as possibly, without making \emph{a
-  priori} assumptions \NEW{about} how exactly languages evolve. An alternative
+  priori} assumptions about how exactly languages evolve. An alternative
 approach is to start by approximating language evolution as a stochastic
 process acting on the phonetic and lexical structure of a language. From
 the definition of the stochastic process the conditional probability
@@ -1049,18 +1005,17 @@ choosing an appropriate cutoff for the best alignment score between
 randomly chosen words from different languages. The main advantage of using
 the Turkic languages as an example is that relatively comparable phonetic
 transcriptions were available, the language family has a relatively shallow
-time depth \NEW{(so that cognacy is likely to be reflected in the surface 
-form of words)}, and words had already been categorized into probable
-descendants of common ancestors, so that the results could easily be
-compared against expert linguistic judgments. \NEW{If 
-  these computational approaches to alignment of attested forms,
-  not requiring knowledge of the true phylogeny or of
-  reconstruction of intermediate ancestral forms, generalizes 
-  to deep divergence times, the procedure outlined here should be able
-  to detect cognates in such saturation's as well.  Whether this really
-  holds is as yet an open question; the success of
-  computational biology in the analogous task of detecting remote
-  homologies \cite{Noble:05,Haggerty:14,Chen:16} is certainly encouraging.}
+time depth (so that cognacy is likely to be reflected in the surface form
+of words), and words had already been categorized into probable descendants
+of common ancestors, so that the results could easily be compared against
+expert linguistic judgments. If these computational approaches to alignment
+of attested forms, not requiring knowledge of the true phylogeny or of
+reconstruction of intermediate ancestral forms, generalizes to deep
+divergence times, the procedure outlined here should be able to detect
+cognates in such saturation's as well.  Whether this really holds is as yet
+an open question; the success of computational biology in the analogous
+task of detecting remote homologies \cite{Noble:05,Haggerty:14,Chen:16} is
+certainly encouraging.
 
 
 Since cognates are known for this data set, we can compute the sensitivity
@@ -1070,12 +1025,12 @@ pairs with an alignment score at least as large as the cutoff value;
 specificity measures the fraction of non-cognates with an alignment score
 smaller than the cutoff. Each cutoff value thus yields a pair of
 sensitivity and specificity values that quantify how well the score-based
-separation between cognates and non-cognates performs. \NEW{One can}
-summarize the values in the form of the \textit{Receiver-Operator-Curve}
-(ROC) shown in Fig.~\ref{fig:DanROC}. Each point on the line corresponds
-to a cutoff value and is placed according to the cutoff's sensitivity and
-specificity in the plot. The diagonal line indicates equal values for
-sensitivity and $1-{}$specificity. This corresponds to a completely random
+separation between cognates and non-cognates performs. One can summarize
+the values in the form of the \textit{Receiver-Operator-Curve} (ROC) shown
+in Fig.~\ref{fig:DanROC}. Each point on the line corresponds to a cutoff
+value and is placed according to the cutoff's sensitivity and specificity
+in the plot. The diagonal line indicates equal values for sensitivity and
+$1-{}$specificity. This corresponds to a completely random
 classification. ROCs below this line are worse than random. The closer the
 ROC approaches the upper left corner of the diagram the better the
 classification works. As a quantitative measure of goodness, one usually
@@ -1084,11 +1039,11 @@ test. Mathematically, the AUC represents how often the test assigns a
 higher score to a random cognate pair as compared to a random non-cognate
 pair, and is, therefore, a threshold independent characterization of the
 quality of the scoring system. In Fig.~\ref{fig:DanROC} the AUC is
-$0.9$. \NEW{Since the ROC curves show
-  intrinsic properties of the test---displaying the sensitivity and specificity
-  as a function of threshold---various other summary
-  statistics like precision, recall, or the customary $f$-score can be
-  derived from it if one knows the total fraction of positives in the data set.}
+$0.9$. Since the ROC curves show intrinsic properties of the
+test---displaying the sensitivity and specificity as a function of
+threshold---various other summary statistics like precision, recall, or the
+customary $f$-score can be derived from it if one knows the total fraction
+of positives in the data set.
 
 \begin{figure}
 \begin{center}
@@ -1119,43 +1074,42 @@ subsections to detect changes conditioned by known phonetic contexts, \eg{}
 position within the word, neighboring phonemes or harmony. It is also
 possible to weight the commonly used words belonging to the core vocabulary
 more than the rare words in deriving the correspondence table, reflecting
-the expectation that the \NEW{proportion} of cognates and the regularity of
-correspondence is higher in this part of the vocabulary. \NEW{Finally,
-  cognacy computed in this fashion is a binary relation between words. When word pairs
-  are considered independently, the inferred relation might fail to be
-  transitive, i.e., while $A-B$ and $B-C$ are classified as cognates, $A-C$
-  may not be so classified. To deal with such situations multiple alignments may be
-  scored directly, either using the same probabilistic model that generated
-  the initial cognate calls, as done somewhat heuristically in
-    \citet{Hruschka:14}, or with the help of consistency-based scoring
-  functions akin to those used in computational biology as measures of the
-  reliability of sequence alignment or structure prediction
-  \cite{Will:12a}.}
+the expectation that the proportion of cognates and the regularity of
+correspondence is higher in this part of the vocabulary. Finally, cognacy
+computed in this fashion is a binary relation between words. When word
+pairs are considered independently, the inferred relation might fail to be
+transitive, i.e., while $A-B$ and $B-C$ are classified as cognates, $A-C$
+may not be so classified. To deal with such situations multiple alignments
+may be scored directly, either using the same probabilistic model that
+generated the initial cognate calls, as done somewhat heuristically in
+\citet{Hruschka:14}, or with the help of consistency-based scoring
+functions akin to those used in computational biology as measures of the
+reliability of sequence alignment or structure prediction \cite{Will:12a}.
   
 \subsubsection{Comparing the two approaches.} 
 
 At face value the two approaches outlined above are quite different. The
 focus on alignments and their scores conforms more closely to the paradigm
 of sequence comparison in computational biology, while the comparison of
-probabilistic models focuses on the evolutionary processes\NEW{. Nevertheless, 
-and in spite of these conceptual differences, the two methods can answer 
-essentially the same} questions, albeit using different mathematical and 
-computational techniques \NEW{and different prior information or expert knowledge}.
-The likelihood method, for example, does not directly produce a scoring
-model. The results are, however, consistent with a scoring model.  First,
-it is obviously possible to simply use the alignments to derive a scoring
-model as outlined above. Second, one can also use the transition
+probabilistic models focuses on the evolutionary processes. Nevertheless,
+and in spite of these conceptual differences, the two methods can answer
+essentially the same questions, albeit using different mathematical and
+computational techniques and different prior information or expert
+knowledge.  The likelihood method, for example, does not directly produce a
+scoring model. The results are, however, consistent with a scoring model.
+First, it is obviously possible to simply use the alignments to derive a
+scoring model as outlined above. Second, one can also use the transition
 probabilities between inferred ancestral sounds and their extant
 descendants to compute the probabilities of sound correspondences directly
 from the underlying stochastic model. Conversely, the scoring system
 derived in the first approach does not directly provide reconstructed
 proto-sounds. Well understood methods from computational biology are
 available, however, to infer ancestral states given observable transition
-probabilities \cite{Pennisi:05,Liberles:07}. \NEW{\citet{Brown:13} investigated
+probabilities \cite{Pennisi:05,Liberles:07}. \citet{Brown:13} investigated
 the inference of sound change rules from a scoring model even though the
-direction of the change was not labeled.} Mathematically
-this should be possible, however, and we take it on as an interesting open
-research question to solve this problem.
+direction of the change was not labeled. Mathematically this should be
+possible, however, and we take it on as an interesting open research
+question to solve this problem.
 
 In principle, the two approaches can therefore be compared with each other
 at all relevant levels: the individual alignments, the inferred scoring
@@ -1170,28 +1124,26 @@ from the data and represent only information that is contained in the data
 set that is actually used in the analysis. As such, one might miss regular
 correspondences that are not sufficiently prevalent in the word
 lists. Furthermore, the scores are explicitly dependent on the languages
-that are compared. \NEW{At the same time, neither method makes a
-  methodological commitment to the strict Neogrammarian position of
-  exception-free regular correspondences, nor can they distinguish
-  between true sporadic change and undetected rare, but regular,
-  contexts. The only structural commitment is that regular
-  correspondences {\em could} provide a better explanation of the observed
-  data than independent processes acting on each item in the
-  lexicon. In fact, within the likelihood framework, simple analyses 
-  based on Akaike Information Criteria~\cite{AIC} or Bayesian
-  Information Criteria~\cite{BIC} readily show that the increase in
-  explanatory power of regular correspondences outweighs the added
-  model complexity~\cite{Hruschka:14}.}
-Alternative approaches using a scoring system based on
-linguistic expertise also exist \cite{Covington:96,Kondrak:03} and such
-models could also be designed to be more or less specific for particular
-language pairs or language families.  \NEW{Again, such data-driven
-  approaches are agnostic as to whether the sound change processes are
-  indeed universal across all language families.  In stead, given any
-  data set, one can determine the weight of evidence for unique
-  processes in each language family (or other classification unit),
-  versus universal, but probabilistic, laws that are variously
-  instantiated in the families.}
+that are compared. At the same time, neither method makes a methodological
+commitment to the strict Neogrammarian position of exception-free regular
+correspondences, nor can they distinguish between true sporadic change and
+undetected rare, but regular, contexts. The only structural commitment is
+that regular correspondences \emph{could} provide a better explanation of
+the observed data than independent processes acting on each item in the
+lexicon. In fact, within the likelihood framework, simple analyses based on
+Akaike Information Criteria~\cite{AIC} or Bayesian Information
+Criteria~\cite{BIC} readily show that the increase in explanatory power of
+regular correspondences outweighs the added model
+complexity~\cite{Hruschka:14}.  Alternative approaches using a scoring
+system based on linguistic expertise also exist
+\cite{Covington:96,Kondrak:03} and such models could also be designed to be
+more or less specific for particular language pairs or language families.
+Again, such data-driven approaches are agnostic as to whether the sound
+change processes are indeed universal across all language families.  In
+stead, given any data set, one can determine the weight of evidence for
+unique processes in each language family (or other classification unit),
+versus universal, but probabilistic, laws that are variously instantiated
+in the families.
   
 
 \subsection{Phylolinguistics.} 
@@ -1228,10 +1180,10 @@ their support. This amounts to a comprehensive stochastic model of language
 evolution. While this approach is certainly the gold standard, it requires
 sufficient data to actually parameterize the model with sufficient
 accuracy, and sufficient computational capacities.  While this is becoming
-feasible at least from a computational point of view, \NEW{as exemplified
-  by large-scale applications of Bayesian methods and ancestral state
-  reconstruction methods to resolving essentially analogous questions in a
-  biological setting \cite{BouchardCote:12,Joy:16},} it may not be the most
+feasible at least from a computational point of view, as exemplified by
+large-scale applications of Bayesian methods and ancestral state
+reconstruction methods to resolving essentially analogous questions in a
+biological setting \cite{BouchardCote:12,Joy:16}, it may not be the most
 efficient approach to analyzing the data. In the context of biological
 phylogenetics it often pays to subdivide the \TT{gold standard} inference
 task into individual components that can be solved independently from one
@@ -1245,45 +1197,40 @@ genomes~\cite{Pennisi:05} and ancestral sequences~\cite{Liberles:07} is
 then performed on a given tree. Inferred trees may then help to improve
 alignments, which in turn yield a better tree in an iterative manner.  In
 complete analogy, word alignments can be performed independently of cognate
-identification and the identification of regular sound changes \NEW{(see
-  also~\cite{Kondrak:09})}. One may meaningfully start by first identifying
+identification and the identification of regular sound changes (see
+also~\cite{Kondrak:09}). One may meaningfully start by first identifying
 regular correspondences between pairs of extant languages and then use the
 fact that these regular correspondences are by definition the result of
 sound changes from the same proto-language along the two independent
 lineages to piece this information together to approximately reconstruct
-proto-languages and then the regularities of sound change. This separation of
-tasks is a matter of computational efficiency
-and expediency \NEW{at our current computational capability.} In
-fact, both maximum likelihood and maximum parsimony methods necessarily use
-this kind of separation internally: likelihoods or parsimony scores are
-computed for a given tree, and then used to compare trees. \NEW{The
-  question is actually of propagating the alignment uncertainty into
-  phylogenetic reconstruction.} Experience from
-computational biology shows that
-\NEW{though methods that attempt to concurrently estimate alignments and
-  phylogenetic trees \cite{Lunter:05,Heman:14} can be
-  devised and applied with success, it appears to gain
-  little in accuracy over the common practise  of
-  treating alignment and phylogeny reconstructing as independent tasks
-   and often does not
-  justify the high experimental costs.}  For example, it can be helpful to
+proto-languages and then the regularities of sound change. This separation
+of tasks is a matter of computational efficiency and expediency at our
+current computational capability. In fact, both maximum likelihood and
+maximum parsimony methods necessarily use this kind of separation
+internally: likelihoods or parsimony scores are computed for a given tree,
+and then used to compare trees. The question is actually of propagating the
+alignment uncertainty into phylogenetic reconstruction.  Experience from
+computational biology shows that though methods that attempt to
+concurrently estimate alignments and phylogenetic trees
+\cite{Lunter:05,Heman:14} can be devised and applied with success, it
+appears to gain little in accuracy over the common practise of treating
+alignment and phylogeny reconstructing as independent tasks and often does
+not justify the high experimental costs.  For example, it can be helpful to
 identify regular correspondences between extant languages as a first step
 rather than trying to infer proto-languages and phylogenetic trees
-directly. \NEW{The regular correspondences between all pairs of languages
-  makes it possible to construct multiple alignments of cognates, which in
-  turn considerably simplify both the inference of phylogenetic trees and
-  the reconstruction of ancestral states.}
-
-
+directly. The regular correspondences between all pairs of languages makes
+it possible to construct multiple alignments of cognates, which in turn
+considerably simplify both the inference of phylogenetic trees and the
+reconstruction of ancestral states.
 
 Depending on the research question, it is often not even the necessary to
 attempt a full reconstruction of language phylogeny. Instead, robust and
 reliable statements on language evolution can be derived with much more
 modest approaches at both the level of modeling and at the pragmatic level
-of computational methodology. For example, \NEW{hypotheses about the 
-genealogical grouping of languages at different scales}
-can be tested on the basis of presence and absence of cognates without
-the necessity to model sound changes explicitly \cite{Bowern:12a,Bowern:12b}.
+of computational methodology. For example, hypotheses about the
+genealogical grouping of languages at different scales can be tested on the
+basis of presence and absence of cognates without the necessity to model
+sound changes explicitly \cite{Bowern:12a,Bowern:12b}.
 
 In the \emph{Classical Comparative Method} carried out manually, a valid
 reconstruction is usually interpreted to be a single highly likely
@@ -1374,11 +1321,11 @@ Another difference between the phylogenetic problem in computational
 
 \subsubsection{Deep phylogeny and its limitations.} 
 
-Similarity serves only \NEW{as} a first filter for relatedness. In fact, the rate of
-\QUOTE{random} mutations \NEW{(either sporadic changes or
-  misconstruction of rare processes)} variously affecting the sounds in individual words
-is so low that the method of comparative historical linguistics stipulates
-that only regular correspondences can be invoked to support the recent
+Similarity serves only as a first filter for relatedness. In fact, the rate
+of \QUOTE{random} mutations (either sporadic changes or misconstruction of
+rare processes) variously affecting the sounds in individual words is so
+low that the method of comparative historical linguistics stipulates that
+only regular correspondences can be invoked to support the recent
 relatedness of languages. But at deeper time scales, not only these
 \QUOTE{sporadic} sound changes, but also fusion of morphemes, morphological
 analogy, lexical diffusion, frequency effects, dialect mixture, inherent
@@ -1433,13 +1380,12 @@ languages together are likely to lead to major progress in deep
 phylogenetics of languages. The need for a drastic expansion of the data
 sets in phylolinguistics implies that efficient computational methods are
 needed to help with preparation and quality control of the input data sets
-at an early stage. Thus, for example, \NEW{errors in the coding of linguistic data} often introduce
-rare characters or unusual sequence of characters into the data; a hidden
-Markov model could be trained to learn the probabilistic patterns in the
-sequence of characters composing the words of a particular language and
-extremely rare occurrences of characters or sequence of characters can then
-be flagged for manual verification.
-
+at an early stage. Thus, for example, errors in the coding of linguistic
+data often introduce rare characters or unusual sequence of characters into
+the data; a hidden Markov model could be trained to learn the probabilistic
+patterns in the sequence of characters composing the words of a particular
+language and extremely rare occurrences of characters or sequence of
+characters can then be flagged for manual verification.
 
 \subsubsection{The effects of borrowing.} 
 
@@ -1454,17 +1400,16 @@ and borrowing might make it impossible for purely computational methods to
 disentangle vertically and horizontally inherited words. This is also an
 issue in bioinformatics, where Hidden Markov Models have been quite
 successful in recognizing sequences that have been acquired by horizontal
-transfer \cite{Dufraigne:05}. \NEW{The key idea there is that horizontally
-  acquired genes have different nucleotide patterns, which are detectable
-  by a model trained to distinguish vertically transmitted from other
-  sequences.  Differences in patterns of sound correspondences should be
-  detectable by the same approach. It will remain to be seen whether this}
-can be successful in cases of large scale borrowing.
-
+transfer \cite{Dufraigne:05}. The key idea there is that horizontally
+acquired genes have different nucleotide patterns, which are detectable by
+a model trained to distinguish vertically transmitted from other sequences.
+Differences in patterns of sound correspondences should be detectable by
+the same approach. It will remain to be seen whether this can be successful
+in cases of large scale borrowing.
 
 It is generally believed that the vertically transmitted patterns of sound
-\NEW{change} between two language lineages form consistent systems applying
-to all or nearly-all words they affect, even if the sounds themselves have
+change between two language lineages form consistent systems applying to
+all or nearly-all words they affect, even if the sounds themselves have
 diverged widely. Isolated loan words may show similarities of sound
 patterning with other languages, but they should not in general assemble
 into a system with the same degree of internal consistency as the system
@@ -1533,8 +1478,8 @@ from raw data to the estimate of trees, regular sound changes or
 alignments. However, the whole enterprise relies on the assumption that
 there is a bona fide phylogenetic signal in the data. Furthermore, we have
 listed a few factors that might account for the absence of a such a
-signal. It should be \NEW{noted} that the methods discussed before will yield
-an answer even if the data at hand is essentially structureless noise---in
+signal. It should be noted that the methods discussed before will yield an
+answer even if the data at hand is essentially structureless noise---in
 other words, the fact that a tree can be produced is not a guarantee that
 it bears any meaningful information with respect to genealogy.
 
@@ -1558,11 +1503,11 @@ related) to persist in the quest for genealogical relatedness. Even then,
 for such a postulate of relatedness to be entertained, an explanation, such
 as a large time depth, for the absence of a signal has to be given.
 
-Let us flesh out \NEW{a concrete example in more detail}. In the case of
-cognate judgments based on similarity scores, for example, one could
-construct a null model to test that pairs of cognates are more similar than
-pairs of non-cognates. Let us assume that we know, for a particular scoring
-model that we want to use, the probability $P(s)$ that the score $s$ is the
+Let us flesh out a concrete example in more detail. In the case of cognate
+judgments based on similarity scores, for example, one could construct a
+null model to test that pairs of cognates are more similar than pairs of
+non-cognates. Let us assume that we know, for a particular scoring model
+that we want to use, the probability $P(s)$ that the score $s$ is the
 similarity score of a pair of non-cognates. This distribution, then, can
 serve as the null model: if the results we find are comparable to what one
 would get with non-cognates, there is little motivation for pursuing the
@@ -1586,8 +1531,8 @@ construction based on the empirical data itself, a prominent example being
 \textsc{permutation tests}. The general idea behind a permutation test is
 to construct the null model by randomly rearranging the observed data in an
 attempt to destroy all the regularities that can be suspected to be related
-to the effect under consideration \NEW{(see~\citet{Oswalt:70} for an example
-on permutation tests in linguistics)}.
+to the effect under consideration (see~\citet{Oswalt:70} for an example on
+permutation tests in linguistics).
 
 Let us consider again cognacy as an example. Given word lists of two
 languages, we expect cognates to be much more frequent among words that
@@ -1826,12 +1771,11 @@ different data sets. We therefore used permutation tests on each data set
 to obtain the score-cutoff that corresponds to an FDR of 10\% and used
 these score cutoff values to make the cognates assignments for each
 dataset. Then we compared the results between the native and the
-artificially recoded set. We found that 97\% of the \NEW{cognate pairs
-  computationally proposed in the data with of the encodings are also
-  identified in the other one (see Fig.~\ref{fig:encoding}a), suggesting
-  that the computational machinery is largely unaffected by details of the
-  encoding.}
-
+artificially recoded set. We found that 97\% of the cognate pairs
+computationally proposed in the data with of the encodings are also
+identified in the other one (see Fig.~\ref{fig:encoding}a), suggesting that
+the computational machinery is largely unaffected by details of the
+encoding.
 
 \begin{figure}
   \begin{center}
@@ -1881,23 +1825,23 @@ thus tolerates occasional errors in the data. In our \QUOTE{easy} example
 we found a residual level of about 3\% discrepancies, which is small enough
 to be tolerated in further analysis. Even for completely different encoding
 schemes that follow different traditions we observe that the majority of
-cognate call is independent of the encoding scheme. \NEW{It is to be
-  admitted, however, that these robustness results might change as one looks at
-  lists with substantially lower frequency of cognates, as expected
-  for deeper families or languages undergoing large amount of
-  lexical replacement.} Substantially different
-encodings, furthermore, mostly lead to a loss of sensitivity, \ie{} an
-underprediction of cognates. In cases where the residual levels
-discrepancies might be problematic, the automatically produced cognate
-calls provide at least a very good starting point for further manual
-curation of cognate assignments. And, of course, there is the possibility
-to choose a smaller FDR value to obtain a smaller but more accurate set of
-cognate pairs. \NEW{Naturally, these claims are subject to regularities that 
-are detectable at this level of representation, more likely to be found 
-between languages with a relatively recent common history. Deeper genealogical 
-relations are discussed on the basis of painstaking combinations of linguistic 
-and historical knowledge, with little or no surface regularities on which 
-contemporary methods could hinge on (e.g. \cite{robbeets2005}).}
+cognate call is independent of the encoding scheme. It is to be admitted,
+however, that these robustness results might change as one looks at lists
+with substantially lower frequency of cognates, as expected for deeper
+families or languages undergoing large amount of lexical
+replacement. Substantially different encodings, furthermore, mostly lead to
+a loss of sensitivity, \ie{} an underprediction of cognates. In cases where
+the residual levels discrepancies might be problematic, the automatically
+produced cognate calls provide at least a very good starting point for
+further manual curation of cognate assignments. And, of course, there is
+the possibility to choose a smaller FDR value to obtain a smaller but more
+accurate set of cognate pairs. Naturally, these claims are subject to
+regularities that are detectable at this level of representation, more
+likely to be found between languages with a relatively recent common
+history. Deeper genealogical relations are discussed on the basis of
+painstaking combinations of linguistic and historical knowledge, with
+little or no surface regularities on which contemporary methods could hinge
+on (e.g. \cite{robbeets2005}).
 
 \subsection{From non-parametric overviews to detailed probabilistic models.}
 
@@ -1913,7 +1857,8 @@ does not need to include the sound changes but can infer them indirectly
 from the scoring model. The exact scores for matching the observed
 characters can also be estimated based on the data. All these parameters,
 namely the phylogeny and scores, would be defined \textit{a priori} in a
-parametric method but do not need to \NEW{be} specified in the non-parametric case.
+parametric method but do not need to be specified in the non-parametric
+case.
 
 When applying the non-parametric approaches we discussed before, one needs
 to choose the similarity measure that can be used to classify the related
@@ -1925,11 +1870,11 @@ different from vowels in word recognition~\cite{Cutler:2000}.
 \footnote{Again, we include changes in presence and absence of cognates as
   well as sound changes in the word \QUOTE{change}.} The most efficient use
 of lexical data for determining deep language relationships, therefore,
-should weight the stable words and \NEW{sounds (e.g., word-initial nasals) as these
-are truly robust across many families.} The signal from vowels is more informative when
-the vowel inventory is larger than average.  In the non-parametric
-approaches, such choices of variously weighting the evidence are choices
-external to the evidence, and made \textit{a priori.}
+should weight the stable words and sounds (e.g., word-initial nasals) as
+these are truly robust across many families. The signal from vowels is more
+informative when the vowel inventory is larger than average.  In the
+non-parametric approaches, such choices of variously weighting the evidence
+are choices external to the evidence, and made \textit{a priori.}
 
 In contrast, likelihood approaches depend on detailed models in which all
 the parameters are simultaneously and consistently estimated. It can be
@@ -1970,24 +1915,24 @@ approximation of reality. With vastly incomplete knowledge, therefore, the
 choice between the likelihood based parametric approaches and the
 non-parametric approaches described earlier is, essentially, a trade-off
 between efficiency and robustness against model misspecifications, \ie{}
-producing the correct results even though some aspects or parameter\NEW{s} of the
+producing the correct results even though some aspects or parameters of the
 model are wrongly estimated.
 
 Both classes of approaches---the parametric likelihood based models and the
 non-parametric estimates based on similarity measures---ultimately rely on
-a notion of \NEW{Unitarianism}: that the process of language change and
-diversification \NEW{does} not change over time. \NEW{Only}
-in very heterogeneous, rapidly changing, or extremely long time
-durations the \NEW{rates of this} process can be averaged over and approximated by
-an additional uncorrelated noise. At intermediate times that is often the
-most interesting, however, non-stationarity of the process is an important
-problem. Non-stationarity in \NEW{these} cases usually means that the probability
-distributions of sound changes change over time or that the scoring model
-are different depending on the age of the words. Two partial solutions
-ameliorate this somewhat. First, one can test the assumption of
+a notion of Unitarianism: that the process of language change and
+diversification does not change over time. Only in very heterogeneous,
+rapidly changing, or extremely long time durations the rates of this
+process can be averaged over and approximated by an additional uncorrelated
+noise. At intermediate times that is often the most interesting, however,
+non-stationarity of the process is an important problem. Non-stationarity
+in these cases usually means that the probability distributions of sound
+changes change over time or that the scoring model are different depending
+on the age of the words. Two partial solutions ameliorate this
+somewhat. First, one can test the assumption of
 uniformity~\cite{Hruschka:14} in the data set under consideration, so that
 this and other modes of model failure can be quantified and incorporated in
-the final confidence interval.\footnote{The confidence interval describe\NEW{s}
+the final confidence interval.\footnote{The confidence interval describes
   the range of a parameter in which one expects the true value for this
   parameter to lie. For example, if we would know that there are
   differences in the rates with which sound changes happen, we could ignore
@@ -2054,21 +1999,21 @@ for the proposed reconstruction, can focus the attention of linguists and
 guide further research.
 
 While the methods sketched here complement and assist the labor of
-traditional historical linguists, \NEW{their real value is in situations
-  where the evidence is scarce or contradictory.  In such cases, the
-  results of the analysis depend on prior beliefs and assumptions about
-  consistency with global patterns.  Whereas a trained linguist can see
-  that the evidence is weak, the quantitative method is often better able
-  to integrate such weak evidence from various pieces of data, keeping
-  track of the accumulated weight of evidence. Thus, for example, while the
-  most widely accepted opinion is that} linguistic analysis can lead at
-most to rejecting the idea that Tasmanian languages constitute a single
-linguistic family \cite{Crowley:1981}, Bowern \NEW{\cite{Bowern:12a}} was
-able to \NEW{use quantitative methods to} gather enough evidence for
-4\NEW{--}5 groupings that correspond somewhat with earlier archaeological
-classifications, while at the same time lending support to the idea that
-Tasmanian languages are not all directly related \NEW{at} the time depth
-accessible to \NEW{available} methods and the data.
+traditional historical linguists, their real value is in situations where
+the evidence is scarce or contradictory.  In such cases, the results of the
+analysis depend on prior beliefs and assumptions about consistency with
+global patterns.  Whereas a trained linguist can see that the evidence is
+weak, the quantitative method is often better able to integrate such weak
+evidence from various pieces of data, keeping track of the accumulated
+weight of evidence. Thus, for example, while the most widely accepted
+opinion is that linguistic analysis can lead at most to rejecting the idea
+that Tasmanian languages constitute a single linguistic family
+\cite{Crowley:1981}, Bowern \cite{Bowern:12a} was able to use quantitative
+methods to gather enough evidence for 4--5 groupings that correspond
+somewhat with earlier archaeological classifications, while at the same
+time lending support to the idea that Tasmanian languages are not all
+directly related at the time depth accessible to available methods and the
+data.
 
 \subsection{Putting dates on language trees.}
 
@@ -2105,19 +2050,20 @@ studied the expansion of the Austronesian family while constraining the age
 of some of its sub-families on evidence from archaeology.
 
 To obtain the dates of unknown events from the dates of a few known events
-\NEW{requires} a model about the rates of change; equally, however, the known dates
-allow one to evaluate any assumption one makes about them. The original
-proposal of glottochronology was to assume that the number of cognate
-retentions of two languages diverging at a given time decays exponentially
-with constant rate~\cite{Swadesh:55}---which is analogous to the strict
-molecular clock hypothesis in molecular evolution. Rate \NEW{regularity} has been
-severely criticized since early on~\cite{Bergsland:62, Blust:00}, 
-\NEW{although some support for the idea of a constant rate of a change within 
-particular subsets of the basic lexicon, or at least for that of certain 
-chronological regularities in lexical evolution, is still found in empirical 
-evidence}~\cite{Ehret:00,Starostin:00,Starostin:13,Holman:11}. Within the
-context of a likelihood based approach, the \NEW{regularity} of the rates
-of various features can be tested~\cite{Hruschka:14}, as can particular
+requires a model about the rates of change; equally, however, the known
+dates allow one to evaluate any assumption one makes about them. The
+original proposal of glottochronology was to assume that the number of
+cognate retentions of two languages diverging at a given time decays
+exponentially with constant rate~\cite{Swadesh:55}---which is analogous to
+the strict molecular clock hypothesis in molecular evolution. Rate
+regularity has been severely criticized since early on~\cite{Bergsland:62,
+  Blust:00}, although some support for the idea of a constant rate of a
+change within particular subsets of the basic lexicon, or at least for that
+of certain chronological regularities in lexical evolution, is still found
+in empirical
+evidence~\cite{Ehret:00,Starostin:00,Starostin:13,Holman:11}. Within the
+context of a likelihood based approach, the regularity of the rates of
+various features can be tested~\cite{Hruschka:14}, as can particular
 hypotheses about factors affecting changes in the different
 branches~\cite{Pagel_rates}.
 
@@ -2200,51 +2146,49 @@ The loss of ancestral morphological forms together with the retention of
 for such examples. Again we will, for the sake of this contribution, not
 pursue the issue of possible mechanisms. Instead we ask here a much simpler
 question: Is there evidence for \TT{paralogous words} as a wide-spread
-phenomenon?  In other words: do data \NEW{sources} accessible to us contain
+phenomenon?  In other words: do data sources accessible to us contain
 sufficient information and signal to start investigating paralogous words
 in a systematic manner? For the purpose of this position paper we will
 demonstrate how these questions can be addressed by means of a suitable
 statistical approach. We will leave a more detailed analysis of the topic,
 which is ongoing work, for a subsequent publication.
 
-
-We make \NEW{the} assumption \NEW{that} paralogous cognates inherit both
-their phonological form and their meaning from a common
-ancestor. \NEW{Paralogy is a concept different from polysemy: paralogous
-  words are by definition distinct, and thus phonologically distinguished,
-  lexical items.}  Conversely, we assume that a simultaneous similarity
-\NEW{(but not equality)} of meaning and phonological form, if not
-explainable by chance, can result only from paralogous cognates, \ie{}
-processes such sound symbolism are sufficiently weak that they can be
-ignored for this purpose. If paralogous cognates exist, they will therefore
-be recognizable in the data as similar words that also fall into the same
-broad semantic groups of meanings. We have already seen above how
-phonological forms can be compared in the context of computational cognate
-detection. We will adapt this approach to become applicable to words from
-the same language. The comparison of meanings is conceptually more
-difficult. However, we do not need a detailed theory or representation of
-meaning. For our purposes it is sufficient to be able to decide whether
-some word pairs are semantically closer than others. We can therefore make
-use of the semantic classification of the words in word list data. As
-discussed above, the IDS data~\cite{IDS} are grouped into \QUOTE{chapters}
-that correspond to very broad semantic categories. We can therefore
-structure our analysis in the following manner: If two similar words are
-completely unrelated and accidental, then they will appear at random places
-in \NEW{the} word list\NEW{s}. On the other hand, paralogous cognates will
-retain some semantic similarity and hence predominantly appear within the
-same chapter of the IDS word list. It is important to recall that our
-purpose is to check whether there is evidence for paralogous cognates in
-the first place, not to understand them in full detail. We therefore devise
-a simple test for the association of similar words with similar meanings:
-we simply ask whether there are more pairs of similar words within a
-chapter than between chapters, and if so, whether the difference is
-statistically significant.
+We make the assumption that paralogous cognates inherit both their
+phonological form and their meaning from a common ancestor. Paralogy is a
+concept different from polysemy: paralogous words are by definition
+distinct, and thus phonologically distinguished, lexical items.
+Conversely, we assume that a simultaneous similarity (but not equality) of
+meaning and phonological form, if not explainable by chance, can result
+only from paralogous cognates, \ie{} processes such sound symbolism are
+sufficiently weak that they can be ignored for this purpose. If paralogous
+cognates exist, they will therefore be recognizable in the data as similar
+words that also fall into the same broad semantic groups of meanings. We
+have already seen above how phonological forms can be compared in the
+context of computational cognate detection. We will adapt this approach to
+become applicable to words from the same language. The comparison of
+meanings is conceptually more difficult. However, we do not need a detailed
+theory or representation of meaning. For our purposes it is sufficient to
+be able to decide whether some word pairs are semantically closer than
+others. We can therefore make use of the semantic classification of the
+words in word list data. As discussed above, the IDS data~\cite{IDS} are
+grouped into \QUOTE{chapters} that correspond to very broad semantic
+categories. We can therefore structure our analysis in the following
+manner: If two similar words are completely unrelated and accidental, then
+they will appear at random places in the word lists. On the other hand,
+paralogous cognates will retain some semantic similarity and hence
+predominantly appear within the same chapter of the IDS word list. It is
+important to recall that our purpose is to check whether there is evidence
+for paralogous cognates in the first place, not to understand them in full
+detail. We therefore devise a simple test for the association of similar
+words with similar meanings: we simply ask whether there are more pairs of
+similar words within a chapter than between chapters, and if so, whether
+the difference is statistically significant.
 
 To do this in practice, we compare for each language two samples of 1000
 pairs of non-identical words. We remove identical words with different
 meanings since we only interested in paralogs, \ie{} words that are
-distinct, not in words that have simply expanded their semantic scope. 
-The first sample comprises word pairs from the same chapter. In the second
+distinct, not in words that have simply expanded their semantic scope.  The
+first sample comprises word pairs from the same chapter. In the second
 sample we only include word pairs from two different chapters. Then we
 determine, separately for each sample, the number of word pairs that are
 phonologically similar using the same alignment scores that we have
@@ -2255,8 +2199,8 @@ a language-specific threshold $\theta(A)$. This threshold value is also
 estimated from the word list data in complete analogy to the thresholds
 used earlier for cognate detection. Again, the bimodal form of the
 distribution of the scores of all word pairs for language $A$ is the key,
-and we remove languages from this study when the bimodality is not obvious
-\NEW{, \ie{} there is only little data for these languages} (see
+and we remove languages from this study when the bimodality is not obvious,
+\ie{} there is only little data for these languages (see
 Fig.~\ref{fig:cutoffChoice}). Our pairs of similar words therefore have the
 same statistical characteristics as cognates, except that they are taken
 from the same language, and may not correspond in meaning too closely.
@@ -2289,17 +2233,17 @@ more non-identical words with similar meanings than expected. For a single
 language we might observe a positive $\delta$-value by chance. In
 Fig.~\ref{fig:deltas}, we therefore plot the frequency distribution of the
 $\delta$-values for large language groups, including Indo-European and
-\NEW{Nakh-Daghestanian} languages \NEW{(mostly form the Daghestanian
-  branch, Nakh languages marked with asterix)}, as well as for a sample of
-155 languages from the IDS \NEW{(see Table~\ref{tab:langDeltas})}. If
-similar, non-identical words do not systematically have similar meanings we
-expect that this distribution is centered around zero.
+Nakh-Daghestanian languages (mostly form the Daghestanian branch, Nakh
+languages marked with asterix), as well as for a sample of 155 languages
+from the IDS (see Table~\ref{tab:langDeltas}). If similar, non-identical
+words do not systematically have similar meanings we expect that this
+distribution is centered around zero.
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.45\textwidth,clip=]{figures/deltaplot}
 \end{center}
-\caption{Distribution of $\delta$ in Indo-European, \NEW{ Nakh-Daghestanian}, and
+\caption{Distribution of $\delta$ in Indo-European, Nakh-Daghestanian, and
   all other languages (see Table~\ref{tab:langDeltas}). Medians of the
   distributions are shown as filled circles. We did not observe
   $\delta$-values smaller than zero. If there would not be a signal, the
@@ -2319,8 +2263,8 @@ distribution of $\delta$ for language groups shows medians around
 $\delta=0.014$ providing an estimate for the fraction of words that have a
 similar copy with similar meaning. This simple analysis indicates that word
 paralogy is a pervasive phenomenon across essentially all language groups
-that deserves a more detailed investigation in the future since
-\NEW{all} language\NEW{s} have a $\delta$-value larger than zero.
+that deserves a more detailed investigation in the future since all
+languages have a $\delta$-value larger than zero.
 
 \subsection{Polysemy.} 
 
@@ -2352,7 +2296,7 @@ patterns of polysemy across the world's languages.
 \label{fig:semanticnet}
 \end{figure}
 
-A recent work~\cite{Youn:16} provides a quantitative assessment \NEW{of} the
+A recent work~\cite{Youn:16} provides a quantitative assessment of the
 patterns of polysemy using cross-linguistic dictionaries. When a word in a
 meta-language is translated to a language of interest, additional meanings
 may appear if the word is polysemous in the language. The study builds a
@@ -2360,11 +2304,11 @@ collection of cross-linguistic polysemies for a few concepts chosen from
 Swadesh list across a set of languages sampled to be representative of
 worldwide diversity. Then, a semantic network is constructed for each
 language where nodes denoting concepts are linked if they are represented
-by a polysemy. \NEW{Fig.}~\ref{fig:semanticnet} shows an aggregated network
+by a polysemy. Fig.~\ref{fig:semanticnet} shows an aggregated network
 obtained from the entire set of languages. A randomization test showed that
 the polysemy relations were statistically universal across the
 languages---the network of relationships captured by any random subset of
-languages \NEW{was} significantly correlated with that obtained from the
+languages was significantly correlated with that obtained from the
 complementary subset, but different from what one would expect merely from
 the amount of polysemy observed for the different words. With further work,
 this should be translated into an empirical prior on the capacity of
@@ -2419,21 +2363,21 @@ comparative-historical databases created by various members of the program.
 
 \section{Measuring the success of statistical methods.}
 
-\NEW{In the previous sections w}e described several statistical \NEW{methods} and
-discussed their application\NEW{s to} different aspects of language evolution.  We
-demonstrated in \NEW{the} sample application that the results are reasonable.  One
-might argue, however, that we chose \QUOTE{simple} cases where the answer
-is already known. This may not immediately convince the reader that the
-methods will also work in \QUOTE{hard} cases, where the signal is weak and
-multiple hypotheses are still debated in the linguistic community. Thus,
-the question is how to prove that a method provides useful and reliable
-results in the hard cases? The problem of assessing the reliability of a
-method or a specific software tool has been well studied in the context of
-computational biology. In this section, we sketch these methods of
-verification with examples relevant to historical linguistics.
+In the previous sections we described several statistical methods and
+discussed their applications to different aspects of language evolution.
+We demonstrated in the sample application that the results are reasonable.
+One might argue, however, that we chose \QUOTE{simple} cases where the
+answer is already known. This may not immediately convince the reader that
+the methods will also work in \QUOTE{hard} cases, where the signal is weak
+and multiple hypotheses are still debated in the linguistic
+community. Thus, the question is how to prove that a method provides useful
+and reliable results in the hard cases?  The problem of assessing the
+reliability of a method or a specific software tool has been well studied
+in the context of computational biology. In this section, we sketch these
+methods of verification with examples relevant to historical linguistics.
 
-Statistics provides \NEW{a} measure for the confidence in the results produced by a
-computational method. Throughout this \NEW{contribution} we have used three of
+Statistics provides a measure for the confidence in the results produced by
+a computational method. Throughout this contribution we have used three of
 these measures: specificity, sensitivity, and the FDR (see
 Figs.~\ref{fig:DanROC} and \ref{fig:FDR}). Sensitivity and specificity are
 calculated with respect to a known ground truth, often called the
@@ -2479,13 +2423,13 @@ and variances changes with sample size, and tests with sub-samples of
 various sizes can verify these predictions.
 
 
-\section{Conclusion \NEW{and Future Directions}.} 
+\section{Conclusion and Future Directions.}
 
 Biological and language data share enough properties to argue that methods
 developed in one domain are also applicable in the other. Comparative
 methods are useful in both fields as a means to infer the evolution of
 species or history of languages. Words as well as genes, proteins, or RNAs
-are encoded in a linear manner, and their \NEW{comparison} is usually based on
+are encoded in a linear manner, and their comparison is usually based on
 alignments. In biology, it is possible to formulate explicit models with
 just a few parameters that have to be estimated. The amino acids and bases
 at alignment positions change almost independently and thus almost
@@ -2500,28 +2444,27 @@ this paper, are model independent. They allow tests of phylolinguistic
 hypotheses even in the complete absence of mechanistic or detailed
 statistical models.
 
-In our presentation above we have highlighted but a few aspects of
-  language evolution. There are, of course, numerous others. Grammatical
-  features, for example, are subject to evolutionary turnover as well.  The
-  work of \citet{Dunn:11} highlights an important issue\NEW{,} on the one hand,
-  features of language may well be correlated. On the other hand, most
-  regularities are of a statistical nature rather than absolute
-  ``universals''. Phylogenetic relatedness naturally introduces such
-  correlations. It becomes an important issue, then, to disentangle
-  regularities in language evolution that are grounded in cognitive,
-  physical, or biological constraints from those that are a mere reflection
-  of lineage-specific persistence. As a case in point, some of us recently
-  revisited \cite{Blasi:16a} the presumed independence of sound and meaning,
-  which is widely believed to be a crucial property of human
-  language. Surprisingly, a careful statistical examination of words from
-  nearly two-thirds of the world's languages reveals that unrelated
-  languages very often use (or avoid) the same sounds for specific
-  referents. This effect cannot by explained by phylogenetic relatedness or
-  geographic proximity but emerge independently. At present we cannot give
-  a mechanistic explanation for most of the statistically significant
-  sound-meaning associations---but we could quite easily incorporate them
-  into the background statistics used, e.g., for cognate detection,
-  with the effect of increasing sensitivity.
+In our presentation above we have highlighted but a few aspects of language
+evolution. There are, of course, numerous others. Grammatical features, for
+example, are subject to evolutionary turnover as well.  The work of
+\citet{Dunn:11} highlights an important issue, on the one hand, features of
+language may well be correlated. On the other hand, most regularities are
+of a statistical nature rather than absolute ``universals''. Phylogenetic
+relatedness naturally introduces such correlations. It becomes an important
+issue, then, to disentangle regularities in language evolution that are
+grounded in cognitive, physical, or biological constraints from those that
+are a mere reflection of lineage-specific persistence. As a case in point,
+some of us recently revisited \cite{Blasi:16a} the presumed independence of
+sound and meaning, which is widely believed to be a crucial property of
+human language. Surprisingly, a careful statistical examination of words
+from nearly two-thirds of the world's languages reveals that unrelated
+languages very often use (or avoid) the same sounds for specific
+referents. This effect cannot by explained by phylogenetic relatedness or
+geographic proximity but emerge independently. At present we cannot give a
+mechanistic explanation for most of the statistically significant
+sound-meaning associations---but we could quite easily incorporate them
+into the background statistics used, e.g., for cognate detection, with the
+effect of increasing sensitivity.
 
 Computational linguistics methods have the potential to carry out all the
 major steps of historical reconstruction starting with lexical data,
@@ -2539,20 +2482,19 @@ methods infer and incorporate limited amounts of rate variation across the
 various lexical items and lineages, and provide a quantitative evaluation
 of various hypothesis, often in probabilistic terms that can be translated
 across different data domains. Even though these methods do not currently
-\NEW{explicitly} incorporate \NEW{the regularities in} rare phonetic
-processes like metathesis and \NEW{other irregular processes like}
-analogical change \NEW{(treating them, rather, as instances of independent
-sporadic changes)}, 
-nor do they evaluate the reasonableness of the phonetic system in their
-inferences, such additional processes and constraints are reasonably
-straightforward to add in when and where they become important. The
-required parameters can again be learned based on the data. As long as the
-effect of each particular language contact on the lexicon is reasonably
-small, methods from biological phylogenetics~\cite{Griffiths:97,Arenas:13}
-can be used to factor them into the inference. More problematic is
-quantifying whether a reconstructed lexicon is reasonable. Work on
-quantifying lexical semantics, however, holds promise for modeling semantic
-shift, thus providing an avenue to approach this problem systematically.
+explicitly incorporate the regularities in rare phonetic processes like
+metathesis and other irregular processes like analogical change (treating
+them, rather, as instances of independent sporadic changes), nor do they
+evaluate the reasonableness of the phonetic system in their inferences,
+such additional processes and constraints are reasonably straightforward to
+add in when and where they become important. The required parameters can
+again be learned based on the data. As long as the effect of each
+particular language contact on the lexicon is reasonably small, methods
+from biological phylogenetics~\cite{Griffiths:97,Arenas:13} can be used to
+factor them into the inference. More problematic is quantifying whether a
+reconstructed lexicon is reasonable. Work on quantifying lexical semantics,
+however, holds promise for modeling semantic shift, thus providing an
+avenue to approach this problem systematically.
 
 It is important to highlight that the task of a statistical inference
 algorithm is never to parameterize the most complete and complex known
@@ -2603,7 +2545,7 @@ might have remained hidden from the perspective only of manual
 reconstruction. Sixth, even in the \QUOTE{hard} cases where signals are
 weak or multiple signals overlayed, computational methods can come in
 handy. Computational methods do not simply return whether a hypothesis is
-true or not but rather how likely they are. Thus, when data \NEW{are} noisy,
+true or not but rather how likely they are. Thus, when data are noisy,
 different hypotheses can be tested and unlikely hypotheses can be
 discarded. Discordant results from application of different methods may
 point to hypotheses resolving the apparently incoherent array of
@@ -2629,10 +2571,10 @@ computational methods to output not only a scored list of alternative
 hypotheses, but also a scored list of evidence that supports and refutes
 any hypothesis. This can focus the valuable time of researchers in
 understanding and weighting the contradictions. This then is the division
-of labor that one can envisage: linguistic knowledge alone prescribes
-\NEW{what questions are interesting and what constitutes adequate
-  support for or against them---how this is done is what the focus on
-  computational linguistics should be.}
+of labor that one can envisage: linguistic knowledge alone prescribes what
+questions are interesting and what constitutes adequate support for or
+against them---how this is done is what the focus on computational
+linguistics should be.
 
 \clearpage
 %
@@ -2641,11 +2583,11 @@ of labor that one can envisage: linguistic knowledge alone prescribes
   alignment algorithm}
 \label{AppA}
 
-Word alignment\NEW{s} are performed with an extension of Needleman-Wunsch
+Word alignments are performed with an extension of Needleman-Wunsch
 algorithm \cite{needleman:70} that computes optimal alignment for linear
 gap cost models such as the Levenshtein distance \cite{Levenshtein:66}. The
 linear gap model is not ideal, however. Instead, it is desirable to
-penalize longer gaps subadditively. The simplest such model \NEW{uses} affine gap
+penalize longer gaps subadditively. The simplest such model uses affine gap
 costs, in which the opening of gap incurs higher costs than gap
 extensions. An efficient dynamic programming algorithm for this version of
 the problem was given by \citet{Gotoh:82}. In order to accommodate
@@ -2689,7 +2631,7 @@ are the gap opening penalties, while $\delta_P(\,.\,)$ and $\delta_Q(y_j)$
 are the smaller gap extension penalties.
 
 The gap penalties may depend on the language pair and the sound, \eg{} to
-accommodate the systematic silencing \NEW{of} a phone. Here we use language and
+accommodate the systematic silencing of a phone. Here we use language and
 sound independent parameters ($3.5$ for gap open and gap extent). The
 (mis)match scores are estimated according to equ.(\ref{eq:score}). Since
 the amount of available data is limited, we use the well-established method
@@ -2731,7 +2673,7 @@ Lists of languages used for different computational analyses.
   Old Church Slavonic, Persian, Polish, Portuguese, Romani, Russian, 
   Sanskrit, Serbo-Croatian, Spanish, Swedish, Tokharian B, Welsh, Yiddish \\
   \hline
-  \NEW{Nakh-Dagehstanian} (43)            
+  Nakh-Dagehstanian (43)            
   & Northern Akhvakh, Southern Akhvakh, Andi, Andi Muni, Archi 1, 
   Archi 2, Avar, Avar Andalal, Avar Antsukh, Avar Batlukh, Avar Hid, 
   Avar Karakh, Avar Kusur, Avar Zakataly, Bagvalal, Bezhta, Botlikh, 
@@ -2793,7 +2735,8 @@ Lists of languages used for different computational analyses.
 \raggedright
 \bibliographystyle{language}
 \phantomsection\addcontentsline{toc}{section}{Bibliography}
-\bibliography{lingo,new,\ifANONYMOUS anon\else ourstuff\fi}
+\bibliography{lingo}
+%\bibliography{lingo,new,\ifANONYMOUS anon\else ourstuff\fi}
 
 
 \newpage
@@ -2801,6 +2744,30 @@ Lists of languages used for different computational analyses.
 
 \vspace*{5mm}
 \theendnotes
+
+\newpage
+\section*{ORCID}
+
+\par\noindent
+
+\begin{center}
+\begin{tabular}{lcl} 
+\hline
+Tanmoy Bhattacharya    &&   0000-0002-1060-652X  \\
+Dami{\'a}n E.\ Blasi   &&   0000-0002-9885-1414  \\
+William Croft          &&   0000-0003-0886-2652  \\
+Michael Cysouw         &&   0000-0003-3168-4946  \\
+Daniel Hruschka        &&   0000-0003-2188-7782  \\
+Ian Maddieson          &&   0000-0002-0775-0555  \\
+Lydia M{\"u}ller       &&   0000-0001-9544-121X  \\
+Nancy Retzlaff         &&   0000-0002-9231-4220  \\
+Eric Smith             &&   0000-0003-0013-3447  \\
+Peter F.\ Stadler      &&   0000-0002-5016-5191  \\
+George Starostin       &&   0000-0002-4024-6625  \\
+HyeJin Youn            &&   0000-0002-6190-4412  \\
+\hline
+\end{tabular} 
+\end{center}
 
 \end{document}
 
